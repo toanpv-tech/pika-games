@@ -594,7 +594,7 @@ local function render_garden()
  -- trick): the row never reflows, and the child reads "2 of 3" rather than
  -- just "2". Laid out from the right bezel so the count grows inward.
  for i,s in ipairs(R.life or{})do
-  spr(s,true,480-CFG.HUD_PAD_X-CFG.HUD_LIFE_STEP*i,CFG.HUD_LIFE_Y,i<=state.lives and 255 or CFG.HUD_SPENT_OPA)
+  spr(s,true,480-CFG.HUD_PAD_X-CFG.HUD_LIFE_SHIFT-CFG.HUD_LIFE_STEP*i,CFG.HUD_LIFE_Y,i<=state.lives and 255 or CFG.HUD_SPENT_OPA)
  end
  for i,p in ipairs(state.plots)do render_plot(i,p)end
  if R.gold then

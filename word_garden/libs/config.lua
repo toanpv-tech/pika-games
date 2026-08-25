@@ -84,6 +84,7 @@ return {
   -- centred.
   HUD_SPACE_ADV = 4.16,
   HUD_LIFE_STEP = 20, -- life pitch; 12 px art + 8 px air
+  HUD_LIFE_SHIFT = 8, -- extra left nudge for the whole life row, off the right bezel
   -- Sun bar: sits inline with row 1, immediately after the NẮNG:/SUN: label,
   -- vertically centred on that text line ((23-8)/2 = 7 below HUD_Y).
   --
