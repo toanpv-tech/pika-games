@@ -1,0 +1,31 @@
+{
+  "version": "1.1.1",
+  "name": {
+    "vi": "Trường Đua",
+    "en": "Word Racer"
+  },
+  "main": "scripts/main.lua",
+  "peripherals": ["led", "audio", "display", "voice", "button"],
+  "input": {
+    "actions": {
+      "left": ["button:left"],
+      "right": ["button:right"],
+      "confirm": ["button:enter"]
+    }
+  },
+  "audio": {
+    "sounds": {
+      "start":   { "path": "assets/audio/start.wav" },
+      "lane":    { "path": "assets/audio/lane.wav" },
+      "coin":    { "path": "assets/audio/coin.wav" },
+      "powerup": { "path": "assets/audio/powerup.wav" },
+      "shield":  { "path": "assets/audio/shield.wav" },
+      "boss":    { "path": "assets/audio/boss.wav" },
+      "smash":   { "path": "assets/audio/smash.wav" },
+      "crash":   { "path": "assets/audio/crash.wav" },
+      "tick":    { "path": "assets/audio/tick.wav" },
+      "over":    { "path": "assets/audio/over.wav" },
+      "record":  { "path": "assets/audio/record.wav" }
+    }
+  }
+}

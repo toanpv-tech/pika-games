@@ -1,0 +1,27 @@
+{
+  "version": "1.1.1",
+  "name": {
+    "vi": "Vườn Hoa",
+    "en": "Word Garden"
+  },
+  "main": "scripts/main.lua",
+  "peripherals": ["audio", "display", "voice", "led", "button"],
+  "input": {
+    "actions": {
+      "confirm": ["button:enter"]
+    }
+  },
+  "audio": {
+    "sounds": {
+      "start":  { "path": "assets/sounds/start.wav" },
+      "bloom":  { "path": "assets/sounds/bloom.wav" },
+      "gold":   { "path": "assets/sounds/gold.wav" },
+      "caw":    { "path": "assets/sounds/caw.wav" },
+      "spell":  { "path": "assets/sounds/spell.wav" },
+      "peck":   { "path": "assets/sounds/peck.wav" },
+      "done":   { "path": "assets/sounds/done.wav" },
+      "sunset": { "path": "assets/sounds/sunset.wav" },
+      "over":   { "path": "assets/sounds/over.wav" }
+    }
+  }
+}

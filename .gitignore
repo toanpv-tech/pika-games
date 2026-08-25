@@ -21,3 +21,8 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+#
+/backup/
+/o_an_quan/
+/session_journey/
+/test_stack/

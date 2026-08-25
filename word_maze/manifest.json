@@ -1,0 +1,32 @@
+{
+  "version": "1.1.1",
+  "name": {
+    "vi": "Mê Cung",
+    "en": "Word Maze"
+  },
+  "main": "scripts/main.lua",
+  "peripherals": ["led", "audio", "display", "voice", "button", "servo"],
+  "input": {
+    "actions": {
+      "confirm": ["button:enter"]
+    }
+  },
+  "audio": {
+    "sounds": {
+      "scurry": { "path": "assets/audio/scurry.wav" },
+      "nom":    { "path": "assets/audio/nom.wav" },
+      "keyget": { "path": "assets/audio/keyget.wav" },
+      "unlock": { "path": "assets/audio/unlock.wav" },
+      "cheese": { "path": "assets/audio/cheese.wav" },
+      "zap":    { "path": "assets/audio/zap.wav" },
+      "growl":  { "path": "assets/audio/growl.wav" },
+      "hurt":   { "path": "assets/audio/hurt.wav" },
+      "miss":   { "path": "assets/audio/miss.wav" },
+      "tick":   { "path": "assets/audio/tick.wav" },
+      "fail":   { "path": "assets/audio/fail.wav" },
+      "over":   { "path": "assets/audio/over.wav" },
+      "start":  { "path": "assets/audio/start.wav" }
+    }
+  },
+  "poses": { "poke": "poke", "cheer_jump": "cheer_jump" }
+}
