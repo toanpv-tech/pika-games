@@ -379,6 +379,12 @@ local function build_render_objects()
   render.player_shield = make_image(CFG.ASSET .. "pika-player-shield.png", 20)
   render.hud_planet = make_image(CFG.ASSET .. "hud-planet.png", 24)
   render.hud_star = make_image(CFG.ASSET .. "hud-star.png", 24)
+  -- Separate handle from render.magnet (the in-lane pickup slot) so the HUD
+  -- countdown icon never fights the pickup sprite's own show/hide state.
+  -- hud-magnet.png is a 20x20 crop of the pickup art (4_3_asteroid_magnet.png,
+  -- 22x31) so it matches hud-planet.png's footprint instead of the taller
+  -- in-lane pickup size.
+  render.hud_magnet = make_image(CFG.ASSET .. "hud-magnet.png", 24)
   render.hud_hearts = {}
   for i = 1, CFG.MAX_LIVES do
     render.hud_hearts[i] = make_image(CFG.ASSET .. "hud-heart.png", 24)
@@ -689,6 +695,7 @@ local function show_title()
   set_sprite(render.player_shield, false)
   set_sprite(render.hud_planet, false)
   set_sprite(render.hud_star, false)
+  set_sprite(render.hud_magnet, false)
   for _, heart in ipairs(render.hud_hearts or {}) do set_sprite(heart, false) end
   hide_text(render.hud)
   hide_lane_labels()
@@ -748,6 +755,7 @@ local function start_run()
   end
   set_sprite(render.start_star, false)
   set_sprite(render.hud_star, false)
+  set_sprite(render.hud_magnet, false)
   clear_items()
   hide_gameplay_text()
   metrics.voice_hits = 0
@@ -936,6 +944,7 @@ local function finish_game(won)
   set_sprite(render.player_shield, false)
   set_sprite(render.hud_planet, false)
   set_sprite(render.hud_star, false)
+  set_sprite(render.hud_magnet, false)
   for _, heart in ipairs(render.hud_hearts or {}) do set_sprite(heart, false) end
 
   run.won = won == true
@@ -1229,18 +1238,26 @@ local function render_gameplay(now)
     player_x - 30, player_y - 1, player_opacity)
 
   if run.play_layout_dirty then
-    -- The journey reads as planet + name + stage, followed by the star score;
-    -- defensive states remain grouped on the right.
+    -- The journey reads as planet + name + stage, then the score box, then the
+    -- star count; defensive states remain grouped on the right.
     align_text(render.voice, "top_left", 50, 13)
+    -- render.footer is idle during gameplay (only used on the title and GAME
+    -- OVER screens), so it is borrowed here as the score box rather than
+    -- spending a ninth Text slot the 8-slot pool does not have. top_right pins
+    -- its RIGHT edge 8 px left of the star icon (330), so the box grows
+    -- leftward with the digit count instead of drifting into the icon.
+    set_font(render.footer, FONT_PX_SMALL)
+    align_text(render.footer, "top_right", 322 - 480, 13)
+    color_text(render.footer, 0xFFD85A)
     align_text(render.hud, "top_left", 353, 13)
     color_text(render.hud, 0xFFE66D)
     color_text(render.voice, 0x7CFFCB)
-    hide_text(render.footer)
     hide_text(render.boss)
     run.play_layout_dirty = false
   end
   if run.hud_dirty or now >= run.hud_next_ms then
     set_text(render.hud, tostring(run.coins), true)
+    set_text(render.footer, I18n.t("score") .. " " .. tostring(math.floor(run.score)), true)
     local planet = planet_for_round(run.round)
     set_text(render.voice,
       I18n.planet(planet.name) .. " | " .. string.format("%02d", run.round), true)
@@ -1261,6 +1278,27 @@ local function render_gameplay(now)
       end
       run.lanes_dirty = false
     end
+    -- render.boss is idle in SCENE_DRIVE (it is only live during the
+    -- checkpoint prompt and the GAME OVER screen), so it is borrowed here to
+    -- show the magnet's remaining active time -- otherwise the player has no
+    -- way to tell how much longer the pull-in effect lasts. Icon sits at
+    -- x=24, directly under render.hud_planet, so the two icons share a
+    -- column; the countdown text starts at x=50, lined up under render.voice
+    -- the same way the icons line up above it. y=34 matches the icon's own
+    -- top rather than the icon's vertical box-centre: a digit/"s" string has
+    -- no descenders, so its glyph ink sits above the centre of its own text
+    -- band (same reasoning as OVER_STAR_Y above) and reads centred against
+    -- the 20 px icon at the icon's own y instead of a geometrically centred one.
+    local magnet_left_ms = (run.magnet_until or 0) - now
+    if magnet_left_ms > 0 then
+      set_sprite(render.hud_magnet, true, 24, 34, 255)
+      align_text(render.boss, "top_left", 50, 34)
+      color_text(render.boss, 0x4FD1FF)
+      set_text(render.boss, math.ceil(magnet_left_ms / 1000) .. "s", true)
+    else
+      set_sprite(render.hud_magnet, false)
+      hide_text(render.boss)
+    end
   end
 
   if run.message ~= "" and (run.message_until == 0 or now < run.message_until) then
@@ -1272,7 +1310,6 @@ local function render_gameplay(now)
 
   if run.scene == SCENE_CHECKPOINT then
     hide_lane_labels()
-    hide_text(render.footer)
     local checkpoint_dy = math.floor(run.checkpoint_y) - CFG.SCREEN_H / 2
     for i = 1, run.checkpoint_loot_n do
       local loot = run.checkpoint_loot[i]

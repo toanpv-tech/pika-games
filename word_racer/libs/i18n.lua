@@ -26,6 +26,7 @@ local TEXT = {
     stars = "STARS ",
     lives = "LIVES ",
     shield = "SHIELD",
+    score = "SCORE:",
   },
   vi = {
     title = "PIKA  DU HÀNH TỪ VỰNG",
@@ -50,6 +51,7 @@ local TEXT = {
     stars = "SAO ",
     lives = "MẠNG ",
     shield = "KHIÊN",
+    score = "ĐIỂM:",
   },
 }
 
