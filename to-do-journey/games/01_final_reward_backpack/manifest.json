@@ -1,0 +1,34 @@
+{
+  "name": { "vi": "Rương mảnh ghép", "en": "Jigsaw Chest" },
+  "version": "1.0.7",
+  "author": "Pika Studio",
+  "main": "scripts/main.lua",
+  "peripherals": ["display", "audio", "button"],
+  "input": { "actions": { "confirm": ["button:enter"] } },
+  "audio": {
+    "sounds": {
+      "voice_1":      { "path": "assets/sounds/voice_1.mp3" },
+      "voice_2":      { "path": "assets/sounds/voice_2.mp3" },
+      "en_voice_1":   { "path": "assets/sounds/en_voice_1.mp3" },
+      "en_voice_2":   { "path": "assets/sounds/en_voice_2.mp3" },
+      "hold_1":       { "path": "assets/sounds/hold_1.mp3" },
+      "hold_2":       { "path": "assets/sounds/hold_2.mp3" },
+      "hold_3":       { "path": "assets/sounds/hold_3.mp3" },
+      "hold_4":       { "path": "assets/sounds/hold_4.mp3" },
+      "hold_5":       { "path": "assets/sounds/hold_5.mp3" },
+      "hold_6":       { "path": "assets/sounds/hold_6.mp3" },
+      "hold_7":       { "path": "assets/sounds/hold_7.mp3" },
+      "hold_8":       { "path": "assets/sounds/hold_8.mp3" },
+      "unlock":       { "path": "assets/sounds/unlock.mp3" },
+      "sparkle":      { "path": "assets/sounds/sparkle.mp3" },
+      "woosh":        { "path": "assets/sounds/woosh.mp3" },
+      "thud_hit":     { "path": "assets/sounds/thud_hit.mp3" },
+      "thud_hop":     { "path": "assets/sounds/thud_hop.mp3" },
+      "fanfare":      { "path": "assets/sounds/fanfare.mp3" },
+      "twinkle1":     { "path": "assets/sounds/twinkle1.mp3" },
+      "twinkle2":     { "path": "assets/sounds/twinkle2.mp3" },
+      "twinkle3":     { "path": "assets/sounds/twinkle3.mp3" },
+      "cp-4":         { "remote": true }
+    }
+  }
+}
