@@ -1,0 +1,52 @@
+{
+  "name": {
+    "vi": "Thư bồ câu",
+    "en": "Pigeon Post"
+  },
+  "version": "1.0.5",
+  "author": "Pika Studio",
+  "main": "scripts/main.lua",
+  "peripherals": [
+    "display",
+    "audio",
+    "button"
+  ],
+  "input": {
+    "actions": {
+      "left": [
+        "button:left"
+      ],
+      "right": [
+        "button:right"
+      ],
+      "confirm": [
+        "button:enter"
+      ]
+    }
+  },
+  "audio": {
+    "sounds": {
+      "cp-1": {
+        "remote": true
+      },
+      "cp-2": {
+        "remote": true
+      },
+      "cp-3": {
+        "remote": true
+      },
+      "fallback_map": {
+        "path": "assets/au/fallback_map.mp3"
+      },
+      "fallback_activity": {
+        "path": "assets/au/fallback_activity.mp3"
+      },
+      "en_fallback_map": {
+        "path": "assets/au/en_fallback_map.mp3"
+      },
+      "en_fallback_activity": {
+        "path": "assets/au/en_fallback_activity.mp3"
+      }
+    }
+  }
+}

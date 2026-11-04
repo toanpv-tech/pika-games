@@ -1,0 +1,31 @@
+{
+  "name": {
+    "vi": "Trứng Nở",
+    "en": "Hatch"
+  },
+  "version": "1.0.8",
+  "main": "scripts/main.lua",
+  "peripherals": ["display", "audio", "button"],
+  "input": {
+    "actions": {
+      "left":    ["button:left"],
+      "right":   ["button:right"],
+      "confirm": ["button:enter"]
+    }
+  },
+  "audio": {
+    "sounds": {
+      "voice_1": { "path": "assets/au/voice_1.mp3" },
+      "voice_2": { "path": "assets/au/voice_2.mp3" },
+      "pick":  { "path": "assets/sounds/pick.mp3" },
+      "shake": { "path": "assets/sounds/shake.mp3" },
+      "hatch": { "path": "assets/sounds/hatch.mp3" },
+      "pour":  { "path": "assets/sounds/pour.mp3" },
+      "select": { "path": "assets/sounds/select.mp3" },
+      "remind_1": { "path": "assets/au/remind_1.mp3" },
+      "remind_2": { "path": "assets/au/remind_2.mp3" },
+      "cp_5": { "remote": true },
+      "cp_6": { "remote": true }
+    }
+  }
+}
