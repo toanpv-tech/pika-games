@@ -1,0 +1,147 @@
+{
+  "status": 0,
+  "msg": "Success",
+  "result": {
+    "id": 3682,
+    "name": "Can-do Sticker Book (test cando_book)",
+    "description": "Bot thu game Lua cando_book: game.level = che do (1 intro, 2 sau bai, 3 bo suu tap), items[0].i = so cum tre tu noi (0-3). Khung lay tu bot 3655.",
+    "task_chain": [
+      {
+        "task": "",
+        "tools": [],
+        "language": "VI",
+        "learn_v2": true,
+        "use_cache": true,
+        "asr_config": "medium",
+        "session_id": "",
+        "sub_agents": [],
+        "checkpoints": [
+          {
+            "game": {
+              "data": {
+                "mode": "after_lesson",
+                "words": [
+                  {
+                    "id": 0,
+                    "said": true
+                  },
+                  {
+                    "id": 1,
+                    "said": true
+                  },
+                  {
+                    "id": 2,
+                    "said": true
+                  }
+                ],
+                "lesson": "Câu lạc bộ Sở thích",
+                "ms_new": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "placed": [],
+                "ms_have": [],
+                "card_state": "dang"
+              },
+              "live": null,
+              "seed": 1,
+              "items": [
+                {
+                  "i": 3,
+                  "say": [],
+                  "text": null,
+                  "pinyin": null,
+                  "meaning": null
+                }
+              ],
+              "level": 2,
+              "rounds": 1,
+              "starts": [],
+              "game_id": "cando_book",
+              "preload": null,
+              "version": "0.3.4",
+              "template": "custom",
+              "game_type": "button",
+              "timeout_s": 600,
+              "audio_base": null,
+              "checkpoints": []
+            },
+            "name": "Sổ sticker can-do",
+            "past": null,
+            "type": "game",
+            "hooks": [],
+            "on_max": "next",
+            "question": {
+              "en": "<emotion type=\"happy\"/> Let's look at your sticker book!",
+              "vi": "<emotion type=\"happy\"/> Mình cùng xem sổ sticker nhé!"
+            },
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "cases": [
+                {
+                  "turn_guide": "Output exactly <next_ckp/> and nothing else. Do not say anything.",
+                  "lower_bound": 0
+                },
+                {
+                  "event": "quit",
+                  "turn_guide": "Output exactly <next_ckp/> and nothing else. Do not say anything."
+                },
+                {
+                  "event": "timeout",
+                  "turn_guide": "Output exactly <next_ckp/> and nothing else. Do not say anything."
+                },
+                {
+                  "event": "invalid",
+                  "turn_guide": "Output exactly <next_ckp/> and nothing else. Do not say anything."
+                }
+              ],
+              "global_guide": "Output exactly <next_ckp/> and nothing else. Do not say anything."
+            },
+            "image_listening": null,
+            "use_cache_guide": false,
+            "cache_hash_guide": "c243ae8451b9ceff56dfc9a24d68802fa3082d64448be7c84a3c8934db6fbc0c",
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "0bdec6066ae7c108c0f445c66f2368e121f35f76263a824ce33ab68ffbab795b",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          }
+        ],
+        "start_message": "",
+        "assessment_mode": null,
+        "cache_audio_map": {},
+        "enable_subtitle": false,
+        "assessment_level": null,
+        "input_schema_key": null,
+        "learn_v2_keep_model": false,
+        "GRAMMAR_CHECKER_TOOL": "",
+        "SYSTEM_TASK_DESCRIPTION": "Pika is a friendly robot talking with a Vietnamese child (A2). This session only opens the Can-do Sticker Book game for the lesson 'Hobby Club'. Keep every line short and cheerful.",
+        "SYSTEM_PROMPT_GENERATION": "",
+        "learn_v2_keep_dev_prompt": false,
+        "SYSTEM_EXTRACTION_PROFILE": "",
+        "dynamic_checkpoint_config": null,
+        "PRONUNCIATION_CHECKER_TOOL": "",
+        "SYSTEM_EXTRACTION_VARIABLES": ""
+      }
+    ],
+    "generation_params": null,
+    "provider_name": "openai",
+    "system_prompt": "You are Pika, a friendly voice teacher for a child.\n\nThe lesson is a sequence of checkpoints. You receive ONE checkpoint at a time from the developer.\n\nEach checkpoint has:\nQuestion: what you must ask the child.\nResponse_guide: cases that describe how to answer the child.\n\nFLOW\n1. At the start of a checkpoint:\n   - Ask the Question once.\n   - Include any [MEDIA:...] tokens from the Question.\n\n2. For each child reply:\n   - If the question_guide or response_guide instructs you\n     to call a function (e.g. pronun_check(...)), you MUST\n     call that function exactly as described in the checkpoint.\n   - If it fits a case in Response_guide, answer using that case.\n     You may rephrase slightly, but keep the same meaning and media tokens.\n   - If it does NOT fit any case, answer kindly in 1–2 short turns:\n     repeat or simplify the Question, and guide the child back to it.\n\n3. Moving to the next checkpoint:\n   - When the Response_guide says this checkpoint is finished,\n     OR the child is back on track and agrees to move on,\n     end your reply with <next_ckp/>.\n   - Only put <next_ckp/> at the END of your message.\n\nMEDIA\nUse [MEDIA:...] exactly as given in the checkpoint or guide.\nDo not invent new media keys.\n\nEMOTION\n- Use <emotion type=\"...\"/> exactly as given in the checkpoint or guide.\n- Do not invent new emotion tags.\n- Do not change the type value.\n- Place the tag at the position specified in the guide.\n\nSTYLE\nShort, simple sentences for a child.\n1–3 short sentences per turn.\nWarm, encouraging, and clear.\nAvoid adult, sexual, violent, extremist, unhealthy, risky, addictive content for kids.\nIf user says something unhealthy, advise them softly\n\nEXAMPLE 1\nTeacher:\n[MEDIA:word_image] Can you say the word \"Banana\"?\nStudent:\nBanana!\nTeacher:\n[MEDIA:star_img] Yes, Banana is correct! <next_ckp/>\n\nEXAMPLE 2\nDev sends:\n<checkpoint_1>\n  <question_guide>\n    <emotion type=\"happy\"/>[Say hello to the child],\n    <emotion type=\"excited\"/>[enthusiastically introduce that the child will learn vocab in the topic animals]\n  </question_guide>\n</checkpoint_1>\nTeacher says:\n<emotion type=\"happy\"/> Hello! Hi there, friend! <emotion type=\"excited\"/> Today, we are going to learn about animals! So fun!\n\nEXAMPLE 3\nDev sends:\n<checkpoint_1>\n<question_guide>\nTalk in corresponding language for: <emotion type=\"encouraging\"/> [Bây giờ, cùng phát âm từ này theo tớ nhé][MEDIA:question][MEDIA:question][MEDIA:question]\n</question_guide>\n<question_media_note>Media note for question:[MEDIA:question]: audio: Phát âm từ \"duck\" 1 lần. image: hình ảnh minh họa cho từ duck</question_media_note>\n</checkpoint_1>\n\nSystem language prompt: English\nTeacher says: <emotion type=\"encouraging\"/> Now, follow me and let's say this word together! [MEDIA:question][MEDIA:question][MEDIA:question]\n\nEXAMPLE 4 — Function call required by response_guide\nDev sends:\n<checkpoint_1>\n<question_guide>\n  [MEDIA:question] Can you say the word \"duck\"?\n</question_guide>\n<response_guide>\n  Always call pronun_check(ref_text=\"duck\") before replying.\n  - Correct: [MEDIA:diamond_10] <next_ckp/>\n  - Incorrect: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n  - No answer / irrelevant / refuses: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n</response_guide>\n</checkpoint_1>\nStudent: Duck!\nTeacher (internal): → calls pronun_check(ref_text=\"duck\") → reads tool result → correct\nTeacher says: [MEDIA:diamond_10] <next_ckp/>",
+    "format_output": "TEXT",
+    "graph": null,
+    "created_at": null,
+    "updated_at": null
+  }
+}

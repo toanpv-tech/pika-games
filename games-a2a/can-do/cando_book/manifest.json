@@ -1,0 +1,187 @@
+{
+  "name": {
+    "vi": "Sổ sticker can-do",
+    "en": "Can-do Sticker Book"
+  },
+  "version": "0.3.4",
+  "author": "Pika",
+  "main": "scripts/main.lua",
+  "peripherals": [
+    "display",
+    "button",
+    "audio"
+  ],
+  "input": {
+    "actions": {
+      "confirm": [
+        "button:enter"
+      ],
+      "left": [
+        "button:left"
+      ],
+      "right": [
+        "button:right"
+      ]
+    }
+  },
+  "audio": {
+    "sounds": {
+      "click": {
+        "path": "assets/sounds/click.wav"
+      },
+      "unlock": {
+        "path": "assets/sounds/unlock.wav"
+      },
+      "piece": {
+        "path": "assets/sounds/piece.wav"
+      },
+      "place": {
+        "path": "assets/sounds/place.wav"
+      },
+      "miss": {
+        "path": "assets/sounds/miss.wav"
+      },
+      "card": {
+        "path": "assets/sounds/card.wav"
+      },
+      "flip": {
+        "path": "assets/sounds/flip.wav"
+      },
+      "v_sum_0": {
+        "path": "assets/voice/sum_0.mp3"
+      },
+      "v_sum_1": {
+        "path": "assets/voice/sum_1.mp3"
+      },
+      "v_sum_2": {
+        "path": "assets/voice/sum_2.mp3"
+      },
+      "v_sum_3": {
+        "path": "assets/voice/sum_3.mp3"
+      },
+      "v_ms_0": {
+        "path": "assets/voice/ms_0.mp3"
+      },
+      "v_ms_1": {
+        "path": "assets/voice/ms_1.mp3"
+      },
+      "v_ms_2": {
+        "path": "assets/voice/ms_2.mp3"
+      },
+      "v_ms_3": {
+        "path": "assets/voice/ms_3.mp3"
+      },
+      "v_unlock_1": {
+        "path": "assets/voice/unlock_1.mp3"
+      },
+      "v_unlock_2": {
+        "path": "assets/voice/unlock_2.mp3"
+      },
+      "v_unlock_3": {
+        "path": "assets/voice/unlock_3.mp3"
+      },
+      "v_fb_110": {
+        "path": "assets/voice/fb_110.mp3"
+      },
+      "v_fb_101": {
+        "path": "assets/voice/fb_101.mp3"
+      },
+      "v_fb_100": {
+        "path": "assets/voice/fb_100.mp3"
+      },
+      "v_fb_011": {
+        "path": "assets/voice/fb_011.mp3"
+      },
+      "v_fb_010": {
+        "path": "assets/voice/fb_010.mp3"
+      },
+      "v_fb_001": {
+        "path": "assets/voice/fb_001.mp3"
+      },
+      "v_fb_000": {
+        "path": "assets/voice/fb_000.mp3"
+      },
+      "v_place_1": {
+        "path": "assets/voice/place_1.mp3"
+      },
+      "v_miss_1": {
+        "path": "assets/voice/miss_1.mp3"
+      },
+      "v_cue_1": {
+        "path": "assets/voice/cue_1.mp3"
+      },
+      "v_cue_1_more": {
+        "path": "assets/voice/cue_1_more.mp3"
+      },
+      "v_place_2": {
+        "path": "assets/voice/place_2.mp3"
+      },
+      "v_miss_2": {
+        "path": "assets/voice/miss_2.mp3"
+      },
+      "v_cue_2": {
+        "path": "assets/voice/cue_2.mp3"
+      },
+      "v_cue_2_more": {
+        "path": "assets/voice/cue_2_more.mp3"
+      },
+      "v_place_3": {
+        "path": "assets/voice/place_3.mp3"
+      },
+      "v_miss_3": {
+        "path": "assets/voice/miss_3.mp3"
+      },
+      "v_cue_3": {
+        "path": "assets/voice/cue_3.mp3"
+      },
+      "v_cue_3_more": {
+        "path": "assets/voice/cue_3_more.mp3"
+      },
+      "v_opening": {
+        "path": "assets/voice/opening.mp3"
+      },
+      "v_later": {
+        "path": "assets/voice/later.mp3"
+      },
+      "v_skip": {
+        "path": "assets/voice/skip.mp3"
+      },
+      "v_flip": {
+        "path": "assets/voice/flip.mp3"
+      },
+      "v_makeover": {
+        "path": "assets/voice/makeover.mp3"
+      },
+      "v_intro": {
+        "path": "assets/voice/intro.mp3"
+      },
+      "v_detail_0": {
+        "path": "assets/voice/detail_0.mp3"
+      },
+      "v_detail_1": {
+        "path": "assets/voice/detail_1.mp3"
+      },
+      "v_detail_2": {
+        "path": "assets/voice/detail_2.mp3"
+      },
+      "v_detail_3": {
+        "path": "assets/voice/detail_3.mp3"
+      },
+      "v_bookv_pend": {
+        "path": "assets/voice/bookv_pend.mp3"
+      },
+      "v_bookv": {
+        "path": "assets/voice/bookv.mp3"
+      },
+      "v_coll_dang": {
+        "path": "assets/voice/coll_dang.mp3"
+      },
+      "v_coll_dat": {
+        "path": "assets/voice/coll_dat.mp3"
+      },
+      "v_detail_sent": {
+        "path": "assets/voice/detail_sent.mp3"
+      }
+    }
+  }
+}
