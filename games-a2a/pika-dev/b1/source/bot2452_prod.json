@@ -1,0 +1,1847 @@
+{
+  "status": 0,
+  "msg": "Success",
+  "result": {
+    "id": 2452,
+    "name": "B1 - F5 - D1 - Present Chunk",
+    "description": "",
+    "task_chain": [
+      {
+        "task": "",
+        "tools": [
+          "pronun_check_v2_simplify"
+        ],
+        "language": "",
+        "learn_v2": true,
+        "use_cache": true,
+        "asr_config": "medium",
+        "session_id": "",
+        "sub_agents": [],
+        "checkpoints": [
+          {
+            "game": null,
+            "name": "Intro — Opening Hook",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:pika_intro_audio] <next_ckp/>",
+            "cambridge": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "pika_intro_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/11326HHlearnwithpika1.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/f5d1pra311hl01.mjpeg",
+                "media_description": "Intro: Pika sitting at a table, waving. Simple bright classroom."
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "0796531515c699c767991672d353ee2fb5cd2f091a011cd89de1a90fe74527c6",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Intro — Impact Moment",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:pika_intro2_audio] <next_ckp/>",
+            "cambridge": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "pika_intro2_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/11326HHlearnwithpika2.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/f5d1pra311hl02.mjpeg",
+                "media_description": "Intro: Title bubble 'Learn With Pika' floats into upper-right corner."
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "837d445b1be61953d16c1eb9f594389abdbb327300131e420ac13b698bab59f1",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Intro — Title Reveal",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:pika_intro3_audio] <next_ckp/>",
+            "cambridge": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "pika_intro3_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/11326HHlearnwithpika3.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/thecoach/all_files/F1D7FP08122509.gif",
+                "media_description": "Intro: Magical music, ding. Happy Pika face."
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "c92ffd212c7918944fd082d72ad1908fdd39f439594d9381029e5cb52bae7ef3",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "(D1 — Opening Hook)",
+            "past": null,
+            "type": "narrative",
+            "question": "<emotion type=\"happy_2\"/>Hey [[name]], let's get our lesson started. Today, we're going to discover Vietnamese snacks. It's going to be so much fun. Let's learn three special things we can try.<next_ckp/>",
+            "cambridge": null,
+            "placement": null,
+            "media_list": [],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": null,
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Chunk 1 — Lead-in",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:a1_leadin_visual] Look at Kenbee. He's looking at a plate of crispy, golden shrimp fritters. What snack is this? Can you guess?",
+            "cambridge": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "a1_leadin_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/a1.jpg",
+                "media_description": "audio: none. image: Kenbi ngồi ở một quầy ăn vặt, nhìn một đĩa bánh tôm vàng giòn với những con tôm nhỏ và lớp bột chiên mỏng. Bên cạnh có rau sống và một bát nước mắm có vài lát cà rốt và su hào. Kenbi nhìn món ăn với vẻ thích thú."
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [],
+                  "turn_guide": "• Case 1 (Trẻ trả lời bằng tiếng Anh, câu trả lời bao gồm từ khóa 'prawn fritters'/'shrimp fritters'): <emotion type=\"happy\"/> Yes. You said, prawn fritters. That's exactly right. Now listen to me. <next_ckp/>\n\n• Case 2 (Các trường hợp còn lại): <emotion type=\"no_problem\"/> Oh [[name]], let me show you. Look, and listen. <next_ckp/>"
+                }
+              ],
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/c1.1_mic.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "base",
+            "cache_hash_question": "3f59f6e80df5e91b18720a1850d719609e931c5b5fff061ba6ea676d692aede5",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Chunk 1 — Listen and Say (Shadowing)",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:A1] Kenbee sits at the snack stall and sees a plate of golden, crispy prawn fritters. Fresh vegetables and a small bowl of dipping sauce are on the side. That is, prawn fritters. [MEDIA:b1_visual] Now say it with me. [MEDIA:b1_shadowing_audio]",
+            "cambridge": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "b1_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/b1.jpg",
+                "media_description": "audio: none. image: Visual A1 + text \"prawn fritters\" overlay."
+              },
+              {
+                "id": "b1_shadowing_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/297hhau16.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/b1.jpg",
+                "media_description": "audio: Voice Pika: "
+              },
+              {
+                "id": "A1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/a1.jpg",
+                "media_description": ""
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"happy\"/> Amazing job, [[name]]. You nailed it. <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"no_problem\"/> You're getting there, [[name]]. Keep it up. <next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này. CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: Let's try that one more time, [[name]]. We will learn English together. <next_ckp/>"
+                }
+              ],
+              "ref_text": "prawn fritters",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/c1.2_mic.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "c78f08a6b3e20ba45123a193e2c34d1587426cb2d1e926de4c7893fdc42e4720",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Chunk 1 — Listen and Say (Correction)",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:text_full_visual] Now listen to me! [MEDIA:_text_highlight_feed_audio] [MEDIA:_text_highlight_the_baby_audio]<next_ckp/>",
+            "cambridge": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "text_full_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/prawnfritters1.jpg",
+                "media_description": "audio: none. image: Text display: , plain background"
+              },
+              {
+                "id": "_text_highlight_feed_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/297hhau17.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/prawnfritters2.jpg",
+                "media_description": "audio: Voice Pika: [slow, instructional] feed. image: Text display:  — 'feed' highlighted"
+              },
+              {
+                "id": "_text_highlight_the_baby_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/297hhau18.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/prawnfritters3.jpg",
+                "media_description": "audio: Voice Pika: [slow, instructional] the baby. image: Text display:  — 'the baby' highlighted"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "d1c7428122cec8628489b50b9dd4ee78de54935d1f238df7fbc9f406ede9fea9",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Chunk 1 — Listen and Say (Correction CTA)",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:b1_visual] Now repeat after me. [MEDIA:b1_correction_audio]",
+            "cambridge": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "b1_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/b1.jpg",
+                "media_description": "audio: none. image: Visual A1 + text \"prawn fritters\" overlay."
+              },
+              {
+                "id": "b1_correction_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/297hhau19.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/b1.jpg",
+                "media_description": "audio: Voice Pika: [instructional, emphasis] "
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"happy\"/> Well done, [[name]]. That sounded great. <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"no_problem\"/> Nice try. You're getting closer, [[name]]. <next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này. CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: Let's try again next time, [[name]]. <next_ckp/>"
+                }
+              ],
+              "ref_text": "prawn fritters",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/c1.2_mic.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "2551283ff0ea174fd399d39246b69e36129ab8bc18304031b13a6868b210c728",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Chunk 1 — Produce",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:b1_visual]  Now I'll show you some magic. Say it with me to crunch into a golden snack. [MEDIA:b1_produce_audio]",
+            "cambridge": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "b1_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/b1.jpg",
+                "media_description": "audio: none. image: Visual A1 + text \"prawn fritters\" overlay."
+              },
+              {
+                "id": "b1_produce_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/297hhau20.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/b1.jpg",
+                "media_description": "audio: Voice Pika: , [instructional, emphasis] , ."
+              },
+              {
+                "id": "d1_success_audio",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/d1.jpg",
+                "media_description": "SFX: Tèn tén ten. image: Visual A1 + Kenbi cầm đũa ăn một miếng bánh tôm ăn, vẻ mặt thích thú."
+              },
+              {
+                "id": "b1_retry_audio",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/297hhau19.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/b1.jpg",
+                "media_description": "audio: Voice Pika: [instructional, emphasis] . image: Visual A1 + text \"prawn fritters\" overlay."
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [],
+                  "turn_guide": "• Case 1 (Trẻ trả lời bằng tiếng Anh, câu trả lời bao gồm từ khóa 'prawn fritters'/'shrimp fritters'): [MEDIA:d1_success_audio] Look! Kenbee takes a bite. It's so crispy and yummy. <next_ckp/>\n\n• Case 2 (Các trường hợp còn lại - False/Fallback/Silent): <emotion type=\"encouraging\"/> Oopsie, that sounded a little different. Let me help you. [MEDIA:b1_retry_audio] [MEDIA:d1_success_audio] Look! Kenbee takes a bite. It's so crispy and yummy. <next_ckp/>"
+                }
+              ],
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/c1.2_mic.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": "8de7174fc59bab6e374f1c673a34f678e4be336b2b7679537a0bd09a0c6cf92f",
+            "pronun_score_only": false,
+            "type_cta_simplify": "base",
+            "cache_hash_question": "bdced88d32c196cce6f2c1350db1370972dd4dc30529046738bc8308a305caea",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Chunk 2 — Lead-in",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:a2_leadin_visual] Look at Kenbee. He’s looking at a plate of round, golden balls covered in sesame seeds. What snack is this? Can you guess?",
+            "cambridge": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "a2_leadin_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/a2.jpg",
+                "media_description": "audio: none. image: Kenbi ngồi ở một quầy ăn vặt, nhìn một đĩa bánh rán vừng tròn xoe, lớp vỏ vàng giòn phủ hạt mè bên ngoài. Kenbi nhìn món ăn với vẻ thích thú."
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [],
+                  "turn_guide": "• Case 1 (Trẻ trả lời bằng tiếng Anh, câu trả lời bao gồm từ khóa 'sesame balls'/'sesame ball'): <emotion type=\"happy\"/> Yes. You said, sesame balls. That's exactly right. Now listen to me. <next_ckp/>\n\n• Case 2 (Các trường hợp còn lại): <emotion type=\"no_problem\"/> Oh [[name]], let me show you. Look, and listen. <next_ckp/>"
+                }
+              ],
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/c2.1_mic.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "base",
+            "cache_hash_question": "bf66d0f68f4324bb17909dc6656a45f882ddbe551bafca2ddd72a0bd58464a59",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Chunk 2 — Listen and Say (Shadowing)",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:A2] Kenbee sits at the snack stall and sees round, golden balls covered with crunchy sesame seeds. That is, sesame balls. [MEDIA:b2_visual] Now say it with me. [MEDIA:b2_shadowing_audio]",
+            "cambridge": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "b2_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/b2.jpg",
+                "media_description": "audio: none. image: Visual A2 + text \"sesame balls\" overlay."
+              },
+              {
+                "id": "b2_shadowing_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/297hhau21.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/b2.jpg",
+                "media_description": "audio: Voice Pika: "
+              },
+              {
+                "id": "A2",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/a2.jpg",
+                "media_description": ""
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"happy\"/> Amazing job, [[name]]. You nailed it. <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"no_problem\"/> You're getting there, [[name]]. Keep it up. <next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này. CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: Let's try that one more time, [[name]]. We will learn English together. <next_ckp/>"
+                }
+              ],
+              "ref_text": "sesame balls",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/c2.2_mic.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "96ad04fef9096d9cb859870db0ad050ab8d07f5c84fbc06827b458beb76d99d3",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Chunk 2 — Listen and Say (Correction)",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:_text_full_visual] Now listen to me! [MEDIA:_text_highlight_helping_in_audio] [MEDIA:_text_highlight_the_kitchen_audio] <next_ckp/>",
+            "cambridge": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "_text_full_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/sesameballs.jpg",
+                "media_description": "audio: none. image: Text display: , plain background"
+              },
+              {
+                "id": "_text_highlight_helping_in_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/297hhau22.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/sesameballs2.jpg",
+                "media_description": "audio: Voice Pika: [slow, instructional] helping in. image: Text display:  — 'helping in' highlighted"
+              },
+              {
+                "id": "_text_highlight_the_kitchen_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/297hhau23.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/sesameballs3.jpg",
+                "media_description": "audio: Voice Pika: [slow, instructional] the kitchen. image: Text display:  — 'the kitchen' highlighted"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "c3fec35b765707d39c97bb0667dfb81dc374e076a4727d16efc042459ac9b8e9",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Chunk 2 — Listen and Say (Correction CTA)",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:b2_visual] Now repeat after me. [MEDIA:b2_correction_audio]",
+            "cambridge": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "b2_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/b2.jpg",
+                "media_description": "audio: none. image: Visual A2 + text \"sesame balls\" overlay."
+              },
+              {
+                "id": "b2_correction_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/297hhau24.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/b2.jpg",
+                "media_description": "audio: Voice Pika: [instructional, emphasis] "
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"happy\"/> Well done, [[name]]. That sounded great. <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"no_problem\"/> Nice try. You're getting closer, [[name]]. <next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này. CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: Let's try again next time, [[name]]. <next_ckp/>"
+                }
+              ],
+              "ref_text": "sesame balls",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/c2.2_mic.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "da1767834d66fdd472419e2f2f753d2d217dcb028be8a539923a7870e98c28e7",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Chunk 2 — Produce",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:b2_visual] Now I'll show you some magic. Say it with me to bite into something round and sweet [MEDIA:b2_produce_audio]",
+            "cambridge": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "b2_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/b2.jpg",
+                "media_description": "audio: none. image: Visual A2 + text \"sesame balls\" overlay."
+              },
+              {
+                "id": "b2_produce_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/297hhau25.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/b2.jpg",
+                "media_description": "audio: Voice Pika: , [instructional, emphasis] , ."
+              },
+              {
+                "id": "d2_success_audio",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/d2.jpg",
+                "media_description": "SFX: Tèn tén ten. image: Visual A2 + Kenbi cầm chiếc bánh rán vừng cuối cùng trong đĩa, cắn một miếng để lộ phần nhân đậu xanh mềm bên trong và mỉm cười thưởng thức."
+              },
+              {
+                "id": "b2_retry_audio",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/297hhau24.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/b2.jpg",
+                "media_description": "audio: Voice Pika: [instructional, emphasis] . image: Visual A2 + text \"sesame balls\" overlay."
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [],
+                  "turn_guide": "• Case 1 (Trẻ trả lời bằng tiếng Anh, câu trả lời bao gồm từ khóa 'sesame balls'/'sesame ball'): [MEDIA:d2_success_audio] Look! Kenbee almost finishes every sesame ball. It's so delicious. <next_ckp/>\n\n• Case 2 (Các trường hợp còn lại - False/Fallback/Silent): <emotion type=\"encouraging\"/> Oopsie, that sounded a little different. Let me help you. [MEDIA:b2_retry_audio] [MEDIA:d2_success_audio] Look! Kenbee almost finishes every sesame ball. It's so delicious. <next_ckp/>"
+                }
+              ],
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/c2.2_mic.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": "5725a0aa77e71b9270e5a5bd3927f64aece3936021ab60c404dddbbec9d31edc",
+            "pronun_score_only": false,
+            "type_cta_simplify": "base",
+            "cache_hash_question": "c0b644ecbfbd3b4f8ef27a19df6cee6940c31b0003884216a616e842372dd497",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Chunk 3 — Lead-in",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:a3_leadin_visual] Look at Kenbee. He’s looking at a dessert with soft square pieces of jelly inside. What snack is this? Can you guess?\n",
+            "cambridge": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "a3_leadin_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/a3.jpg",
+                "media_description": "audio: none. image: Kenbi ngồi ở quầy ăn vặt, nhìn một hộp thạch dừa trong suốt chứa đầy những viên thạch dừa hình khối vuông nhỏ, màu trắng trong. Các viên thạch ngập trong nước đường trong suốt, nắp hộp đóng kín. Nắp hộp có hình quả dừa."
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [],
+                  "turn_guide": "• Case 1 (Trẻ trả lời bằng tiếng Anh, câu trả lời bao gồm từ khóa 'coconut jelly'): <emotion type=\"happy\"/> Yes. You said, coconut jelly. That's exactly right. Now listen to me. <next_ckp/>\n\n• Case 2 (Các trường hợp còn lại): <emotion type=\"no_problem\"/> Oh [[name]], let me show you. Look, and listen. <next_ckp/>"
+                }
+              ],
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/c3.1_mic.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "base",
+            "cache_hash_question": "34fb30d32ada7f608481cb147ae56ff2983ce45dd820922b16d9673bab6d4c22",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Chunk 3 — Listen and Say (Shadowing)",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:A3] Kenbee sits at the snack stall and sees a cool, clear jelly dessert cup. Small pieces of white coconut jelly are inside it. That is, coconut jelly. [MEDIA:b3_visual] Now say it with me. [MEDIA:b3_shadowing_audio]",
+            "cambridge": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "b3_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/b3.jpg",
+                "media_description": "audio: none. image: Visual A3 + text \"coconut jelly\" overlay."
+              },
+              {
+                "id": "b3_shadowing_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/297hhau26.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/b3.jpg",
+                "media_description": "audio: Voice Pika: "
+              },
+              {
+                "id": "A3",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/a3.jpg",
+                "media_description": ""
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"happy\"/> Amazing job, [[name]]. You nailed it. <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"no_problem\"/> You're getting there, [[name]]. Keep it up. <next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này. CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: Let's try that one more time, [[name]]. We will learn English together. <next_ckp/>"
+                }
+              ],
+              "ref_text": "coconut jelly",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/c3.2_mic.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "f5734aed4cbec1edc48caa4df69e6f13bb2a4e2951ed9e373c44ad343ee6eca8",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Chunk 3 — Listen and Say (Correction)",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:_text_full_visual] Now listen to me! [MEDIA:_text_highlight_going_to_audio] [MEDIA:_text_highlight_a_cafe_audio]<next_ckp/>",
+            "cambridge": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "_text_full_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/coconutjelly.jpg",
+                "media_description": "audio: none. image: Text display: , plain background"
+              },
+              {
+                "id": "_text_highlight_going_to_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/297hhau27.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/coconutjelly2.jpg",
+                "media_description": "audio: Voice Pika: [slow, instructional] going to. image: Text display:  — 'going to' highlighted"
+              },
+              {
+                "id": "_text_highlight_a_cafe_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/297hhau28.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/coconutjelly3.jpg",
+                "media_description": "audio: Voice Pika: [slow, instructional] a cafe. image: Text display:  — 'a cafe' highlighted"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "4e2160aed470fb7e38a4b948a2d30cf8a9024473284dbc2b89e81bee13284cae",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Chunk 3 — Listen and Say (Correction CTA)",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:b3_visual] Now repeat after me.[MEDIA:b3_correction_audio]",
+            "cambridge": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "b3_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/b3.jpg",
+                "media_description": "audio: none. image: Visual A3 + text \"coconut jelly\" overlay."
+              },
+              {
+                "id": "b3_correction_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/297hhau29.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/b3.jpg",
+                "media_description": "audio: Voice Pika: [instructional, emphasis] "
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"happy\"/> Well done, [[name]]. That sounded great. <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"no_problem\"/> Nice try. You're getting closer, [[name]]. <next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này. CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: Let's try again next time, [[name]]. <next_ckp/>"
+                }
+              ],
+              "ref_text": "coconut jelly",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/c3.2_mic.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "0563301f3c8b24f80f791c417dbe9bffa08477339283c322f4da36f889bcfa82",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Chunk 3 — Produce",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:b3_visual] Now I'll show you some magic. Say it with me to cool down with a wobbly treat. [MEDIA:b3_produce_audio]",
+            "cambridge": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "b3_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/b3.jpg",
+                "media_description": "audio: none. image: Visual A3 + text \"coconut jelly\" overlay."
+              },
+              {
+                "id": "b3_produce_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/297hhau30.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/b3.jpg",
+                "media_description": "audio: Voice Pika: , [instructional, emphasis] , ."
+              },
+              {
+                "id": "d3_success_audio",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/d3.jpg",
+                "media_description": "SFX: Tèn tén ten. image: Visual A3 + Kenbi cầm một chiếc thìa, ăn miếng thạch dừa cuối cùng trong chiếc hộp nhựa trong suốt, mỉm cười thích thú."
+              },
+              {
+                "id": "b3_retry_audio",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/297hhau29.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/b3.jpg",
+                "media_description": "audio: Voice Pika: [instructional, emphasis] . image: Visual A3 + text \"coconut jelly\" overlay."
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [],
+                  "turn_guide": "• Case 1 (Trẻ trả lời bằng tiếng Anh, câu trả lời bao gồm từ khóa 'coconut jelly'): [MEDIA:d3_success_audio] Kenbee finishes the whole cup, feeling cool and refreshed. <next_ckp/>\n\n• Case 2 (Các trường hợp còn lại - False/Fallback/Silent): <emotion type=\"encouraging\"/> Oopsie, that sounded a little different. Let me help you. [MEDIA:b3_retry_audio] [MEDIA:d3_success_audio] Kenbee finishes the whole cup, feeling cool and refreshed. <next_ckp/>"
+                }
+              ],
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/c3.2_mic.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": "8dd409bfef236820aa51e0ee91e68f1b727d29398398626a31d2d813d1b7411b",
+            "pronun_score_only": false,
+            "type_cta_simplify": "base",
+            "cache_hash_question": "3e651ac6fae630732a612a578f02fa660b3f1dca5791ffaaaaca4c041064f458",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Kết bài — Recap",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:e_visual] The three snacks we learn in today’s lesson are prawn fritters, sesame balls, and coconut jelly. You learned all three today, and I'm so proud of you! Now you know even more yummy Vietnamese snacks in English!<next_ckp/>",
+            "cambridge": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "e_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/upload/jpg/lesson_generator/2_b1_f5_d1_present_chunk/e.jpg",
+                "media_description": "audio: none. image: Ảnh tổng kết gồm Visual A1 + Visual A2 + Visual A3 trên cùng một canvas theo bố cục collage 2 tầng, Visual A1 và Visual A2 đặt ở hàng trên, Visual A3 đặt ở hàng dưới và căn giữa. Mỗi khung cần đủ lớn, không bị cắt nhân vật chính, không chồng lấn, có khoảng cách rõ ràng giữa các khung, giữ đúng nhân vật, bối cảnh và continuity của từng visual gốc."
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "ce7b67aec7ff192b6b85b8a451bfc66910721fdbbdecfc7be95b2f642628961d",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Kết bài — Favorite activity",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "<emotion type=\"happy\"/> What is your favourite Vietnamese snack?",
+            "cambridge": null,
+            "placement": null,
+            "media_list": [],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [],
+                  "turn_guide": "• Case 1 (Trẻ chọn một trong 3): <emotion type=\"excited\"/> [Pika lắng nghe và xác nhận lại câu trả lời của trẻ bằng một câu bình luận ngắn gọn, ấm áp.] <next_ckp/>\n\n• Case 2 (Trẻ không biết / không trả lời): <emotion type=\"happy\"/> [Pika chia sẻ một gợi ý nhỏ của riêng mình một cách nhẹ nhàng, không hỏi thêm.] <next_ckp/>\n\n• Case 3 (Trẻ trả lời không phù hợp, không nói gì, nói không liên quan): <emotion type=\"happy\"/> [Pika lảng đi hoàn toàn, không đề cập. Chuyển sang kết thúc.] <next_ckp/>"
+                }
+              ],
+              "global_guide": ""
+            },
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": "a0dde7c7ea81c2cb3b7901d13ff2c5d147530f92e06eac2ce47b9cea8e818da3",
+            "pronun_score_only": false,
+            "type_cta_simplify": "base",
+            "cache_hash_question": "d2f01fb0ceee86fd6054880289a051ac75f464796a42d910adcb04f605390ac2",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Kết bài — Ending promise",
+            "past": null,
+            "type": "narrative",
+            "question": "<emotion type=\"happy\"/> That was just the beginning. There are even more yummy Vietnamese snacks to discover. Are you ready for the next mission? <next_ckp/>",
+            "cambridge": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "outro_music",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/11326HHouttro.mp3",
+                "image_url": "",
+                "media_description": "Lesson outro music"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "e58a9fc48e23531bf0abaf2a01fc85ede317da73e19c83f54798d033058ee3d7",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          }
+        ],
+        "start_message": "",
+        "assessment_mode": null,
+        "cache_audio_map": {
+          "0563301f3c8b24f80f791c417dbe9bffa08477339283c322f4da36f889bcfa82:0:s0": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "Now repeat after me.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/0563301f3c8b24f80f791c417dbe9bffa08477339283c322f4da36f889bcfa82:0:s0.1791975977724.wav",
+            "created_at": 1791975978,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 43982,
+            "updated_at": 1791975978
+          },
+          "2551283ff0ea174fd399d39246b69e36129ab8bc18304031b13a6868b210c728:0:s0": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "Now repeat after me.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/2551283ff0ea174fd399d39246b69e36129ab8bc18304031b13a6868b210c728:0:s0.1791975977005.wav",
+            "created_at": 1791975977,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 52524,
+            "updated_at": 1791975977
+          },
+          "34fb30d32ada7f608481cb147ae56ff2983ce45dd820922b16d9673bab6d4c22:0:s0": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "sn",
+            "sentence": "Look at Kenbee.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/34fb30d32ada7f608481cb147ae56ff2983ce45dd820922b16d9673bab6d4c22:0:s0.1791975977608.wav",
+            "created_at": 1791975977,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 39886,
+            "updated_at": 1791975977
+          },
+          "34fb30d32ada7f608481cb147ae56ff2983ce45dd820922b16d9673bab6d4c22:0:s1": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "He’s looking at a dessert with soft square pieces of jelly inside.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/34fb30d32ada7f608481cb147ae56ff2983ce45dd820922b16d9673bab6d4c22:0:s1.1791975978957.wav",
+            "created_at": 1791975979,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 139564,
+            "updated_at": 1791975979
+          },
+          "34fb30d32ada7f608481cb147ae56ff2983ce45dd820922b16d9673bab6d4c22:0:s2": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "What snack is this?",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/34fb30d32ada7f608481cb147ae56ff2983ce45dd820922b16d9673bab6d4c22:0:s2.1791975979778.wav",
+            "created_at": 1791975980,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 38444,
+            "updated_at": 1791975980
+          },
+          "34fb30d32ada7f608481cb147ae56ff2983ce45dd820922b16d9673bab6d4c22:0:s3": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "Can you guess?",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/34fb30d32ada7f608481cb147ae56ff2983ce45dd820922b16d9673bab6d4c22:0:s3.1791975980456.wav",
+            "created_at": 1791975980,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 26924,
+            "updated_at": 1791975980
+          },
+          "3e651ac6fae630732a612a578f02fa660b3f1dca5791ffaaaaca4c041064f458:0:s0": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "Now I'll show you some magic.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/3e651ac6fae630732a612a578f02fa660b3f1dca5791ffaaaaca4c041064f458:0:s0.1791975978318.wav",
+            "created_at": 1791975978,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 50732,
+            "updated_at": 1791975978
+          },
+          "3e651ac6fae630732a612a578f02fa660b3f1dca5791ffaaaaca4c041064f458:0:s1": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "Say it with me to cool down with a wobbly treat.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/3e651ac6fae630732a612a578f02fa660b3f1dca5791ffaaaaca4c041064f458:0:s1.1791975979483.wav",
+            "created_at": 1791975979,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 105628,
+            "updated_at": 1791975979
+          },
+          "3f59f6e80df5e91b18720a1850d719609e931c5b5fff061ba6ea676d692aede5:0:s0": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "sn",
+            "sentence": "Look at Kenbee.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/3f59f6e80df5e91b18720a1850d719609e931c5b5fff061ba6ea676d692aede5:0:s0.1791975976818.wav",
+            "created_at": 1791975977,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 33964,
+            "updated_at": 1791975977
+          },
+          "3f59f6e80df5e91b18720a1850d719609e931c5b5fff061ba6ea676d692aede5:0:s1": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "He's looking at a plate of crispy, golden shrimp fritters.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/3f59f6e80df5e91b18720a1850d719609e931c5b5fff061ba6ea676d692aede5:0:s1.1791975978138.wav",
+            "created_at": 1791975978,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 120732,
+            "updated_at": 1791975978
+          },
+          "3f59f6e80df5e91b18720a1850d719609e931c5b5fff061ba6ea676d692aede5:0:s2": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "What snack is this?",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/3f59f6e80df5e91b18720a1850d719609e931c5b5fff061ba6ea676d692aede5:0:s2.1791975978913.wav",
+            "created_at": 1791975979,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 44204,
+            "updated_at": 1791975979
+          },
+          "3f59f6e80df5e91b18720a1850d719609e931c5b5fff061ba6ea676d692aede5:0:s3": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "Can you guess?",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/3f59f6e80df5e91b18720a1850d719609e931c5b5fff061ba6ea676d692aede5:0:s3.1791975979587.wav",
+            "created_at": 1791975979,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 28844,
+            "updated_at": 1791975979
+          },
+          "4e2160aed470fb7e38a4b948a2d30cf8a9024473284dbc2b89e81bee13284cae:0:s0": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "Now listen to me!",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/4e2160aed470fb7e38a4b948a2d30cf8a9024473284dbc2b89e81bee13284cae:0:s0.1791975977588.wav",
+            "created_at": 1791975977,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 30764,
+            "updated_at": 1791975977
+          },
+          "96ad04fef9096d9cb859870db0ad050ab8d07f5c84fbc06827b458beb76d99d3:0:s0": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "Kenbee sits at the snack stall and sees round, golden balls covered with crunchy sesame seeds.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/96ad04fef9096d9cb859870db0ad050ab8d07f5c84fbc06827b458beb76d99d3:0:s0.1791975978152.wav",
+            "created_at": 1791975978,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 211244,
+            "updated_at": 1791975978
+          },
+          "96ad04fef9096d9cb859870db0ad050ab8d07f5c84fbc06827b458beb76d99d3:0:s1": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "That is, sesame balls.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/96ad04fef9096d9cb859870db0ad050ab8d07f5c84fbc06827b458beb76d99d3:0:s1.1791975979158.wav",
+            "created_at": 1791975979,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 57644,
+            "updated_at": 1791975979
+          },
+          "96ad04fef9096d9cb859870db0ad050ab8d07f5c84fbc06827b458beb76d99d3:1:s0": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "Now say it with me.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/96ad04fef9096d9cb859870db0ad050ab8d07f5c84fbc06827b458beb76d99d3:1:s0.1791975979731.wav",
+            "created_at": 1791975980,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 30764,
+            "updated_at": 1791975980
+          },
+          "bdced88d32c196cce6f2c1350db1370972dd4dc30529046738bc8308a305caea:0:s0": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "Now I'll show you some magic.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/bdced88d32c196cce6f2c1350db1370972dd4dc30529046738bc8308a305caea:0:s0.1791975976993.wav",
+            "created_at": 1791975977,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 49964,
+            "updated_at": 1791975977
+          },
+          "bdced88d32c196cce6f2c1350db1370972dd4dc30529046738bc8308a305caea:0:s1": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "Say it with me to crunch into a golden snack.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/bdced88d32c196cce6f2c1350db1370972dd4dc30529046738bc8308a305caea:0:s1.1791975978107.wav",
+            "created_at": 1791975978,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 92204,
+            "updated_at": 1791975978
+          },
+          "bf66d0f68f4324bb17909dc6656a45f882ddbe551bafca2ddd72a0bd58464a59:0:s0": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "sn",
+            "sentence": "Look at Kenbee.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/bf66d0f68f4324bb17909dc6656a45f882ddbe551bafca2ddd72a0bd58464a59:0:s0.1791975976969.wav",
+            "created_at": 1791975977,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 42540,
+            "updated_at": 1791975977
+          },
+          "bf66d0f68f4324bb17909dc6656a45f882ddbe551bafca2ddd72a0bd58464a59:0:s1": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "He’s looking at a plate of round, golden balls covered in sesame seeds.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/bf66d0f68f4324bb17909dc6656a45f882ddbe551bafca2ddd72a0bd58464a59:0:s1.1791975978691.wav",
+            "created_at": 1791975979,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 171420,
+            "updated_at": 1791975979
+          },
+          "bf66d0f68f4324bb17909dc6656a45f882ddbe551bafca2ddd72a0bd58464a59:0:s2": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "What snack is this?",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/bf66d0f68f4324bb17909dc6656a45f882ddbe551bafca2ddd72a0bd58464a59:0:s2.1791975979446.wav",
+            "created_at": 1791975979,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 38444,
+            "updated_at": 1791975979
+          },
+          "bf66d0f68f4324bb17909dc6656a45f882ddbe551bafca2ddd72a0bd58464a59:0:s3": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "Can you guess?",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/bf66d0f68f4324bb17909dc6656a45f882ddbe551bafca2ddd72a0bd58464a59:0:s3.1791975979959.wav",
+            "created_at": 1791975980,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 19884,
+            "updated_at": 1791975980
+          },
+          "c0b644ecbfbd3b4f8ef27a19df6cee6940c31b0003884216a616e842372dd497:0:s0": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "Now I'll show you some magic.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/c0b644ecbfbd3b4f8ef27a19df6cee6940c31b0003884216a616e842372dd497:0:s0.1791975976965.wav",
+            "created_at": 1791975977,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 46636,
+            "updated_at": 1791975977
+          },
+          "c0b644ecbfbd3b4f8ef27a19df6cee6940c31b0003884216a616e842372dd497:0:s1": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "Say it with me to bite into something round and sweet",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/c0b644ecbfbd3b4f8ef27a19df6cee6940c31b0003884216a616e842372dd497:0:s1.1791975978237.wav",
+            "created_at": 1791975978,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 105004,
+            "updated_at": 1791975978
+          },
+          "c3fec35b765707d39c97bb0667dfb81dc374e076a4727d16efc042459ac9b8e9:0:s0": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "Now listen to me!",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/c3fec35b765707d39c97bb0667dfb81dc374e076a4727d16efc042459ac9b8e9:0:s0.1791975976880.wav",
+            "created_at": 1791975977,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 37804,
+            "updated_at": 1791975977
+          },
+          "c78f08a6b3e20ba45123a193e2c34d1587426cb2d1e926de4c7893fdc42e4720:0:s0": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "Kenbee sits at the snack stall and sees a plate of golden, crispy prawn fritters.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/c78f08a6b3e20ba45123a193e2c34d1587426cb2d1e926de4c7893fdc42e4720:0:s0.1792489966570.wav",
+            "created_at": 1792489967,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 172844,
+            "updated_at": 1792489967
+          },
+          "c78f08a6b3e20ba45123a193e2c34d1587426cb2d1e926de4c7893fdc42e4720:0:s1": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "Fresh vegetables and a small bowl of dipping sauce are on the side.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/c78f08a6b3e20ba45123a193e2c34d1587426cb2d1e926de4c7893fdc42e4720:0:s1.1792489968224.wav",
+            "created_at": 1792489968,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 134444,
+            "updated_at": 1792489968
+          },
+          "c78f08a6b3e20ba45123a193e2c34d1587426cb2d1e926de4c7893fdc42e4720:0:s2": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "That is, prawn fritters.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/c78f08a6b3e20ba45123a193e2c34d1587426cb2d1e926de4c7893fdc42e4720:0:s2.1792489969294.wav",
+            "created_at": 1792489969,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 82332,
+            "updated_at": 1792489969
+          },
+          "c78f08a6b3e20ba45123a193e2c34d1587426cb2d1e926de4c7893fdc42e4720:1:s0": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "Now say it with me.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/c78f08a6b3e20ba45123a193e2c34d1587426cb2d1e926de4c7893fdc42e4720:1:s0.1792489969966.wav",
+            "created_at": 1792489970,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 36524,
+            "updated_at": 1792489970
+          },
+          "ce7b67aec7ff192b6b85b8a451bfc66910721fdbbdecfc7be95b2f642628961d:0:s0": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "The three snacks we learn in today’s lesson are prawn fritters, sesame balls, and coconut jelly.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/ce7b67aec7ff192b6b85b8a451bfc66910721fdbbdecfc7be95b2f642628961d:0:s0.1791975979763.wav",
+            "created_at": 1791975980,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 222764,
+            "updated_at": 1791975980
+          },
+          "ce7b67aec7ff192b6b85b8a451bfc66910721fdbbdecfc7be95b2f642628961d:0:s1": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "You learned all three today, and I'm so proud of you!",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/ce7b67aec7ff192b6b85b8a451bfc66910721fdbbdecfc7be95b2f642628961d:0:s1.1791975981105.wav",
+            "created_at": 1791975981,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 110124,
+            "updated_at": 1791975981
+          },
+          "ce7b67aec7ff192b6b85b8a451bfc66910721fdbbdecfc7be95b2f642628961d:0:s2": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "Now you know even more yummy Vietnamese snacks in English!",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/ce7b67aec7ff192b6b85b8a451bfc66910721fdbbdecfc7be95b2f642628961d:0:s2.1791975982508.wav",
+            "created_at": 1791975982,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 137004,
+            "updated_at": 1791975982
+          },
+          "d1c7428122cec8628489b50b9dd4ee78de54935d1f238df7fbc9f406ede9fea9:0:s0": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "Now listen to me!",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/d1c7428122cec8628489b50b9dd4ee78de54935d1f238df7fbc9f406ede9fea9:0:s0.1791975976860.wav",
+            "created_at": 1791975977,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 34604,
+            "updated_at": 1791975977
+          },
+          "d2f01fb0ceee86fd6054880289a051ac75f464796a42d910adcb04f605390ac2:0:s0": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "What is your favourite Vietnamese snack?",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/d2f01fb0ceee86fd6054880289a051ac75f464796a42d910adcb04f605390ac2:0:s0.1791975979139.wav",
+            "created_at": 1791975979,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 62124,
+            "updated_at": 1791975979
+          },
+          "da1767834d66fdd472419e2f2f753d2d217dcb028be8a539923a7870e98c28e7:0:s0": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "Now repeat after me.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/da1767834d66fdd472419e2f2f753d2d217dcb028be8a539923a7870e98c28e7:0:s0.1791975976946.wav",
+            "created_at": 1791975977,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 42540,
+            "updated_at": 1791975977
+          },
+          "e58a9fc48e23531bf0abaf2a01fc85ede317da73e19c83f54798d033058ee3d7:0:s0": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "That was just the beginning.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/e58a9fc48e23531bf0abaf2a01fc85ede317da73e19c83f54798d033058ee3d7:0:s0.1791975979023.wav",
+            "created_at": 1791975979,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 42924,
+            "updated_at": 1791975979
+          },
+          "e58a9fc48e23531bf0abaf2a01fc85ede317da73e19c83f54798d033058ee3d7:0:s1": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "There are even more yummy Vietnamese snacks to discover.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/e58a9fc48e23531bf0abaf2a01fc85ede317da73e19c83f54798d033058ee3d7:0:s1.1791975980129.wav",
+            "created_at": 1791975980,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 103084,
+            "updated_at": 1791975980
+          },
+          "e58a9fc48e23531bf0abaf2a01fc85ede317da73e19c83f54798d033058ee3d7:0:s2": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "Are you ready for the next mission?",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/e58a9fc48e23531bf0abaf2a01fc85ede317da73e19c83f54798d033058ee3d7:0:s2.1791975980992.wav",
+            "created_at": 1791975981,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 64044,
+            "updated_at": 1791975981
+          },
+          "f5734aed4cbec1edc48caa4df69e6f13bb2a4e2951ed9e373c44ad343ee6eca8:0:s0": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "Kenbee sits at the snack stall and sees a cool, clear jelly dessert cup.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/f5734aed4cbec1edc48caa4df69e6f13bb2a4e2951ed9e373c44ad343ee6eca8:0:s0.1791975978590.wav",
+            "created_at": 1791975978,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 171014,
+            "updated_at": 1791975978
+          },
+          "f5734aed4cbec1edc48caa4df69e6f13bb2a4e2951ed9e373c44ad343ee6eca8:0:s1": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "Small pieces of white coconut jelly are inside it.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/f5734aed4cbec1edc48caa4df69e6f13bb2a4e2951ed9e373c44ad343ee6eca8:0:s1.1791975979781.wav",
+            "created_at": 1791975980,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 96044,
+            "updated_at": 1791975980
+          },
+          "f5734aed4cbec1edc48caa4df69e6f13bb2a4e2951ed9e373c44ad343ee6eca8:0:s2": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "That is, coconut jelly.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/f5734aed4cbec1edc48caa4df69e6f13bb2a4e2951ed9e373c44ad343ee6eca8:0:s2.1791975980685.wav",
+            "created_at": 1791975981,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 71724,
+            "updated_at": 1791975981
+          },
+          "f5734aed4cbec1edc48caa4df69e6f13bb2a4e2951ed9e373c44ad343ee6eca8:1:s0": {
+            "bot_id": "2452",
+            "source": "warm",
+            "warmed": true,
+            "winner": "llm_tts",
+            "language": "en",
+            "sentence": "Now say it with me.",
+            "trace_id": "",
+            "voice_id": "",
+            "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/f5734aed4cbec1edc48caa4df69e6f13bb2a4e2951ed9e373c44ad343ee6eca8:1:s0.1791975981523.wav",
+            "created_at": 1791975981,
+            "is_primary": true,
+            "normalized": false,
+            "size_bytes": 39724,
+            "updated_at": 1791975981
+          }
+        },
+        "enable_subtitle": false,
+        "assessment_level": null,
+        "input_schema_key": null,
+        "learn_v2_keep_model": false,
+        "GRAMMAR_CHECKER_TOOL": "",
+        "SYSTEM_TASK_DESCRIPTION": "You are Pika, a friendly voice teacher for a child.\n\n# ROLE\nThe lesson is a sequence of checkpoints. You receive ONE checkpoint at a time from the developer. Each checkpoint has:\n- Question: what you must ask the child.\n- Response_guide: cases describing how to answer the child.\n\n# FLOW\n1. Start of checkpoint: ask the Question once, including its [MEDIA:...] tokens.\n2. For each child reply:\n   - If the guide says to call a function (e.g. pronun_check(...)), call it exactly as described BEFORE replying.\n   - If the reply fits a case in Response_guide, answer using that case. You may rephrase slightly, but keep the meaning and all media/tags.\n   - Otherwise, kindly repeat or simplify the Question in 1–2 short turns to guide the child back.\n3. End your reply with <next_ckp/> when the Response_guide marks the checkpoint finished, or the child is back on track and agrees to move on. Only at the END of the message.\n\n# FIDELITY (media & tags)\nFor every [MEDIA:...] token, <eng>...</eng>, and <emotion type=\"...\"/> in the guide:\n- Count: output each one exactly as many times as it appears — no more, no fewer.\n- Order: keep the exact sequence given.\n- No invention: never add a token/tag not in the current checkpoint.\n- No omission: never drop one, even if the sentence reads fine without it.\n- No change: never alter an emotion `type` value or invent new keys.\n\n# LANGUAGE\n- Speak in the language set by the system language prompt. Follow it for all your own words.\n- Keep <eng>...</eng> content in English regardless of language setting.\n- [Say in {lang_code}: {text}] → this is an INSTRUCTION to you, not text for the child.\n- Translate {text} into {lang_code} and output ONLY the translation.\n- NEVER output the token \"[Say in ...]\" itself.\n- NEVER output the original {text} if it is not in {lang_code}.\n\nWRONG: \"[Say in EN: Nào cùng nói từ này với tớ nhé]\"\nWRONG: \"Nào cùng nói từ này với tớ nhé\" (kept original Vietnamese)\nRIGHT: \"Now, let's say this word together!\"\n\n# STYLE\n- 1–3 short, simple sentences per turn. Warm, encouraging, clear.\n- Avoid adult, sexual, violent, extremist, unhealthy, or risky content. If the child says something unhealthy, softly advise them.\n\n# EXAMPLES\nExample 1 — basic flow\n  Teacher: [MEDIA:word_image] Can you say the word \"Banana\"?\n  Student: Banana!\n  Teacher: [MEDIA:star_img] Yes, Banana is correct! <next_ckp/>\n\nExample 2 — emotion placement\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"happy\"/>[Say hello to the child],\n        <emotion type=\"excited\"/>[introduce that the child will learn vocab about animals]\n      </question_guide>\n    </checkpoint_1>\n  Teacher: <emotion type=\"happy\"/> Hello! Hi there, friend! <emotion type=\"excited\"/> Today, we are going to learn about animals! So fun!\n\nExample 3 — [Say in {lang_code}:] + exact media count + order\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\n      </question_guide>\n    </checkpoint_1>\nRIGHT OUTPUT:\n  Teacher: <emotion type=\"encouraging\"/> Now, follow me and let's say this word together! [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (output the [Say in...] token literally):\n<emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (kept Vietnamese instead of translating):\n<emotion type=\"encouraging\"/> Nào cùng nói từ này với tớ nhé [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\nWRONG (dropped one token):\n<emotion type=\"encouraging\"/> Now, follow me! [MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\n\nExample 4 — function call required\n  Dev:\n    <checkpoint_1>\n      <question_guide>[MEDIA:question] Can you say the word \"duck\"?</question_guide>\n      <response_guide>\n        Always call pronun_check(ref_text=\"duck\") before replying.\n        - Correct: [MEDIA:diamond_10] <next_ckp/>\n        - Incorrect / no answer / irrelevant: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n      </response_guide>\n    </checkpoint_1>\n  Student: Duck!\n  Teacher (internal): calls pronun_check(ref_text=\"duck\") → correct\n  Teacher: [MEDIA:diamond_10] <next_ckp/>",
+        "SYSTEM_PROMPT_GENERATION": "",
+        "learn_v2_keep_dev_prompt": false,
+        "SYSTEM_EXTRACTION_PROFILE": "",
+        "dynamic_checkpoint_config": null,
+        "PRONUNCIATION_CHECKER_TOOL": "true",
+        "SYSTEM_EXTRACTION_VARIABLES": ""
+      }
+    ],
+    "generation_params": null,
+    "provider_name": "openai",
+    "system_prompt": "You are Pika, a friendly voice teacher for a child.\n\n# ROLE\nThe lesson is a sequence of checkpoints. You receive ONE checkpoint at a time from the developer. Each checkpoint has:\n- Question: what you must ask the child.\n- Response_guide: cases describing how to answer the child.\n\n# FLOW\n1. Start of checkpoint: ask the Question once, including its [MEDIA:...] tokens.\n2. For each child reply:\n   - If the guide says to call a function (e.g. pronun_check(...)), call it exactly as described BEFORE replying.\n   - If the reply fits a case in Response_guide, answer using that case. You may rephrase slightly, but keep the meaning and all media/tags.\n   - Otherwise, kindly repeat or simplify the Question in 1–2 short turns to guide the child back.\n3. End your reply with <next_ckp/> when the Response_guide marks the checkpoint finished, or the child is back on track and agrees to move on. Only at the END of the message.\n\n# FIDELITY (media & tags)\nFor every [MEDIA:...] token, <eng>...</eng>, and <emotion type=\"...\"/> in the guide:\n- Count: output each one exactly as many times as it appears — no more, no fewer.\n- Order: keep the exact sequence given.\n- No invention: never add a token/tag not in the current checkpoint.\n- No omission: never drop one, even if the sentence reads fine without it.\n- No change: never alter an emotion `type` value or invent new keys.\n\n# LANGUAGE\n- Speak in the language set by the system language prompt. Follow it for all your own words.\n- Keep <eng>...</eng> content in English regardless of language setting.\n- [Say in {lang_code}: {text}] → this is an INSTRUCTION to you, not text for the child.\n- Translate {text} into {lang_code} and output ONLY the translation.\n- NEVER output the token \"[Say in ...]\" itself.\n- NEVER output the original {text} if it is not in {lang_code}.\n\nWRONG: \"[Say in EN: Nào cùng nói từ này với tớ nhé]\"\nWRONG: \"Nào cùng nói từ này với tớ nhé\" (kept original Vietnamese)\nRIGHT: \"Now, let's say this word together!\"\n\n# STYLE\n- 1–3 short, simple sentences per turn. Warm, encouraging, clear.\n- Avoid adult, sexual, violent, extremist, unhealthy, or risky content. If the child says something unhealthy, softly advise them.\n\n# EXAMPLES\nExample 1 — basic flow\n  Teacher: [MEDIA:word_image] Can you say the word \"Banana\"?\n  Student: Banana!\n  Teacher: [MEDIA:star_img] Yes, Banana is correct! <next_ckp/>\n\nExample 2 — emotion placement\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"happy\"/>[Say hello to the child],\n        <emotion type=\"excited\"/>[introduce that the child will learn vocab about animals]\n      </question_guide>\n    </checkpoint_1>\n  Teacher: <emotion type=\"happy\"/> Hello! Hi there, friend! <emotion type=\"excited\"/> Today, we are going to learn about animals! So fun!\n\nExample 3 — [Say in {lang_code}:] + exact media count + order\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\n      </question_guide>\n    </checkpoint_1>\nRIGHT OUTPUT:\n  Teacher: <emotion type=\"encouraging\"/> Now, follow me and let's say this word together! [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (output the [Say in...] token literally):\n<emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (kept Vietnamese instead of translating):\n<emotion type=\"encouraging\"/> Nào cùng nói từ này với tớ nhé [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\nWRONG (dropped one token):\n<emotion type=\"encouraging\"/> Now, follow me! [MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\n\nExample 4 — function call required\n  Dev:\n    <checkpoint_1>\n      <question_guide>[MEDIA:question] Can you say the word \"duck\"?</question_guide>\n      <response_guide>\n        Always call pronun_check(ref_text=\"duck\") before replying.\n        - Correct: [MEDIA:diamond_10] <next_ckp/>\n        - Incorrect / no answer / irrelevant: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n      </response_guide>\n    </checkpoint_1>\n  Student: Duck!\n  Teacher (internal): calls pronun_check(ref_text=\"duck\") → correct\n  Teacher: [MEDIA:diamond_10] <next_ckp/>",
+    "format_output": "TEXT",
+    "graph": null,
+    "created_at": null,
+    "updated_at": null
+  }
+}

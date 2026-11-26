@@ -1,0 +1,2485 @@
+{
+  "status": 0,
+  "msg": "Success",
+  "result": {
+    "id": 3788,
+    "name": "A1 - Trải nghiệm 30p - Học cụm (chuyển từ workflow 950)",
+    "description": "Bot learn v2 cho buổi trải nghiệm 30 phút A1, nhúng vào graph chính bằng SubGraphNode. Chuyển từ workflow 950 (robot lesson 1209) P1-P12: bỏ intro chung và câu 'next mission', lời, âm thanh, hình giữ nguyên; nhìn và nói có lượt 2; câu cuối nối sang Jenny.",
+    "task_chain": [
+      {
+        "task": "",
+        "tools": [
+          "pronun_check_v2"
+        ],
+        "language": "",
+        "learn_v2": true,
+        "use_cache": false,
+        "asr_config": "medium",
+        "session_id": "",
+        "sub_agents": [],
+        "checkpoints": [
+          {
+            "game": null,
+            "name": "P1 - Nhà KenBi lên xe đi cắm trại",
+            "past": null,
+            "type": "narrative",
+            "hooks": [],
+            "on_max": "next",
+            "question": "Hello, hello, hello! Today, KenBi's family is going camping! [MEDIA:p1c4_2] They're packing everything into the car. Let's watch! [MEDIA:p1c5_1] [MEDIA:p1c6_1] <next_ckp/>",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "p1c4_2",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/31726f3d1long02.mjpeg",
+                "media_description": "Chuyển cảnh từ hiện text: 'The Camping Trip (part 1) tới cảnh Gia đình KenBi (KenBi, Kim Đậu, bố, mẹ) đang dọn đồ lên xe oto, vẫy tay chào vui vẻ, cả nhà cười tươi."
+              },
+              {
+                "id": "p1c5_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/031826HHcamping.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/31726f3d1long03.mjpeg",
+                "media_description": "Xe oto chạy trên đường, cảnh thiên nhiên xanh tươi, núi đồi, cây cối trôi qua."
+              },
+              {
+                "id": "p1c6_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/0318HHcamping2.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320261.mjpeg",
+                "media_description": "Xe oto dừng lại ở bãi cắm trại, cả nhà bước xuống xe, nhìn xung quanh với vẻ ngạc nhiên và vui vẻ."
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": null,
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "c5884c23a5ca260eeb29ae6f92722256a7bd1c64eeba408e3d8fce45166a78dc",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "P2 - Buổi sáng nắng",
+            "past": null,
+            "type": "narrative",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:p2c1_1] [MEDIA:p2c1_2] [MEDIA:p2c1_3] [MEDIA:p2c1_4] <next_ckp/>",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "p2c1_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au01.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/31726f3d1long04.mjpeg",
+                "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng, bên dưới có chữ 'a sunny morning'."
+              },
+              {
+                "id": "p2c1_2",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au02.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320262.mjpeg",
+                "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng, bên dưới có chữ 'a sunny morning'."
+              },
+              {
+                "id": "p2c1_3",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au03.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320263fix.jpg",
+                "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng, bên dưới có chữ 'a sunny morning'."
+              },
+              {
+                "id": "p2c1_4",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au04.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320263fix.jpg",
+                "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng, bên dưới có chữ 'a sunny morning'."
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": null,
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "7895ded29aedbf2ab4d77f7da56cfcb59ed029108e30fc159b8dee74b4cf3671",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "P2 - Nhìn và nói: a sunny morning",
+            "past": null,
+            "type": "cta_simplify",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:p2q_1] Now look, and say. [MEDIA:p2q_2]",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "p2q_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320264fix.jpg",
+                "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng, bên dưới có chữ 'a sunny morning'."
+              },
+              {
+                "id": "p2q_2",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au05.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320264fix.jpg",
+                "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng, bên dưới có chữ 'a sunny morning'."
+              },
+              {
+                "id": "p2ok_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/game/asset/reward10.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/thecoach/all_files/10.gif",
+                "media_description": "Popa crystals reward"
+              },
+              {
+                "id": "p2fix_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320264fix.jpg",
+                "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng, bên dưới có chữ 'a sunny morning'."
+              },
+              {
+                "id": "p2fix_2",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au06.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320264fix.jpg",
+                "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng, bên dưới có chữ 'a sunny morning'."
+              },
+              {
+                "id": "p2fix_3",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320264fix.jpg",
+                "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng, bên dưới có chữ 'a sunny morning'."
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"proud\"/> [Khen ngắn, cụ thể] [MEDIA:p2ok_1] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"encouraging\"/> [Gần được rồi] [MEDIA:p2fix_1] We should say [MEDIA:p2fix_2] Now, say it again!"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"calm\"/> [Mời trẻ nói cùng] [MEDIA:p2fix_1] We should say [MEDIA:p2fix_2] Now, say it again!"
+                },
+                {
+                  "turn": 2,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"proud\"/> [Khen ngắn, cụ thể] [MEDIA:p2ok_1] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"encouraging\"/> [MEDIA:p2fix_1] We should say [MEDIA:p2fix_2] [MEDIA:p2fix_3] [Bảo chúng mình sẽ luyện thêm sau] <next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"encouraging\"/> [MEDIA:p2fix_1] We should say [MEDIA:p2fix_2] [MEDIA:p2fix_3] [Bảo chúng mình sẽ luyện thêm sau] <next_ckp/>"
+                }
+              ],
+              "ref_text": "a sunny morning",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320265fix.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": "bb6d16b71a34cd3713d7228cf61c3885709463119041cdc8125d4db205ef7c3c",
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "663c5f7aa17cb885a71cd504b139c9d365566bdf9a63022c41be214e208d928f",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "P3 - Nhìn và trả lời: a sunny morning",
+            "past": null,
+            "type": "cta_simplify",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:p3q_1] Now, look and answer. What is it like?",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "p3q_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320264fix.jpg",
+                "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng + text 'a sunny morning' và icon micro."
+              },
+              {
+                "id": "p3ok_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/game/asset/reward20.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/thecoach/all_files/20.gif",
+                "media_description": "Popa crystals reward"
+              },
+              {
+                "id": "p3fix_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320264fix.jpg",
+                "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng + text 'a sunny morning' và icon micro."
+              },
+              {
+                "id": "p3fix_2",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au06.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320264fix.jpg",
+                "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng + text 'a sunny morning' và icon micro."
+              },
+              {
+                "id": "p3fix_3",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/tadaabutshort.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320266.jpg",
+                "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng + text 'a sunny morning' và icon micro."
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.6,
+                      "response_guide": "<emotion type=\"proud\"/> [Khen ngắn, cụ thể] [MEDIA:p3ok_1] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"encouraging\"/> [MEDIA:p3fix_1] Looking at the picture, I say [MEDIA:p3fix_2] [MEDIA:p3fix_3] we can practice it later! <next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"encouraging\"/> [MEDIA:p3fix_1] Looking at the picture, I say [MEDIA:p3fix_2] [MEDIA:p3fix_3] we can practice it later! <next_ckp/>"
+                }
+              ],
+              "ref_text": "a sunny morning",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320265fix.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": "300f49a03f83ddb17fde380af313cff196068538a95035010ef99b3d0172d3e9",
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "9b8afe8fec3d42e2a653f1ab52fd6e4434d841ce60e875e45bff6f4803819f1d",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "P4 - Dựng lều, gió mát",
+            "past": null,
+            "type": "narrative",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:p4c1_1] [MEDIA:p4c2_1] [MEDIA:p4c3_1] [MEDIA:p4c4_1] <next_ckp/>",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "p4c1_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au07.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320267.jpg",
+                "media_description": "Bố ngồi chuẩn bị lôi đồ nghề, dụng cụ dựng lều ra trên mặt đất, mặt vui vẻ"
+              },
+              {
+                "id": "p4c2_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au08.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320268.mjpeg",
+                "media_description": "Mẹ Ly ngẩng đầu, tóc bay trong làn gió thoảng, tạo cảm giác yên bình"
+              },
+              {
+                "id": "p4c3_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au09.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320269.jpg",
+                "media_description": "KenBi và Kim Đậu cảm nhận làn gió thoảng, nhắm mắt tận hưởng, có manpu gió thoảng"
+              },
+              {
+                "id": "p4c4_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au10.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320269.jpg",
+                "media_description": "KenBi và Kim Đậu cảm nhận làn gió thoảng, nhắm mắt tận hưởng, có manpu gió thoảng"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": null,
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "371fbe91f888d4fda6bbd776d51c9910daf610b057c9aa143527e8eb41bced07",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "P5 - Nhìn và nói: a cool breeze",
+            "past": null,
+            "type": "cta_simplify",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:p5q_1] Now look, and say. [MEDIA:p5q_2]",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "p5q_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202610fix.jpg",
+                "media_description": "Ảnh tĩnh gió thổi qua bãi cắm trại, bên dưới có chữ 'a cool breeze'."
+              },
+              {
+                "id": "p5q_2",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au11.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202610fix.jpg",
+                "media_description": "Ảnh tĩnh gió thổi qua bãi cắm trại, bên dưới có chữ 'a cool breeze'."
+              },
+              {
+                "id": "p5ok_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/game/asset/reward20.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/thecoach/all_files/20.gif",
+                "media_description": "Popa crystals reward"
+              },
+              {
+                "id": "p5fix_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202610fix.jpg",
+                "media_description": "Ảnh tĩnh gió thổi qua bãi cắm trại, bên dưới có chữ 'a cool breeze'."
+              },
+              {
+                "id": "p5fix_2",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au14.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202610fix.jpg",
+                "media_description": "Ảnh tĩnh gió thổi qua bãi cắm trại, bên dưới có chữ 'a cool breeze'."
+              },
+              {
+                "id": "p5fix_3",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202610fix.jpg",
+                "media_description": "Ảnh tĩnh gió thổi qua bãi cắm trại, bên dưới có chữ 'a cool breeze'."
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"proud\"/> [Khen ngắn, cụ thể] [MEDIA:p5ok_1] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"encouraging\"/> [Gần được rồi] [MEDIA:p5fix_1] We should say [MEDIA:p5fix_2] Now, say it again!"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"calm\"/> [Mời trẻ nói cùng] [MEDIA:p5fix_1] We should say [MEDIA:p5fix_2] Now, say it again!"
+                },
+                {
+                  "turn": 2,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"proud\"/> [Khen ngắn, cụ thể] [MEDIA:p5ok_1] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"encouraging\"/> [MEDIA:p5fix_1] We should say [MEDIA:p5fix_2] [MEDIA:p5fix_3] [Bảo chúng mình sẽ luyện thêm sau] <next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"encouraging\"/> [MEDIA:p5fix_1] We should say [MEDIA:p5fix_2] [MEDIA:p5fix_3] [Bảo chúng mình sẽ luyện thêm sau] <next_ckp/>"
+                }
+              ],
+              "ref_text": "a cool breeze",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202611fix.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": "04cc333ada47d2373262660f2b1f7f80fc0f414784fd6b32732e1e15e08373c1",
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "9401be57435b8d83c996bd5860952f43a22fb2d03af6d95717f089ea111eccc1",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "P6 - Luyện từ khó: breeze",
+            "past": null,
+            "type": "cta_simplify",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:p6n_1] Now listen carefully to this word. [MEDIA:p6n_2] Now, louder, say it! [MEDIA:p6q_1]",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "p6n_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca101.jpg",
+                "media_description": "Chữ 'breeze', với chữ 'br' có màu khác"
+              },
+              {
+                "id": "p6n_2",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au12.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca101.jpg",
+                "media_description": "Chữ 'breeze', với chữ 'br' có màu khác"
+              },
+              {
+                "id": "p6q_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au13.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca101.jpg",
+                "media_description": "Chữ 'breeze', với chữ 'br' có màu khác"
+              },
+              {
+                "id": "p6ok_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca101.jpg",
+                "media_description": "Popa crystals reward"
+              },
+              {
+                "id": "p6ok_2",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca101pgf.jpg",
+                "media_description": "Popa crystals reward"
+              },
+              {
+                "id": "p6ok_3",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/tadaabutshort.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca101pgf.jpg",
+                "media_description": "Popa crystals reward"
+              },
+              {
+                "id": "p6fix_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca101.jpg",
+                "media_description": "Chữ 'breeze', với chữ 'br' có màu khác"
+              },
+              {
+                "id": "p6fix_2",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca101pgf.jpg",
+                "media_description": "Chữ 'breeze', với chữ 'br' có màu khác"
+              },
+              {
+                "id": "p6fix_3",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/tadaabutshort.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca101pgf.jpg",
+                "media_description": "Chữ 'breeze', với chữ 'br' có màu khác"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"proud\"/> [Khen ngắn, cụ thể] [MEDIA:p6fix_1] It is…breeze! [MEDIA:p6fix_2] Remember! That's how we say it! [MEDIA:p6fix_3] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"encouraging\"/> [MEDIA:p6fix_1] It is…breeze! [MEDIA:p6fix_2] Remember! That's how we say it! [MEDIA:p6fix_3] <next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"encouraging\"/> [MEDIA:p6fix_1] It is…breeze! [MEDIA:p6fix_2] Remember! That's how we say it! [MEDIA:p6fix_3] <next_ckp/>"
+                }
+              ],
+              "ref_text": "breeze",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca101imf.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": "f95f8b7c8206a266fc3c61df9466540a1f21bd349e351fce6a12fc415ffc419c",
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "8429ebad121cf9ad2e6c7a0cf03ba8c27dd2e5409745753142532e5febf9ebc9",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "P7 - Nhìn và trả lời: a cool breeze",
+            "past": null,
+            "type": "cta_simplify",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:p7q_1] Now, look and answer. What is it like?",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "p7q_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202610fix.jpg",
+                "media_description": "Ảnh tĩnh gió thổi qua bãi cắm trại + text 'a cool breeze'"
+              },
+              {
+                "id": "p7ok_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/game/asset/reward20.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/thecoach/all_files/20.gif",
+                "media_description": "Popa crystals reward"
+              },
+              {
+                "id": "p7fix_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202610fix.jpg",
+                "media_description": "Ảnh tĩnh gió thổi qua bãi cắm trại + text 'a cool breeze'"
+              },
+              {
+                "id": "p7fix_2",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au14.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202610fix.jpg",
+                "media_description": "Ảnh tĩnh gió thổi qua bãi cắm trại + text 'a cool breeze'"
+              },
+              {
+                "id": "p7fix_3",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/tadaabutshort.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202612.jpg",
+                "media_description": "Ảnh tĩnh gió thổi qua bãi cắm trại + text 'a cool breeze'"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.6,
+                      "response_guide": "<emotion type=\"proud\"/> [Khen ngắn, cụ thể] [MEDIA:p7ok_1] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"encouraging\"/> [MEDIA:p7fix_1] Looking at the picture, I say [MEDIA:p7fix_2] [MEDIA:p7fix_3] we can practice it later! <next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"encouraging\"/> [MEDIA:p7fix_1] Looking at the picture, I say [MEDIA:p7fix_2] [MEDIA:p7fix_3] we can practice it later! <next_ckp/>"
+                }
+              ],
+              "ref_text": "a cool breeze",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202611fix.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": "500aed89a7c52982cfec38229180aae015c2cbca0600de818c511032b054fb68",
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "a8f70c44597909ae8f92be2d8a36e05afc3d8a5ba7f77abd6796e9cd66bb536c",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "P8 - Ăn trưa, trời trong",
+            "past": null,
+            "type": "narrative",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:p8c1_1] [MEDIA:p8c2_1] [MEDIA:p8c3_1] [MEDIA:p8c4_1] [MEDIA:p8c5_1] [MEDIA:p8c6_1] <next_ckp/>",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "p8c1_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au15.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202613.mjpeg",
+                "media_description": "Cả gia đình ngồi xuống ăn picnic, lấy đồ ăn từ giỏ."
+              },
+              {
+                "id": "p8c2_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au16.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202614.jpg",
+                "media_description": "Thảm picnic bày đồ ăn ngon lành: cơm cuộn, sandwich, nước cam, fried rice"
+              },
+              {
+                "id": "p8c3_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au17.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202615.mjpeg",
+                "media_description": "Cả gia đình ngồi ăn, nhìn lên bầu trời xanh trong vắt, không có mây. Kim Đậu chỉ tay lên trời, cười tươi hớn hở."
+              },
+              {
+                "id": "p8c4_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au18.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202615.mjpeg",
+                "media_description": "Cả gia đình ngồi ăn, nhìn lên bầu trời xanh trong vắt, không có mây. Kim Đậu chỉ tay lên trời, cười tươi hớn hở."
+              },
+              {
+                "id": "p8c5_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au19.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202616.jpg",
+                "media_description": "Bầu trời xanh trong vắt, không có mây, cả gia đình ngồi ăn dưới bầu trời, ánh nắng vàng ấm áp"
+              },
+              {
+                "id": "p8c6_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au20.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202616.jpg",
+                "media_description": "Bầu trời xanh trong vắt, không có mây, cả gia đình ngồi ăn dưới bầu trời (clear sky là chủ thể chính, chiếm tối thiểu ⅔ bố cục ảnh)"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": null,
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "45fa1b052c90939b4aaa4ab091a20c8b621aaf754106750e1f2c64dbb2701d22",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "P9 - Nhìn và nói: a clear sky",
+            "past": null,
+            "type": "cta_simplify",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:p9q_1] Now look, and say. [MEDIA:p9q_2]",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "p9q_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202617.jpg",
+                "media_description": "Ảnh tĩnh bầu trời xanh trong, bên dưới có chữ \"a clear sky\"."
+              },
+              {
+                "id": "p9q_2",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au21.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202617.jpg",
+                "media_description": "Ảnh tĩnh bầu trời xanh trong, bên dưới có chữ \"a clear sky\"."
+              },
+              {
+                "id": "p9ok_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/game/asset/reward10.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/thecoach/all_files/10.gif",
+                "media_description": "Popa crystals reward"
+              },
+              {
+                "id": "p9fix_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202617.jpg",
+                "media_description": "Ảnh tĩnh bầu trời xanh trong, bên dưới có chữ \"a clear sky\"."
+              },
+              {
+                "id": "p9fix_2",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au24.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202617.jpg",
+                "media_description": "Ảnh tĩnh bầu trời xanh trong, bên dưới có chữ \"a clear sky\"."
+              },
+              {
+                "id": "p9fix_3",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202617.jpg",
+                "media_description": "Ảnh tĩnh bầu trời xanh trong, bên dưới có chữ \"a clear sky\"."
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"proud\"/> [Khen ngắn, cụ thể] [MEDIA:p9ok_1] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"encouraging\"/> [Gần được rồi] [MEDIA:p9fix_1] We should say [MEDIA:p9fix_2] Now, say it again!"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"calm\"/> [Mời trẻ nói cùng] [MEDIA:p9fix_1] We should say [MEDIA:p9fix_2] Now, say it again!"
+                },
+                {
+                  "turn": 2,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"proud\"/> [Khen ngắn, cụ thể] [MEDIA:p9ok_1] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"encouraging\"/> [MEDIA:p9fix_1] We should say [MEDIA:p9fix_2] [MEDIA:p9fix_3] [Bảo chúng mình sẽ luyện thêm sau] <next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"encouraging\"/> [MEDIA:p9fix_1] We should say [MEDIA:p9fix_2] [MEDIA:p9fix_3] [Bảo chúng mình sẽ luyện thêm sau] <next_ckp/>"
+                }
+              ],
+              "ref_text": "a clear sky",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202618.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": "5d9fb225c54fc721021baedf83d96bac15ea4776fc3d7fe6dd6745f8a4801d2e",
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "66639eb77ed0b6dfdf63111aa59ef7acd789c88aa17be0c82d29389e97218a0a",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "P10 - Luyện từ khó: clear",
+            "past": null,
+            "type": "cta_simplify",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:p10n_1] Now listen carefully to this word. [MEDIA:p10n_2] [MEDIA:p10n_3] Now, louder, say it! [MEDIA:p10q_1]",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "p10n_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca102.jpg",
+                "media_description": "Chữ 'clear', với chữ 'cl' có màu khác"
+              },
+              {
+                "id": "p10n_2",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au22.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca102.jpg",
+                "media_description": "Chữ 'clear', với chữ 'cl' có màu khác"
+              },
+              {
+                "id": "p10n_3",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca102.jpg",
+                "media_description": "Chữ 'clear', với chữ 'cl' có màu khác"
+              },
+              {
+                "id": "p10q_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au23.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca102.jpg",
+                "media_description": "Chữ 'clear', với chữ 'cl' có màu khác"
+              },
+              {
+                "id": "p10ok_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca102.jpg",
+                "media_description": "Popa crystals reward"
+              },
+              {
+                "id": "p10ok_2",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca102.jpg",
+                "media_description": "Popa crystals reward"
+              },
+              {
+                "id": "p10ok_3",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/tadaabutshort.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca102pg.jpg",
+                "media_description": "Popa crystals reward"
+              },
+              {
+                "id": "p10fix_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca102.jpg",
+                "media_description": "Chữ 'clear', với chữ 'cl' có màu khác"
+              },
+              {
+                "id": "p10fix_2",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca102.jpg",
+                "media_description": "Chữ 'clear', với chữ 'cl' có màu khác"
+              },
+              {
+                "id": "p10fix_3",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/tadaabutshort.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca102pg.jpg",
+                "media_description": "Chữ 'clear', với chữ 'cl' có màu khác"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"proud\"/> [Khen ngắn, cụ thể] [MEDIA:p10fix_1] For this, we say it…clear! [MEDIA:p10fix_2] Remember! That's how we say it! [MEDIA:p10fix_3] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"encouraging\"/> [MEDIA:p10fix_1] For this, we say it…clear! [MEDIA:p10fix_2] Remember! That's how we say it! [MEDIA:p10fix_3] <next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"encouraging\"/> [MEDIA:p10fix_1] For this, we say it…clear! [MEDIA:p10fix_2] Remember! That's how we say it! [MEDIA:p10fix_3] <next_ckp/>"
+                }
+              ],
+              "ref_text": "clear",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca102im.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": "befdda6875b5678e03edcb9741ea20c62342e4a390db37fb628be39be67e4802",
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "0467835de20fdeb8fa079029c7d9eac7ab1c43324b7a230bb1571c836163ebd5",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "P11 - Nhìn và trả lời: a clear sky",
+            "past": null,
+            "type": "cta_simplify",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:p11q_1] Now, look and answer. What is the sky like?",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "p11q_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202617.jpg",
+                "media_description": "Ảnh tĩnh bầu trời xanh trong + text 'a clear sky'"
+              },
+              {
+                "id": "p11ok_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/game/asset/reward30.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/thecoach/all_files/30.gif",
+                "media_description": "Popa crystals reward"
+              },
+              {
+                "id": "p11fix_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202617.jpg",
+                "media_description": "Ảnh tĩnh bầu trời xanh trong + text 'a clear sky'"
+              },
+              {
+                "id": "p11fix_2",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au24.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202617.jpg",
+                "media_description": "Ảnh tĩnh bầu trời xanh trong + text 'a clear sky'"
+              },
+              {
+                "id": "p11fix_3",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/tadaabutshort.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202619.jpg",
+                "media_description": "Ảnh tĩnh bầu trời xanh trong + text 'a clear sky'"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.6,
+                      "response_guide": "<emotion type=\"proud\"/> [Khen ngắn, cụ thể] [MEDIA:p11ok_1] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"encouraging\"/> [MEDIA:p11fix_1] Looking at the picture, I say [MEDIA:p11fix_2] [MEDIA:p11fix_3] we can practice it later! <next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"encouraging\"/> [MEDIA:p11fix_1] Looking at the picture, I say [MEDIA:p11fix_2] [MEDIA:p11fix_3] we can practice it later! <next_ckp/>"
+                }
+              ],
+              "ref_text": "a clear sky",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202618.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": "20ded926414f6cf4e0d0a80926e0ee4b8d09e7da1ff257a3077af3ad642b3ff5",
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "a09f6b0f2d66040e81d9aa4a9ba53eed1c47b8698ba75d376e8f645c300ec11a",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "P12 - Ôn 3 kiểu trời, nối sang Jenny",
+            "past": null,
+            "type": "narrative",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:p12c1_1] [MEDIA:p12c2_1] Congratulations! Now, let's see what we discovered in this trip! [MEDIA:p12c3_1] a sunny morning! [MEDIA:p12c4_1] a cool breeze! [MEDIA:p12c5_1] a clear sky! [MEDIA:p12c6_1] And these are the three beautiful things [MEDIA:p12c7_1] you discovered during the camping adventure! Cậu dạy tớ đủ 3 kiểu trời rồi, vào album hết! Bạn Jenny đang du lịch Tây Bắc cũng thấy y như vậy. Mình qua hỏi Jenny xem trời thế nào nha! <next_ckp/>",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "p12c1_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/victorygame.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202620.mjpeg",
+                "media_description": "Gia đình ăn picnic dưới bầu trời trong xanh, camera pan up lên bầu trời xanh rực rỡ"
+              },
+              {
+                "id": "p12c2_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/11326HHouttro.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202625.mjpeg",
+                "media_description": "Bầu trời xanh rực rỡ"
+              },
+              {
+                "id": "p12c3_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320264fix.jpg",
+                "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng, bên dưới có chữ \"a sunny morning\""
+              },
+              {
+                "id": "p12c4_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202610fix.jpg",
+                "media_description": "Ảnh tĩnh gió thổi qua bãi cắm trại, bên dưới có chữ \"a cool breeze\""
+              },
+              {
+                "id": "p12c5_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202617.jpg",
+                "media_description": "Ảnh tĩnh bầu trời xanh trong, bên dưới có chữ \"a clear sky\""
+              },
+              {
+                "id": "p12c6_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202624.mjpeg",
+                "media_description": "Cả gia đình KenBi (KenBi, Kim Đậu, bố, mẹ) ngồi ăn picnic vui vẻ dưới bầu trời xanh trong, vẫy tay chào, tươi cười, với vẻ mặt hạnh phúc."
+              },
+              {
+                "id": "p12c7_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202624.mjpeg",
+                "media_description": "Text \"to be continued...\" hiện lên trên bầu trời xanh"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": null,
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "1c09e139369fbd07cfc911e9a4f825ff52aaa79a4cecba054b09189b34b048c7",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          }
+        ],
+        "start_message": "",
+        "assessment_mode": null,
+        "enable_subtitle": false,
+        "assessment_level": null,
+        "input_schema_key": null,
+        "learn_v2_keep_model": false,
+        "GRAMMAR_CHECKER_TOOL": "",
+        "SYSTEM_TASK_DESCRIPTION": "You are Pika, a friendly voice teacher for a child.\n\n# ROLE\nThe lesson is a sequence of checkpoints. You receive ONE checkpoint at a time from the developer. Each checkpoint has:\n- Question: what you must ask the child.\n- Response_guide: cases describing how to answer the child.\n\n# FLOW\n1. Start of checkpoint: ask the Question once, including its [MEDIA:...] tokens.\n2. For each child reply:\n   - If the guide says to call a function (e.g. pronun_check(...)), call it exactly as described BEFORE replying.\n   - If the reply fits a case in Response_guide, answer using that case. You may rephrase slightly, but keep the meaning and all media/tags.\n   - Otherwise, kindly repeat or simplify the Question in 1–2 short turns to guide the child back.\n3. End your reply with <next_ckp/> when the Response_guide marks the checkpoint finished, or the child is back on track and agrees to move on. Only at the END of the message.\n\n# FIDELITY (media & tags)\nFor every [MEDIA:...] token, <eng>...</eng>, and <emotion type=\"...\"/> in the guide:\n- Count: output each one exactly as many times as it appears — no more, no fewer.\n- Order: keep the exact sequence given.\n- No invention: never add a token/tag not in the current checkpoint.\n- No omission: never drop one, even if the sentence reads fine without it.\n- No change: never alter an emotion `type` value or invent new keys.\n\n# LANGUAGE\n- Speak in the language set by the system language prompt. Follow it for all your own words.\n- Keep <eng>...</eng> content in English regardless of language setting.\n- [Say in {lang_code}: {text}] → this is an INSTRUCTION to you, not text for the child.\n- Translate {text} into {lang_code} and output ONLY the translation.\n- NEVER output the token \"[Say in ...]\" itself.\n- NEVER output the original {text} if it is not in {lang_code}.\n\nWRONG: \"[Say in EN: Nào cùng nói từ này với tớ nhé]\"\nWRONG: \"Nào cùng nói từ này với tớ nhé\" (kept original Vietnamese)\nRIGHT: \"Now, let's say this word together!\"\n\n# STYLE\n- 1–3 short, simple sentences per turn. Warm, encouraging, clear.\n- Avoid adult, sexual, violent, extremist, unhealthy, or risky content. If the child says something unhealthy, softly advise them.\n\n# EXAMPLES\nExample 1 — basic flow\n  Teacher: [MEDIA:word_image] Can you say the word \"Banana\"?\n  Student: Banana!\n  Teacher: [MEDIA:star_img] Yes, Banana is correct! <next_ckp/>\n\nExample 2 — emotion placement\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"happy\"/>[Say hello to the child],\n        <emotion type=\"excited\"/>[introduce that the child will learn vocab about animals]\n      </question_guide>\n    </checkpoint_1>\n  Teacher: <emotion type=\"happy\"/> Hello! Hi there, friend! <emotion type=\"excited\"/> Today, we are going to learn about animals! So fun!\n\nExample 3 — [Say in {lang_code}:] + exact media count + order\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\n      </question_guide>\n    </checkpoint_1>\nRIGHT OUTPUT:\n  Teacher: <emotion type=\"encouraging\"/> Now, follow me and let's say this word together! [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (output the [Say in...] token literally):\n<emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (kept Vietnamese instead of translating):\n<emotion type=\"encouraging\"/> Nào cùng nói từ này với tớ nhé [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\nWRONG (dropped one token):\n<emotion type=\"encouraging\"/> Now, follow me! [MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\n\nExample 4 — function call required\n  Dev:\n    <checkpoint_1>\n      <question_guide>[MEDIA:question] Can you say the word \"duck\"?</question_guide>\n      <response_guide>\n        Always call pronun_check(ref_text=\"duck\") before replying.\n        - Correct: [MEDIA:diamond_10] <next_ckp/>\n        - Incorrect / no answer / irrelevant: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n      </response_guide>\n    </checkpoint_1>\n  Student: Duck!\n  Teacher (internal): calls pronun_check(ref_text=\"duck\") → correct\n  Teacher: [MEDIA:diamond_10] <next_ckp/>",
+        "SYSTEM_PROMPT_GENERATION": "",
+        "learn_v2_keep_dev_prompt": false,
+        "SYSTEM_EXTRACTION_PROFILE": "",
+        "dynamic_checkpoint_config": null,
+        "PRONUNCIATION_CHECKER_TOOL": "true",
+        "SYSTEM_EXTRACTION_VARIABLES": ""
+      }
+    ],
+    "generation_params": null,
+    "provider_name": "openai",
+    "system_prompt": "You are Pika, a friendly voice teacher for a child.\n\n# ROLE\nThe lesson is a sequence of checkpoints. You receive ONE checkpoint at a time from the developer. Each checkpoint has:\n- Question: what you must ask the child.\n- Response_guide: cases describing how to answer the child.\n\n# FLOW\n1. Start of checkpoint: ask the Question once, including its [MEDIA:...] tokens.\n2. For each child reply:\n   - If the guide says to call a function (e.g. pronun_check(...)), call it exactly as described BEFORE replying.\n   - If the reply fits a case in Response_guide, answer using that case. You may rephrase slightly, but keep the meaning and all media/tags.\n   - Otherwise, kindly repeat or simplify the Question in 1–2 short turns to guide the child back.\n3. End your reply with <next_ckp/> when the Response_guide marks the checkpoint finished, or the child is back on track and agrees to move on. Only at the END of the message.\n\n# FIDELITY (media & tags)\nFor every [MEDIA:...] token, <eng>...</eng>, and <emotion type=\"...\"/> in the guide:\n- Count: output each one exactly as many times as it appears — no more, no fewer.\n- Order: keep the exact sequence given.\n- No invention: never add a token/tag not in the current checkpoint.\n- No omission: never drop one, even if the sentence reads fine without it.\n- No change: never alter an emotion `type` value or invent new keys.\n\n# LANGUAGE\n- Speak in the language set by the system language prompt. Follow it for all your own words.\n- Keep <eng>...</eng> content in English regardless of language setting.\n- [Say in {lang_code}: {text}] → this is an INSTRUCTION to you, not text for the child.\n- Translate {text} into {lang_code} and output ONLY the translation.\n- NEVER output the token \"[Say in ...]\" itself.\n- NEVER output the original {text} if it is not in {lang_code}.\n\nWRONG: \"[Say in EN: Nào cùng nói từ này với tớ nhé]\"\nWRONG: \"Nào cùng nói từ này với tớ nhé\" (kept original Vietnamese)\nRIGHT: \"Now, let's say this word together!\"\n\n# STYLE\n- 1–3 short, simple sentences per turn. Warm, encouraging, clear.\n- Avoid adult, sexual, violent, extremist, unhealthy, or risky content. If the child says something unhealthy, softly advise them.\n\n# EXAMPLES\nExample 1 — basic flow\n  Teacher: [MEDIA:word_image] Can you say the word \"Banana\"?\n  Student: Banana!\n  Teacher: [MEDIA:star_img] Yes, Banana is correct! <next_ckp/>\n\nExample 2 — emotion placement\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"happy\"/>[Say hello to the child],\n        <emotion type=\"excited\"/>[introduce that the child will learn vocab about animals]\n      </question_guide>\n    </checkpoint_1>\n  Teacher: <emotion type=\"happy\"/> Hello! Hi there, friend! <emotion type=\"excited\"/> Today, we are going to learn about animals! So fun!\n\nExample 3 — [Say in {lang_code}:] + exact media count + order\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\n      </question_guide>\n    </checkpoint_1>\nRIGHT OUTPUT:\n  Teacher: <emotion type=\"encouraging\"/> Now, follow me and let's say this word together! [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (output the [Say in...] token literally):\n<emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (kept Vietnamese instead of translating):\n<emotion type=\"encouraging\"/> Nào cùng nói từ này với tớ nhé [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\nWRONG (dropped one token):\n<emotion type=\"encouraging\"/> Now, follow me! [MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\n\nExample 4 — function call required\n  Dev:\n    <checkpoint_1>\n      <question_guide>[MEDIA:question] Can you say the word \"duck\"?</question_guide>\n      <response_guide>\n        Always call pronun_check(ref_text=\"duck\") before replying.\n        - Correct: [MEDIA:diamond_10] <next_ckp/>\n        - Incorrect / no answer / irrelevant: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n      </response_guide>\n    </checkpoint_1>\n  Student: Duck!\n  Teacher (internal): calls pronun_check(ref_text=\"duck\") → correct\n  Teacher: [MEDIA:diamond_10] <next_ckp/>",
+    "format_output": "TEXT",
+    "graph": {
+      "nodes": [
+        {
+          "node_id": "learn_chunk",
+          "prompt": "",
+          "type": "LEARN",
+          "tools": [],
+          "pivots": [],
+          "nexts": [],
+          "checkpoints": [
+            {
+              "name": "P1 - Nhà KenBi lên xe đi cắm trại",
+              "type": "narrative",
+              "question": "Hello, hello, hello! Today, KenBi's family is going camping! [MEDIA:p1c4_2] They're packing everything into the car. Let's watch! [MEDIA:p1c5_1] [MEDIA:p1c6_1] <next_ckp/>",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "p1c4_2",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/31726f3d1long02.mjpeg",
+                  "audio_url": "",
+                  "media_description": "Chuyển cảnh từ hiện text: 'The Camping Trip (part 1) tới cảnh Gia đình KenBi (KenBi, Kim Đậu, bố, mẹ) đang dọn đồ lên xe oto, vẫy tay chào vui vẻ, cả nhà cười tươi.",
+                  "score": null
+                },
+                {
+                  "id": "p1c5_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/31726f3d1long03.mjpeg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/031826HHcamping.mp3",
+                  "media_description": "Xe oto chạy trên đường, cảnh thiên nhiên xanh tươi, núi đồi, cây cối trôi qua.",
+                  "score": null
+                },
+                {
+                  "id": "p1c6_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320261.mjpeg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/0318HHcamping2.mp3",
+                  "media_description": "Xe oto dừng lại ở bãi cắm trại, cả nhà bước xuống xe, nhìn xung quanh với vẻ ngạc nhiên và vui vẻ.",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": null,
+              "image_listening": null,
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "c5884c23a5ca260eeb29ae6f92722256a7bd1c64eeba408e3d8fce45166a78dc",
+              "cache_hash_guide": null
+            },
+            {
+              "name": "P2 - Buổi sáng nắng",
+              "type": "narrative",
+              "question": "[MEDIA:p2c1_1] [MEDIA:p2c1_2] [MEDIA:p2c1_3] [MEDIA:p2c1_4] <next_ckp/>",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "p2c1_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/31726f3d1long04.mjpeg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au01.mp3",
+                  "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng, bên dưới có chữ 'a sunny morning'.",
+                  "score": null
+                },
+                {
+                  "id": "p2c1_2",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320262.mjpeg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au02.mp3",
+                  "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng, bên dưới có chữ 'a sunny morning'.",
+                  "score": null
+                },
+                {
+                  "id": "p2c1_3",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320263fix.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au03.mp3",
+                  "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng, bên dưới có chữ 'a sunny morning'.",
+                  "score": null
+                },
+                {
+                  "id": "p2c1_4",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320263fix.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au04.mp3",
+                  "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng, bên dưới có chữ 'a sunny morning'.",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": null,
+              "image_listening": null,
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "7895ded29aedbf2ab4d77f7da56cfcb59ed029108e30fc159b8dee74b4cf3671",
+              "cache_hash_guide": null
+            },
+            {
+              "name": "P2 - Nhìn và nói: a sunny morning",
+              "type": "cta_simplify",
+              "question": "[MEDIA:p2q_1] Now look, and say. [MEDIA:p2q_2]",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "p2q_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320264fix.jpg",
+                  "audio_url": "",
+                  "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng, bên dưới có chữ 'a sunny morning'.",
+                  "score": null
+                },
+                {
+                  "id": "p2q_2",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320264fix.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au05.mp3",
+                  "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng, bên dưới có chữ 'a sunny morning'.",
+                  "score": null
+                },
+                {
+                  "id": "p2ok_1",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/thecoach/all_files/10.gif",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/game/asset/reward10.mp3",
+                  "media_description": "Popa crystals reward",
+                  "score": null
+                },
+                {
+                  "id": "p2fix_1",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320264fix.jpg",
+                  "audio_url": "",
+                  "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng, bên dưới có chữ 'a sunny morning'.",
+                  "score": null
+                },
+                {
+                  "id": "p2fix_2",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320264fix.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au06.mp3",
+                  "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng, bên dưới có chữ 'a sunny morning'.",
+                  "score": null
+                },
+                {
+                  "id": "p2fix_3",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320264fix.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+                  "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng, bên dưới có chữ 'a sunny morning'.",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": {
+                "tool": "pronun_check_v2_simplify",
+                "turns": [
+                  {
+                    "turn": 1,
+                    "cases": [
+                      {
+                        "lower_bound": 0.85,
+                        "response_guide": "<emotion type=\"proud\"/> [Khen ngắn, cụ thể] [MEDIA:p2ok_1] <next_ckp/>"
+                      },
+                      {
+                        "lower_bound": 0,
+                        "response_guide": "<emotion type=\"encouraging\"/> [Gần được rồi] [MEDIA:p2fix_1] We should say [MEDIA:p2fix_2] Now, say it again!"
+                      }
+                    ],
+                    "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"calm\"/> [Mời trẻ nói cùng] [MEDIA:p2fix_1] We should say [MEDIA:p2fix_2] Now, say it again!"
+                  },
+                  {
+                    "turn": 2,
+                    "cases": [
+                      {
+                        "lower_bound": 0.85,
+                        "response_guide": "<emotion type=\"proud\"/> [Khen ngắn, cụ thể] [MEDIA:p2ok_1] <next_ckp/>"
+                      },
+                      {
+                        "lower_bound": 0,
+                        "response_guide": "<emotion type=\"encouraging\"/> [MEDIA:p2fix_1] We should say [MEDIA:p2fix_2] [MEDIA:p2fix_3] [Bảo chúng mình sẽ luyện thêm sau] <next_ckp/>"
+                      }
+                    ],
+                    "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"encouraging\"/> [MEDIA:p2fix_1] We should say [MEDIA:p2fix_2] [MEDIA:p2fix_3] [Bảo chúng mình sẽ luyện thêm sau] <next_ckp/>"
+                  }
+                ],
+                "ref_text": "a sunny morning",
+                "global_guide": ""
+              },
+              "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320265fix.jpg",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "663c5f7aa17cb885a71cd504b139c9d365566bdf9a63022c41be214e208d928f",
+              "cache_hash_guide": "bb6d16b71a34cd3713d7228cf61c3885709463119041cdc8125d4db205ef7c3c"
+            },
+            {
+              "name": "P3 - Nhìn và trả lời: a sunny morning",
+              "type": "cta_simplify",
+              "question": "[MEDIA:p3q_1] Now, look and answer. What is it like?",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "p3q_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320264fix.jpg",
+                  "audio_url": "",
+                  "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng + text 'a sunny morning' và icon micro.",
+                  "score": null
+                },
+                {
+                  "id": "p3ok_1",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/thecoach/all_files/20.gif",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/game/asset/reward20.mp3",
+                  "media_description": "Popa crystals reward",
+                  "score": null
+                },
+                {
+                  "id": "p3fix_1",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320264fix.jpg",
+                  "audio_url": "",
+                  "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng + text 'a sunny morning' và icon micro.",
+                  "score": null
+                },
+                {
+                  "id": "p3fix_2",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320264fix.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au06.mp3",
+                  "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng + text 'a sunny morning' và icon micro.",
+                  "score": null
+                },
+                {
+                  "id": "p3fix_3",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320266.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/tadaabutshort.mp3",
+                  "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng + text 'a sunny morning' và icon micro.",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": {
+                "tool": "pronun_check_v2_simplify",
+                "turns": [
+                  {
+                    "turn": 1,
+                    "cases": [
+                      {
+                        "lower_bound": 0.6,
+                        "response_guide": "<emotion type=\"proud\"/> [Khen ngắn, cụ thể] [MEDIA:p3ok_1] <next_ckp/>"
+                      },
+                      {
+                        "lower_bound": 0,
+                        "response_guide": "<emotion type=\"encouraging\"/> [MEDIA:p3fix_1] Looking at the picture, I say [MEDIA:p3fix_2] [MEDIA:p3fix_3] we can practice it later! <next_ckp/>"
+                      }
+                    ],
+                    "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"encouraging\"/> [MEDIA:p3fix_1] Looking at the picture, I say [MEDIA:p3fix_2] [MEDIA:p3fix_3] we can practice it later! <next_ckp/>"
+                  }
+                ],
+                "ref_text": "a sunny morning",
+                "global_guide": ""
+              },
+              "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320265fix.jpg",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "9b8afe8fec3d42e2a653f1ab52fd6e4434d841ce60e875e45bff6f4803819f1d",
+              "cache_hash_guide": "300f49a03f83ddb17fde380af313cff196068538a95035010ef99b3d0172d3e9"
+            },
+            {
+              "name": "P4 - Dựng lều, gió mát",
+              "type": "narrative",
+              "question": "[MEDIA:p4c1_1] [MEDIA:p4c2_1] [MEDIA:p4c3_1] [MEDIA:p4c4_1] <next_ckp/>",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "p4c1_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320267.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au07.mp3",
+                  "media_description": "Bố ngồi chuẩn bị lôi đồ nghề, dụng cụ dựng lều ra trên mặt đất, mặt vui vẻ",
+                  "score": null
+                },
+                {
+                  "id": "p4c2_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320268.mjpeg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au08.mp3",
+                  "media_description": "Mẹ Ly ngẩng đầu, tóc bay trong làn gió thoảng, tạo cảm giác yên bình",
+                  "score": null
+                },
+                {
+                  "id": "p4c3_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320269.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au09.mp3",
+                  "media_description": "KenBi và Kim Đậu cảm nhận làn gió thoảng, nhắm mắt tận hưởng, có manpu gió thoảng",
+                  "score": null
+                },
+                {
+                  "id": "p4c4_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320269.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au10.mp3",
+                  "media_description": "KenBi và Kim Đậu cảm nhận làn gió thoảng, nhắm mắt tận hưởng, có manpu gió thoảng",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": null,
+              "image_listening": null,
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "371fbe91f888d4fda6bbd776d51c9910daf610b057c9aa143527e8eb41bced07",
+              "cache_hash_guide": null
+            },
+            {
+              "name": "P5 - Nhìn và nói: a cool breeze",
+              "type": "cta_simplify",
+              "question": "[MEDIA:p5q_1] Now look, and say. [MEDIA:p5q_2]",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "p5q_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202610fix.jpg",
+                  "audio_url": "",
+                  "media_description": "Ảnh tĩnh gió thổi qua bãi cắm trại, bên dưới có chữ 'a cool breeze'.",
+                  "score": null
+                },
+                {
+                  "id": "p5q_2",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202610fix.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au11.mp3",
+                  "media_description": "Ảnh tĩnh gió thổi qua bãi cắm trại, bên dưới có chữ 'a cool breeze'.",
+                  "score": null
+                },
+                {
+                  "id": "p5ok_1",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/thecoach/all_files/20.gif",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/game/asset/reward20.mp3",
+                  "media_description": "Popa crystals reward",
+                  "score": null
+                },
+                {
+                  "id": "p5fix_1",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202610fix.jpg",
+                  "audio_url": "",
+                  "media_description": "Ảnh tĩnh gió thổi qua bãi cắm trại, bên dưới có chữ 'a cool breeze'.",
+                  "score": null
+                },
+                {
+                  "id": "p5fix_2",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202610fix.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au14.mp3",
+                  "media_description": "Ảnh tĩnh gió thổi qua bãi cắm trại, bên dưới có chữ 'a cool breeze'.",
+                  "score": null
+                },
+                {
+                  "id": "p5fix_3",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202610fix.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+                  "media_description": "Ảnh tĩnh gió thổi qua bãi cắm trại, bên dưới có chữ 'a cool breeze'.",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": {
+                "tool": "pronun_check_v2_simplify",
+                "turns": [
+                  {
+                    "turn": 1,
+                    "cases": [
+                      {
+                        "lower_bound": 0.85,
+                        "response_guide": "<emotion type=\"proud\"/> [Khen ngắn, cụ thể] [MEDIA:p5ok_1] <next_ckp/>"
+                      },
+                      {
+                        "lower_bound": 0,
+                        "response_guide": "<emotion type=\"encouraging\"/> [Gần được rồi] [MEDIA:p5fix_1] We should say [MEDIA:p5fix_2] Now, say it again!"
+                      }
+                    ],
+                    "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"calm\"/> [Mời trẻ nói cùng] [MEDIA:p5fix_1] We should say [MEDIA:p5fix_2] Now, say it again!"
+                  },
+                  {
+                    "turn": 2,
+                    "cases": [
+                      {
+                        "lower_bound": 0.85,
+                        "response_guide": "<emotion type=\"proud\"/> [Khen ngắn, cụ thể] [MEDIA:p5ok_1] <next_ckp/>"
+                      },
+                      {
+                        "lower_bound": 0,
+                        "response_guide": "<emotion type=\"encouraging\"/> [MEDIA:p5fix_1] We should say [MEDIA:p5fix_2] [MEDIA:p5fix_3] [Bảo chúng mình sẽ luyện thêm sau] <next_ckp/>"
+                      }
+                    ],
+                    "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"encouraging\"/> [MEDIA:p5fix_1] We should say [MEDIA:p5fix_2] [MEDIA:p5fix_3] [Bảo chúng mình sẽ luyện thêm sau] <next_ckp/>"
+                  }
+                ],
+                "ref_text": "a cool breeze",
+                "global_guide": ""
+              },
+              "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202611fix.jpg",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "9401be57435b8d83c996bd5860952f43a22fb2d03af6d95717f089ea111eccc1",
+              "cache_hash_guide": "04cc333ada47d2373262660f2b1f7f80fc0f414784fd6b32732e1e15e08373c1"
+            },
+            {
+              "name": "P6 - Luyện từ khó: breeze",
+              "type": "cta_simplify",
+              "question": "[MEDIA:p6n_1] Now listen carefully to this word. [MEDIA:p6n_2] Now, louder, say it! [MEDIA:p6q_1]",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "p6n_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca101.jpg",
+                  "audio_url": "",
+                  "media_description": "Chữ 'breeze', với chữ 'br' có màu khác",
+                  "score": null
+                },
+                {
+                  "id": "p6n_2",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca101.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au12.mp3",
+                  "media_description": "Chữ 'breeze', với chữ 'br' có màu khác",
+                  "score": null
+                },
+                {
+                  "id": "p6q_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca101.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au13.mp3",
+                  "media_description": "Chữ 'breeze', với chữ 'br' có màu khác",
+                  "score": null
+                },
+                {
+                  "id": "p6ok_1",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca101.jpg",
+                  "audio_url": "",
+                  "media_description": "Popa crystals reward",
+                  "score": null
+                },
+                {
+                  "id": "p6ok_2",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca101pgf.jpg",
+                  "audio_url": "",
+                  "media_description": "Popa crystals reward",
+                  "score": null
+                },
+                {
+                  "id": "p6ok_3",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca101pgf.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/tadaabutshort.mp3",
+                  "media_description": "Popa crystals reward",
+                  "score": null
+                },
+                {
+                  "id": "p6fix_1",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca101.jpg",
+                  "audio_url": "",
+                  "media_description": "Chữ 'breeze', với chữ 'br' có màu khác",
+                  "score": null
+                },
+                {
+                  "id": "p6fix_2",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca101pgf.jpg",
+                  "audio_url": "",
+                  "media_description": "Chữ 'breeze', với chữ 'br' có màu khác",
+                  "score": null
+                },
+                {
+                  "id": "p6fix_3",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca101pgf.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/tadaabutshort.mp3",
+                  "media_description": "Chữ 'breeze', với chữ 'br' có màu khác",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": {
+                "tool": "pronun_check_v2_simplify",
+                "turns": [
+                  {
+                    "turn": 1,
+                    "cases": [
+                      {
+                        "lower_bound": 0.85,
+                        "response_guide": "<emotion type=\"proud\"/> [Khen ngắn, cụ thể] [MEDIA:p6fix_1] It is…breeze! [MEDIA:p6fix_2] Remember! That's how we say it! [MEDIA:p6fix_3] <next_ckp/>"
+                      },
+                      {
+                        "lower_bound": 0,
+                        "response_guide": "<emotion type=\"encouraging\"/> [MEDIA:p6fix_1] It is…breeze! [MEDIA:p6fix_2] Remember! That's how we say it! [MEDIA:p6fix_3] <next_ckp/>"
+                      }
+                    ],
+                    "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"encouraging\"/> [MEDIA:p6fix_1] It is…breeze! [MEDIA:p6fix_2] Remember! That's how we say it! [MEDIA:p6fix_3] <next_ckp/>"
+                  }
+                ],
+                "ref_text": "breeze",
+                "global_guide": ""
+              },
+              "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca101imf.jpg",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "8429ebad121cf9ad2e6c7a0cf03ba8c27dd2e5409745753142532e5febf9ebc9",
+              "cache_hash_guide": "f95f8b7c8206a266fc3c61df9466540a1f21bd349e351fce6a12fc415ffc419c"
+            },
+            {
+              "name": "P7 - Nhìn và trả lời: a cool breeze",
+              "type": "cta_simplify",
+              "question": "[MEDIA:p7q_1] Now, look and answer. What is it like?",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "p7q_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202610fix.jpg",
+                  "audio_url": "",
+                  "media_description": "Ảnh tĩnh gió thổi qua bãi cắm trại + text 'a cool breeze'",
+                  "score": null
+                },
+                {
+                  "id": "p7ok_1",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/thecoach/all_files/20.gif",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/game/asset/reward20.mp3",
+                  "media_description": "Popa crystals reward",
+                  "score": null
+                },
+                {
+                  "id": "p7fix_1",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202610fix.jpg",
+                  "audio_url": "",
+                  "media_description": "Ảnh tĩnh gió thổi qua bãi cắm trại + text 'a cool breeze'",
+                  "score": null
+                },
+                {
+                  "id": "p7fix_2",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202610fix.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au14.mp3",
+                  "media_description": "Ảnh tĩnh gió thổi qua bãi cắm trại + text 'a cool breeze'",
+                  "score": null
+                },
+                {
+                  "id": "p7fix_3",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202612.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/tadaabutshort.mp3",
+                  "media_description": "Ảnh tĩnh gió thổi qua bãi cắm trại + text 'a cool breeze'",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": {
+                "tool": "pronun_check_v2_simplify",
+                "turns": [
+                  {
+                    "turn": 1,
+                    "cases": [
+                      {
+                        "lower_bound": 0.6,
+                        "response_guide": "<emotion type=\"proud\"/> [Khen ngắn, cụ thể] [MEDIA:p7ok_1] <next_ckp/>"
+                      },
+                      {
+                        "lower_bound": 0,
+                        "response_guide": "<emotion type=\"encouraging\"/> [MEDIA:p7fix_1] Looking at the picture, I say [MEDIA:p7fix_2] [MEDIA:p7fix_3] we can practice it later! <next_ckp/>"
+                      }
+                    ],
+                    "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"encouraging\"/> [MEDIA:p7fix_1] Looking at the picture, I say [MEDIA:p7fix_2] [MEDIA:p7fix_3] we can practice it later! <next_ckp/>"
+                  }
+                ],
+                "ref_text": "a cool breeze",
+                "global_guide": ""
+              },
+              "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202611fix.jpg",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "a8f70c44597909ae8f92be2d8a36e05afc3d8a5ba7f77abd6796e9cd66bb536c",
+              "cache_hash_guide": "500aed89a7c52982cfec38229180aae015c2cbca0600de818c511032b054fb68"
+            },
+            {
+              "name": "P8 - Ăn trưa, trời trong",
+              "type": "narrative",
+              "question": "[MEDIA:p8c1_1] [MEDIA:p8c2_1] [MEDIA:p8c3_1] [MEDIA:p8c4_1] [MEDIA:p8c5_1] [MEDIA:p8c6_1] <next_ckp/>",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "p8c1_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202613.mjpeg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au15.mp3",
+                  "media_description": "Cả gia đình ngồi xuống ăn picnic, lấy đồ ăn từ giỏ.",
+                  "score": null
+                },
+                {
+                  "id": "p8c2_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202614.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au16.mp3",
+                  "media_description": "Thảm picnic bày đồ ăn ngon lành: cơm cuộn, sandwich, nước cam, fried rice",
+                  "score": null
+                },
+                {
+                  "id": "p8c3_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202615.mjpeg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au17.mp3",
+                  "media_description": "Cả gia đình ngồi ăn, nhìn lên bầu trời xanh trong vắt, không có mây. Kim Đậu chỉ tay lên trời, cười tươi hớn hở.",
+                  "score": null
+                },
+                {
+                  "id": "p8c4_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202615.mjpeg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au18.mp3",
+                  "media_description": "Cả gia đình ngồi ăn, nhìn lên bầu trời xanh trong vắt, không có mây. Kim Đậu chỉ tay lên trời, cười tươi hớn hở.",
+                  "score": null
+                },
+                {
+                  "id": "p8c5_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202616.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au19.mp3",
+                  "media_description": "Bầu trời xanh trong vắt, không có mây, cả gia đình ngồi ăn dưới bầu trời, ánh nắng vàng ấm áp",
+                  "score": null
+                },
+                {
+                  "id": "p8c6_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202616.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au20.mp3",
+                  "media_description": "Bầu trời xanh trong vắt, không có mây, cả gia đình ngồi ăn dưới bầu trời (clear sky là chủ thể chính, chiếm tối thiểu ⅔ bố cục ảnh)",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": null,
+              "image_listening": null,
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "45fa1b052c90939b4aaa4ab091a20c8b621aaf754106750e1f2c64dbb2701d22",
+              "cache_hash_guide": null
+            },
+            {
+              "name": "P9 - Nhìn và nói: a clear sky",
+              "type": "cta_simplify",
+              "question": "[MEDIA:p9q_1] Now look, and say. [MEDIA:p9q_2]",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "p9q_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202617.jpg",
+                  "audio_url": "",
+                  "media_description": "Ảnh tĩnh bầu trời xanh trong, bên dưới có chữ \"a clear sky\".",
+                  "score": null
+                },
+                {
+                  "id": "p9q_2",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202617.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au21.mp3",
+                  "media_description": "Ảnh tĩnh bầu trời xanh trong, bên dưới có chữ \"a clear sky\".",
+                  "score": null
+                },
+                {
+                  "id": "p9ok_1",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/thecoach/all_files/10.gif",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/game/asset/reward10.mp3",
+                  "media_description": "Popa crystals reward",
+                  "score": null
+                },
+                {
+                  "id": "p9fix_1",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202617.jpg",
+                  "audio_url": "",
+                  "media_description": "Ảnh tĩnh bầu trời xanh trong, bên dưới có chữ \"a clear sky\".",
+                  "score": null
+                },
+                {
+                  "id": "p9fix_2",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202617.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au24.mp3",
+                  "media_description": "Ảnh tĩnh bầu trời xanh trong, bên dưới có chữ \"a clear sky\".",
+                  "score": null
+                },
+                {
+                  "id": "p9fix_3",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202617.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+                  "media_description": "Ảnh tĩnh bầu trời xanh trong, bên dưới có chữ \"a clear sky\".",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": {
+                "tool": "pronun_check_v2_simplify",
+                "turns": [
+                  {
+                    "turn": 1,
+                    "cases": [
+                      {
+                        "lower_bound": 0.85,
+                        "response_guide": "<emotion type=\"proud\"/> [Khen ngắn, cụ thể] [MEDIA:p9ok_1] <next_ckp/>"
+                      },
+                      {
+                        "lower_bound": 0,
+                        "response_guide": "<emotion type=\"encouraging\"/> [Gần được rồi] [MEDIA:p9fix_1] We should say [MEDIA:p9fix_2] Now, say it again!"
+                      }
+                    ],
+                    "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"calm\"/> [Mời trẻ nói cùng] [MEDIA:p9fix_1] We should say [MEDIA:p9fix_2] Now, say it again!"
+                  },
+                  {
+                    "turn": 2,
+                    "cases": [
+                      {
+                        "lower_bound": 0.85,
+                        "response_guide": "<emotion type=\"proud\"/> [Khen ngắn, cụ thể] [MEDIA:p9ok_1] <next_ckp/>"
+                      },
+                      {
+                        "lower_bound": 0,
+                        "response_guide": "<emotion type=\"encouraging\"/> [MEDIA:p9fix_1] We should say [MEDIA:p9fix_2] [MEDIA:p9fix_3] [Bảo chúng mình sẽ luyện thêm sau] <next_ckp/>"
+                      }
+                    ],
+                    "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"encouraging\"/> [MEDIA:p9fix_1] We should say [MEDIA:p9fix_2] [MEDIA:p9fix_3] [Bảo chúng mình sẽ luyện thêm sau] <next_ckp/>"
+                  }
+                ],
+                "ref_text": "a clear sky",
+                "global_guide": ""
+              },
+              "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202618.jpg",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "66639eb77ed0b6dfdf63111aa59ef7acd789c88aa17be0c82d29389e97218a0a",
+              "cache_hash_guide": "5d9fb225c54fc721021baedf83d96bac15ea4776fc3d7fe6dd6745f8a4801d2e"
+            },
+            {
+              "name": "P10 - Luyện từ khó: clear",
+              "type": "cta_simplify",
+              "question": "[MEDIA:p10n_1] Now listen carefully to this word. [MEDIA:p10n_2] [MEDIA:p10n_3] Now, louder, say it! [MEDIA:p10q_1]",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "p10n_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca102.jpg",
+                  "audio_url": "",
+                  "media_description": "Chữ 'clear', với chữ 'cl' có màu khác",
+                  "score": null
+                },
+                {
+                  "id": "p10n_2",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca102.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au22.mp3",
+                  "media_description": "Chữ 'clear', với chữ 'cl' có màu khác",
+                  "score": null
+                },
+                {
+                  "id": "p10n_3",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca102.jpg",
+                  "audio_url": "",
+                  "media_description": "Chữ 'clear', với chữ 'cl' có màu khác",
+                  "score": null
+                },
+                {
+                  "id": "p10q_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca102.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au23.mp3",
+                  "media_description": "Chữ 'clear', với chữ 'cl' có màu khác",
+                  "score": null
+                },
+                {
+                  "id": "p10ok_1",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca102.jpg",
+                  "audio_url": "",
+                  "media_description": "Popa crystals reward",
+                  "score": null
+                },
+                {
+                  "id": "p10ok_2",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca102.jpg",
+                  "audio_url": "",
+                  "media_description": "Popa crystals reward",
+                  "score": null
+                },
+                {
+                  "id": "p10ok_3",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca102pg.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/tadaabutshort.mp3",
+                  "media_description": "Popa crystals reward",
+                  "score": null
+                },
+                {
+                  "id": "p10fix_1",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca102.jpg",
+                  "audio_url": "",
+                  "media_description": "Chữ 'clear', với chữ 'cl' có màu khác",
+                  "score": null
+                },
+                {
+                  "id": "p10fix_2",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca102.jpg",
+                  "audio_url": "",
+                  "media_description": "Chữ 'clear', với chữ 'cl' có màu khác",
+                  "score": null
+                },
+                {
+                  "id": "p10fix_3",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca102pg.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/tadaabutshort.mp3",
+                  "media_description": "Chữ 'clear', với chữ 'cl' có màu khác",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": {
+                "tool": "pronun_check_v2_simplify",
+                "turns": [
+                  {
+                    "turn": 1,
+                    "cases": [
+                      {
+                        "lower_bound": 0.85,
+                        "response_guide": "<emotion type=\"proud\"/> [Khen ngắn, cụ thể] [MEDIA:p10fix_1] For this, we say it…clear! [MEDIA:p10fix_2] Remember! That's how we say it! [MEDIA:p10fix_3] <next_ckp/>"
+                      },
+                      {
+                        "lower_bound": 0,
+                        "response_guide": "<emotion type=\"encouraging\"/> [MEDIA:p10fix_1] For this, we say it…clear! [MEDIA:p10fix_2] Remember! That's how we say it! [MEDIA:p10fix_3] <next_ckp/>"
+                      }
+                    ],
+                    "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"encouraging\"/> [MEDIA:p10fix_1] For this, we say it…clear! [MEDIA:p10fix_2] Remember! That's how we say it! [MEDIA:p10fix_3] <next_ckp/>"
+                  }
+                ],
+                "ref_text": "clear",
+                "global_guide": ""
+              },
+              "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/17326HHmca102im.jpg",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "0467835de20fdeb8fa079029c7d9eac7ab1c43324b7a230bb1571c836163ebd5",
+              "cache_hash_guide": "befdda6875b5678e03edcb9741ea20c62342e4a390db37fb628be39be67e4802"
+            },
+            {
+              "name": "P11 - Nhìn và trả lời: a clear sky",
+              "type": "cta_simplify",
+              "question": "[MEDIA:p11q_1] Now, look and answer. What is the sky like?",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "p11q_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202617.jpg",
+                  "audio_url": "",
+                  "media_description": "Ảnh tĩnh bầu trời xanh trong + text 'a clear sky'",
+                  "score": null
+                },
+                {
+                  "id": "p11ok_1",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/thecoach/all_files/30.gif",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/game/asset/reward30.mp3",
+                  "media_description": "Popa crystals reward",
+                  "score": null
+                },
+                {
+                  "id": "p11fix_1",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202617.jpg",
+                  "audio_url": "",
+                  "media_description": "Ảnh tĩnh bầu trời xanh trong + text 'a clear sky'",
+                  "score": null
+                },
+                {
+                  "id": "p11fix_2",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202617.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au24.mp3",
+                  "media_description": "Ảnh tĩnh bầu trời xanh trong + text 'a clear sky'",
+                  "score": null
+                },
+                {
+                  "id": "p11fix_3",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202619.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/tadaabutshort.mp3",
+                  "media_description": "Ảnh tĩnh bầu trời xanh trong + text 'a clear sky'",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": {
+                "tool": "pronun_check_v2_simplify",
+                "turns": [
+                  {
+                    "turn": 1,
+                    "cases": [
+                      {
+                        "lower_bound": 0.6,
+                        "response_guide": "<emotion type=\"proud\"/> [Khen ngắn, cụ thể] [MEDIA:p11ok_1] <next_ckp/>"
+                      },
+                      {
+                        "lower_bound": 0,
+                        "response_guide": "<emotion type=\"encouraging\"/> [MEDIA:p11fix_1] Looking at the picture, I say [MEDIA:p11fix_2] [MEDIA:p11fix_3] we can practice it later! <next_ckp/>"
+                      }
+                    ],
+                    "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"encouraging\"/> [MEDIA:p11fix_1] Looking at the picture, I say [MEDIA:p11fix_2] [MEDIA:p11fix_3] we can practice it later! <next_ckp/>"
+                  }
+                ],
+                "ref_text": "a clear sky",
+                "global_guide": ""
+              },
+              "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202618.jpg",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "a09f6b0f2d66040e81d9aa4a9ba53eed1c47b8698ba75d376e8f645c300ec11a",
+              "cache_hash_guide": "20ded926414f6cf4e0d0a80926e0ee4b8d09e7da1ff257a3077af3ad642b3ff5"
+            },
+            {
+              "name": "P12 - Ôn 3 kiểu trời, nối sang Jenny",
+              "type": "narrative",
+              "question": "[MEDIA:p12c1_1] [MEDIA:p12c2_1] Congratulations! Now, let's see what we discovered in this trip! [MEDIA:p12c3_1] a sunny morning! [MEDIA:p12c4_1] a cool breeze! [MEDIA:p12c5_1] a clear sky! [MEDIA:p12c6_1] And these are the three beautiful things [MEDIA:p12c7_1] you discovered during the camping adventure! Cậu dạy tớ đủ 3 kiểu trời rồi, vào album hết! Bạn Jenny đang du lịch Tây Bắc cũng thấy y như vậy. Mình qua hỏi Jenny xem trời thế nào nha! <next_ckp/>",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "p12c1_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202620.mjpeg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/victorygame.mp3",
+                  "media_description": "Gia đình ăn picnic dưới bầu trời trong xanh, camera pan up lên bầu trời xanh rực rỡ",
+                  "score": null
+                },
+                {
+                  "id": "p12c2_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202625.mjpeg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/11326HHouttro.mp3",
+                  "media_description": "Bầu trời xanh rực rỡ",
+                  "score": null
+                },
+                {
+                  "id": "p12c3_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN170320264fix.jpg",
+                  "audio_url": "",
+                  "media_description": "Ảnh tĩnh bãi cắm trại trong ánh nắng sáng, bên dưới có chữ \"a sunny morning\"",
+                  "score": null
+                },
+                {
+                  "id": "p12c4_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202610fix.jpg",
+                  "audio_url": "",
+                  "media_description": "Ảnh tĩnh gió thổi qua bãi cắm trại, bên dưới có chữ \"a cool breeze\"",
+                  "score": null
+                },
+                {
+                  "id": "p12c5_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202617.jpg",
+                  "audio_url": "",
+                  "media_description": "Ảnh tĩnh bầu trời xanh trong, bên dưới có chữ \"a clear sky\"",
+                  "score": null
+                },
+                {
+                  "id": "p12c6_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202624.mjpeg",
+                  "audio_url": "",
+                  "media_description": "Cả gia đình KenBi (KenBi, Kim Đậu, bố, mẹ) ngồi ăn picnic vui vẻ dưới bầu trời xanh trong, vẫy tay chào, tươi cười, với vẻ mặt hạnh phúc.",
+                  "score": null
+                },
+                {
+                  "id": "p12c7_1",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/XN1703202624.mjpeg",
+                  "audio_url": "",
+                  "media_description": "Text \"to be continued...\" hiện lên trên bầu trời xanh",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": null,
+              "image_listening": null,
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "1c09e139369fbd07cfc911e9a4f825ff52aaa79a4cecba054b09189b34b048c7",
+              "cache_hash_guide": null
+            }
+          ],
+          "input_schema_key": null,
+          "start_message": "",
+          "hooks": [],
+          "max_turns": null,
+          "pre_llm_pipeline": null,
+          "dynamic_checkpoint_builder": null,
+          "dynamic_checkpoint_config": {},
+          "tts_provider_override": null,
+          "learn_v2": true,
+          "learn_v2_keep_dev_prompt": false,
+          "learn_v2_keep_model": false,
+          "enable_subtitle": false,
+          "context": "clear",
+          "context_recent": 4,
+          "context_return": "append_summary",
+          "use_main_system_prompt": false
+        }
+      ],
+      "global_pivots": [],
+      "global_tools": [
+        "pronun_check_v2"
+      ],
+      "global_hooks": [],
+      "system_prompt": "You are Pika, a friendly voice teacher for a child.\n\n# ROLE\nThe lesson is a sequence of checkpoints. You receive ONE checkpoint at a time from the developer. Each checkpoint has:\n- Question: what you must ask the child.\n- Response_guide: cases describing how to answer the child.\n\n# FLOW\n1. Start of checkpoint: ask the Question once, including its [MEDIA:...] tokens.\n2. For each child reply:\n   - If the guide says to call a function (e.g. pronun_check(...)), call it exactly as described BEFORE replying.\n   - If the reply fits a case in Response_guide, answer using that case. You may rephrase slightly, but keep the meaning and all media/tags.\n   - Otherwise, kindly repeat or simplify the Question in 1–2 short turns to guide the child back.\n3. End your reply with <next_ckp/> when the Response_guide marks the checkpoint finished, or the child is back on track and agrees to move on. Only at the END of the message.\n\n# FIDELITY (media & tags)\nFor every [MEDIA:...] token, <eng>...</eng>, and <emotion type=\"...\"/> in the guide:\n- Count: output each one exactly as many times as it appears — no more, no fewer.\n- Order: keep the exact sequence given.\n- No invention: never add a token/tag not in the current checkpoint.\n- No omission: never drop one, even if the sentence reads fine without it.\n- No change: never alter an emotion `type` value or invent new keys.\n\n# LANGUAGE\n- Speak in the language set by the system language prompt. Follow it for all your own words.\n- Keep <eng>...</eng> content in English regardless of language setting.\n- [Say in {lang_code}: {text}] → this is an INSTRUCTION to you, not text for the child.\n- Translate {text} into {lang_code} and output ONLY the translation.\n- NEVER output the token \"[Say in ...]\" itself.\n- NEVER output the original {text} if it is not in {lang_code}.\n\nWRONG: \"[Say in EN: Nào cùng nói từ này với tớ nhé]\"\nWRONG: \"Nào cùng nói từ này với tớ nhé\" (kept original Vietnamese)\nRIGHT: \"Now, let's say this word together!\"\n\n# STYLE\n- 1–3 short, simple sentences per turn. Warm, encouraging, clear.\n- Avoid adult, sexual, violent, extremist, unhealthy, or risky content. If the child says something unhealthy, softly advise them.\n\n# EXAMPLES\nExample 1 — basic flow\n  Teacher: [MEDIA:word_image] Can you say the word \"Banana\"?\n  Student: Banana!\n  Teacher: [MEDIA:star_img] Yes, Banana is correct! <next_ckp/>\n\nExample 2 — emotion placement\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"happy\"/>[Say hello to the child],\n        <emotion type=\"excited\"/>[introduce that the child will learn vocab about animals]\n      </question_guide>\n    </checkpoint_1>\n  Teacher: <emotion type=\"happy\"/> Hello! Hi there, friend! <emotion type=\"excited\"/> Today, we are going to learn about animals! So fun!\n\nExample 3 — [Say in {lang_code}:] + exact media count + order\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\n      </question_guide>\n    </checkpoint_1>\nRIGHT OUTPUT:\n  Teacher: <emotion type=\"encouraging\"/> Now, follow me and let's say this word together! [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (output the [Say in...] token literally):\n<emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (kept Vietnamese instead of translating):\n<emotion type=\"encouraging\"/> Nào cùng nói từ này với tớ nhé [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\nWRONG (dropped one token):\n<emotion type=\"encouraging\"/> Now, follow me! [MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\n\nExample 4 — function call required\n  Dev:\n    <checkpoint_1>\n      <question_guide>[MEDIA:question] Can you say the word \"duck\"?</question_guide>\n      <response_guide>\n        Always call pronun_check(ref_text=\"duck\") before replying.\n        - Correct: [MEDIA:diamond_10] <next_ckp/>\n        - Incorrect / no answer / irrelevant: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n      </response_guide>\n    </checkpoint_1>\n  Student: Duck!\n  Teacher (internal): calls pronun_check(ref_text=\"duck\") → correct\n  Teacher: [MEDIA:diamond_10] <next_ckp/>",
+      "version": "v2",
+      "mem_filter": null,
+      "strict": false,
+      "use_intent": "full"
+    },
+    "created_at": null,
+    "updated_at": null
+  }
+}

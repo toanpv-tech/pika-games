@@ -1,0 +1,1455 @@
+{
+  "name": "A1 - Trải nghiệm 30p - Học câu (cắt từ 2897)",
+  "description": "Bot learn v2 cho buổi trải nghiệm 30 phút A1, nhúng vào graph chính bằng SubGraphNode. Ckp gốc 2897 vị trí 4-18, 23 (It's a sunny morning / a cool breeze / a clear sky); vị trí 4 bỏ 'Hello, hello, hello!' (bài cụm đã nói); vị trí 18 thêm lượt 2 cho trẻ nói đủ câu; bỏ light rain, sunset, starry night và lời tạm biệt.",
+  "task_chain": [
+    {
+      "task": "",
+      "tools": [
+        "pronun_check_v2"
+      ],
+      "language": "",
+      "learn_v2": true,
+      "use_cache": false,
+      "asr_config": "medium",
+      "session_id": "",
+      "sub_agents": [],
+      "checkpoints": [
+        {
+          "name": "Component 4: Call to Action",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:cta_jenny_thao_wave_visual] Today, we will learn about the weather in Northwest Vietnam! Ready, ready, are you ready? <next_ckp/>",
+          "media_list": [
+            {
+              "id": "cta_jenny_thao_wave_visual",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG02.jpg",
+              "media_description": "audio: none. image: Jenny and Thao waving hello cheerfully, Scene background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": null,
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Checkpoint 5: Jenny khám phá vùng núi",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:jenny_mountain_overlook_audio] [MEDIA:jenny_exploring_scenery_audio] <next_ckp/>",
+          "media_list": [
+            {
+              "id": "jenny_mountain_overlook_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au47.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG03.mjpeg",
+              "media_description": "audio: Voice Jenny: [emphasis] Hi everyone. I'm visiting the Northwest mountains of Vietnam. I'm so excited to explore this wonderland. image: Jenny standing at a high mountain vantage point looking down into a valley, tall misty mountain peaks surrounding her, she waves happily, Mountain background"
+            },
+            {
+              "id": "jenny_exploring_scenery_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au48.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG04.mjpeg",
+              "media_description": "audio: Voice Jenny: [emphasis] Wow, look at this beautiful place. The weather here is so nice. image: Jenny pointing in different directions and looking up at the sky with excitement, beautiful Northwest Vietnam mountain scenery around her, Mountain background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "d1afecd42906e7332520cae3ac9fa8ec1ac5fb2d9558efa1e0ad147c1975c99c",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Checkpoint 6: Thao xuất hiện",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:thao_appears_greeting_audio] <next_ckp/>",
+          "media_list": [
+            {
+              "id": "thao_appears_greeting_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au49.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG05.mjpeg",
+              "media_description": "audio: Voice Thao: [emphasis] Hi, I'm Thao, your local guide. Let me show you the beautiful weather and nature here. image: Thao, a Vietnamese girl with a friendly smile wearing traditional Vietnamese clothing, appearing beside Jenny with her hand raised in welcome, Mountain background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "429e742ec9a37f63081d75599f719e921b1675bd3b60e999176ec0ca88a0f46f",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Checkpoint 7: Sáng nắng đẹp",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:thao_jenny_sunny_morning_audio] <next_ckp/>",
+          "media_list": [
+            {
+              "id": "thao_jenny_sunny_morning_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au50.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG06.jpg",
+              "media_description": "audio: Voice Thao: [emphasis] Look, the morning is so beautiful. [emphasis, slow] It's a sunny morning. image: Thao and Jenny standing on a mountain peak at early morning, the sun just rising with warm golden light shining down, both smiling happily, Mountain background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "07987263ac7469b1f0c1a519f8e2cc983303e91190f6776daf831c6f2cf95012",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Checkpoint 8: Show Form — It's a sunny morning",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:show_form_sunny_morning_audio] <next_ckp/>",
+          "media_list": [
+            {
+              "id": "show_form_sunny_morning_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au51.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG07.jpg",
+              "media_description": "audio: Voice Thao: [emphasis, slow] It's a sunny morning. image: Northwest Vietnam mountain scenery in sunny morning light, Mountain background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "f187c8dee68c41892f5fb59be342e4360cd637f936daf14088a8af02e8393e1b",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Checkpoint 8.1: Giới thiệu luyện tập cụm It's",
+          "past": null,
+          "type": "narrative",
+          "question": " <emotion type=\"excited\"/> Let's practice the phrase, It is.  <next_ckp/>",
+          "media_list": [],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "4cc2a238eb09938216c6da9b2223beb6c85b165a7f262deb8dfa51e5a852ec40",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Checkpoint 9: Luyện tập cụm cấu trúc It's",
+          "past": null,
+          "type": "cta_simplify",
+          "question": "[MEDIA:stem_practice_its_audio] Listen and say. [MEDIA:audio]",
+          "media_list": [
+            {
+              "id": "stem_practice_its_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG08.jpg",
+              "media_description": "audio: Voice Thao: [emphasis, slow] It's. image: Northwest Vietnam mountain scenery in sunny morning light, Mountain background"
+            },
+            {
+              "id": "tenten",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG08.jpg",
+              "media_description": "audio: Voice Thao: [emphasis, slow] It's. image: Northwest Vietnam mountain scenery in sunny morning light, Mountain background"
+            },
+            {
+              "id": "audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au52.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG08.jpg",
+              "media_description": ""
+            },
+            {
+              "id": "Itis",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG08.jpg",
+              "media_description": ""
+            },
+            {
+              "id": "itis_audio",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au52.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG08.jpg",
+              "media_description": ""
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 3,
+          "question_guide": null,
+          "response_guide": {
+            "tool": "pronun_check_v2_simplify",
+            "turns": [
+              {
+                "turn": 1,
+                "cases": [
+                  {
+                    "lower_bound": 0.85,
+                    "response_guide": "<emotion type=\"proud\"/> [Khen ngợi tích cực, xác nhận trẻ nói đúng] <next_ckp/>"
+                  },
+                  {
+                    "lower_bound": 0,
+                    "response_guide": "[MEDIA:Itis] Listen again. [MEDIA:itis_audio] Now, say that again."
+                  }
+                ],
+                "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này. CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"happy\"/> [Động viên trẻ nói nếu trẻ yên lặng; cổ vũ tinh thần nếu trẻ bảo không biết; kéo về bài học nếu trẻ nói linh tinh; các trường hợp còn lại chỉ cần động viên và bảo trẻ nói lại] [MEDIA:itis_audio] Now, say that again."
+              },
+              {
+                "turn": 2,
+                "cases": [
+                  {
+                    "lower_bound": 0.85,
+                    "response_guide": "<emotion type=\"proud\"/> [Khen ngợi tích cực, xác nhận trẻ nói đúng] <next_ckp/>"
+                  },
+                  {
+                    "lower_bound": 0,
+                    "response_guide": "[MEDIA:Itis] So, we should say, It is. We'll practice more later. [MEDIA:tenten] <next_ckp/>"
+                  }
+                ],
+                "turn_guide": "Trẻ đọc chưa đạt (điểm < 0.85), hoặc im lặng, nói tiếng Việt, nói \"tớ không biết\", nói chuyện khác không liên quan tới từ mẫu thì dùng nhánh này — trẻ đọc đạt (điểm ≥ 0.85) thì KHÔNG chọn nhánh intent này: [MEDIA:Itis] So, we should say, It is. We'll practice more later. [MEDIA:tenten] <next_ckp/>"
+              }
+            ],
+            "ref_text": "It's",
+            "global_guide": ""
+          },
+          "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG09.jpg",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "8d39f23ab6b60427aa4c7d81264e852e7e385f4e247e48a78eb88202897412bc",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Checkpoint 10: Luyện tập câu toàn phần It's a sunny morning",
+          "past": null,
+          "type": "cta_simplify",
+          "question": "[MEDIA:full_sentence_sunny_morning_audio] Now, listen and say the whole sentence.  [MEDIA:full_audio]",
+          "media_list": [
+            {
+              "id": "full_sentence_sunny_morning_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG07.jpg",
+              "media_description": "audio: Voice Thao: [emphasis, slow] It's a sunny morning. image: Northwest Vietnam mountain scenery in sunny morning light, Mountain background"
+            },
+            {
+              "id": "tenten",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG07.jpg",
+              "media_description": "audio: Voice Thao: [emphasis, slow] It's… a sunny morning. image: Northwest Vietnam mountain scenery in sunny morning light, Mountain background"
+            },
+            {
+              "id": "full_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au51.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG07.jpg",
+              "media_description": ""
+            },
+            {
+              "id": "full",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG07.jpg",
+              "media_description": ""
+            },
+            {
+              "id": "full_audio",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au51.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG07.jpg",
+              "media_description": ""
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 3,
+          "question_guide": null,
+          "response_guide": {
+            "tool": "pronun_check_v2_simplify",
+            "turns": [
+              {
+                "turn": 1,
+                "cases": [
+                  {
+                    "lower_bound": 0.85,
+                    "response_guide": "<emotion type=\"proud\"/> [Khen ngợi tích cực, xác nhận trẻ nói đúng] <next_ckp/>"
+                  },
+                  {
+                    "lower_bound": 0,
+                    "response_guide": "[MEDIA:full] Listen again.  [MEDIA:full_audio] [MEDIA:full] Now, say that again."
+                  }
+                ],
+                "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này. CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"happy\"/> [Động viên trẻ nói nếu trẻ yên lặng; cổ vũ tinh thần nếu trẻ bảo không biết; kéo về bài học nếu trẻ nói linh tinh; các trường hợp còn lại chỉ cần động viên và bảo trẻ nói lại] [MEDIA:full_audio] [MEDIA:full] Now, say that again."
+              },
+              {
+                "turn": 2,
+                "cases": [
+                  {
+                    "lower_bound": 0.85,
+                    "response_guide": "<emotion type=\"proud\"/> [Khen ngợi tích cực, xác nhận trẻ nói đúng] <next_ckp/>"
+                  },
+                  {
+                    "lower_bound": 0,
+                    "response_guide": "[MEDIA:full] So, we should say, It's a sunny morning. We'll practice more later. [MEDIA:tenten] <next_ckp/>"
+                  }
+                ],
+                "turn_guide": "Trẻ đọc chưa đạt (điểm < 0.85), hoặc im lặng, nói tiếng Việt, nói \"tớ không biết\", nói chuyện khác không liên quan tới từ mẫu thì dùng nhánh này — trẻ đọc đạt (điểm ≥ 0.85) thì KHÔNG chọn nhánh intent này: [MEDIA:full] So, we should say, It's a sunny morning. We'll practice more later. [MEDIA:tenten] <next_ckp/>"
+              }
+            ],
+            "ref_text": "It's a sunny morning",
+            "global_guide": ""
+          },
+          "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG10.jpg",
+          "use_cache_guide": false,
+          "cache_hash_guide": "6378f89c52ee7c2c4770dff7e94b001d751d881bea0d413bea713822ab17125f",
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "88b76d9e8e06c710e99f1f7a35f37bcc2ef6383debe2c40c1fb0bedf85c0e360",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Checkpoint 11: Cụm 2 — a cool breeze, dẫn vào",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:jenny_thao_walking_breeze_visual] Next, let's see what else they see. <next_ckp/>",
+          "media_list": [
+            {
+              "id": "jenny_thao_walking_breeze_visual",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG11.mjpeg",
+              "media_description": "audio: none. image: Jenny and Thao walking down a mountain path, gentle wind blowing, grass and trees swaying lightly, Mountain background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "6a62fc10805c4f8e7895cd0b5375a9f4416f56df079b345d420a558f3d2bbd37",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Checkpoint 12: Jenny cảm nhận gió mát",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:jenny_thao_feel_breeze_audio] <next_ckp/>",
+          "media_list": [
+            {
+              "id": "jenny_thao_feel_breeze_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au53.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG12.jpg",
+              "media_description": "audio: Voice Jenny: [emphasis] Oh wow, I feel something. [emphasis, slow] It's a cool breeze. image: Jenny standing on the mountain feeling the wind, her hair blowing gently, looking relaxed and happy, Thao standing beside her also enjoying the breeze, Mountain background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "6564854c40bb68f0007d7c833b70001edb69adbf45d5ccc1fd9949829de3d818",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Checkpoint 13: Trẻ luyện tập It's a cool breeze",
+          "past": null,
+          "type": "cta_simplify",
+          "question": "[MEDIA:cool_breeze_practice_audio] Great! Now, you listen and say it with me [MEDIA:fulll_audio]",
+          "media_list": [
+            {
+              "id": "cool_breeze_practice_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG13.jpg",
+              "media_description": "audio: Voice Jenny: [emphasis, slow] It's a cool breeze. image: Mountain scenery with wind blowing, trees and grass swaying gently, Mountain background"
+            },
+            {
+              "id": "cool_breeze_fallback_audio",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au54.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG13.jpg",
+              "media_description": "audio: Voice Jenny: [emphasis, slow] It's a cool breeze. image: Mountain scenery with wind blowing, trees and grass swaying gently, Mountain background"
+            },
+            {
+              "id": "fulll_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au54.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG13.jpg",
+              "media_description": ""
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 3,
+          "question_guide": null,
+          "response_guide": {
+            "tool": "pronun_check_v2_simplify",
+            "turns": [
+              {
+                "turn": 1,
+                "cases": [
+                  {
+                    "lower_bound": 0.85,
+                    "response_guide": "<emotion type=\"proud\"/> [Khen ngợi tích cực, xác nhận trẻ nói đúng] <next_ckp/>"
+                  },
+                  {
+                    "lower_bound": 0,
+                    "response_guide": "<emotion type=\"happy\"/> [Không nhắc lại câu trả lời của trẻ, động viên và thu hút trẻ tập trung vào bài học] [MEDIA:cool_breeze_fallback_audio] <next_ckp/>"
+                  }
+                ],
+                "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này. CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"happy\"/>  Let's move on!  [MEDIA:cool_breeze_fallback_audio] <next_ckp/>"
+              }
+            ],
+            "ref_text": "It's a cool breeze",
+            "global_guide": ""
+          },
+          "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG14.jpg",
+          "use_cache_guide": false,
+          "cache_hash_guide": "b9ab3feac9d382a4844ebd988f4b50f77fe07240f6819f8be18bfcd4bb5fb497",
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "aaa9feb1a9f38233b88a196ee3028eac8527b22b8088cf18e65c2906a674ee96",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Phần 4 Intro: Ask and Answer",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:ngoilen] Now, let's learn how to ask and answer about the weather! <next_ckp/>",
+          "media_list": [
+            {
+              "id": "ngoilen",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/616hl01prea1pre20a.mjpeg",
+              "media_description": ""
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "2c437f7535f5675b9a87c3d19207c99effb778af41541a492b2c766ee23931fb",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Checkpoint 14: Jenny hỏi Thao về bầu trời",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:jenny_thao_sky_question_audio] <next_ckp/>",
+          "media_list": [
+            {
+              "id": "jenny_thao_sky_question_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au56.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG15.jpg",
+              "media_description": "audio: Voice Jenny: [emphasis] Hey Thao, look at the sky. What's it like? image: Jenny and Thao sitting side by side looking at the sky, Jenny pointing at the sky and turning to smile at Thao, Mountain background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "58196ca20a6619b38c1caf9df43281b1dbb908a64bb485d31e9e28b00fb36e61",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Checkpoint 15: Thao trả lời — It's a clear sky",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:thao_clear_sky_answer_audio] <next_ckp/>",
+          "media_list": [
+            {
+              "id": "thao_clear_sky_answer_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au57.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG16.jpg",
+              "media_description": "audio: Voice Thao: [emphasis, slow] It's a clear sky. image: Thao pointing at a clear blue sky with no clouds, looking very happy, Mountain background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "3a9d605535e590a3db3fd0a9638df1378f1a83a594f5992f66181fc5e1eb1ef5",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Checkpoint 16: Pika hỏi trẻ — vòng 1 (clear sky)",
+          "past": null,
+          "type": "cta_simplify",
+          "question": "[MEDIA:clear_sky_cta_visual] Okay, your turn. What's it like?",
+          "media_list": [
+            {
+              "id": "clear_sky_cta_visual",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG17.jpg",
+              "media_description": "audio: none. image: Clear blue sky with no clouds, Mountain background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": {
+            "turns": [
+              {
+                "turn": 1,
+                "cases": [],
+                "turn_guide": "• Case 1 (Trẻ nói đủ câu có 'It's' và 'clear sky'): <emotion type=\"admire\"/> [Khen cụ thể là trẻ nói đủ cả câu, nói Pika cũng thấy trời quang, không hỏi thêm] <next_ckp/>\n\n• Case 2 (Trẻ chỉ nói 'clear sky' hoặc 'a clear sky', thiếu 'It's'): <emotion type=\"encouraging\"/> [Khen trẻ nói đúng kiểu trời] Let's say the whole sentence: It's a clear sky! [Mời trẻ nói lại cả câu một lần]\n\n• Case 3 (Các trường hợp còn lại): <emotion type=\"encouraging\"/> [Nhẹ nhàng] Look at the sky. We say: It's a clear sky! [Mời trẻ nói theo một lần]"
+              },
+              {
+                "turn": 2,
+                "cases": [],
+                "turn_guide": "• Case 1 (Trẻ nói đủ câu có 'It's' và 'clear sky'): <emotion type=\"admire\"/> [Khen cụ thể] <next_ckp/>\n\n• Case 2 (Các trường hợp còn lại): <emotion type=\"encouraging\"/> It's a clear sky! [Bảo chúng mình sẽ luyện thêm sau, không hỏi thêm] <next_ckp/>"
+              }
+            ],
+            "global_guide": ""
+          },
+          "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG18.jpg",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "base",
+          "cache_hash_question": "985ef0d6d4fd6f3c05afda8af30afd471b70be372e97d729e12ca40e63fd80fc",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Checkpoint 20: Outro — Jenny và Thao tổng kết",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:outro_mountain_hug_audio] [MEDIA:outro_jenny_thao_wave_audio]  [MEDIA:kethuc] Wow, what an amazing adventure! You learned so much about the weather in Northwest Vietnam! <next_ckp/>",
+          "media_list": [
+            {
+              "id": "outro_mountain_hug_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au66.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG32.jpg",
+              "media_description": "audio: Voice Thao: [emphasis] What an amazing day. We experienced so many wonderful things. It was a sunny morning, a cool breeze, a clear sky, a light rain, a beautiful sunset, and a starry night. image: Jenny and Thao standing on a mountain peak, arms around each other, smiling broadly, beautiful Northwest Vietnam mountain scenery surrounding them, Mountain background"
+            },
+            {
+              "id": "outro_jenny_thao_wave_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au67.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG33.mjpeg",
+              "media_description": "audio: cheerful happy background music. Voice Jenny: [emphasis] Thank you so much, Thao! This is the best adventure ever. image: Jenny and Thao waving goodbye happily, mountain peaks and beautiful sky surrounding them, Mountain background"
+            },
+            {
+              "id": "kethuc",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG34.mjpeg",
+              "media_description": ""
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "65896a8a16514f2def3d016d824dfc5baba7c9672041dbab54971cda61bd169e",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        }
+      ],
+      "start_message": "",
+      "input_schema_key": null,
+      "learn_v2_keep_model": false,
+      "GRAMMAR_CHECKER_TOOL": "",
+      "SYSTEM_TASK_DESCRIPTION": "You are Pika, a friendly voice teacher for a child.\n\n# ROLE\nThe lesson is a sequence of checkpoints. You receive ONE checkpoint at a time from the developer. Each checkpoint has:\n- Question: what you must ask the child.\n- Response_guide: cases describing how to answer the child.\n\n# FLOW\n1. Start of checkpoint: ask the Question once, including its [MEDIA:...] tokens.\n2. For each child reply:\n   - If the guide says to call a function (e.g. pronun_check(...)), call it exactly as described BEFORE replying.\n   - If the reply fits a case in Response_guide, answer using that case. You may rephrase slightly, but keep the meaning and all media/tags.\n   - Otherwise, kindly repeat or simplify the Question in 1–2 short turns to guide the child back.\n3. End your reply with <next_ckp/> when the Response_guide marks the checkpoint finished, or the child is back on track and agrees to move on. Only at the END of the message.\n\n# FIDELITY (media & tags)\nFor every [MEDIA:...] token, <eng>...</eng>, and <emotion type=\"...\"/> in the guide:\n- Count: output each one exactly as many times as it appears — no more, no fewer.\n- Order: keep the exact sequence given.\n- No invention: never add a token/tag not in the current checkpoint.\n- No omission: never drop one, even if the sentence reads fine without it.\n- No change: never alter an emotion `type` value or invent new keys.\n\n# LANGUAGE\n- Speak in the language set by the system language prompt. Follow it for all your own words.\n- Keep <eng>...</eng> content in English regardless of language setting.\n- [Say in {lang_code}: {text}] → this is an INSTRUCTION to you, not text for the child.\n- Translate {text} into {lang_code} and output ONLY the translation.\n- NEVER output the token \"[Say in ...]\" itself.\n- NEVER output the original {text} if it is not in {lang_code}.\n\nWRONG: \"[Say in EN: Nào cùng nói từ này với tớ nhé]\"\nWRONG: \"Nào cùng nói từ này với tớ nhé\" (kept original Vietnamese)\nRIGHT: \"Now, let's say this word together!\"\n\n# STYLE\n- 1–3 short, simple sentences per turn. Warm, encouraging, clear.\n- Avoid adult, sexual, violent, extremist, unhealthy, or risky content. If the child says something unhealthy, softly advise them.\n\n# EXAMPLES\nExample 1 — basic flow\n  Teacher: [MEDIA:word_image] Can you say the word \"Banana\"?\n  Student: Banana!\n  Teacher: [MEDIA:star_img] Yes, Banana is correct! <next_ckp/>\n\nExample 2 — emotion placement\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"happy\"/>[Say hello to the child],\n        <emotion type=\"excited\"/>[introduce that the child will learn vocab about animals]\n      </question_guide>\n    </checkpoint_1>\n  Teacher: <emotion type=\"happy\"/> Hello! Hi there, friend! <emotion type=\"excited\"/> Today, we are going to learn about animals! So fun!\n\nExample 3 — [Say in {lang_code}:] + exact media count + order\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\n      </question_guide>\n    </checkpoint_1>\nRIGHT OUTPUT:\n  Teacher: <emotion type=\"encouraging\"/> Now, follow me and let's say this word together! [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (output the [Say in...] token literally):\n<emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (kept Vietnamese instead of translating):\n<emotion type=\"encouraging\"/> Nào cùng nói từ này với tớ nhé [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\nWRONG (dropped one token):\n<emotion type=\"encouraging\"/> Now, follow me! [MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\n\nExample 4 — function call required\n  Dev:\n    <checkpoint_1>\n      <question_guide>[MEDIA:question] Can you say the word \"duck\"?</question_guide>\n      <response_guide>\n        Always call pronun_check(ref_text=\"duck\") before replying.\n        - Correct: [MEDIA:diamond_10] <next_ckp/>\n        - Incorrect / no answer / irrelevant: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n      </response_guide>\n    </checkpoint_1>\n  Student: Duck!\n  Teacher (internal): calls pronun_check(ref_text=\"duck\") → correct\n  Teacher: [MEDIA:diamond_10] <next_ckp/>",
+      "SYSTEM_PROMPT_GENERATION": "",
+      "learn_v2_keep_dev_prompt": false,
+      "SYSTEM_EXTRACTION_PROFILE": "",
+      "dynamic_checkpoint_config": null,
+      "PRONUNCIATION_CHECKER_TOOL": "true",
+      "SYSTEM_EXTRACTION_VARIABLES": ""
+    }
+  ],
+  "generation_params": null,
+  "provider_name": "openai",
+  "system_prompt": "You are Pika, a friendly voice teacher for a child.\n\n# ROLE\nThe lesson is a sequence of checkpoints. You receive ONE checkpoint at a time from the developer. Each checkpoint has:\n- Question: what you must ask the child.\n- Response_guide: cases describing how to answer the child.\n\n# FLOW\n1. Start of checkpoint: ask the Question once, including its [MEDIA:...] tokens.\n2. For each child reply:\n   - If the guide says to call a function (e.g. pronun_check(...)), call it exactly as described BEFORE replying.\n   - If the reply fits a case in Response_guide, answer using that case. You may rephrase slightly, but keep the meaning and all media/tags.\n   - Otherwise, kindly repeat or simplify the Question in 1–2 short turns to guide the child back.\n3. End your reply with <next_ckp/> when the Response_guide marks the checkpoint finished, or the child is back on track and agrees to move on. Only at the END of the message.\n\n# FIDELITY (media & tags)\nFor every [MEDIA:...] token, <eng>...</eng>, and <emotion type=\"...\"/> in the guide:\n- Count: output each one exactly as many times as it appears — no more, no fewer.\n- Order: keep the exact sequence given.\n- No invention: never add a token/tag not in the current checkpoint.\n- No omission: never drop one, even if the sentence reads fine without it.\n- No change: never alter an emotion `type` value or invent new keys.\n\n# LANGUAGE\n- Speak in the language set by the system language prompt. Follow it for all your own words.\n- Keep <eng>...</eng> content in English regardless of language setting.\n- [Say in {lang_code}: {text}] → this is an INSTRUCTION to you, not text for the child.\n- Translate {text} into {lang_code} and output ONLY the translation.\n- NEVER output the token \"[Say in ...]\" itself.\n- NEVER output the original {text} if it is not in {lang_code}.\n\nWRONG: \"[Say in EN: Nào cùng nói từ này với tớ nhé]\"\nWRONG: \"Nào cùng nói từ này với tớ nhé\" (kept original Vietnamese)\nRIGHT: \"Now, let's say this word together!\"\n\n# STYLE\n- 1–3 short, simple sentences per turn. Warm, encouraging, clear.\n- Avoid adult, sexual, violent, extremist, unhealthy, or risky content. If the child says something unhealthy, softly advise them.\n\n# EXAMPLES\nExample 1 — basic flow\n  Teacher: [MEDIA:word_image] Can you say the word \"Banana\"?\n  Student: Banana!\n  Teacher: [MEDIA:star_img] Yes, Banana is correct! <next_ckp/>\n\nExample 2 — emotion placement\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"happy\"/>[Say hello to the child],\n        <emotion type=\"excited\"/>[introduce that the child will learn vocab about animals]\n      </question_guide>\n    </checkpoint_1>\n  Teacher: <emotion type=\"happy\"/> Hello! Hi there, friend! <emotion type=\"excited\"/> Today, we are going to learn about animals! So fun!\n\nExample 3 — [Say in {lang_code}:] + exact media count + order\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\n      </question_guide>\n    </checkpoint_1>\nRIGHT OUTPUT:\n  Teacher: <emotion type=\"encouraging\"/> Now, follow me and let's say this word together! [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (output the [Say in...] token literally):\n<emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (kept Vietnamese instead of translating):\n<emotion type=\"encouraging\"/> Nào cùng nói từ này với tớ nhé [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\nWRONG (dropped one token):\n<emotion type=\"encouraging\"/> Now, follow me! [MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\n\nExample 4 — function call required\n  Dev:\n    <checkpoint_1>\n      <question_guide>[MEDIA:question] Can you say the word \"duck\"?</question_guide>\n      <response_guide>\n        Always call pronun_check(ref_text=\"duck\") before replying.\n        - Correct: [MEDIA:diamond_10] <next_ckp/>\n        - Incorrect / no answer / irrelevant: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n      </response_guide>\n    </checkpoint_1>\n  Student: Duck!\n  Teacher (internal): calls pronun_check(ref_text=\"duck\") → correct\n  Teacher: [MEDIA:diamond_10] <next_ckp/>",
+  "format_output": "TEXT",
+  "graph": {
+    "nodes": [
+      {
+        "node_id": "learn_sentence",
+        "prompt": "",
+        "type": "LEARN",
+        "tools": [],
+        "pivots": [],
+        "nexts": [],
+        "checkpoints": [
+          {
+            "name": "Component 4: Call to Action",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:cta_jenny_thao_wave_visual] Today, we will learn about the weather in Northwest Vietnam! Ready, ready, are you ready? <next_ckp/>",
+            "media_list": [
+              {
+                "id": "cta_jenny_thao_wave_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG02.jpg",
+                "media_description": "audio: none. image: Jenny and Thao waving hello cheerfully, Scene background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": null,
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Checkpoint 5: Jenny khám phá vùng núi",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:jenny_mountain_overlook_audio] [MEDIA:jenny_exploring_scenery_audio] <next_ckp/>",
+            "media_list": [
+              {
+                "id": "jenny_mountain_overlook_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au47.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG03.mjpeg",
+                "media_description": "audio: Voice Jenny: [emphasis] Hi everyone. I'm visiting the Northwest mountains of Vietnam. I'm so excited to explore this wonderland. image: Jenny standing at a high mountain vantage point looking down into a valley, tall misty mountain peaks surrounding her, she waves happily, Mountain background"
+              },
+              {
+                "id": "jenny_exploring_scenery_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au48.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG04.mjpeg",
+                "media_description": "audio: Voice Jenny: [emphasis] Wow, look at this beautiful place. The weather here is so nice. image: Jenny pointing in different directions and looking up at the sky with excitement, beautiful Northwest Vietnam mountain scenery around her, Mountain background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "d1afecd42906e7332520cae3ac9fa8ec1ac5fb2d9558efa1e0ad147c1975c99c",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Checkpoint 6: Thao xuất hiện",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:thao_appears_greeting_audio] <next_ckp/>",
+            "media_list": [
+              {
+                "id": "thao_appears_greeting_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au49.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG05.mjpeg",
+                "media_description": "audio: Voice Thao: [emphasis] Hi, I'm Thao, your local guide. Let me show you the beautiful weather and nature here. image: Thao, a Vietnamese girl with a friendly smile wearing traditional Vietnamese clothing, appearing beside Jenny with her hand raised in welcome, Mountain background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "429e742ec9a37f63081d75599f719e921b1675bd3b60e999176ec0ca88a0f46f",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Checkpoint 7: Sáng nắng đẹp",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:thao_jenny_sunny_morning_audio] <next_ckp/>",
+            "media_list": [
+              {
+                "id": "thao_jenny_sunny_morning_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au50.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG06.jpg",
+                "media_description": "audio: Voice Thao: [emphasis] Look, the morning is so beautiful. [emphasis, slow] It's a sunny morning. image: Thao and Jenny standing on a mountain peak at early morning, the sun just rising with warm golden light shining down, both smiling happily, Mountain background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "07987263ac7469b1f0c1a519f8e2cc983303e91190f6776daf831c6f2cf95012",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Checkpoint 8: Show Form — It's a sunny morning",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:show_form_sunny_morning_audio] <next_ckp/>",
+            "media_list": [
+              {
+                "id": "show_form_sunny_morning_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au51.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG07.jpg",
+                "media_description": "audio: Voice Thao: [emphasis, slow] It's a sunny morning. image: Northwest Vietnam mountain scenery in sunny morning light, Mountain background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "f187c8dee68c41892f5fb59be342e4360cd637f936daf14088a8af02e8393e1b",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Checkpoint 8.1: Giới thiệu luyện tập cụm It's",
+            "past": null,
+            "type": "narrative",
+            "question": " <emotion type=\"excited\"/> Let's practice the phrase, It is.  <next_ckp/>",
+            "media_list": [],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "4cc2a238eb09938216c6da9b2223beb6c85b165a7f262deb8dfa51e5a852ec40",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Checkpoint 9: Luyện tập cụm cấu trúc It's",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:stem_practice_its_audio] Listen and say. [MEDIA:audio]",
+            "media_list": [
+              {
+                "id": "stem_practice_its_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG08.jpg",
+                "media_description": "audio: Voice Thao: [emphasis, slow] It's. image: Northwest Vietnam mountain scenery in sunny morning light, Mountain background"
+              },
+              {
+                "id": "tenten",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG08.jpg",
+                "media_description": "audio: Voice Thao: [emphasis, slow] It's. image: Northwest Vietnam mountain scenery in sunny morning light, Mountain background"
+              },
+              {
+                "id": "audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au52.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG08.jpg",
+                "media_description": ""
+              },
+              {
+                "id": "Itis",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG08.jpg",
+                "media_description": ""
+              },
+              {
+                "id": "itis_audio",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au52.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG08.jpg",
+                "media_description": ""
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 3,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"proud\"/> [Khen ngợi tích cực, xác nhận trẻ nói đúng] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "[MEDIA:Itis] Listen again. [MEDIA:itis_audio] Now, say that again."
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này. CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"happy\"/> [Động viên trẻ nói nếu trẻ yên lặng; cổ vũ tinh thần nếu trẻ bảo không biết; kéo về bài học nếu trẻ nói linh tinh; các trường hợp còn lại chỉ cần động viên và bảo trẻ nói lại] [MEDIA:itis_audio] Now, say that again."
+                },
+                {
+                  "turn": 2,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"proud\"/> [Khen ngợi tích cực, xác nhận trẻ nói đúng] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "[MEDIA:Itis] So, we should say, It is. We'll practice more later. [MEDIA:tenten] <next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ đọc chưa đạt (điểm < 0.85), hoặc im lặng, nói tiếng Việt, nói \"tớ không biết\", nói chuyện khác không liên quan tới từ mẫu thì dùng nhánh này — trẻ đọc đạt (điểm ≥ 0.85) thì KHÔNG chọn nhánh intent này: [MEDIA:Itis] So, we should say, It is. We'll practice more later. [MEDIA:tenten] <next_ckp/>"
+                }
+              ],
+              "ref_text": "It's",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG09.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "8d39f23ab6b60427aa4c7d81264e852e7e385f4e247e48a78eb88202897412bc",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Checkpoint 10: Luyện tập câu toàn phần It's a sunny morning",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:full_sentence_sunny_morning_audio] Now, listen and say the whole sentence.  [MEDIA:full_audio]",
+            "media_list": [
+              {
+                "id": "full_sentence_sunny_morning_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG07.jpg",
+                "media_description": "audio: Voice Thao: [emphasis, slow] It's a sunny morning. image: Northwest Vietnam mountain scenery in sunny morning light, Mountain background"
+              },
+              {
+                "id": "tenten",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG07.jpg",
+                "media_description": "audio: Voice Thao: [emphasis, slow] It's… a sunny morning. image: Northwest Vietnam mountain scenery in sunny morning light, Mountain background"
+              },
+              {
+                "id": "full_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au51.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG07.jpg",
+                "media_description": ""
+              },
+              {
+                "id": "full",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG07.jpg",
+                "media_description": ""
+              },
+              {
+                "id": "full_audio",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au51.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG07.jpg",
+                "media_description": ""
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 3,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"proud\"/> [Khen ngợi tích cực, xác nhận trẻ nói đúng] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "[MEDIA:full] Listen again.  [MEDIA:full_audio] [MEDIA:full] Now, say that again."
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này. CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"happy\"/> [Động viên trẻ nói nếu trẻ yên lặng; cổ vũ tinh thần nếu trẻ bảo không biết; kéo về bài học nếu trẻ nói linh tinh; các trường hợp còn lại chỉ cần động viên và bảo trẻ nói lại] [MEDIA:full_audio] [MEDIA:full] Now, say that again."
+                },
+                {
+                  "turn": 2,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"proud\"/> [Khen ngợi tích cực, xác nhận trẻ nói đúng] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "[MEDIA:full] So, we should say, It's a sunny morning. We'll practice more later. [MEDIA:tenten] <next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ đọc chưa đạt (điểm < 0.85), hoặc im lặng, nói tiếng Việt, nói \"tớ không biết\", nói chuyện khác không liên quan tới từ mẫu thì dùng nhánh này — trẻ đọc đạt (điểm ≥ 0.85) thì KHÔNG chọn nhánh intent này: [MEDIA:full] So, we should say, It's a sunny morning. We'll practice more later. [MEDIA:tenten] <next_ckp/>"
+                }
+              ],
+              "ref_text": "It's a sunny morning",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG10.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": "6378f89c52ee7c2c4770dff7e94b001d751d881bea0d413bea713822ab17125f",
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "88b76d9e8e06c710e99f1f7a35f37bcc2ef6383debe2c40c1fb0bedf85c0e360",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Checkpoint 11: Cụm 2 — a cool breeze, dẫn vào",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:jenny_thao_walking_breeze_visual] Next, let's see what else they see. <next_ckp/>",
+            "media_list": [
+              {
+                "id": "jenny_thao_walking_breeze_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG11.mjpeg",
+                "media_description": "audio: none. image: Jenny and Thao walking down a mountain path, gentle wind blowing, grass and trees swaying lightly, Mountain background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "6a62fc10805c4f8e7895cd0b5375a9f4416f56df079b345d420a558f3d2bbd37",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Checkpoint 12: Jenny cảm nhận gió mát",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:jenny_thao_feel_breeze_audio] <next_ckp/>",
+            "media_list": [
+              {
+                "id": "jenny_thao_feel_breeze_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au53.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG12.jpg",
+                "media_description": "audio: Voice Jenny: [emphasis] Oh wow, I feel something. [emphasis, slow] It's a cool breeze. image: Jenny standing on the mountain feeling the wind, her hair blowing gently, looking relaxed and happy, Thao standing beside her also enjoying the breeze, Mountain background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "6564854c40bb68f0007d7c833b70001edb69adbf45d5ccc1fd9949829de3d818",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Checkpoint 13: Trẻ luyện tập It's a cool breeze",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:cool_breeze_practice_audio] Great! Now, you listen and say it with me [MEDIA:fulll_audio]",
+            "media_list": [
+              {
+                "id": "cool_breeze_practice_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG13.jpg",
+                "media_description": "audio: Voice Jenny: [emphasis, slow] It's a cool breeze. image: Mountain scenery with wind blowing, trees and grass swaying gently, Mountain background"
+              },
+              {
+                "id": "cool_breeze_fallback_audio",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au54.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG13.jpg",
+                "media_description": "audio: Voice Jenny: [emphasis, slow] It's a cool breeze. image: Mountain scenery with wind blowing, trees and grass swaying gently, Mountain background"
+              },
+              {
+                "id": "fulll_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au54.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG13.jpg",
+                "media_description": ""
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 3,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"proud\"/> [Khen ngợi tích cực, xác nhận trẻ nói đúng] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"happy\"/> [Không nhắc lại câu trả lời của trẻ, động viên và thu hút trẻ tập trung vào bài học] [MEDIA:cool_breeze_fallback_audio] <next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này. CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"happy\"/>  Let's move on!  [MEDIA:cool_breeze_fallback_audio] <next_ckp/>"
+                }
+              ],
+              "ref_text": "It's a cool breeze",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG14.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": "b9ab3feac9d382a4844ebd988f4b50f77fe07240f6819f8be18bfcd4bb5fb497",
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "aaa9feb1a9f38233b88a196ee3028eac8527b22b8088cf18e65c2906a674ee96",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Phần 4 Intro: Ask and Answer",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:ngoilen] Now, let's learn how to ask and answer about the weather! <next_ckp/>",
+            "media_list": [
+              {
+                "id": "ngoilen",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/616hl01prea1pre20a.mjpeg",
+                "media_description": ""
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "2c437f7535f5675b9a87c3d19207c99effb778af41541a492b2c766ee23931fb",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Checkpoint 14: Jenny hỏi Thao về bầu trời",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:jenny_thao_sky_question_audio] <next_ckp/>",
+            "media_list": [
+              {
+                "id": "jenny_thao_sky_question_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au56.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG15.jpg",
+                "media_description": "audio: Voice Jenny: [emphasis] Hey Thao, look at the sky. What's it like? image: Jenny and Thao sitting side by side looking at the sky, Jenny pointing at the sky and turning to smile at Thao, Mountain background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "58196ca20a6619b38c1caf9df43281b1dbb908a64bb485d31e9e28b00fb36e61",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Checkpoint 15: Thao trả lời — It's a clear sky",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:thao_clear_sky_answer_audio] <next_ckp/>",
+            "media_list": [
+              {
+                "id": "thao_clear_sky_answer_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au57.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG16.jpg",
+                "media_description": "audio: Voice Thao: [emphasis, slow] It's a clear sky. image: Thao pointing at a clear blue sky with no clouds, looking very happy, Mountain background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "3a9d605535e590a3db3fd0a9638df1378f1a83a594f5992f66181fc5e1eb1ef5",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Checkpoint 16: Pika hỏi trẻ — vòng 1 (clear sky)",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:clear_sky_cta_visual] Okay, your turn. What's it like?",
+            "media_list": [
+              {
+                "id": "clear_sky_cta_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG17.jpg",
+                "media_description": "audio: none. image: Clear blue sky with no clouds, Mountain background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [],
+                  "turn_guide": "• Case 1 (Trẻ nói đủ câu có 'It's' và 'clear sky'): <emotion type=\"admire\"/> [Khen cụ thể là trẻ nói đủ cả câu, nói Pika cũng thấy trời quang, không hỏi thêm] <next_ckp/>\n\n• Case 2 (Trẻ chỉ nói 'clear sky' hoặc 'a clear sky', thiếu 'It's'): <emotion type=\"encouraging\"/> [Khen trẻ nói đúng kiểu trời] Let's say the whole sentence: It's a clear sky! [Mời trẻ nói lại cả câu một lần]\n\n• Case 3 (Các trường hợp còn lại): <emotion type=\"encouraging\"/> [Nhẹ nhàng] Look at the sky. We say: It's a clear sky! [Mời trẻ nói theo một lần]"
+                },
+                {
+                  "turn": 2,
+                  "cases": [],
+                  "turn_guide": "• Case 1 (Trẻ nói đủ câu có 'It's' và 'clear sky'): <emotion type=\"admire\"/> [Khen cụ thể] <next_ckp/>\n\n• Case 2 (Các trường hợp còn lại): <emotion type=\"encouraging\"/> It's a clear sky! [Bảo chúng mình sẽ luyện thêm sau, không hỏi thêm] <next_ckp/>"
+                }
+              ],
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG18.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "base",
+            "cache_hash_question": "985ef0d6d4fd6f3c05afda8af30afd471b70be372e97d729e12ca40e63fd80fc",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Checkpoint 20: Outro — Jenny và Thao tổng kết",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:outro_mountain_hug_audio] [MEDIA:outro_jenny_thao_wave_audio]  [MEDIA:kethuc] Wow, what an amazing adventure! You learned so much about the weather in Northwest Vietnam! <next_ckp/>",
+            "media_list": [
+              {
+                "id": "outro_mountain_hug_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au66.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG32.jpg",
+                "media_description": "audio: Voice Thao: [emphasis] What an amazing day. We experienced so many wonderful things. It was a sunny morning, a cool breeze, a clear sky, a light rain, a beautiful sunset, and a starry night. image: Jenny and Thao standing on a mountain peak, arms around each other, smiling broadly, beautiful Northwest Vietnam mountain scenery surrounding them, Mountain background"
+              },
+              {
+                "id": "outro_jenny_thao_wave_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/17326HHa1au67.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG33.mjpeg",
+                "media_description": "audio: cheerful happy background music. Voice Jenny: [emphasis] Thank you so much, Thao! This is the best adventure ever. image: Jenny and Thao waving goodbye happily, mountain peaks and beautiful sky surrounding them, Mountain background"
+              },
+              {
+                "id": "kethuc",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/170326PHG34.mjpeg",
+                "media_description": ""
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "65896a8a16514f2def3d016d824dfc5baba7c9672041dbab54971cda61bd169e",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          }
+        ],
+        "input_schema_key": null,
+        "start_message": "",
+        "hooks": [],
+        "max_turns": null,
+        "pre_llm_pipeline": null,
+        "dynamic_checkpoint_builder": null,
+        "dynamic_checkpoint_config": {},
+        "tts_provider_override": null,
+        "learn_v2": true,
+        "learn_v2_keep_dev_prompt": false,
+        "learn_v2_keep_model": false
+      }
+    ],
+    "global_pivots": [],
+    "global_tools": [
+      "pronun_check_v2"
+    ],
+    "global_hooks": [],
+    "system_prompt": "You are Pika, a friendly voice teacher for a child.\n\n# ROLE\nThe lesson is a sequence of checkpoints. You receive ONE checkpoint at a time from the developer. Each checkpoint has:\n- Question: what you must ask the child.\n- Response_guide: cases describing how to answer the child.\n\n# FLOW\n1. Start of checkpoint: ask the Question once, including its [MEDIA:...] tokens.\n2. For each child reply:\n   - If the guide says to call a function (e.g. pronun_check(...)), call it exactly as described BEFORE replying.\n   - If the reply fits a case in Response_guide, answer using that case. You may rephrase slightly, but keep the meaning and all media/tags.\n   - Otherwise, kindly repeat or simplify the Question in 1–2 short turns to guide the child back.\n3. End your reply with <next_ckp/> when the Response_guide marks the checkpoint finished, or the child is back on track and agrees to move on. Only at the END of the message.\n\n# FIDELITY (media & tags)\nFor every [MEDIA:...] token, <eng>...</eng>, and <emotion type=\"...\"/> in the guide:\n- Count: output each one exactly as many times as it appears — no more, no fewer.\n- Order: keep the exact sequence given.\n- No invention: never add a token/tag not in the current checkpoint.\n- No omission: never drop one, even if the sentence reads fine without it.\n- No change: never alter an emotion `type` value or invent new keys.\n\n# LANGUAGE\n- Speak in the language set by the system language prompt. Follow it for all your own words.\n- Keep <eng>...</eng> content in English regardless of language setting.\n- [Say in {lang_code}: {text}] → this is an INSTRUCTION to you, not text for the child.\n- Translate {text} into {lang_code} and output ONLY the translation.\n- NEVER output the token \"[Say in ...]\" itself.\n- NEVER output the original {text} if it is not in {lang_code}.\n\nWRONG: \"[Say in EN: Nào cùng nói từ này với tớ nhé]\"\nWRONG: \"Nào cùng nói từ này với tớ nhé\" (kept original Vietnamese)\nRIGHT: \"Now, let's say this word together!\"\n\n# STYLE\n- 1–3 short, simple sentences per turn. Warm, encouraging, clear.\n- Avoid adult, sexual, violent, extremist, unhealthy, or risky content. If the child says something unhealthy, softly advise them.\n\n# EXAMPLES\nExample 1 — basic flow\n  Teacher: [MEDIA:word_image] Can you say the word \"Banana\"?\n  Student: Banana!\n  Teacher: [MEDIA:star_img] Yes, Banana is correct! <next_ckp/>\n\nExample 2 — emotion placement\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"happy\"/>[Say hello to the child],\n        <emotion type=\"excited\"/>[introduce that the child will learn vocab about animals]\n      </question_guide>\n    </checkpoint_1>\n  Teacher: <emotion type=\"happy\"/> Hello! Hi there, friend! <emotion type=\"excited\"/> Today, we are going to learn about animals! So fun!\n\nExample 3 — [Say in {lang_code}:] + exact media count + order\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\n      </question_guide>\n    </checkpoint_1>\nRIGHT OUTPUT:\n  Teacher: <emotion type=\"encouraging\"/> Now, follow me and let's say this word together! [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (output the [Say in...] token literally):\n<emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (kept Vietnamese instead of translating):\n<emotion type=\"encouraging\"/> Nào cùng nói từ này với tớ nhé [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\nWRONG (dropped one token):\n<emotion type=\"encouraging\"/> Now, follow me! [MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\n\nExample 4 — function call required\n  Dev:\n    <checkpoint_1>\n      <question_guide>[MEDIA:question] Can you say the word \"duck\"?</question_guide>\n      <response_guide>\n        Always call pronun_check(ref_text=\"duck\") before replying.\n        - Correct: [MEDIA:diamond_10] <next_ckp/>\n        - Incorrect / no answer / irrelevant: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n      </response_guide>\n    </checkpoint_1>\n  Student: Duck!\n  Teacher (internal): calls pronun_check(ref_text=\"duck\") → correct\n  Teacher: [MEDIA:diamond_10] <next_ckp/>",
+    "version": "v2",
+    "strict": false,
+    "use_intent": "full"
+  }
+}

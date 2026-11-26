@@ -1,0 +1,1544 @@
+{
+  "name": "Pre A1 - Trải nghiệm 30p - Học câu (cắt từ 1737)",
+  "description": "Bot learn v2 cho buổi trải nghiệm 30 phút, nhúng vào graph chính bằng SubGraphNode. Ckp gốc 1737 #5-#13, #15-#21, #28 (I like rice / noodles / soup); #20 thêm lượt 2 cho trẻ nói lại cả câu; #28 đổi lời; bỏ #29, lời tạm biệt do graph chính nói.",
+  "task_chain": [
+    {
+      "task": "",
+      "tools": [
+        "pronun_check_v2"
+      ],
+      "language": "",
+      "learn_v2": true,
+      "use_cache": true,
+      "asr_config": "medium",
+      "session_id": "",
+      "sub_agents": [
+        {
+          "bot_id": 373,
+          "comeback_msg": null,
+          "end_behavior": "COMEBACK"
+        },
+        {
+          "bot_id": 371,
+          "comeback_msg": null,
+          "end_behavior": "END"
+        },
+        {
+          "bot_id": 370,
+          "comeback_msg": null,
+          "end_behavior": "END"
+        }
+      ],
+      "checkpoints": [
+        {
+          "name": "Mở bài – Cánh cửa vàng mở ra",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:yellow_door_open_visual] Oh! A yellow door. Let's see what's inside... <next_ckp/>",
+          "media_list": [
+            {
+              "id": "yellow_door_open_visual",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/523f6d2hl01b.mjpeg",
+              "media_description": "audio: none. image: Yellow door swinging open with a burst of bright white light flooding out, Space background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "0ea40ee51c969e39d20e527ad05599b98d4dc786163bbdf3577ec4271a0a815d",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Intro – Canteen trường Pet Pet, Justin phỏng vấn",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:canteen_intro_justin_audio] [MEDIA:canteen_justin_talk] <next_ckp/>",
+          "media_list": [
+            {
+              "id": "canteen_intro_justin_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/9326HHbienhinhmagic.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at01.jpg",
+              "media_description": "audio: lively upbeat music, animal chatter sounds, eating sounds. Voice Justin: Hello, hello, hello! We will learn to talk about our favorite food today. Let's ask Alice first! image: Pet Pet school canteen interior with tables full of delicious food, Justin the Capybara holding a toy microphone ready to interview, Alice the Rabbit sitting eating rice, School canteen background"
+            },
+            {
+              "id": "canteen_justin_talk",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau001.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at01.jpg",
+              "media_description": "Voice Justin: Hello, hello, hello! We will learn to talk about our favorite food today. Let's ask Alice first! image: Pet Pet school canteen interior with tables full of delicious food, Justin the Capybara holding a toy microphone ready to interview, Alice the Rabbit sitting eating rice, School canteen background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "46e95660f3295742e9655559ea0111247a12884e6d6c58116bd38ea61a38389b",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Intro – Justin hỏi Alice món ăn yêu thích",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:justin_asks_alice_audio] <next_ckp/>",
+          "media_list": [
+            {
+              "id": "justin_asks_alice_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau002.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at02.jpg",
+              "media_description": "audio: Voice Justin: Alice, what food do you like? image: Justin the Capybara walking up to Alice the Rabbit at the canteen table, holding microphone toward her, School canteen background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "d002eff63a3e2ba13b09e2e104552c8f0bb109b6c5c0cf200d5872b229a2246e",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Intro – Alice trả lời I like rice",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:alice_likes_rice_audio] <next_ckp/>",
+          "media_list": [
+            {
+              "id": "alice_likes_rice_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau003.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at03.jpg",
+              "media_description": "audio: Voice Alice: Oh! I like rice. image: Alice the Rabbit pointing to her bowl of rice and smiling, School canteen background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "bdb7e10506b8ba42e3b3c466ece2ce6119068e2ec5064069391bf73fad8637d8",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Phần 1 – Alice nói rõ I like rice",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:alice_rice_closeup_audio] <next_ckp/>",
+          "media_list": [
+            {
+              "id": "alice_rice_closeup_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau004.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at03.jpg",
+              "media_description": "audio: Voice Alice: I like rice. image: Close-up of Alice the Rabbit pointing clearly to her bowl of rice, speaking expressively, School canteen background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "759aa6dd6c1c876858d788f547b5722db43182796ebf7e0a5b0805491bf67854",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Phần 1 – Show Form: I like rice",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:show_form_i_like_rice_audio] <next_ckp/>",
+          "media_list": [
+            {
+              "id": "show_form_i_like_rice_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau005.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at04.jpg",
+              "media_description": "audio: Voice Narrator: [instructional, emphasis, loud] I like rice. image: School canteen background with large centered text display, School canteen background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "2dbf383f9a3f51dafe4daaa817816bb4dbdb382f37496cd4143503daabc44aed",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Phần 2 – Luyện tập cụm cấu trúc: I like (CTA)",
+          "past": null,
+          "type": "cta_simplify",
+          "question": "[MEDIA:a] Great! In English, we will say…I like. Let's practice together. Listen and say! [MEDIA:stem_practice_i_like_audio]",
+          "media_list": [
+            {
+              "id": "stem_practice_i_like_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau006.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at05.jpg",
+              "media_description": "audio: Voice Narrator: I like. image: School canteen background with large centered text display, School canteen background"
+            },
+            {
+              "id": "a",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at05.jpg",
+              "media_description": ""
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 3,
+          "question_guide": null,
+          "response_guide": {
+            "tool": "pronun_check_v2_simplify",
+            "turns": [
+              {
+                "turn": 1,
+                "cases": [
+                  {
+                    "lower_bound": 0.85,
+                    "response_guide": "<next_ckp/>"
+                  },
+                  {
+                    "lower_bound": 0.7,
+                    "response_guide": "<emotion type=\"happy\"/> [We should say, I like!] <next_ckp/>"
+                  },
+                  {
+                    "lower_bound": 0.6,
+                    "response_guide": "<emotion type=\"encouraging\"/> [We should say, I like!] [Động viên trẻ rằng sắp đạt được rồi, bảo chúng mình sẽ luyện tập thêm sau] <next_ckp/>"
+                  },
+                  {
+                    "lower_bound": 0,
+                    "response_guide": "<emotion type=\"encouraging\"/> [We should say, I like!] [Động viên trẻ, bảo chúng mình sẽ luyện tập thêm sau] <next_ckp/>"
+                  }
+                ],
+                "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"calm\"/> [Lảng đi, gently redirect] [We should say, I like!] [Động viên trẻ, bảo chúng mình sẽ luyện tập thêm sau]<next_ckp/>"
+              }
+            ],
+            "ref_text": "I like",
+            "global_guide": ""
+          },
+          "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at06.jpg",
+          "use_cache_guide": false,
+          "cache_hash_guide": "9c1bd0e6fb04dc8f9d9ab98b733c7c30b38b53b6244e5f8c9bd80c1837daf570",
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "a718a457eacd57507d0f86d31b279db6df2805a300941db28f8d7ebb321cd3b2",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Phần 2 – Narrative sau luyện cụm I like (lần 1)",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:alice_eating_rice_1_audio] <next_ckp/>",
+          "media_list": [
+            {
+              "id": "alice_eating_rice_1_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at07.jpg",
+              "media_description": "audio: ten ten sound effect. image: Alice the Rabbit happily eating rice with a spoon, School canteen background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "e60f2566cb04f0def53de0f270d0bc38d17c8651f13affad32893716bcbbf9f1",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Phần 2 – Bổ trợ cụm cấu trúc: I like (CTA lần 2)",
+          "past": null,
+          "type": "cta_simplify",
+          "question": "[MEDIA:stem_support_i_like_intro_audio] Listen to me one more time! \n[MEDIA:stem_support_i_highlight_visual] [MEDIA:stem_support_like_highlight_audio] \n[MEDIA:stem_support_i_like_intro_audio] Now, repeat after me. [MEDIA:stem_support_i_like_full_audio]",
+          "media_list": [
+            {
+              "id": "stem_support_i_like_intro_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at05.jpg",
+              "media_description": "audio: Voice Narrator: I…I! image: School canteen background with large centered text display, School canteen background"
+            },
+            {
+              "id": "stem_support_i_like_full_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau006.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at05.jpg",
+              "media_description": "audio: Voice Narrator: I...like! image: School canteen background with large centered text display, School canteen background"
+            },
+            {
+              "id": "stem_support_i_highlight_visual",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau007.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at08.jpg",
+              "media_description": "audio: none. image: Large text displayed on cream background: I like with word 'I' highlighted in red"
+            },
+            {
+              "id": "stem_support_like_highlight_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau008.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at09.jpg",
+              "media_description": "audio: Voice Narrator: like…like!. image: Large text displayed on cream background: I like with word 'like' highlighted in red"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 3,
+          "question_guide": null,
+          "response_guide": {
+            "tool": "pronun_check_v2_simplify",
+            "turns": [
+              {
+                "turn": 1,
+                "cases": [
+                  {
+                    "lower_bound": 0.85,
+                    "response_guide": "<next_ckp/>"
+                  }
+                ],
+                "turn_guide": "Trẻ đọc cụm mẫu đạt điểm phát âm ≥ 0.85 thì KHÔNG chọn nhánh này. CHỈ chọn nhánh này khi trẻ đọc cụm mẫu nhưng điểm phát âm < 0.85, hoặc trẻ im lặng, nói \"tớ không biết\", nói nội dung không phù hợp, không liên quan tới cụm mẫu: <emotion type=\"encouraging\"/> [Hey, hey, let's say...I like!] <next_ckp/>"
+              }
+            ],
+            "ref_text": "I like",
+            "global_guide": ""
+          },
+          "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at06.jpg",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "15112357195a95a6bf94c256978e2ecfa5fc09e0c8e070598aa45589a3364a91",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Phần 2 – Luyện tập cả câu: I like rice (CTA)",
+          "past": null,
+          "type": "cta_simplify",
+          "question": "[MEDIA:a] Good job! Now let's put it all together. Listen and say the whole sentence. [MEDIA:full_sentence_rice_audio]",
+          "media_list": [
+            {
+              "id": "full_sentence_rice_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau005.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at10f.jpg",
+              "media_description": "audio: Voice Narrator: [instructional, emphasis] I like rice. image: Alice the Rabbit holding a bowl of rice with a pleased expression, large centered text display, School canteen background"
+            },
+            {
+              "id": "a",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at10f.jpg",
+              "media_description": ""
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 3,
+          "question_guide": null,
+          "response_guide": {
+            "tool": "pronun_check_v2_simplify",
+            "turns": [
+              {
+                "turn": 1,
+                "cases": [
+                  {
+                    "lower_bound": 0.85,
+                    "response_guide": "<emotion type=\"happy_3\"/>[Khen ngợi trẻ làm rất tốt!] [We say, I like rice!]<next_ckp/>"
+                  },
+                  {
+                    "lower_bound": 0.7,
+                    "response_guide": "<emotion type=\"encouraging\"/> [We should say, I like rice!] <next_ckp/>"
+                  },
+                  {
+                    "lower_bound": 0.6,
+                    "response_guide": "<emotion type=\"encouraging\"/> [We should say, I like rice!] [Động viên trẻ rằng sắp đạt được rồi, bảo chúng mình sẽ luyện tập thêm sau] <next_ckp/>"
+                  },
+                  {
+                    "lower_bound": 0,
+                    "response_guide": "<emotion type=\"encouraging\"/> [We should say, I like rice!] [Bảo chúng mình sẽ luyện tập thêm sau] <next_ckp/>"
+                  }
+                ],
+                "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"calm\"/> [Lảng đi, gently redirect] [We should say, I like rice!] <next_ckp/>"
+              }
+            ],
+            "ref_text": "I like rice",
+            "global_guide": ""
+          },
+          "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at10.jpg",
+          "use_cache_guide": false,
+          "cache_hash_guide": "442d9e012d94b2513449b8151599db71809726cfcd3d13e52975a1551a7c4022",
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "9c4d7e96ea2d784c47c7b807c506046ed77ea6da112a72479a5c363e06dca3ca",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Phần 2 – Narrative sau luyện câu I like rice",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:alice_eating_rice_3_audio] <next_ckp/>",
+          "media_list": [
+            {
+              "id": "alice_eating_rice_3_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at07.jpg",
+              "media_description": "audio: ten ten sound effect. image: Alice the Rabbit holding a spoon eating rice, happy expression, School canteen background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "b6752c40f7daae92c13fd6e6a2caa7494a0addc19b62c21029b5f2db286faa38",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Phần 3 – Justin hỏi Jake, Jake trả lời I like noodles",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:justin_asks_jake_audio] [MEDIA:jake_likes_noodles_audio] <next_ckp/>",
+          "media_list": [
+            {
+              "id": "justin_asks_jake_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau009f.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at11.jpg",
+              "media_description": "audio: Voice Justin: Jake, what food do you like? image: Justin the Capybara walking up to Jake the Bear at the canteen table, holding microphone toward Jake, School canteen background"
+            },
+            {
+              "id": "jake_likes_noodles_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau010.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at12.jpg",
+              "media_description": "audio: Voice Jake: Oh! I like noodles. image: Jake the Bear pointing to his bowl of noodles and holding it forward, School canteen background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "c738e59d8c831748f2505a84a03e13cf5a4a1d6721a50331aefb464d3a7c51fb",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Phần 3 – Luyện tập câu: I like noodles (CTA)",
+          "past": null,
+          "type": "cta_simplify",
+          "question": "[MEDIA:a] In English, we will say…I like noodles. Listen and say it with me! [MEDIA:full_sentence_noodles_audio]",
+          "media_list": [
+            {
+              "id": "full_sentence_noodles_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau011.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at13.jpg",
+              "media_description": "audio: Voice Narrator: I like noodles. image: Jake the Bear holding a bowl of noodles with a pleased expression, large centered text display, School canteen background"
+            },
+            {
+              "id": "a",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at13.jpg",
+              "media_description": ""
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 3,
+          "question_guide": null,
+          "response_guide": {
+            "tool": "pronun_check_v2_simplify",
+            "turns": [
+              {
+                "turn": 1,
+                "cases": [
+                  {
+                    "lower_bound": 0.85,
+                    "response_guide": "<emotion type=\"excited_2\"/>[Khen ngợi trẻ làm rất tốt!] [We say, I like noodles!] <next_ckp/>"
+                  },
+                  {
+                    "lower_bound": 0.7,
+                    "response_guide": "<emotion type=\"encouraging\"/> [We should say, I like noodles!] <next_ckp/>"
+                  },
+                  {
+                    "lower_bound": 0.6,
+                    "response_guide": "<emotion type=\"encouraging\"/> [We should say, I like noodles!] [Động viên trẻ rằng sắp đạt được rồi, bảo chúng mình sẽ luyện tập thêm sau] <next_ckp/>"
+                  },
+                  {
+                    "lower_bound": 0,
+                    "response_guide": "<emotion type=\"encouraging\"/> [We should say, I like noodles!] [Bảo chúng mình sẽ luyện tập thêm sau] <next_ckp/>"
+                  }
+                ],
+                "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"calm\"/> [Lảng đi, gently redirect] [We should say, I like noodles!] <next_ckp/>"
+              }
+            ],
+            "ref_text": "I like noodles",
+            "global_guide": ""
+          },
+          "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at14.jpg",
+          "use_cache_guide": false,
+          "cache_hash_guide": "d5f280237d7bc42f7b41187a952fe4fab9a947a9a3cf04464ad82a87bffead80",
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "7fe5654db7559e26e6a4098dc3676096375dad88070e75899751c79eb411c221",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Phần 3 – Narrative sau luyện câu I like noodles",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:jake_eating_noodles_audio] <next_ckp/>",
+          "media_list": [
+            {
+              "id": "jake_eating_noodles_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at15.jpg",
+              "media_description": "audio: ten ten sound effect. image: Jake the Bear using chopsticks to eat noodles, happy expression, School canteen background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "7e5db3201813d2db4bbe36894c3c74342d04c68bca93d90010dc07e99e9cbf69",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Phần 4 – Trẻ trả lời: I like soup (CTA)",
+          "past": null,
+          "type": "cta_simplify",
+          "question": "[MEDIA:jane_soup_question_audio]",
+          "media_list": [
+            {
+              "id": "jane_soup_question_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau012.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at16.jpg",
+              "media_description": "audio: Voice Justin: What food do you like? image: Jane the Deer sitting in front of a bowl of soup on the canteen table, School canteen background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 3,
+          "question_guide": null,
+          "response_guide": {
+            "tool": "pronun_check_v2_simplify",
+            "turns": [
+              {
+                "turn": 1,
+                "cases": [
+                  {
+                    "lower_bound": 0.85,
+                    "response_guide": "<emotion type=\"playful_2\"/> [Khen ngợi trẻ làm rất tốt!]  [We say, I like soup!] <next_ckp/>"
+                  },
+                  {
+                    "lower_bound": 0.6,
+                    "response_guide": "<emotion type=\"encouraging\"/> [Khen trẻ đã nói được rồi, chỉ cần nói đủ cả câu] [Listen: I like soup! Cậu nói lại cả câu với tớ một lần nữa nhé!]"
+                  },
+                  {
+                    "lower_bound": 0,
+                    "response_guide": "<emotion type=\"encouraging\"/> [Khen trẻ đã cố gắng] [Listen carefully: I like soup! Cậu nói lại cả câu với tớ một lần nữa nhé!]"
+                  }
+                ],
+                "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"calm\"/> [Lảng đi, gently redirect] [We say, I like soup! Cậu nói theo tớ nhé!]"
+              },
+              {
+                "turn": 2,
+                "cases": [
+                  {
+                    "lower_bound": 0.85,
+                    "response_guide": "<emotion type=\"playful_2\"/> [Khen ngợi trẻ làm rất tốt!]  [I like soup! Yummy!] <next_ckp/>"
+                  },
+                  {
+                    "lower_bound": 0,
+                    "response_guide": "<emotion type=\"encouraging\"/> [We say, I like soup!] [Khen trẻ đã cố gắng, bảo chúng mình sẽ luyện tập thêm sau] <next_ckp/>"
+                  }
+                ],
+                "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"calm\"/> [We say, I like soup!] [Bảo chúng mình sẽ luyện tập thêm sau] <next_ckp/>"
+              }
+            ],
+            "ref_text": "I like soup",
+            "global_guide": ""
+          },
+          "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at18.jpg",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "a59cb7661229f9795b28af0b58124d37bf6442c6b7de3985054ddb8fa091227e",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Phần 4 – Narrative sau câu I like soup",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:justin_eating_soup_audio] <next_ckp/>",
+          "media_list": [
+            {
+              "id": "justin_eating_soup_audio",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at19.jpg",
+              "media_description": "audio: ten ten sound effect. image: Justin the Capybara holding a spoon eating soup, happy expression, School canteen background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "e03386f6d46c07db44b8b9426713b67be1483082eba3c1dbf3c68863f3ee6cee",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Kết bài – Tổng kết các món ăn",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:summary_all_foods_visual] Wow! We learned about food we like today! Rice, noodles, and soup. Amazing work! <next_ckp/>",
+          "media_list": [
+            {
+              "id": "summary_all_foods_visual",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at29.jpg",
+              "media_description": "audio: none. image: Justin the Capybara standing in the center of the canteen surrounded by friends, food items appearing one by one with their name labels: rice, noodles, soup, sausage, eggs, cake, School canteen background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": null,
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        }
+      ],
+      "start_message": "",
+      "cache_audio_map": {},
+      "input_schema_key": null,
+      "learn_v2_keep_model": false,
+      "GRAMMAR_CHECKER_TOOL": "",
+      "SYSTEM_TASK_DESCRIPTION": "You are Pika, a friendly voice teacher for a child.\n\nThe lesson is a sequence of checkpoints. You receive ONE checkpoint at a time from the developer.\n\nEach checkpoint has:\nQuestion: what you must ask the child.\nResponse_guide: cases that describe how to answer the child.\n\nFLOW\n1. At the start of a checkpoint:\n   - Ask the Question once.\n   - Include any [MEDIA:...] tokens from the Question.\n\n2. For each child reply:\n   - If the question_guide or response_guide instructs you\n     to call a function (e.g. pronun_check(...)), you MUST\n     call that function exactly as described in the checkpoint.\n   - If it fits a case in Response_guide, answer using that case.\n     You may rephrase slightly, but keep the same meaning and media tokens.\n   - If it does NOT fit any case, answer kindly in 1–2 short turns:\n     repeat or simplify the Question, and guide the child back to it.\n\n3. Moving to the next checkpoint:\n   - When the Response_guide says this checkpoint is finished,\n     OR the child is back on track and agrees to move on,\n     end your reply with <next_ckp/>.\n   - Only put <next_ckp/> at the END of your message.\n\nMEDIA\nUse [MEDIA:...] exactly as given in the checkpoint or guide.\nDo not invent new media keys.\n\nEMOTION\n- Use <emotion type=\"...\"/> exactly as given in the checkpoint or guide.\n- Do not invent new emotion tags.\n- Do not change the type value.\n- Place the tag at the position specified in the guide.\n\nSTYLE\nShort, simple sentences for a child.\n1–3 short sentences per turn.\nWarm, encouraging, and clear.\nAvoid adult, sexual, violent, extremist, unhealthy, risky, addictive content for kids.\nIf user says something unhealthy, advise them softly\n\nEXAMPLE 1\nTeacher:\n[MEDIA:word_image] Can you say the word \"Banana\"?\nStudent:\nBanana!\nTeacher:\n[MEDIA:star_img] Yes, Banana is correct! <next_ckp/>\n\nEXAMPLE 2\nDev sends:\n<checkpoint_1>\n  <question_guide>\n    <emotion type=\"happy\"/>[Say hello to the child],\n    <emotion type=\"excited\"/>[enthusiastically introduce that the child will learn vocab in the topic animals]\n  </question_guide>\n</checkpoint_1>\nTeacher says:\n<emotion type=\"happy\"/> Hello! Hi there, friend! <emotion type=\"excited\"/> Today, we are going to learn about animals! So fun!\n\nEXAMPLE 3\nDev sends:\n<checkpoint_1>\n<question_guide>\nTalk in corresponding language for: <emotion type=\"encouraging\"/> [Bây giờ, cùng phát âm từ này theo tớ nhé][MEDIA:question][MEDIA:question][MEDIA:question]\n</question_guide>\n<question_media_note>Media note for question:[MEDIA:question]: audio: Phát âm từ \"duck\" 1 lần. image: hình ảnh minh họa cho từ duck</question_media_note>\n</checkpoint_1>\n\nSystem language prompt: English\nTeacher says: <emotion type=\"encouraging\"/> Now, follow me and let's say this word together! [MEDIA:question][MEDIA:question][MEDIA:question]\n\nEXAMPLE 4 — Function call required by response_guide\nDev sends:\n<checkpoint_1>\n<question_guide>\n  [MEDIA:question] Can you say the word \"duck\"?\n</question_guide>\n<response_guide>\n  Always call pronun_check(ref_text=\"duck\") before replying.\n  - Correct: [MEDIA:diamond_10] <next_ckp/>\n  - Incorrect: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n  - No answer / irrelevant / refuses: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n</response_guide>\n</checkpoint_1>\nStudent: Duck!\nTeacher (internal): → calls pronun_check(ref_text=\"duck\") → reads tool result → correct\nTeacher says: [MEDIA:diamond_10] <next_ckp/>",
+      "SYSTEM_PROMPT_GENERATION": "",
+      "learn_v2_keep_dev_prompt": false,
+      "SYSTEM_EXTRACTION_PROFILE": "",
+      "dynamic_checkpoint_config": null,
+      "PRONUNCIATION_CHECKER_TOOL": "true",
+      "SYSTEM_EXTRACTION_VARIABLES": ""
+    }
+  ],
+  "generation_params": null,
+  "provider_name": "openai",
+  "system_prompt": "You are Pika, a friendly voice teacher for a child.\n\nThe lesson is a sequence of checkpoints. You receive ONE checkpoint at a time from the developer.\n\nEach checkpoint has:\nQuestion: what you must ask the child.\nResponse_guide: cases that describe how to answer the child.\n\nFLOW\n1. At the start of a checkpoint:\n   - Ask the Question once.\n   - Include any [MEDIA:...] tokens from the Question.\n\n2. For each child reply:\n   - If the question_guide or response_guide instructs you\n     to call a function (e.g. pronun_check(...)), you MUST\n     call that function exactly as described in the checkpoint.\n   - If it fits a case in Response_guide, answer using that case.\n     You may rephrase slightly, but keep the same meaning and media tokens.\n   - If it does NOT fit any case, answer kindly in 1–2 short turns:\n     repeat or simplify the Question, and guide the child back to it.\n\n3. Moving to the next checkpoint:\n   - When the Response_guide says this checkpoint is finished,\n     OR the child is back on track and agrees to move on,\n     end your reply with <next_ckp/>.\n   - Only put <next_ckp/> at the END of your message.\n\nMEDIA\nUse [MEDIA:...] exactly as given in the checkpoint or guide.\nDo not invent new media keys.\n\nEMOTION\n- Use <emotion type=\"...\"/> exactly as given in the checkpoint or guide.\n- Do not invent new emotion tags.\n- Do not change the type value.\n- Place the tag at the position specified in the guide.\n\nSTYLE\nShort, simple sentences for a child.\n1–3 short sentences per turn.\nWarm, encouraging, and clear.\nAvoid adult, sexual, violent, extremist, unhealthy, risky, addictive content for kids.\nIf user says something unhealthy, advise them softly\n\nEXAMPLE 1\nTeacher:\n[MEDIA:word_image] Can you say the word \"Banana\"?\nStudent:\nBanana!\nTeacher:\n[MEDIA:star_img] Yes, Banana is correct! <next_ckp/>\n\nEXAMPLE 2\nDev sends:\n<checkpoint_1>\n  <question_guide>\n    <emotion type=\"happy\"/>[Say hello to the child],\n    <emotion type=\"excited\"/>[enthusiastically introduce that the child will learn vocab in the topic animals]\n  </question_guide>\n</checkpoint_1>\nTeacher says:\n<emotion type=\"happy\"/> Hello! Hi there, friend! <emotion type=\"excited\"/> Today, we are going to learn about animals! So fun!\n\nEXAMPLE 3\nDev sends:\n<checkpoint_1>\n<question_guide>\nTalk in corresponding language for: <emotion type=\"encouraging\"/> [Bây giờ, cùng phát âm từ này theo tớ nhé][MEDIA:question][MEDIA:question][MEDIA:question]\n</question_guide>\n<question_media_note>Media note for question:[MEDIA:question]: audio: Phát âm từ \"duck\" 1 lần. image: hình ảnh minh họa cho từ duck</question_media_note>\n</checkpoint_1>\n\nSystem language prompt: English\nTeacher says: <emotion type=\"encouraging\"/> Now, follow me and let's say this word together! [MEDIA:question][MEDIA:question][MEDIA:question]\n\nEXAMPLE 4 — Function call required by response_guide\nDev sends:\n<checkpoint_1>\n<question_guide>\n  [MEDIA:question] Can you say the word \"duck\"?\n</question_guide>\n<response_guide>\n  Always call pronun_check(ref_text=\"duck\") before replying.\n  - Correct: [MEDIA:diamond_10] <next_ckp/>\n  - Incorrect: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n  - No answer / irrelevant / refuses: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n</response_guide>\n</checkpoint_1>\nStudent: Duck!\nTeacher (internal): → calls pronun_check(ref_text=\"duck\") → reads tool result → correct\nTeacher says: [MEDIA:diamond_10] <next_ckp/>",
+  "format_output": "TEXT",
+  "graph": {
+    "nodes": [
+      {
+        "node_id": "learn_sentence",
+        "prompt": "",
+        "type": "LEARN",
+        "tools": [],
+        "pivots": [],
+        "nexts": [],
+        "checkpoints": [
+          {
+            "name": "Mở bài – Cánh cửa vàng mở ra",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:yellow_door_open_visual] Oh! A yellow door. Let's see what's inside... <next_ckp/>",
+            "media_list": [
+              {
+                "id": "yellow_door_open_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/523f6d2hl01b.mjpeg",
+                "media_description": "audio: none. image: Yellow door swinging open with a burst of bright white light flooding out, Space background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "0ea40ee51c969e39d20e527ad05599b98d4dc786163bbdf3577ec4271a0a815d",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Intro – Canteen trường Pet Pet, Justin phỏng vấn",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:canteen_intro_justin_audio] [MEDIA:canteen_justin_talk] <next_ckp/>",
+            "media_list": [
+              {
+                "id": "canteen_intro_justin_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/9326HHbienhinhmagic.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at01.jpg",
+                "media_description": "audio: lively upbeat music, animal chatter sounds, eating sounds. Voice Justin: Hello, hello, hello! We will learn to talk about our favorite food today. Let's ask Alice first! image: Pet Pet school canteen interior with tables full of delicious food, Justin the Capybara holding a toy microphone ready to interview, Alice the Rabbit sitting eating rice, School canteen background"
+              },
+              {
+                "id": "canteen_justin_talk",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau001.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at01.jpg",
+                "media_description": "Voice Justin: Hello, hello, hello! We will learn to talk about our favorite food today. Let's ask Alice first! image: Pet Pet school canteen interior with tables full of delicious food, Justin the Capybara holding a toy microphone ready to interview, Alice the Rabbit sitting eating rice, School canteen background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "46e95660f3295742e9655559ea0111247a12884e6d6c58116bd38ea61a38389b",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Intro – Justin hỏi Alice món ăn yêu thích",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:justin_asks_alice_audio] <next_ckp/>",
+            "media_list": [
+              {
+                "id": "justin_asks_alice_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau002.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at02.jpg",
+                "media_description": "audio: Voice Justin: Alice, what food do you like? image: Justin the Capybara walking up to Alice the Rabbit at the canteen table, holding microphone toward her, School canteen background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "d002eff63a3e2ba13b09e2e104552c8f0bb109b6c5c0cf200d5872b229a2246e",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Intro – Alice trả lời I like rice",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:alice_likes_rice_audio] <next_ckp/>",
+            "media_list": [
+              {
+                "id": "alice_likes_rice_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau003.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at03.jpg",
+                "media_description": "audio: Voice Alice: Oh! I like rice. image: Alice the Rabbit pointing to her bowl of rice and smiling, School canteen background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "bdb7e10506b8ba42e3b3c466ece2ce6119068e2ec5064069391bf73fad8637d8",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Phần 1 – Alice nói rõ I like rice",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:alice_rice_closeup_audio] <next_ckp/>",
+            "media_list": [
+              {
+                "id": "alice_rice_closeup_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau004.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at03.jpg",
+                "media_description": "audio: Voice Alice: I like rice. image: Close-up of Alice the Rabbit pointing clearly to her bowl of rice, speaking expressively, School canteen background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "759aa6dd6c1c876858d788f547b5722db43182796ebf7e0a5b0805491bf67854",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Phần 1 – Show Form: I like rice",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:show_form_i_like_rice_audio] <next_ckp/>",
+            "media_list": [
+              {
+                "id": "show_form_i_like_rice_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau005.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at04.jpg",
+                "media_description": "audio: Voice Narrator: [instructional, emphasis, loud] I like rice. image: School canteen background with large centered text display, School canteen background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "2dbf383f9a3f51dafe4daaa817816bb4dbdb382f37496cd4143503daabc44aed",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Phần 2 – Luyện tập cụm cấu trúc: I like (CTA)",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:a] Great! In English, we will say…I like. Let's practice together. Listen and say! [MEDIA:stem_practice_i_like_audio]",
+            "media_list": [
+              {
+                "id": "stem_practice_i_like_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau006.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at05.jpg",
+                "media_description": "audio: Voice Narrator: I like. image: School canteen background with large centered text display, School canteen background"
+              },
+              {
+                "id": "a",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at05.jpg",
+                "media_description": ""
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 3,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0.7,
+                      "response_guide": "<emotion type=\"happy\"/> [We should say, I like!] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0.6,
+                      "response_guide": "<emotion type=\"encouraging\"/> [We should say, I like!] [Động viên trẻ rằng sắp đạt được rồi, bảo chúng mình sẽ luyện tập thêm sau] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"encouraging\"/> [We should say, I like!] [Động viên trẻ, bảo chúng mình sẽ luyện tập thêm sau] <next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"calm\"/> [Lảng đi, gently redirect] [We should say, I like!] [Động viên trẻ, bảo chúng mình sẽ luyện tập thêm sau]<next_ckp/>"
+                }
+              ],
+              "ref_text": "I like",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at06.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": "9c1bd0e6fb04dc8f9d9ab98b733c7c30b38b53b6244e5f8c9bd80c1837daf570",
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "a718a457eacd57507d0f86d31b279db6df2805a300941db28f8d7ebb321cd3b2",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Phần 2 – Narrative sau luyện cụm I like (lần 1)",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:alice_eating_rice_1_audio] <next_ckp/>",
+            "media_list": [
+              {
+                "id": "alice_eating_rice_1_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at07.jpg",
+                "media_description": "audio: ten ten sound effect. image: Alice the Rabbit happily eating rice with a spoon, School canteen background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "e60f2566cb04f0def53de0f270d0bc38d17c8651f13affad32893716bcbbf9f1",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Phần 2 – Bổ trợ cụm cấu trúc: I like (CTA lần 2)",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:stem_support_i_like_intro_audio] Listen to me one more time! \n[MEDIA:stem_support_i_highlight_visual] [MEDIA:stem_support_like_highlight_audio] \n[MEDIA:stem_support_i_like_intro_audio] Now, repeat after me. [MEDIA:stem_support_i_like_full_audio]",
+            "media_list": [
+              {
+                "id": "stem_support_i_like_intro_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at05.jpg",
+                "media_description": "audio: Voice Narrator: I…I! image: School canteen background with large centered text display, School canteen background"
+              },
+              {
+                "id": "stem_support_i_like_full_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau006.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at05.jpg",
+                "media_description": "audio: Voice Narrator: I...like! image: School canteen background with large centered text display, School canteen background"
+              },
+              {
+                "id": "stem_support_i_highlight_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau007.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at08.jpg",
+                "media_description": "audio: none. image: Large text displayed on cream background: I like with word 'I' highlighted in red"
+              },
+              {
+                "id": "stem_support_like_highlight_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau008.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at09.jpg",
+                "media_description": "audio: Voice Narrator: like…like!. image: Large text displayed on cream background: I like with word 'like' highlighted in red"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 3,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ đọc cụm mẫu đạt điểm phát âm ≥ 0.85 thì KHÔNG chọn nhánh này. CHỈ chọn nhánh này khi trẻ đọc cụm mẫu nhưng điểm phát âm < 0.85, hoặc trẻ im lặng, nói \"tớ không biết\", nói nội dung không phù hợp, không liên quan tới cụm mẫu: <emotion type=\"encouraging\"/> [Hey, hey, let's say...I like!] <next_ckp/>"
+                }
+              ],
+              "ref_text": "I like",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at06.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "15112357195a95a6bf94c256978e2ecfa5fc09e0c8e070598aa45589a3364a91",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Phần 2 – Luyện tập cả câu: I like rice (CTA)",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:a] Good job! Now let's put it all together. Listen and say the whole sentence. [MEDIA:full_sentence_rice_audio]",
+            "media_list": [
+              {
+                "id": "full_sentence_rice_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau005.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at10f.jpg",
+                "media_description": "audio: Voice Narrator: [instructional, emphasis] I like rice. image: Alice the Rabbit holding a bowl of rice with a pleased expression, large centered text display, School canteen background"
+              },
+              {
+                "id": "a",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at10f.jpg",
+                "media_description": ""
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 3,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"happy_3\"/>[Khen ngợi trẻ làm rất tốt!] [We say, I like rice!]<next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0.7,
+                      "response_guide": "<emotion type=\"encouraging\"/> [We should say, I like rice!] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0.6,
+                      "response_guide": "<emotion type=\"encouraging\"/> [We should say, I like rice!] [Động viên trẻ rằng sắp đạt được rồi, bảo chúng mình sẽ luyện tập thêm sau] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"encouraging\"/> [We should say, I like rice!] [Bảo chúng mình sẽ luyện tập thêm sau] <next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"calm\"/> [Lảng đi, gently redirect] [We should say, I like rice!] <next_ckp/>"
+                }
+              ],
+              "ref_text": "I like rice",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at10.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": "442d9e012d94b2513449b8151599db71809726cfcd3d13e52975a1551a7c4022",
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "9c4d7e96ea2d784c47c7b807c506046ed77ea6da112a72479a5c363e06dca3ca",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Phần 2 – Narrative sau luyện câu I like rice",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:alice_eating_rice_3_audio] <next_ckp/>",
+            "media_list": [
+              {
+                "id": "alice_eating_rice_3_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at07.jpg",
+                "media_description": "audio: ten ten sound effect. image: Alice the Rabbit holding a spoon eating rice, happy expression, School canteen background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "b6752c40f7daae92c13fd6e6a2caa7494a0addc19b62c21029b5f2db286faa38",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Phần 3 – Justin hỏi Jake, Jake trả lời I like noodles",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:justin_asks_jake_audio] [MEDIA:jake_likes_noodles_audio] <next_ckp/>",
+            "media_list": [
+              {
+                "id": "justin_asks_jake_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau009f.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at11.jpg",
+                "media_description": "audio: Voice Justin: Jake, what food do you like? image: Justin the Capybara walking up to Jake the Bear at the canteen table, holding microphone toward Jake, School canteen background"
+              },
+              {
+                "id": "jake_likes_noodles_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau010.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at12.jpg",
+                "media_description": "audio: Voice Jake: Oh! I like noodles. image: Jake the Bear pointing to his bowl of noodles and holding it forward, School canteen background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "c738e59d8c831748f2505a84a03e13cf5a4a1d6721a50331aefb464d3a7c51fb",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Phần 3 – Luyện tập câu: I like noodles (CTA)",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:a] In English, we will say…I like noodles. Listen and say it with me! [MEDIA:full_sentence_noodles_audio]",
+            "media_list": [
+              {
+                "id": "full_sentence_noodles_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau011.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at13.jpg",
+                "media_description": "audio: Voice Narrator: I like noodles. image: Jake the Bear holding a bowl of noodles with a pleased expression, large centered text display, School canteen background"
+              },
+              {
+                "id": "a",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at13.jpg",
+                "media_description": ""
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 3,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"excited_2\"/>[Khen ngợi trẻ làm rất tốt!] [We say, I like noodles!] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0.7,
+                      "response_guide": "<emotion type=\"encouraging\"/> [We should say, I like noodles!] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0.6,
+                      "response_guide": "<emotion type=\"encouraging\"/> [We should say, I like noodles!] [Động viên trẻ rằng sắp đạt được rồi, bảo chúng mình sẽ luyện tập thêm sau] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"encouraging\"/> [We should say, I like noodles!] [Bảo chúng mình sẽ luyện tập thêm sau] <next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"calm\"/> [Lảng đi, gently redirect] [We should say, I like noodles!] <next_ckp/>"
+                }
+              ],
+              "ref_text": "I like noodles",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at14.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": "d5f280237d7bc42f7b41187a952fe4fab9a947a9a3cf04464ad82a87bffead80",
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "7fe5654db7559e26e6a4098dc3676096375dad88070e75899751c79eb411c221",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Phần 3 – Narrative sau luyện câu I like noodles",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:jake_eating_noodles_audio] <next_ckp/>",
+            "media_list": [
+              {
+                "id": "jake_eating_noodles_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at15.jpg",
+                "media_description": "audio: ten ten sound effect. image: Jake the Bear using chopsticks to eat noodles, happy expression, School canteen background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "7e5db3201813d2db4bbe36894c3c74342d04c68bca93d90010dc07e99e9cbf69",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Phần 4 – Trẻ trả lời: I like soup (CTA)",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:jane_soup_question_audio]",
+            "media_list": [
+              {
+                "id": "jane_soup_question_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/106HHau012.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at16.jpg",
+                "media_description": "audio: Voice Justin: What food do you like? image: Jane the Deer sitting in front of a bowl of soup on the canteen table, School canteen background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 3,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"playful_2\"/> [Khen ngợi trẻ làm rất tốt!]  [We say, I like soup!] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0.6,
+                      "response_guide": "<emotion type=\"encouraging\"/> [Khen trẻ đã nói được rồi, chỉ cần nói đủ cả câu] [Listen: I like soup! Cậu nói lại cả câu với tớ một lần nữa nhé!]"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"encouraging\"/> [Khen trẻ đã cố gắng] [Listen carefully: I like soup! Cậu nói lại cả câu với tớ một lần nữa nhé!]"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"calm\"/> [Lảng đi, gently redirect] [We say, I like soup! Cậu nói theo tớ nhé!]"
+                },
+                {
+                  "turn": 2,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"playful_2\"/> [Khen ngợi trẻ làm rất tốt!]  [I like soup! Yummy!] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"encouraging\"/> [We say, I like soup!] [Khen trẻ đã cố gắng, bảo chúng mình sẽ luyện tập thêm sau] <next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này — CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"calm\"/> [We say, I like soup!] [Bảo chúng mình sẽ luyện tập thêm sau] <next_ckp/>"
+                }
+              ],
+              "ref_text": "I like soup",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at18.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "a59cb7661229f9795b28af0b58124d37bf6442c6b7de3985054ddb8fa091227e",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Phần 4 – Narrative sau câu I like soup",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:justin_eating_soup_audio] <next_ckp/>",
+            "media_list": [
+              {
+                "id": "justin_eating_soup_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at19.jpg",
+                "media_description": "audio: ten ten sound effect. image: Justin the Capybara holding a spoon eating soup, happy expression, School canteen background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "e03386f6d46c07db44b8b9426713b67be1483082eba3c1dbf3c68863f3ee6cee",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Kết bài – Tổng kết các món ăn",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:summary_all_foods_visual] Wow! We learned about food we like today! Rice, noodles, and soup. Amazing work! <next_ckp/>",
+            "media_list": [
+              {
+                "id": "summary_all_foods_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/061026at29.jpg",
+                "media_description": "audio: none. image: Justin the Capybara standing in the center of the canteen surrounded by friends, food items appearing one by one with their name labels: rice, noodles, soup, sausage, eggs, cake, School canteen background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": null,
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          }
+        ],
+        "input_schema_key": null,
+        "start_message": "",
+        "hooks": [],
+        "max_turns": null,
+        "pre_llm_pipeline": null,
+        "dynamic_checkpoint_builder": null,
+        "dynamic_checkpoint_config": {},
+        "tts_provider_override": null,
+        "learn_v2": true,
+        "learn_v2_keep_dev_prompt": false,
+        "learn_v2_keep_model": false
+      }
+    ],
+    "global_pivots": [],
+    "global_tools": [
+      "pronun_check_v2"
+    ],
+    "global_hooks": [],
+    "system_prompt": "You are Pika, a friendly voice teacher for a child.\n\nThe lesson is a sequence of checkpoints. You receive ONE checkpoint at a time from the developer.\n\nEach checkpoint has:\nQuestion: what you must ask the child.\nResponse_guide: cases that describe how to answer the child.\n\nFLOW\n1. At the start of a checkpoint:\n   - Ask the Question once.\n   - Include any [MEDIA:...] tokens from the Question.\n\n2. For each child reply:\n   - If the question_guide or response_guide instructs you\n     to call a function (e.g. pronun_check(...)), you MUST\n     call that function exactly as described in the checkpoint.\n   - If it fits a case in Response_guide, answer using that case.\n     You may rephrase slightly, but keep the same meaning and media tokens.\n   - If it does NOT fit any case, answer kindly in 1–2 short turns:\n     repeat or simplify the Question, and guide the child back to it.\n\n3. Moving to the next checkpoint:\n   - When the Response_guide says this checkpoint is finished,\n     OR the child is back on track and agrees to move on,\n     end your reply with <next_ckp/>.\n   - Only put <next_ckp/> at the END of your message.\n\nMEDIA\nUse [MEDIA:...] exactly as given in the checkpoint or guide.\nDo not invent new media keys.\n\nEMOTION\n- Use <emotion type=\"...\"/> exactly as given in the checkpoint or guide.\n- Do not invent new emotion tags.\n- Do not change the type value.\n- Place the tag at the position specified in the guide.\n\nSTYLE\nShort, simple sentences for a child.\n1–3 short sentences per turn.\nWarm, encouraging, and clear.\nAvoid adult, sexual, violent, extremist, unhealthy, risky, addictive content for kids.\nIf user says something unhealthy, advise them softly\n\nEXAMPLE 1\nTeacher:\n[MEDIA:word_image] Can you say the word \"Banana\"?\nStudent:\nBanana!\nTeacher:\n[MEDIA:star_img] Yes, Banana is correct! <next_ckp/>\n\nEXAMPLE 2\nDev sends:\n<checkpoint_1>\n  <question_guide>\n    <emotion type=\"happy\"/>[Say hello to the child],\n    <emotion type=\"excited\"/>[enthusiastically introduce that the child will learn vocab in the topic animals]\n  </question_guide>\n</checkpoint_1>\nTeacher says:\n<emotion type=\"happy\"/> Hello! Hi there, friend! <emotion type=\"excited\"/> Today, we are going to learn about animals! So fun!\n\nEXAMPLE 3\nDev sends:\n<checkpoint_1>\n<question_guide>\nTalk in corresponding language for: <emotion type=\"encouraging\"/> [Bây giờ, cùng phát âm từ này theo tớ nhé][MEDIA:question][MEDIA:question][MEDIA:question]\n</question_guide>\n<question_media_note>Media note for question:[MEDIA:question]: audio: Phát âm từ \"duck\" 1 lần. image: hình ảnh minh họa cho từ duck</question_media_note>\n</checkpoint_1>\n\nSystem language prompt: English\nTeacher says: <emotion type=\"encouraging\"/> Now, follow me and let's say this word together! [MEDIA:question][MEDIA:question][MEDIA:question]\n\nEXAMPLE 4 — Function call required by response_guide\nDev sends:\n<checkpoint_1>\n<question_guide>\n  [MEDIA:question] Can you say the word \"duck\"?\n</question_guide>\n<response_guide>\n  Always call pronun_check(ref_text=\"duck\") before replying.\n  - Correct: [MEDIA:diamond_10] <next_ckp/>\n  - Incorrect: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n  - No answer / irrelevant / refuses: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n</response_guide>\n</checkpoint_1>\nStudent: Duck!\nTeacher (internal): → calls pronun_check(ref_text=\"duck\") → reads tool result → correct\nTeacher says: [MEDIA:diamond_10] <next_ckp/>",
+    "version": "v2",
+    "strict": false,
+    "use_intent": "full"
+  }
+}

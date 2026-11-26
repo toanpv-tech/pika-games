@@ -1,0 +1,34 @@
+{
+  "status": 0,
+  "msg": "Success",
+  "result": {
+    "id": 4008,
+    "name": "A2 Trải nghiệm 30p",
+    "description": "",
+    "scenario": [
+      {
+        "robot_type": "Agent",
+        "set_variable": "",
+        "robot_type_id": 3793,
+        "param_extractor": ""
+      }
+    ],
+    "system_prompt": "",
+    "provider_name": "",
+    "generation_params": {},
+    "create_at": 1795593311721,
+    "update_at": 1795593311721,
+    "system_extraction_variables": "",
+    "system_prompt_generation": "",
+    "system_extraction_profile": "",
+    "data_excel": [
+      {
+        "robot_type": "Agent",
+        "set_variable": "",
+        "robot_type_id": 3793,
+        "param_extractor": ""
+      }
+    ],
+    "is_loading": false
+  }
+}

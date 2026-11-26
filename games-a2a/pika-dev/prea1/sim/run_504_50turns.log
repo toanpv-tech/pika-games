@@ -1,0 +1,24 @@
+CHẠY GIẢ LẬP bot 3787 trên https://platform-builder-api.stepup.edu.vn (tốn chi phí LLM)
+  4 persona × 50 turn (tối đa; tổng tối đa 200 turn)
+  - real-preA1-hop-tac: profile Vân [VI-EN] maxTurns=50 timeout=900s prompt tuỳ chỉnh | customProfile language_mode=VI-EN,learn_level=Pre-A1,age=7
+  - thu-dong: profile Vân [VI-EN] maxTurns=50 timeout=900s prompt tuỳ chỉnh | customProfile language_mode=VI-EN,learn_level=Pre-A1,age=7
+  - lac-de-hoi-nhieu: profile Vân [VI-EN] maxTurns=50 timeout=900s prompt tuỳ chỉnh | customProfile language_mode=VI-EN,learn_level=Pre-A1,age=7
+  - doi-dung-giua-chung: profile Vân [VI-EN] maxTurns=50 timeout=900s prompt tuỳ chỉnh | customProfile language_mode=VI-EN,learn_level=Pre-A1,age=7
+  song song tối đa 2; 4 nhóm, trong nhóm chạy tuần tự (0 nhóm có >1 persona)
+[real-preA1-hop-tac] bắt đầu (profile 019ecea2-408d-73e3-81cb-78d8a1cac5ec, maxTurns=50) ...
+[thu-dong] bắt đầu (profile 019ecea2-408d-73e3-81cb-78d8a1cac5ec, maxTurns=50) ...
+[thu-dong] LỖI: HTTP 504 (POST /simulate/run @ https://platform-builder-api.stepup.edu.vn): lỗi phía server/upstream, thử lại sau. The origin web server did not respond to Cloudflare within the allowed time. This typically means the origin is overloaded or a backend process is taking too long. -> Backend không gọi được dịch vụ giả lập (upstream chưa cấu hình/sai token/không kết nối được). Báo admin, không phải lỗi persona.
+[lac-de-hoi-nhieu] bắt đầu (profile 019ecea2-408d-73e3-81cb-78d8a1cac5ec, maxTurns=50) ...
+[real-preA1-hop-tac] LỖI: HTTP 504 (POST /simulate/run @ https://platform-builder-api.stepup.edu.vn): lỗi phía server/upstream, thử lại sau. The origin web server did not respond to Cloudflare within the allowed time. This typically means the origin is overloaded or a backend process is taking too long. -> Backend không gọi được dịch vụ giả lập (upstream chưa cấu hình/sai token/không kết nối được). Báo admin, không phải lỗi persona.
+[doi-dung-giua-chung] bắt đầu (profile 019ecea2-408d-73e3-81cb-78d8a1cac5ec, maxTurns=50) ...
+[lac-de-hoi-nhieu] LỖI: HTTP 504 (POST /simulate/run @ https://platform-builder-api.stepup.edu.vn): lỗi phía server/upstream, thử lại sau. The origin web server did not respond to Cloudflare within the allowed time. This typically means the origin is overloaded or a backend process is taking too long. -> Backend không gọi được dịch vụ giả lập (upstream chưa cấu hình/sai token/không kết nối được). Báo admin, không phải lỗi persona.
+[doi-dung-giua-chung] LỖI: HTTP 504 (POST /simulate/run @ https://platform-builder-api.stepup.edu.vn): lỗi phía server/upstream, thử lại sau. The origin web server did not respond to Cloudflare within the allowed time. This typically means the origin is overloaded or a backend process is taking too long. -> Backend không gọi được dịch vụ giả lập (upstream chưa cấu hình/sai token/không kết nối được). Báo admin, không phải lỗi persona.
+
+=== TÓM TẮT ===
+HOST=https://platform-builder-api.stepup.edu.vn BOT=3787 OUT=sim
+- real-preA1-hop-tac: THẤT BẠI — HTTP 504 (POST /simulate/run @ https://platform-builder-api.stepup.edu.vn): lỗi phía server/upstream, thử lại sau. The origin web server did not respond to Cloudflare within the allowed time. This typically means the origin is overloaded or a backend process is taking too long. -> Backend không gọi được dịch vụ giả lập (upstream chưa cấu hình/sai token/không kết nối được). Báo admin, không phải lỗi persona.
+- thu-dong: THẤT BẠI — HTTP 504 (POST /simulate/run @ https://platform-builder-api.stepup.edu.vn): lỗi phía server/upstream, thử lại sau. The origin web server did not respond to Cloudflare within the allowed time. This typically means the origin is overloaded or a backend process is taking too long. -> Backend không gọi được dịch vụ giả lập (upstream chưa cấu hình/sai token/không kết nối được). Báo admin, không phải lỗi persona.
+- lac-de-hoi-nhieu: THẤT BẠI — HTTP 504 (POST /simulate/run @ https://platform-builder-api.stepup.edu.vn): lỗi phía server/upstream, thử lại sau. The origin web server did not respond to Cloudflare within the allowed time. This typically means the origin is overloaded or a backend process is taking too long. -> Backend không gọi được dịch vụ giả lập (upstream chưa cấu hình/sai token/không kết nối được). Báo admin, không phải lỗi persona.
+- doi-dung-giua-chung: THẤT BẠI — HTTP 504 (POST /simulate/run @ https://platform-builder-api.stepup.edu.vn): lỗi phía server/upstream, thử lại sau. The origin web server did not respond to Cloudflare within the allowed time. This typically means the origin is overloaded or a backend process is taking too long. -> Backend không gọi được dịch vụ giả lập (upstream chưa cấu hình/sai token/không kết nối được). Báo admin, không phải lỗi persona.
+Đọc transcript: <out>/<tên>.md; xem references/reading-results.md để đối chiếu test case.
+EXIT=1

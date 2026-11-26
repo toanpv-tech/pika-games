@@ -1,0 +1,34 @@
+{
+  "status": 0,
+  "msg": "Success",
+  "result": {
+    "id": 2582,
+    "name": "B1 F5 D1 Present Chunk",
+    "description": "",
+    "scenario": [
+      {
+        "robot_type": "Agent",
+        "set_variable": "",
+        "robot_type_id": 2452,
+        "param_extractor": ""
+      }
+    ],
+    "system_prompt": null,
+    "provider_name": null,
+    "generation_params": null,
+    "create_at": 1785234832239,
+    "update_at": 1785234832239,
+    "system_extraction_variables": null,
+    "system_prompt_generation": null,
+    "system_extraction_profile": null,
+    "data_excel": [
+      {
+        "robot_type": "Agent",
+        "set_variable": "",
+        "robot_type_id": 2452,
+        "param_extractor": ""
+      }
+    ],
+    "is_loading": true
+  }
+}

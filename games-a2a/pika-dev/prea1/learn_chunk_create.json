@@ -1,0 +1,1491 @@
+{
+  "name": "Pre A1 - Trải nghiệm 30p - Học cụm (cắt từ 1528)",
+  "description": "Bot learn v2 cho buổi trải nghiệm 30 phút, nhúng vào graph chính bằng SubGraphNode. Ckp gốc 1528 #4-#10, #17-#20 (rice, noodles, soup); #4 bỏ câu tiếng Việt (graph chính đã nói câu nối); #19 đổi lời; #20 đổi lời, dẫn sang căn tin Pet Pet; [[name]] đổi thành 'cậu'.",
+  "task_chain": [
+    {
+      "task": "",
+      "tools": [
+        "pronun_check_v2"
+      ],
+      "language": "",
+      "learn_v2": true,
+      "use_cache": true,
+      "asr_config": "medium",
+      "session_id": "",
+      "sub_agents": [
+        {
+          "bot_id": 373,
+          "comeback_msg": null,
+          "end_behavior": "COMEBACK"
+        },
+        {
+          "bot_id": 371,
+          "comeback_msg": null,
+          "end_behavior": "END"
+        },
+        {
+          "bot_id": 370,
+          "comeback_msg": null,
+          "end_behavior": "END"
+        }
+      ],
+      "checkpoints": [
+        {
+          "name": "Chủ đề hôm nay",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:family_dining_table_intro] What food do you like? Today, let's learn about food! <next_ckp/>",
+          "media_list": [
+            {
+              "id": "family_dining_table_intro",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1PREhl01f.jpg",
+              "media_description": "audio: none. image: A warm family dining table filled with colorful delicious dishes, Dining room background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": null,
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Giới thiệu từ vựng: rice",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:rice_bowl_present]  Cậu ơi! Cơm trắng dẻo thơm — món ăn quen thuộc trong bữa cơm gia đình mình đó! Trong tiếng Anh, chúng mình gọi đó là [MEDIA:rice_bowl_vocab] <next_ckp/>",
+          "media_list": [
+            {
+              "id": "rice_bowl_present",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1PREhl02.jpg",
+              "media_description": " image: A bowl of fluffy white steamed rice on a family dining table, Dining room background"
+            },
+            {
+              "id": "rice_bowl_vocab",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/20526hhau37.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt03.jpg",
+              "media_description": "Audio: rice. rice. rice.. image: A bowl of fluffy white steamed rice"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": null,
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Luyện tập phát âm: rice",
+          "past": null,
+          "type": "cta_simplify",
+          "question": "<emotion type=\"excited\"/> Cùng nói theo tớ nhé. Say it with me! [MEDIA:rice_bowl_practice] ",
+          "media_list": [
+            {
+              "id": "rice_bowl_practice",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/20526hhau38.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt03.jpg",
+              "media_description": "audio: [cheerful, energetic]Rice, rice! image: A bowl of fluffy white steamed rice"
+            },
+            {
+              "id": "rice_bowl_retry",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/20526hhau37.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt03.jpg",
+              "media_description": "Audio: rice. rice. rice. image: A bowl of fluffy white steamed rice"
+            },
+            {
+              "id": "rice_bowl_fallback",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt03.jpg",
+              "media_description": " image: A bowl of fluffy white steamed rice"
+            },
+            {
+              "id": "rice_tenten",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/tadaabutshort.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt03.jpg",
+              "media_description": "Visual: Bát cơm trắng dẻo thơm | Chữ: \"rice\"\nAudio: Ta-da!\n"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 3,
+          "question_guide": null,
+          "response_guide": {
+            "tool": "pronun_check_v2_simplify",
+            "turns": [
+              {
+                "turn": 1,
+                "cases": [
+                  {
+                    "lower_bound": 0.85,
+                    "response_guide": "<next_ckp/>"
+                  },
+                  {
+                    "lower_bound": 0,
+                    "response_guide": "<emotion type=\"encouraging\"/> [Mình nói lại cùng nhau nha! One more time, nghe thật kỹ rồi nói theo tớ nhé] [MEDIA:rice_bowl_retry]"
+                  }
+                ],
+                "turn_guide": "Trẻ phát âm chưa tới ngưỡng đạt nhưng vẫn đang cố đọc từ mẫu thì KHÔNG chọn nhánh này — chỉ chọn khi trẻ im lặng, trẻ đáp lại bằng tiếng Việt, trẻ nói \"tớ không biết\", hoặc trẻ nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"happy\"/> [Nào cậu ơi, cùng nói với tớ nhé! Listen carefully and say] [MEDIA:rice_bowl_retry]"
+              },
+              {
+                "turn": 2,
+                "cases": [
+                  {
+                    "lower_bound": 0.85,
+                    "response_guide": "<next_ckp/>"
+                  }
+                ],
+                "turn_guide": "Điểm phát âm < 0.85, hoặc trẻ im lặng, trẻ đáp lại bằng tiếng Việt, trẻ nói \"tớ không biết\", trẻ nói chuyện khác không liên quan tới từ mẫu — điểm phát âm từ 0.85 trở lên thì KHÔNG chọn nhánh này: [MEDIA:rice_bowl_fallback] [Để tớ nói cùng cậu nhé! Let me say it with you. Đó là cơm. Chúng mình gọi là <eng> rice </eng>. We'll practice more later!] [MEDIA:rice_tenten]<next_ckp/>"
+              }
+            ],
+            "ref_text": "rice",
+            "global_guide": ""
+          },
+          "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt02f.jpg",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "357151c9c1d9adef2bb0a4fde2720c6ef4be0bce4960090839ee9597fd885b4b",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Giới thiệu từ vựng: noodles",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:noodles_bowl_present]  Tiếp nào cậu ơi! Sợi mì dài dai, húp xì xụp nghe vui tai — trong tiếng Anh, chúng mình gọi đó là [MEDIA:noodles_bowl_vocab] <next_ckp/>",
+          "media_list": [
+            {
+              "id": "noodles_bowl_present",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1PREhl03.jpg",
+              "media_description": ". image: A bowl of golden hot noodles with steam rising on a family dining table, Dining room background"
+            },
+            {
+              "id": "noodles_bowl_vocab",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/20526hhau39.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt06.jpg",
+              "media_description": "audio: [instructional, emphasis]noodles. noodles. noodles. image: A bowl of golden hot noodles with steam rising"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": null,
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Luyện tập phát âm: noodles",
+          "past": null,
+          "type": "cta_simplify",
+          "question": "<emotion type=\"happy_2\"/> Cậu nói theo tớ nhé. Say it with me! [MEDIA:noodles_bowl_practice] ",
+          "media_list": [
+            {
+              "id": "noodles_bowl_practice",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/20526hhau40.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt06.jpg",
+              "media_description": "audio: [cheerful, energetic]Noodles, noodles! image: A bowl of golden hot noodles with steam rising"
+            },
+            {
+              "id": "noodles_bowl_retry",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/20526hhau39.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt06.jpg",
+              "media_description": "Audio: noodles. noodles. noodles. image: A bowl of golden hot noodles with steam rising"
+            },
+            {
+              "id": "noodles_bowl_fallback",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt06.jpg",
+              "media_description": " image: A bowl of golden hot noodles with steam rising"
+            },
+            {
+              "id": "noodles_tenten",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/tadaabutshort.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt06.jpg",
+              "media_description": "Audio: Ta-da!\nVisual: Tô mì sợi vàng nóng hổi | Chữ: \"noodles\"\n"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 3,
+          "question_guide": null,
+          "response_guide": {
+            "tool": "pronun_check_v2_simplify",
+            "turns": [
+              {
+                "turn": 1,
+                "cases": [
+                  {
+                    "lower_bound": 0.85,
+                    "response_guide": "<next_ckp/>"
+                  },
+                  {
+                    "lower_bound": 0,
+                    "response_guide": "<emotion type=\"happy\"/> [Pika thấy có gì đó hơi khác một chút nè! One more time, nghe thật kỹ rồi nói theo tớ nhé] [MEDIA:noodles_bowl_retry]"
+                  }
+                ],
+                "turn_guide": "Trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu — nếu trẻ CÓ nói tiếng Anh và đang cố đọc từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh intent này: <emotion type=\"happy\"/> [Nào cậu ơi, cùng nói với tớ nhé! Listen carefully and say] [MEDIA:noodles_bowl_retry]"
+              },
+              {
+                "turn": 2,
+                "cases": [
+                  {
+                    "lower_bound": 0.85,
+                    "response_guide": "<next_ckp/>"
+                  }
+                ],
+                "turn_guide": "Trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", nói chuyện khác không liên quan tới từ mẫu, hoặc đọc từ mẫu nhưng điểm phát âm < 0.85 — nếu điểm phát âm ≥ 0.85 thì KHÔNG chọn nhánh intent này: [MEDIA:noodles_bowl_fallback] [Để tớ nói cùng cậu nhé! Let me say it with you. Đó là mì. Chúng mình gọi là <eng> noodles </eng>. We'll practice more later!] [MEDIA:noodles_tenten]<next_ckp/>"
+              }
+            ],
+            "ref_text": "noodles",
+            "global_guide": ""
+          },
+          "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt05f.jpg",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "f4a04ddf1c3941c8c95bedf8ebec317b8f8b235728f9194201ef7f056025787c",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Giới thiệu từ vựng: soup",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:soup_bowl_present] Cậu ơi! Canh nóng hổi, húp một ngụm là ấm bụng ngay — trong tiếng Anh, chúng mình gọi đó là [MEDIA:soup_bowl_vocab]  <next_ckp/>",
+          "media_list": [
+            {
+              "id": "soup_bowl_present",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1PREhl04.jpg",
+              "media_description": " image: A steaming hot bowl of fragrant soup on a family dining table, Dining room background"
+            },
+            {
+              "id": "soup_bowl_vocab",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/20526hhau41.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt09.jpg",
+              "media_description": "audio: [instructional, emphasis]soup. soup. soup. image: A steaming hot bowl of fragrant soup"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": null,
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Luyện tập phát âm: soup",
+          "past": null,
+          "type": "cta_simplify",
+          "question": " <emotion type=\"happy_3\"/> Hãy  nói theo tớ nhé. Say it with me! [MEDIA:soup_bowl_practice]",
+          "media_list": [
+            {
+              "id": "soup_bowl_practice",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/20526hhau42.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt09.jpg",
+              "media_description": "audio: [cheerful, energetic]Soup, soup! image: A steaming hot bowl of fragrant soup"
+            },
+            {
+              "id": "soup_bowl_retry",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/20526hhau41.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt09.jpg",
+              "media_description": "Audio: soup. soup. soup. image: A steaming hot bowl of fragrant soup"
+            },
+            {
+              "id": "soup_bowl_fallback",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt09.jpg",
+              "media_description": " image: A steaming hot bowl of fragrant soup"
+            },
+            {
+              "id": "soup_tenten",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/tadaabutshort.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt09.jpg",
+              "media_description": "Audio: Ta-da!\nVisual: Tô canh nóng hổi | Chữ: \"soup\"\n"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 3,
+          "question_guide": null,
+          "response_guide": {
+            "tool": "pronun_check_v2_simplify",
+            "turns": [
+              {
+                "turn": 1,
+                "cases": [
+                  {
+                    "lower_bound": 0.85,
+                    "response_guide": "<next_ckp/>"
+                  },
+                  {
+                    "lower_bound": 0,
+                    "response_guide": "<emotion type=\"happy\"/> [Tớ nghĩ chúng mình cần phát âm chuẩn hơn từ này! One more time, nghe thật kỹ rồi nói theo tớ nhé] [MEDIA:soup_bowl_retry]"
+                  }
+                ],
+                "turn_guide": "Trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu — nếu trẻ CÓ nói tiếng Anh và đang cố đọc từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh intent này: <emotion type=\"happy\"/> [Nào cậu ơi, cùng nói với tớ nhé! Listen carefully and say] [MEDIA:soup_bowl_retry]"
+              },
+              {
+                "turn": 2,
+                "cases": [
+                  {
+                    "lower_bound": 0.85,
+                    "response_guide": "<next_ckp/>"
+                  }
+                ],
+                "turn_guide": "Trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", nói chuyện khác không liên quan tới từ mẫu, hoặc đọc từ mẫu nhưng điểm phát âm < 0.85 — nếu điểm phát âm ≥ 0.85 thì KHÔNG chọn nhánh intent này: [MEDIA:soup_bowl_fallback] [Để tớ nói cùng cậu nhé! Let me say it with you. Đó là canh. Chúng mình gọi là <eng> soup </eng>. We'll practice more later!] [MEDIA:soup_tenten]<next_ckp/>"
+              }
+            ],
+            "ref_text": "soup",
+            "global_guide": ""
+          },
+          "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt08f.jpg",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "98edca522f6ea92cc9c43077b8ee98840d56b4095d65e2a45f327bbc2d704998",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Kết thúc - pháo hoa",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:ending_fireworks] <next_ckp/>",
+          "media_list": [
+            {
+              "id": "ending_fireworks",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/fireworksparkling.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/022326hlongfw.mjpeg",
+              "media_description": "audio: fireworks sound effect. image: Colorful fireworks bursting in a night sky, Night sky background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": "8d42a315583c9336cbba65edad6f0f427438a03995aff205e4fd0552dfd8b744",
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Khen ngợi và ôn tập",
+          "past": null,
+          "type": "narrative",
+          "question": "<emotion type=\"excited\"/> Cậu giỏi quá trời luôn á! Cùng ôn lại nào! Great job! Let's review! <next_ckp/>",
+          "media_list": [],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": null,
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Ôn tập từ vựng",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:recap_rice] <eng> rice </eng>, [MEDIA:recap_noodles] <eng> noodles </eng>, [MEDIA:recap_soup] <eng> soup </eng>. <next_ckp/>",
+          "media_list": [
+            {
+              "id": "recap_rice",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt03.jpg",
+              "media_description": "audio: none. image: A bowl of fluffy white steamed rice"
+            },
+            {
+              "id": "recap_noodles",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt06.jpg",
+              "media_description": "audio: none. image: A bowl of golden hot noodles with steam rising"
+            },
+            {
+              "id": "recap_soup",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt09.jpg",
+              "media_description": "audio: none. image: A steaming hot bowl of fragrant soup"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": null,
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "Kết thúc bài học",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:ending_screen] Cậu dạy tớ đủ tên 3 món rồi! Ở căn tin trường Pet Pet, bạn Justin hay hỏi mọi người thích ăn gì đó. Mình qua đó nghe cùng nhau nha. Mở cánh cửa vàng nào! <next_ckp/>",
+          "media_list": [
+            {
+              "id": "ending_screen",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/seeyouending.mjpeg",
+              "media_description": "audio: none. image: A cheerful colorful ending screen with Pika character waving goodbye, Colorful background"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": "",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "pronun",
+          "cache_hash_question": null,
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        }
+      ],
+      "start_message": "",
+      "cache_audio_map": {
+        "2487fe247a14dc52c33e8ad545b4550285f1802425c7dac330be79466d1558f7:0:s0": {
+          "bot_id": "1528",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "Hôm nay chúng mình cùng học tên các món ăn yêu thích nhé!",
+          "trace_id": "pika-0-ROBOT019db38a-f255-7222-8369-e8b2af9cc9a145c2f864-1806-4748-b8d9-da42eb83c312",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/2487fe247a14dc52c33e8ad545b4550285f1802425c7dac330be79466d1558f7:0:s0.1793939750462.wav",
+          "created_at": 1793939750,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 106418,
+          "updated_at": 1793939750
+        },
+        "2487fe247a14dc52c33e8ad545b4550285f1802425c7dac330be79466d1558f7:0:s1": {
+          "bot_id": "1528",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " What food do you like?",
+          "trace_id": "pika-0-ROBOT019db38a-f255-7222-8369-e8b2af9cc9a145c2f864-1806-4748-b8d9-da42eb83c312",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/2487fe247a14dc52c33e8ad545b4550285f1802425c7dac330be79466d1558f7:0:s1.1793939750499.wav",
+          "created_at": 1793939750,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 71004,
+          "updated_at": 1793939750
+        },
+        "2487fe247a14dc52c33e8ad545b4550285f1802425c7dac330be79466d1558f7:0:s2": {
+          "bot_id": "1528",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " Today, let's learn about food!",
+          "trace_id": "pika-0-ROBOT019db38a-f255-7222-8369-e8b2af9cc9a145c2f864-1806-4748-b8d9-da42eb83c312",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/2487fe247a14dc52c33e8ad545b4550285f1802425c7dac330be79466d1558f7:0:s2.1793939750517.wav",
+          "created_at": 1793939750,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 98030,
+          "updated_at": 1793939750
+        },
+        "357151c9c1d9adef2bb0a4fde2720c6ef4be0bce4960090839ee9597fd885b4b:0:s0": {
+          "bot_id": "1528",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "Cùng nói theo tớ nhé.",
+          "trace_id": "pika-0-ROBOT019db38a-f255-7222-8369-e8b2af9cc9a145c2f864-1806-4748-b8d9-da42eb83c312",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/357151c9c1d9adef2bb0a4fde2720c6ef4be0bce4960090839ee9597fd885b4b:0:s0.1793939751887.wav",
+          "created_at": 1793939752,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 52228,
+          "updated_at": 1793939752
+        },
+        "357151c9c1d9adef2bb0a4fde2720c6ef4be0bce4960090839ee9597fd885b4b:0:s1": {
+          "bot_id": "1528",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " Say it with me!",
+          "trace_id": "pika-0-ROBOT019db38a-f255-7222-8369-e8b2af9cc9a145c2f864-1806-4748-b8d9-da42eb83c312",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/357151c9c1d9adef2bb0a4fde2720c6ef4be0bce4960090839ee9597fd885b4b:0:s1.1793939751902.wav",
+          "created_at": 1793939752,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 66958,
+          "updated_at": 1793939752
+        },
+        "9655a01c31c0e7399f63e39931a6a476022f7b7083cfda54fa0c60b7b01d65c5:0:s0": {
+          "bot_id": "1528",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "Cậu nói theo tớ nhé.",
+          "trace_id": "pika-10-ROBOT019db38a-f255-7222-8369-e8b2af9cc9a145c2f864-1806-4748-b8d9-da42eb83c312",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/9655a01c31c0e7399f63e39931a6a476022f7b7083cfda54fa0c60b7b01d65c5:0:s0.1793940118918.wav",
+          "created_at": 1793940119,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 50836,
+          "updated_at": 1793940119
+        },
+        "9655a01c31c0e7399f63e39931a6a476022f7b7083cfda54fa0c60b7b01d65c5:0:s1": {
+          "bot_id": "1528",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " Say it with me!",
+          "trace_id": "pika-10-ROBOT019db38a-f255-7222-8369-e8b2af9cc9a145c2f864-1806-4748-b8d9-da42eb83c312",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/9655a01c31c0e7399f63e39931a6a476022f7b7083cfda54fa0c60b7b01d65c5:0:s1.1793940118935.wav",
+          "created_at": 1793940119,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 60844,
+          "updated_at": 1793940119
+        },
+        "98edca522f6ea92cc9c43077b8ee98840d56b4095d65e2a45f327bbc2d704998:0:s0": {
+          "bot_id": "1528",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "Hãy nói theo tớ nhé.",
+          "trace_id": "pika-4-ROBOT019db38a-f255-7222-8369-e8b2af9cc9a145c2f864-1806-4748-b8d9-da42eb83c312",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/98edca522f6ea92cc9c43077b8ee98840d56b4095d65e2a45f327bbc2d704998:0:s0.1793939895682.wav",
+          "created_at": 1793939896,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 56374,
+          "updated_at": 1793939896
+        },
+        "98edca522f6ea92cc9c43077b8ee98840d56b4095d65e2a45f327bbc2d704998:0:s1": {
+          "bot_id": "1528",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " Say it with me!",
+          "trace_id": "pika-4-ROBOT019db38a-f255-7222-8369-e8b2af9cc9a145c2f864-1806-4748-b8d9-da42eb83c312",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/98edca522f6ea92cc9c43077b8ee98840d56b4095d65e2a45f327bbc2d704998:0:s1.1793939895697.wav",
+          "created_at": 1793939896,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 66958,
+          "updated_at": 1793939896
+        },
+        "cad0b593647dcd15d532e282dba0289ae6567b6b63d9d1ffc7bb8cc0e5c7ffca:0:s0": {
+          "bot_id": "1528",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "Cậu nói theo tớ nhé.",
+          "trace_id": "pika-8-ROBOT019db38a-f255-7222-8369-e8b2af9cc9a145c2f864-1806-4748-b8d9-da42eb83c312",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/cad0b593647dcd15d532e282dba0289ae6567b6b63d9d1ffc7bb8cc0e5c7ffca:0:s0.1793940038973.wav",
+          "created_at": 1793940039,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 50836,
+          "updated_at": 1793940039
+        },
+        "cad0b593647dcd15d532e282dba0289ae6567b6b63d9d1ffc7bb8cc0e5c7ffca:0:s1": {
+          "bot_id": "1528",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " Say it with me!",
+          "trace_id": "pika-8-ROBOT019db38a-f255-7222-8369-e8b2af9cc9a145c2f864-1806-4748-b8d9-da42eb83c312",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/cad0b593647dcd15d532e282dba0289ae6567b6b63d9d1ffc7bb8cc0e5c7ffca:0:s1.1793940038989.wav",
+          "created_at": 1793940039,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 65702,
+          "updated_at": 1793940039
+        },
+        "e04253acbef072b885d1921a51867d25f121332e652e00a25fc215569f0bc92e:0:s0": {
+          "bot_id": "1528",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "Cậu nói theo tớ nhé.",
+          "trace_id": "pika-6-ROBOT019db38a-f255-7222-8369-e8b2af9cc9a145c2f864-1806-4748-b8d9-da42eb83c312",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/e04253acbef072b885d1921a51867d25f121332e652e00a25fc215569f0bc92e:0:s0.1793939971040.wav",
+          "created_at": 1793939971,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 52228,
+          "updated_at": 1793939971
+        },
+        "e04253acbef072b885d1921a51867d25f121332e652e00a25fc215569f0bc92e:0:s1": {
+          "bot_id": "1528",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " Say it with me!",
+          "trace_id": "pika-6-ROBOT019db38a-f255-7222-8369-e8b2af9cc9a145c2f864-1806-4748-b8d9-da42eb83c312",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/e04253acbef072b885d1921a51867d25f121332e652e00a25fc215569f0bc92e:0:s1.1793939971063.wav",
+          "created_at": 1793939971,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 65516,
+          "updated_at": 1793939971
+        },
+        "f4a04ddf1c3941c8c95bedf8ebec317b8f8b235728f9194201ef7f056025787c:0:s0": {
+          "bot_id": "1528",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "Cậu nói theo tớ nhé.",
+          "trace_id": "pika-2-ROBOT019db38a-f255-7222-8369-e8b2af9cc9a145c2f864-1806-4748-b8d9-da42eb83c312",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/f4a04ddf1c3941c8c95bedf8ebec317b8f8b235728f9194201ef7f056025787c:0:s0.1793939826864.wav",
+          "created_at": 1793939827,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 53626,
+          "updated_at": 1793939827
+        },
+        "f4a04ddf1c3941c8c95bedf8ebec317b8f8b235728f9194201ef7f056025787c:0:s1": {
+          "bot_id": "1528",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " Say it with me!",
+          "trace_id": "pika-2-ROBOT019db38a-f255-7222-8369-e8b2af9cc9a145c2f864-1806-4748-b8d9-da42eb83c312",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/f4a04ddf1c3941c8c95bedf8ebec317b8f8b235728f9194201ef7f056025787c:0:s1.1793939826880.wav",
+          "created_at": 1793939827,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 64044,
+          "updated_at": 1793939827
+        },
+        "f33f235b11c4a980297538289204192fe9cd786777d8817d4a56b4bc4915cc46:0|sw=slow:s0": {
+          "bot_id": "1528",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "en",
+          "sentence": "rice",
+          "trace_id": "pika-12-ROBOT019db38a-f255-7222-8369-e8b2af9cc9a145c2f864-1806-4748-b8d9-da42eb83c312",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/f33f235b11c4a980297538289204192fe9cd786777d8817d4a56b4bc4915cc46:0|sw=slow:s0.1793940188120.wav",
+          "created_at": 1793940188,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 50262,
+          "updated_at": 1793940188
+        },
+        "f33f235b11c4a980297538289204192fe9cd786777d8817d4a56b4bc4915cc46:1|sw=slow:s0": {
+          "bot_id": "1528",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "en",
+          "sentence": "noodles",
+          "trace_id": "pika-12-ROBOT019db38a-f255-7222-8369-e8b2af9cc9a145c2f864-1806-4748-b8d9-da42eb83c312",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/f33f235b11c4a980297538289204192fe9cd786777d8817d4a56b4bc4915cc46:1|sw=slow:s0.1793940188346.wav",
+          "created_at": 1793940188,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 57006,
+          "updated_at": 1793940188
+        },
+        "f33f235b11c4a980297538289204192fe9cd786777d8817d4a56b4bc4915cc46:2|sw=slow:s0": {
+          "bot_id": "1528",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "en",
+          "sentence": "soup",
+          "trace_id": "pika-12-ROBOT019db38a-f255-7222-8369-e8b2af9cc9a145c2f864-1806-4748-b8d9-da42eb83c312",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/f33f235b11c4a980297538289204192fe9cd786777d8817d4a56b4bc4915cc46:2|sw=slow:s0.1793940188579.wav",
+          "created_at": 1793940188,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 51468,
+          "updated_at": 1793940188
+        },
+        "f33f235b11c4a980297538289204192fe9cd786777d8817d4a56b4bc4915cc46:3|sw=slow:s0": {
+          "bot_id": "1528",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "en",
+          "sentence": "sausage",
+          "trace_id": "pika-12-ROBOT019db38a-f255-7222-8369-e8b2af9cc9a145c2f864-1806-4748-b8d9-da42eb83c312",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/f33f235b11c4a980297538289204192fe9cd786777d8817d4a56b4bc4915cc46:3|sw=slow:s0.1793940188789.wav",
+          "created_at": 1793940189,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 52860,
+          "updated_at": 1793940189
+        },
+        "f33f235b11c4a980297538289204192fe9cd786777d8817d4a56b4bc4915cc46:4|sw=slow:s0": {
+          "bot_id": "1528",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "en",
+          "sentence": "eggs",
+          "trace_id": "pika-12-ROBOT019db38a-f255-7222-8369-e8b2af9cc9a145c2f864-1806-4748-b8d9-da42eb83c312",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/f33f235b11c4a980297538289204192fe9cd786777d8817d4a56b4bc4915cc46:4|sw=slow:s0.1793940188988.wav",
+          "created_at": 1793940189,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 57644,
+          "updated_at": 1793940189
+        },
+        "f33f235b11c4a980297538289204192fe9cd786777d8817d4a56b4bc4915cc46:5|sw=slow:s0": {
+          "bot_id": "1528",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "en",
+          "sentence": "fruits",
+          "trace_id": "pika-12-ROBOT019db38a-f255-7222-8369-e8b2af9cc9a145c2f864-1806-4748-b8d9-da42eb83c312",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/f33f235b11c4a980297538289204192fe9cd786777d8817d4a56b4bc4915cc46:5|sw=slow:s0.1793940189182.wav",
+          "created_at": 1793940189,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 54444,
+          "updated_at": 1793940189
+        }
+      },
+      "input_schema_key": null,
+      "learn_v2_keep_model": false,
+      "GRAMMAR_CHECKER_TOOL": "",
+      "SYSTEM_TASK_DESCRIPTION": "You are Pika, a friendly voice teacher for a child.\n\nThe lesson is a sequence of checkpoints. You receive ONE checkpoint at a time from the developer.\n\nEach checkpoint has:\nQuestion: what you must ask the child.\nResponse_guide: cases that describe how to answer the child.\n\nFLOW\n1. At the start of a checkpoint:\n   - Ask the Question once.\n   - Include any [MEDIA:...] tokens from the Question.\n\n2. For each child reply:\n   - If the question_guide or response_guide instructs you\n     to call a function (e.g. pronun_check(...)), you MUST\n     call that function exactly as described in the checkpoint.\n   - If it fits a case in Response_guide, answer using that case.\n     You may rephrase slightly, but keep the same meaning and media tokens.\n   - If it does NOT fit any case, answer kindly in 1–2 short turns:\n     repeat or simplify the Question, and guide the child back to it.\n\n3. Moving to the next checkpoint:\n   - When the Response_guide says this checkpoint is finished,\n     OR the child is back on track and agrees to move on,\n     end your reply with <next_ckp/>.\n   - Only put <next_ckp/> at the END of your message.\n\nMEDIA\nUse [MEDIA:...] exactly as given in the checkpoint or guide.\nDo not invent new media keys.\n\nEMOTION\n- Use <emotion type=\"...\"/> exactly as given in the checkpoint or guide.\n- Do not invent new emotion tags.\n- Do not change the type value.\n- Place the tag at the position specified in the guide.\n\nSTYLE\nShort, simple sentences for a child.\n1–3 short sentences per turn.\nWarm, encouraging, and clear.\nAvoid adult, sexual, violent, extremist, unhealthy, risky, addictive content for kids.\nIf user says something unhealthy, advise them softly\n\nEXAMPLE 1\nTeacher:\n[MEDIA:word_image] Can you say the word \"Banana\"?\nStudent:\nBanana!\nTeacher:\n[MEDIA:star_img] Yes, Banana is correct! <next_ckp/>\n\nEXAMPLE 2\nDev sends:\n<checkpoint_1>\n  <question_guide>\n    <emotion type=\"happy\"/>[Say hello to the child],\n    <emotion type=\"excited\"/>[enthusiastically introduce that the child will learn vocab in the topic animals]\n  </question_guide>\n</checkpoint_1>\nTeacher says:\n<emotion type=\"happy\"/> Hello! Hi there, friend! <emotion type=\"excited\"/> Today, we are going to learn about animals! So fun!\n\nEXAMPLE 3\nDev sends:\n<checkpoint_1>\n<question_guide>\nTalk in corresponding language for: <emotion type=\"encouraging\"/> [Bây giờ, cùng phát âm từ này theo tớ nhé][MEDIA:question][MEDIA:question][MEDIA:question]\n</question_guide>\n<question_media_note>Media note for question:[MEDIA:question]: audio: Phát âm từ \"duck\" 1 lần. image: hình ảnh minh họa cho từ duck</question_media_note>\n</checkpoint_1>\n\nSystem language prompt: English\nTeacher says: <emotion type=\"encouraging\"/> Now, follow me and let's say this word together! [MEDIA:question][MEDIA:question][MEDIA:question]\n\nEXAMPLE 4 — Function call required by response_guide\nDev sends:\n<checkpoint_1>\n<question_guide>\n  [MEDIA:question] Can you say the word \"duck\"?\n</question_guide>\n<response_guide>\n  Always call pronun_check(ref_text=\"duck\") before replying.\n  - Correct: [MEDIA:diamond_10] <next_ckp/>\n  - Incorrect: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n  - No answer / irrelevant / refuses: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n</response_guide>\n</checkpoint_1>\nStudent: Duck!\nTeacher (internal): → calls pronun_check(ref_text=\"duck\") → reads tool result → correct\nTeacher says: [MEDIA:diamond_10] <next_ckp/>",
+      "SYSTEM_PROMPT_GENERATION": "",
+      "learn_v2_keep_dev_prompt": false,
+      "SYSTEM_EXTRACTION_PROFILE": "",
+      "dynamic_checkpoint_config": null,
+      "PRONUNCIATION_CHECKER_TOOL": "",
+      "SYSTEM_EXTRACTION_VARIABLES": ""
+    }
+  ],
+  "generation_params": null,
+  "provider_name": "openai",
+  "system_prompt": "You are Pika, a friendly voice teacher for a child.\n\nThe lesson is a sequence of checkpoints. You receive ONE checkpoint at a time from the developer.\n\nEach checkpoint has:\nQuestion: what you must ask the child.\nResponse_guide: cases that describe how to answer the child.\n\nFLOW\n1. At the start of a checkpoint:\n   - Ask the Question once.\n   - Include any [MEDIA:...] tokens from the Question.\n\n2. For each child reply:\n   - If the question_guide or response_guide instructs you\n     to call a function (e.g. pronun_check(...)), you MUST\n     call that function exactly as described in the checkpoint.\n   - If it fits a case in Response_guide, answer using that case.\n     You may rephrase slightly, but keep the same meaning and media tokens.\n   - If it does NOT fit any case, answer kindly in 1–2 short turns:\n     repeat or simplify the Question, and guide the child back to it.\n\n3. Moving to the next checkpoint:\n   - When the Response_guide says this checkpoint is finished,\n     OR the child is back on track and agrees to move on,\n     end your reply with <next_ckp/>.\n   - Only put <next_ckp/> at the END of your message.\n\nMEDIA\nUse [MEDIA:...] exactly as given in the checkpoint or guide.\nDo not invent new media keys.\n\nEMOTION\n- Use <emotion type=\"...\"/> exactly as given in the checkpoint or guide.\n- Do not invent new emotion tags.\n- Do not change the type value.\n- Place the tag at the position specified in the guide.\n\nSTYLE\nShort, simple sentences for a child.\n1–3 short sentences per turn.\nWarm, encouraging, and clear.\nAvoid adult, sexual, violent, extremist, unhealthy, risky, addictive content for kids.\nIf user says something unhealthy, advise them softly\n\nEXAMPLE 1\nTeacher:\n[MEDIA:word_image] Can you say the word \"Banana\"?\nStudent:\nBanana!\nTeacher:\n[MEDIA:star_img] Yes, Banana is correct! <next_ckp/>\n\nEXAMPLE 2\nDev sends:\n<checkpoint_1>\n  <question_guide>\n    <emotion type=\"happy\"/>[Say hello to the child],\n    <emotion type=\"excited\"/>[enthusiastically introduce that the child will learn vocab in the topic animals]\n  </question_guide>\n</checkpoint_1>\nTeacher says:\n<emotion type=\"happy\"/> Hello! Hi there, friend! <emotion type=\"excited\"/> Today, we are going to learn about animals! So fun!\n\nEXAMPLE 3\nDev sends:\n<checkpoint_1>\n<question_guide>\nTalk in corresponding language for: <emotion type=\"encouraging\"/> [Bây giờ, cùng phát âm từ này theo tớ nhé][MEDIA:question][MEDIA:question][MEDIA:question]\n</question_guide>\n<question_media_note>Media note for question:[MEDIA:question]: audio: Phát âm từ \"duck\" 1 lần. image: hình ảnh minh họa cho từ duck</question_media_note>\n</checkpoint_1>\n\nSystem language prompt: English\nTeacher says: <emotion type=\"encouraging\"/> Now, follow me and let's say this word together! [MEDIA:question][MEDIA:question][MEDIA:question]\n\nEXAMPLE 4 — Function call required by response_guide\nDev sends:\n<checkpoint_1>\n<question_guide>\n  [MEDIA:question] Can you say the word \"duck\"?\n</question_guide>\n<response_guide>\n  Always call pronun_check(ref_text=\"duck\") before replying.\n  - Correct: [MEDIA:diamond_10] <next_ckp/>\n  - Incorrect: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n  - No answer / irrelevant / refuses: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n</response_guide>\n</checkpoint_1>\nStudent: Duck!\nTeacher (internal): → calls pronun_check(ref_text=\"duck\") → reads tool result → correct\nTeacher says: [MEDIA:diamond_10] <next_ckp/>",
+  "format_output": "TEXT",
+  "graph": {
+    "nodes": [
+      {
+        "node_id": "learn_chunk",
+        "prompt": "",
+        "type": "LEARN",
+        "tools": [],
+        "pivots": [],
+        "nexts": [],
+        "checkpoints": [
+          {
+            "name": "Chủ đề hôm nay",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:family_dining_table_intro] What food do you like? Today, let's learn about food! <next_ckp/>",
+            "media_list": [
+              {
+                "id": "family_dining_table_intro",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1PREhl01f.jpg",
+                "media_description": "audio: none. image: A warm family dining table filled with colorful delicious dishes, Dining room background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": null,
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Giới thiệu từ vựng: rice",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:rice_bowl_present]  Cậu ơi! Cơm trắng dẻo thơm — món ăn quen thuộc trong bữa cơm gia đình mình đó! Trong tiếng Anh, chúng mình gọi đó là [MEDIA:rice_bowl_vocab] <next_ckp/>",
+            "media_list": [
+              {
+                "id": "rice_bowl_present",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1PREhl02.jpg",
+                "media_description": " image: A bowl of fluffy white steamed rice on a family dining table, Dining room background"
+              },
+              {
+                "id": "rice_bowl_vocab",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/20526hhau37.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt03.jpg",
+                "media_description": "Audio: rice. rice. rice.. image: A bowl of fluffy white steamed rice"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": null,
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Luyện tập phát âm: rice",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "<emotion type=\"excited\"/> Cùng nói theo tớ nhé. Say it with me! [MEDIA:rice_bowl_practice] ",
+            "media_list": [
+              {
+                "id": "rice_bowl_practice",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/20526hhau38.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt03.jpg",
+                "media_description": "audio: [cheerful, energetic]Rice, rice! image: A bowl of fluffy white steamed rice"
+              },
+              {
+                "id": "rice_bowl_retry",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/20526hhau37.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt03.jpg",
+                "media_description": "Audio: rice. rice. rice. image: A bowl of fluffy white steamed rice"
+              },
+              {
+                "id": "rice_bowl_fallback",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt03.jpg",
+                "media_description": " image: A bowl of fluffy white steamed rice"
+              },
+              {
+                "id": "rice_tenten",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/tadaabutshort.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt03.jpg",
+                "media_description": "Visual: Bát cơm trắng dẻo thơm | Chữ: \"rice\"\nAudio: Ta-da!\n"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 3,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"encouraging\"/> [Mình nói lại cùng nhau nha! One more time, nghe thật kỹ rồi nói theo tớ nhé] [MEDIA:rice_bowl_retry]"
+                    }
+                  ],
+                  "turn_guide": "Trẻ phát âm chưa tới ngưỡng đạt nhưng vẫn đang cố đọc từ mẫu thì KHÔNG chọn nhánh này — chỉ chọn khi trẻ im lặng, trẻ đáp lại bằng tiếng Việt, trẻ nói \"tớ không biết\", hoặc trẻ nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"happy\"/> [Nào cậu ơi, cùng nói với tớ nhé! Listen carefully and say] [MEDIA:rice_bowl_retry]"
+                },
+                {
+                  "turn": 2,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Điểm phát âm < 0.85, hoặc trẻ im lặng, trẻ đáp lại bằng tiếng Việt, trẻ nói \"tớ không biết\", trẻ nói chuyện khác không liên quan tới từ mẫu — điểm phát âm từ 0.85 trở lên thì KHÔNG chọn nhánh này: [MEDIA:rice_bowl_fallback] [Để tớ nói cùng cậu nhé! Let me say it with you. Đó là cơm. Chúng mình gọi là <eng> rice </eng>. We'll practice more later!] [MEDIA:rice_tenten]<next_ckp/>"
+                }
+              ],
+              "ref_text": "rice",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt02f.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "357151c9c1d9adef2bb0a4fde2720c6ef4be0bce4960090839ee9597fd885b4b",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Giới thiệu từ vựng: noodles",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:noodles_bowl_present]  Tiếp nào cậu ơi! Sợi mì dài dai, húp xì xụp nghe vui tai — trong tiếng Anh, chúng mình gọi đó là [MEDIA:noodles_bowl_vocab] <next_ckp/>",
+            "media_list": [
+              {
+                "id": "noodles_bowl_present",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1PREhl03.jpg",
+                "media_description": ". image: A bowl of golden hot noodles with steam rising on a family dining table, Dining room background"
+              },
+              {
+                "id": "noodles_bowl_vocab",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/20526hhau39.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt06.jpg",
+                "media_description": "audio: [instructional, emphasis]noodles. noodles. noodles. image: A bowl of golden hot noodles with steam rising"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": null,
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Luyện tập phát âm: noodles",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "<emotion type=\"happy_2\"/> Cậu nói theo tớ nhé. Say it with me! [MEDIA:noodles_bowl_practice] ",
+            "media_list": [
+              {
+                "id": "noodles_bowl_practice",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/20526hhau40.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt06.jpg",
+                "media_description": "audio: [cheerful, energetic]Noodles, noodles! image: A bowl of golden hot noodles with steam rising"
+              },
+              {
+                "id": "noodles_bowl_retry",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/20526hhau39.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt06.jpg",
+                "media_description": "Audio: noodles. noodles. noodles. image: A bowl of golden hot noodles with steam rising"
+              },
+              {
+                "id": "noodles_bowl_fallback",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt06.jpg",
+                "media_description": " image: A bowl of golden hot noodles with steam rising"
+              },
+              {
+                "id": "noodles_tenten",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/tadaabutshort.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt06.jpg",
+                "media_description": "Audio: Ta-da!\nVisual: Tô mì sợi vàng nóng hổi | Chữ: \"noodles\"\n"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 3,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"happy\"/> [Pika thấy có gì đó hơi khác một chút nè! One more time, nghe thật kỹ rồi nói theo tớ nhé] [MEDIA:noodles_bowl_retry]"
+                    }
+                  ],
+                  "turn_guide": "Trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu — nếu trẻ CÓ nói tiếng Anh và đang cố đọc từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh intent này: <emotion type=\"happy\"/> [Nào cậu ơi, cùng nói với tớ nhé! Listen carefully and say] [MEDIA:noodles_bowl_retry]"
+                },
+                {
+                  "turn": 2,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", nói chuyện khác không liên quan tới từ mẫu, hoặc đọc từ mẫu nhưng điểm phát âm < 0.85 — nếu điểm phát âm ≥ 0.85 thì KHÔNG chọn nhánh intent này: [MEDIA:noodles_bowl_fallback] [Để tớ nói cùng cậu nhé! Let me say it with you. Đó là mì. Chúng mình gọi là <eng> noodles </eng>. We'll practice more later!] [MEDIA:noodles_tenten]<next_ckp/>"
+                }
+              ],
+              "ref_text": "noodles",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt05f.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "f4a04ddf1c3941c8c95bedf8ebec317b8f8b235728f9194201ef7f056025787c",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Giới thiệu từ vựng: soup",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:soup_bowl_present] Cậu ơi! Canh nóng hổi, húp một ngụm là ấm bụng ngay — trong tiếng Anh, chúng mình gọi đó là [MEDIA:soup_bowl_vocab]  <next_ckp/>",
+            "media_list": [
+              {
+                "id": "soup_bowl_present",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1PREhl04.jpg",
+                "media_description": " image: A steaming hot bowl of fragrant soup on a family dining table, Dining room background"
+              },
+              {
+                "id": "soup_bowl_vocab",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/20526hhau41.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt09.jpg",
+                "media_description": "audio: [instructional, emphasis]soup. soup. soup. image: A steaming hot bowl of fragrant soup"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": null,
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Luyện tập phát âm: soup",
+            "past": null,
+            "type": "cta_simplify",
+            "question": " <emotion type=\"happy_3\"/> Hãy  nói theo tớ nhé. Say it with me! [MEDIA:soup_bowl_practice]",
+            "media_list": [
+              {
+                "id": "soup_bowl_practice",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/20526hhau42.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt09.jpg",
+                "media_description": "audio: [cheerful, energetic]Soup, soup! image: A steaming hot bowl of fragrant soup"
+              },
+              {
+                "id": "soup_bowl_retry",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/20526hhau41.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt09.jpg",
+                "media_description": "Audio: soup. soup. soup. image: A steaming hot bowl of fragrant soup"
+              },
+              {
+                "id": "soup_bowl_fallback",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt09.jpg",
+                "media_description": " image: A steaming hot bowl of fragrant soup"
+              },
+              {
+                "id": "soup_tenten",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/tadaabutshort.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt09.jpg",
+                "media_description": "Audio: Ta-da!\nVisual: Tô canh nóng hổi | Chữ: \"soup\"\n"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 3,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"happy\"/> [Tớ nghĩ chúng mình cần phát âm chuẩn hơn từ này! One more time, nghe thật kỹ rồi nói theo tớ nhé] [MEDIA:soup_bowl_retry]"
+                    }
+                  ],
+                  "turn_guide": "Trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu — nếu trẻ CÓ nói tiếng Anh và đang cố đọc từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh intent này: <emotion type=\"happy\"/> [Nào cậu ơi, cùng nói với tớ nhé! Listen carefully and say] [MEDIA:soup_bowl_retry]"
+                },
+                {
+                  "turn": 2,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", nói chuyện khác không liên quan tới từ mẫu, hoặc đọc từ mẫu nhưng điểm phát âm < 0.85 — nếu điểm phát âm ≥ 0.85 thì KHÔNG chọn nhánh intent này: [MEDIA:soup_bowl_fallback] [Để tớ nói cùng cậu nhé! Let me say it with you. Đó là canh. Chúng mình gọi là <eng> soup </eng>. We'll practice more later!] [MEDIA:soup_tenten]<next_ckp/>"
+                }
+              ],
+              "ref_text": "soup",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt08f.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "98edca522f6ea92cc9c43077b8ee98840d56b4095d65e2a45f327bbc2d704998",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Kết thúc - pháo hoa",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:ending_fireworks] <next_ckp/>",
+            "media_list": [
+              {
+                "id": "ending_fireworks",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/fireworksparkling.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/022326hlongfw.mjpeg",
+                "media_description": "audio: fireworks sound effect. image: Colorful fireworks bursting in a night sky, Night sky background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "8d42a315583c9336cbba65edad6f0f427438a03995aff205e4fd0552dfd8b744",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Khen ngợi và ôn tập",
+            "past": null,
+            "type": "narrative",
+            "question": "<emotion type=\"excited\"/> Cậu giỏi quá trời luôn á! Cùng ôn lại nào! Great job! Let's review! <next_ckp/>",
+            "media_list": [],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": null,
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Ôn tập từ vựng",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:recap_rice] <eng> rice </eng>, [MEDIA:recap_noodles] <eng> noodles </eng>, [MEDIA:recap_soup] <eng> soup </eng>. <next_ckp/>",
+            "media_list": [
+              {
+                "id": "recap_rice",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt03.jpg",
+                "media_description": "audio: none. image: A bowl of fluffy white steamed rice"
+              },
+              {
+                "id": "recap_noodles",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt06.jpg",
+                "media_description": "audio: none. image: A bowl of golden hot noodles with steam rising"
+              },
+              {
+                "id": "recap_soup",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/520f15d1hlt09.jpg",
+                "media_description": "audio: none. image: A steaming hot bowl of fragrant soup"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": null,
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "Kết thúc bài học",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:ending_screen] Cậu dạy tớ đủ tên 3 món rồi! Ở căn tin trường Pet Pet, bạn Justin hay hỏi mọi người thích ăn gì đó. Mình qua đó nghe cùng nhau nha. Mở cánh cửa vàng nào! <next_ckp/>",
+            "media_list": [
+              {
+                "id": "ending_screen",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/seeyouending.mjpeg",
+                "media_description": "audio: none. image: A cheerful colorful ending screen with Pika character waving goodbye, Colorful background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": null,
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          }
+        ],
+        "input_schema_key": null,
+        "start_message": "",
+        "hooks": [],
+        "max_turns": null,
+        "pre_llm_pipeline": null,
+        "dynamic_checkpoint_builder": null,
+        "dynamic_checkpoint_config": {},
+        "tts_provider_override": null,
+        "learn_v2": true,
+        "learn_v2_keep_dev_prompt": false,
+        "learn_v2_keep_model": false
+      }
+    ],
+    "global_pivots": [],
+    "global_tools": [
+      "pronun_check_v2"
+    ],
+    "global_hooks": [],
+    "system_prompt": "You are Pika, a friendly voice teacher for a child.\n\nThe lesson is a sequence of checkpoints. You receive ONE checkpoint at a time from the developer.\n\nEach checkpoint has:\nQuestion: what you must ask the child.\nResponse_guide: cases that describe how to answer the child.\n\nFLOW\n1. At the start of a checkpoint:\n   - Ask the Question once.\n   - Include any [MEDIA:...] tokens from the Question.\n\n2. For each child reply:\n   - If the question_guide or response_guide instructs you\n     to call a function (e.g. pronun_check(...)), you MUST\n     call that function exactly as described in the checkpoint.\n   - If it fits a case in Response_guide, answer using that case.\n     You may rephrase slightly, but keep the same meaning and media tokens.\n   - If it does NOT fit any case, answer kindly in 1–2 short turns:\n     repeat or simplify the Question, and guide the child back to it.\n\n3. Moving to the next checkpoint:\n   - When the Response_guide says this checkpoint is finished,\n     OR the child is back on track and agrees to move on,\n     end your reply with <next_ckp/>.\n   - Only put <next_ckp/> at the END of your message.\n\nMEDIA\nUse [MEDIA:...] exactly as given in the checkpoint or guide.\nDo not invent new media keys.\n\nEMOTION\n- Use <emotion type=\"...\"/> exactly as given in the checkpoint or guide.\n- Do not invent new emotion tags.\n- Do not change the type value.\n- Place the tag at the position specified in the guide.\n\nSTYLE\nShort, simple sentences for a child.\n1–3 short sentences per turn.\nWarm, encouraging, and clear.\nAvoid adult, sexual, violent, extremist, unhealthy, risky, addictive content for kids.\nIf user says something unhealthy, advise them softly\n\nEXAMPLE 1\nTeacher:\n[MEDIA:word_image] Can you say the word \"Banana\"?\nStudent:\nBanana!\nTeacher:\n[MEDIA:star_img] Yes, Banana is correct! <next_ckp/>\n\nEXAMPLE 2\nDev sends:\n<checkpoint_1>\n  <question_guide>\n    <emotion type=\"happy\"/>[Say hello to the child],\n    <emotion type=\"excited\"/>[enthusiastically introduce that the child will learn vocab in the topic animals]\n  </question_guide>\n</checkpoint_1>\nTeacher says:\n<emotion type=\"happy\"/> Hello! Hi there, friend! <emotion type=\"excited\"/> Today, we are going to learn about animals! So fun!\n\nEXAMPLE 3\nDev sends:\n<checkpoint_1>\n<question_guide>\nTalk in corresponding language for: <emotion type=\"encouraging\"/> [Bây giờ, cùng phát âm từ này theo tớ nhé][MEDIA:question][MEDIA:question][MEDIA:question]\n</question_guide>\n<question_media_note>Media note for question:[MEDIA:question]: audio: Phát âm từ \"duck\" 1 lần. image: hình ảnh minh họa cho từ duck</question_media_note>\n</checkpoint_1>\n\nSystem language prompt: English\nTeacher says: <emotion type=\"encouraging\"/> Now, follow me and let's say this word together! [MEDIA:question][MEDIA:question][MEDIA:question]\n\nEXAMPLE 4 — Function call required by response_guide\nDev sends:\n<checkpoint_1>\n<question_guide>\n  [MEDIA:question] Can you say the word \"duck\"?\n</question_guide>\n<response_guide>\n  Always call pronun_check(ref_text=\"duck\") before replying.\n  - Correct: [MEDIA:diamond_10] <next_ckp/>\n  - Incorrect: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n  - No answer / irrelevant / refuses: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n</response_guide>\n</checkpoint_1>\nStudent: Duck!\nTeacher (internal): → calls pronun_check(ref_text=\"duck\") → reads tool result → correct\nTeacher says: [MEDIA:diamond_10] <next_ckp/>",
+    "version": "v2",
+    "strict": false,
+    "use_intent": "full"
+  }
+}

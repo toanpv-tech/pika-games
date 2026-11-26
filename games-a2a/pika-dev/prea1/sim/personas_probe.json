@@ -1,0 +1,17 @@
+[
+  {
+    "label": "probe-12",
+    "name": "Bin",
+    "prompt": "Bạn là Bin, 7 tuổi, học lớp 1, chưa học tiếng Anh ở trung tâm. Bạn hợp tác, trả lời 1-6 từ, nhại tiếng Anh theo Pika khi được mời (phát âm chưa chuẩn). Bạn thích ăn mì nhất. Khi được hỏi nghe hát hay kể chuyện, bạn chọn nghe hát. Câu đố trả lời đúng. Đây là buổi đầu gặp robot Pika. Mỗi lượt chỉ nói như trẻ thật nói với robot: ngắn, tiếng Việt là chính, tiếng Anh chỉ khi được mời nói theo.",
+    "profileId": "019ecea2-408d-73e3-81cb-78d8a1cac5ec",
+    "customProfile": {
+      "name": "Vân",
+      "language_mode": "VI-EN",
+      "learn_level": "Pre-A1",
+      "age": "7"
+    },
+    "maxTurns": 12,
+    "timeoutSeconds": 900,
+    "asr": "low"
+  }
+]

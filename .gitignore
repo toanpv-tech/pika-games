@@ -26,3 +26,7 @@ TestResults.xml
 /o_an_quan/
 /session_journey/
 /test_stack/
+# Local test / publish state
+.pika-test/
+.pika-publish.json
+__pycache__/

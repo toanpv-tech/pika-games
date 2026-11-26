@@ -1,0 +1,2377 @@
+{
+  "status": 0,
+  "msg": "Success",
+  "result": {
+    "id": 3795,
+    "name": "B1 - Trải nghiệm 30p - Học câu (cắt từ 2400)",
+    "description": "Bot learn v2 cho buổi trải nghiệm 30 phút B1, nhúng vào graph chính bằng SubGraphNode. Ckp gốc 2400 #5-#28 (I enjoy ... the most, He enjoys ... the most); #23 và #27 thêm lượt 2 cho trẻ nói đủ câu; bỏ mở đầu chung #1-#4 và lời tạm biệt #29.",
+    "task_chain": [
+      {
+        "task": "",
+        "tools": [
+          "pronun_check_v2"
+        ],
+        "language": "",
+        "learn_v2": true,
+        "use_cache": true,
+        "asr_config": "medium",
+        "session_id": "",
+        "sub_agents": [],
+        "checkpoints": [
+          {
+            "game": null,
+            "name": "An Linh gọi Ken Bi đến quầy ăn vặt",
+            "past": null,
+            "type": "narrative",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:anlinh_snack_stall_wave_audio] <next_ckp/>",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "anlinh_snack_stall_wave_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/upload/mp3/lesson_generator/b1_f5_d2_present_sentence/anlinh_snack_stall_wave_audio.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at02.jpg",
+                "media_description": "audio: Voice An Linh: [emphasis] Kenbee, come sit here. I got us some snacks. image: Wide sidewalk in front of a school gate with a snack stall, a few plastic chairs, and a low iron fence along the curb. On the stall counter there are red snack bags, three coconut jelly cups, and many skewered grilled meats. An Linh sits on a plastic chair next to the stall, holding a sausage skewer on a wooden stick, smiling and waving to Ken Bi, Sidewalk background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "07164ad8d5fe082a96d2c81a50bddfe9bb1fa990fe5a3ca6674f18a431a248b3",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Ken Bi đến quầy và hỏi An Linh",
+            "past": null,
+            "type": "narrative",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:kenbi_arrives_stall_audio] <next_ckp/>",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "kenbi_arrives_stall_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2907TAau11.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at03.jpg",
+                "media_description": "audio: Voice Ken Bi: [soft, low pitched] [soft, low-pitched] Wow, so many snacks. Which Vietnamese snack do you enjoy the most? image: Ken Bi running up to the snack stall, eyes lighting up looking at the snacks displayed on the counter, then turning to An Linh, Sidewalk background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "bfb1c45c5dd7a5101a55a5abadf94a0595646467bfdb3e3a626a5c17e77385db",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "An Linh suy nghĩ và nói về bánh tôm",
+            "past": null,
+            "type": "narrative",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:anlinh_thinking_prawn_fritters_audio] <next_ckp/>",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "anlinh_thinking_prawn_fritters_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/upload/mp3/lesson_generator/b1_f5_d2_present_sentence/anlinh_thinking_prawn_fritters_audio.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at04.jpg",
+                "media_description": "audio: Voice An Linh: [slow, emphasis] I enjoy prawn fritters the most. image: An Linh raising her hand to her chin, smiling and thinking, a thought bubble appearing above her head showing her eating prawn fritters with a woman, the fritters lightly steaming, Sidewalk background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "a379bca5923dd91cf995b36860391cfe0ebded779e43178282f46a0b17e38db2",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Hiện câu mẫu - I enjoy prawn fritters the most",
+            "past": null,
+            "type": "narrative",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:show_form_prawn_fritters_visual] Look, we say it like this. [MEDIA:anlinh_says_prawn_fritters_audio]  <next_ckp/>",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "show_form_prawn_fritters_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at05.jpg",
+                "media_description": "audio: none. image: A large thought bubble filling the screen showing An Linh holding a plate of prawn fritters, smiling"
+              },
+              {
+                "id": "anlinh_says_prawn_fritters_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/upload/mp3/lesson_generator/b1_f5_d2_present_sentence/anlinh_says_prawn_fritters_audio.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at05.jpg",
+                "media_description": "audio: Voice An Linh: [slow, emphasis] I enjoy prawn fritters the most. image: A large thought bubble filling the screen showing An Linh holding a plate of prawn fritters, smiling"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "f9df69c46d25e953393035d5a58001885de42f6902abd307f377c346b516acd7",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Giới thiệu luyện tập cụm cấu trúc",
+            "past": null,
+            "type": "narrative",
+            "hooks": [],
+            "on_max": "next",
+            "question": "<emotion type=\"excited\"/> Let's practice the phrase, I enjoy the most. <next_ckp/>",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "a931c3b8d5cce9b76eb8882e42aa2f9f183c54aecba77c51a52fe1d48f1b0d71",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Luyện tập cụm cấu trúc - I enjoy ... the most",
+            "past": null,
+            "type": "cta_simplify",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:structure_phrase_practice_visual] Listen and say. [MEDIA:anlinh_models_structure_audio] ",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "structure_phrase_practice_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at06.jpg",
+                "media_description": "audio: none. image: Sidewalk background with large centered text display"
+              },
+              {
+                "id": "anlinh_models_structure_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2907TAau12.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at06.jpg",
+                "media_description": "audio: Voice An Linh: [slow, emphasis] I enjoy... the most. image: Sidewalk background with large centered text display"
+              },
+              {
+                "id": "nen",
+                "type": "for_response",
+                "score": null,
+                "audio_url": null,
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at06.jpg",
+                "media_description": "audio: none. image: Reaction visual — Now, say that again"
+              },
+              {
+                "id": "audio",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2907TAau12.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at06.jpg",
+                "media_description": "audio: none. image: Reaction visual — Case 3 (Fallback / Silent / Irrelevant): [Động viên trẻ nói nếu trẻ yên lặng; cổ vũ tinh thần nếu trẻ bảo không biết; ké"
+              },
+              {
+                "id": "tenten",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at06.jpg",
+                "media_description": "audio: none. image: Reaction visual — 85 / Fallback / Silent / Irrelevant): So, we should say, I enjoy the most"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 3,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"proud\"/> [Khen ngợi tích cực, xác nhận trẻ nói đúng] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "[MEDIA:nen] [Listen again.] [MEDIA:audio] [Now, say that again.]"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này. CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"encouraging\"/> [Động viên trẻ nói nếu trẻ yên lặng; cổ vũ tinh thần nếu trẻ bảo không biết; kéo về bài học nếu trẻ nói linh tinh; các trường hợp còn lại chỉ cần động viên và bảo trẻ nói lại] [MEDIA:audio] [Now, say that again.]"
+                },
+                {
+                  "turn": 2,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"proud\"/> [Khen ngợi tích cực, xác nhận trẻ nói đúng] <next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Điểm phát âm dưới 0.85, hoặc trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan đến từ mẫu (nếu điểm ≥ 0.85 thì KHÔNG chọn nhánh này): [MEDIA:nen] [So, we should say] [MEDIA:audio] [We'll practice more later.] [MEDIA:tenten] <next_ckp/>"
+                }
+              ],
+              "ref_text": "I enjoy the most",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at07.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": "a2d84ae56553de7ac4c8209b07d12677570d3d57d940ac6d9b53713070ff9a41",
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "8aafa0cb8a0c1caa003c6108b73acd43c6aacf4b146e2a27c5a0f525dc03960f",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Luyện tập câu toàn phần - I enjoy prawn fritters the most",
+            "past": null,
+            "type": "cta_simplify",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:full_sentence_prawn_fritters_visual] Now, listen and say the whole sentence. [MEDIA:anlinh_models_full_prawn_audio] ",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "full_sentence_prawn_fritters_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at05.jpg",
+                "media_description": "audio: none. image: An Linh holding a plate of prawn fritters, smiling, Sidewalk background"
+              },
+              {
+                "id": "anlinh_models_full_prawn_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2907TAau13.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at05.jpg",
+                "media_description": "audio: Voice An Linh: [slow, emphasis] I enjoy prawn fritters the most. image: An Linh holding a plate of prawn fritters, smiling, Sidewalk background"
+              },
+              {
+                "id": "nen",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at05.jpg",
+                "media_description": "audio: none. image: Reaction visual — Now, say that again, Sidewalk background"
+              },
+              {
+                "id": "audio",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2907TAau13.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at05.jpg",
+                "media_description": "audio: none. image: Reaction visual — Case 3 (Fallback / Silent / Irrelevant): [Động viên trẻ nói nếu trẻ yên lặng; cổ vũ tinh thần nếu trẻ bảo không biết; ké, Sidewalk background"
+              },
+              {
+                "id": "tenten",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at05.jpg",
+                "media_description": "audio: none. image: Reaction visual — 85 / Fallback / Silent / Irrelevant): So, we should say, I enjoy prawn fritters the most, Sidewalk background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 3,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"proud\" /> [Khen ngợi tích cực, xác nhận trẻ nói đúng] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "[MEDIA:nen] [Listen again.] [MEDIA:audio] [Now, say that again.]"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh intent này. CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"encouraging\"/> [Động viên trẻ nói nếu trẻ yên lặng; cổ vũ tinh thần nếu trẻ bảo không biết; kéo về bài học nếu trẻ nói linh tinh; các trường hợp còn lại chỉ cần động viên và bảo trẻ nói lại] [MEDIA:audio] [Now, say that again.]"
+                },
+                {
+                  "turn": 2,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"proud\" /> [Khen ngợi tích cực, xác nhận trẻ nói đúng] <next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ có điểm phát âm < 0.85, hoặc trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu. Nếu trẻ đạt điểm phát âm ≥ 0.85 thì KHÔNG chọn nhánh intent này: [MEDIA:nen] [So, we should say] [MEDIA:audio] [We'll practice more later.] [MEDIA:tenten] <next_ckp/>"
+                }
+              ],
+              "ref_text": "I enjoy prawn fritters the most",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at08.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": "ad27971296a6e5770808d9513d2d175ced36dab12aa2e9292788806c830a7595",
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "a29eddc92f5bbc039f782d8665e19c78f8341ea8510222b00dbca53d7fcfb617",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "An Linh hỏi Ken Bi về bánh rán vừng",
+            "past": null,
+            "type": "narrative",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:anlinh_asks_kenbi_sesame_audio] <next_ckp/>",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "anlinh_asks_kenbi_sesame_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/upload/mp3/lesson_generator/b1_f5_d2_present_sentence/anlinh_asks_kenbi_sesame_audio.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at09.jpg",
+                "media_description": "audio: Voice An Linh: [soft, low-pitched] What about you, Kenbee? Which Vietnamese snack do you enjoy the most? image: An Linh with eyes lighting up, smiling brightly, looking at Ken Bi, hand on chin, Sidewalk background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "101f74d8f29359601afa46f57c06d6795afe9ff643c187b8df0014c459f361cf",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Ken Bi suy nghĩ về bánh rán vừng",
+            "past": null,
+            "type": "narrative",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:kenbi_thinking_sesame_balls_audio] <next_ckp/>",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "kenbi_thinking_sesame_balls_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2807TAau01.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at10.jpg",
+                "media_description": "audio: Voice An Linh: [slow, emphasis] I enjoy sesame balls the most. They're so soft inside. image: Ken Bi raising hand to chin thinking, a thought bubble appearing above his head showing round golden-fried sesame balls sprinkled with white sesame seeds on the outside, Sidewalk background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "e2dc959dbab166c5b9b16e88592211b093a72de34644c3472ad0115f2822fed4",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Trẻ lắng nghe và lặp lại - sesame balls",
+            "past": null,
+            "type": "cta_simplify",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:kenbi_sesame_balls_sentence_visual] Now, you listen and repeat. [MEDIA:kenbi_models_sesame_audio] ",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "kenbi_sesame_balls_sentence_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at11.jpg",
+                "media_description": "audio: none. image: A large thought bubble filling the screen showing Ken Bi holding a sesame ball, mouth wide open ready to eat, Sidewalk background"
+              },
+              {
+                "id": "kenbi_models_sesame_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2907TAau14.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at11.jpg",
+                "media_description": "audio: Voice Ken Bi: [soft, low pitched] [slow, emphasis] I enjoy sesame balls the most. image: A large thought bubble filling the screen showing Ken Bi holding a sesame ball, mouth wide open ready to eat, Sidewalk background"
+              },
+              {
+                "id": "anlinh_retry_sesame_audio",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2907TAau14.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at11.jpg",
+                "media_description": "audio: none. image: Reaction visual — 85): [Bảo trẻ cùng nghe lại một lần nữa rồi tiếp tục sang phần khác], Sidewalk background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 3,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"proud\" /> [Khen ngợi tích cực, xác nhận trẻ nói đúng] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"encouraging\"/> [Bảo trẻ cùng nghe lại một lần nữa rồi tiếp tục sang phần khác] [MEDIA:anlinh_retry_sesame_audio] <next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo câu mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này. CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới câu mẫu: <emotion type=\"calm\"/> [Động viên/kéo về bài] [MEDIA:anlinh_retry_sesame_audio] <next_ckp/>"
+                }
+              ],
+              "ref_text": "I enjoy sesame balls the most",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at12.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": "8b528d115346a24ff76ba08d878f3e0f92de8751405711c0b7b818aedf22d00e",
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "1ca985fef10e700cde9209cf4566c5d51d5e277becc300ccdf233f2af50841bb",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "An Linh hào hứng và rủ đến quầy hàng",
+            "past": null,
+            "type": "narrative",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:anlinh_excited_stall_audio] <next_ckp/>",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "anlinh_excited_stall_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2807TAau03.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at13.jpg",
+                "media_description": "audio: Voice An Linh: [soft, low-pitched, cheerful] I love sesame balls too. What about getting closer to the snack stall to find some more yummy food? image: An Linh nodding enthusiastically, raising both hands excitedly, Sidewalk background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "c9bad2180efb14a404e9ca5a05a9f2308393c00ae2c6546ec4c37a93541e7e27",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "An Linh và Ken Bi đứng trước quầy hàng",
+            "past": null,
+            "type": "narrative",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:anlinh_kenbi_at_stall_audio] <next_ckp/>",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "anlinh_kenbi_at_stall_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/upload/mp3/lesson_generator/b1_f5_d2_present_sentence/anlinh_kenbi_at_stall_audio.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at14.jpg",
+                "media_description": "audio: Voice An Linh: Wow, so yummy! image: An Linh and Ken Bi standing in front of the snack stall, on the display counter there are various snacks such as fish cakes, sausages, and coconut jelly, Sidewalk background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "3423b55b11da4d5dd6d0664a5c3809df324a9ea4024b3ed34d80494f0fc6e80f",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Ken Bi hỏi An Linh về thạch dừa",
+            "past": null,
+            "type": "narrative",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:kenbi_asks_anlinh_coconut_audio] <next_ckp/>",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "kenbi_asks_anlinh_coconut_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/upload/mp3/lesson_generator/b1_f5_d2_present_sentence/kenbi_asks_anlinh_coconut_audio.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at15.jpg",
+                "media_description": "audio: Voice Ken Bi: [soft, low pitched] Which Vietnamese snack do you enjoy the most? I'm really excited to know! image: Ken Bi turning to look at An Linh, tilting head curiously, Sidewalk background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "37599f72a4d021e760c338d4f17ee9a03497980aa9f6b899c38838a9e8f0197a",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "An Linh cầm thạch dừa và nói",
+            "past": null,
+            "type": "narrative",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:anlinh_holds_coconut_jelly_audio] <next_ckp/>",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "anlinh_holds_coconut_jelly_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/upload/mp3/lesson_generator/b1_f5_d2_present_sentence/anlinh_holds_coconut_jelly_audio.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at16.jpg",
+                "media_description": "audio: Voice An Linh: [slow, emphasis] I enjoy coconut jelly the most. It's so cool and refreshing. image: An Linh picking up a coconut jelly cup from the stall display counter, holding it out in front, Ken Bi also looking at the coconut jelly cup, Sidewalk background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "a56c99036f975e04fbfff305d45b4c0b7bf9f95e6a841c2db2b9e681a6f0c75c",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Trẻ lắng nghe và lặp lại - coconut jelly",
+            "past": null,
+            "type": "cta_simplify",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:anlinh_coconut_jelly_sentence_visual] Awesome. Now, you say it. Listen and say. [MEDIA:anlinh_models_coconut_audio] ",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "anlinh_coconut_jelly_sentence_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at17.jpg",
+                "media_description": "audio: none. image: An Linh holding a coconut jelly cup, Sidewalk background"
+              },
+              {
+                "id": "anlinh_models_coconut_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2907TAau15.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at17.jpg",
+                "media_description": "audio: Voice An Linh: [slow, emphasis] I enjoy coconut jelly the most. image: An Linh holding a coconut jelly cup, Sidewalk background"
+              },
+              {
+                "id": "anlinh_retry_coconut_audio",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2907TAau15.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at17.jpg",
+                "media_description": "audio: none. image: Reaction visual — 85): [Bảo trẻ cùng nghe lại một lần nữa rồi tiếp tục sang phần khác], Sidewalk background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 3,
+            "question_guide": null,
+            "response_guide": {
+              "tool": "pronun_check_v2_simplify",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [
+                    {
+                      "lower_bound": 0.85,
+                      "response_guide": "<emotion type=\"proud\" /> [Khen ngợi tích cực, xác nhận trẻ nói đúng] <next_ckp/>"
+                    },
+                    {
+                      "lower_bound": 0,
+                      "response_guide": "<emotion type=\"encouraging\"/> [Bảo trẻ cùng nghe lại một lần nữa rồi tiếp tục sang phần khác] [MEDIA:anlinh_retry_coconut_audio] <next_ckp/>"
+                    }
+                  ],
+                  "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo câu mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này. CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới câu mẫu: <emotion type=\"calm\"/> [Động viên/kéo về bài] [MEDIA:anlinh_retry_coconut_audio] <next_ckp/>"
+                }
+              ],
+              "ref_text": "I enjoy coconut jelly the most",
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at18.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": "3dbed8273a880aa458808098167b461e00866ad336a9e316f58f2c2b90f4b16d",
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "00000c5d52319a2229171031d72c9b257c39aba0dd10cd4241b974b7c829181d",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Pika giới thiệu phần hỏi và đáp",
+            "past": null,
+            "type": "narrative",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:pika_rises_ask_answer_visual] Now, let's learn how to ask and answer about Vietnamese snacks we enjoy. <next_ckp/>",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "pika_rises_ask_answer_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/616hl01prea1pre20a.mjpeg",
+                "media_description": "audio: none. image: Pika robot rising up, Sidewalk background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "4bd394c655bbabf5dbae61218ad81912ee399d8f53936173de03d917b19446ea",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Ken Bi hỏi An Linh - Which Vietnamese snack",
+            "past": null,
+            "type": "narrative",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:kenbi_asks_anlinh_dialogue_audio] <next_ckp/>",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "kenbi_asks_anlinh_dialogue_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2807TAau05.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at19.jpg",
+                "media_description": "audio: Voice Ken Bi: [soft, low pitched] [soft, low-pitched] [slow, emphasis] Which Vietnamese snack do you enjoy the most? image: Ken Bi and An Linh sitting on plastic chairs on a wide sidewalk at a school gate, chatting happily, Ken Bi turning to An Linh, Sidewalk background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "cde090aa55f71e6af57f40c1955f04ad1bc2aa2310de2b425c859b8916cb7595",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "An Linh trả lời - I enjoy coconut jelly the most",
+            "past": null,
+            "type": "narrative",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:anlinh_answers_coconut_dialogue_audio] <next_ckp/>",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "anlinh_answers_coconut_dialogue_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/upload/mp3/lesson_generator/b1_f5_d2_present_sentence/anlinh_answers_coconut_dialogue_audio.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at17.jpg",
+                "media_description": "audio: Voice An Linh: [slow, emphasis] I enjoy coconut jelly the most. image: An Linh smiling, holding a coconut jelly cup, smiling brightly, Sidewalk background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "921738297de455fd020fe080c7e338c5368c3bfecc615513a0b21cba6747b2c3",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Pika hỏi trẻ - Which Vietnamese snack do you enjoy the most",
+            "past": null,
+            "type": "cta_simplify",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:pika_asks_child_snack_visual] Okay, now it's your turn. Which Vietnamese snack do you enjoy the most?",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "pika_asks_child_snack_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at20.jpg",
+                "media_description": "audio: none. image: Clean screen with two text boxes, question at top and sentence stem at bottom, surrounded by Vietnamese snack icons including prawn fritters, sesame balls, coconut jelly, sweet soup, mixed rice paper, and ice cream cone, Scene background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "tool": null,
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [],
+                  "turn_guide": "• Case 1 (Trẻ nói đủ câu 'I enjoy ... the most' với một món ăn vặt): <emotion type=\"admire\"/> [Khen cụ thể là trẻ nói đủ cả câu, nói Pika thấy đó là lựa chọn tuyệt, không hỏi thêm] <next_ckp/>\n\n• Case 2 (Trẻ chỉ nói tên món, ví dụ 'sesame balls', hoặc thiếu 'the most'): <emotion type=\"encouraging\"/> [Khen trẻ chọn món hay] Let's say the whole sentence: I enjoy <món trẻ chọn> the most! [Mời trẻ nói lại cả câu một lần]\n\n• Case 3 (Im lặng, không biết, nói chuyện khác; nội dung không phù hợp thì lảng đi): <emotion type=\"encouraging\"/> [Nhẹ nhàng] For me, I enjoy coconut jelly the most! What about you? Say: I enjoy ... the most!"
+                },
+                {
+                  "turn": 2,
+                  "cases": [],
+                  "turn_guide": "• Case 1 (Trẻ nói đủ câu 'I enjoy ... the most'): <emotion type=\"admire\"/> [Khen cụ thể] <next_ckp/>\n\n• Case 2 (Các trường hợp còn lại): <emotion type=\"encouraging\"/> [Nói mẫu đủ câu với món trẻ chọn, nếu không có thì dùng coconut jelly] I enjoy ... the most! [Bảo chúng mình sẽ luyện thêm sau, không hỏi thêm] <next_ckp/>"
+                }
+              ],
+              "ref_text": null,
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at21.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": "514468138763ebec51fe4ba27d076270253dc3ab82823ceef4e0914779bfda21",
+            "pronun_score_only": false,
+            "type_cta_simplify": "base",
+            "cache_hash_question": "f046f7aa9310b6715e10afbe0d70303b23d18a85b840238468182297ef20dbad",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Pika giới thiệu đổi ngôi thứ",
+            "past": null,
+            "type": "narrative",
+            "hooks": [],
+            "on_max": "next",
+            "question": "<emotion type=\"curious\"/> Now, let's talk about what our friends enjoy. <next_ckp/>",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "ab5514b4bc06360a77d3fa5fa8ff654c73f1394ecbbd6e680b3fb1ef38ce6b0e",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Hỏi về thím Bảy - she",
+            "past": null,
+            "type": "narrative",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:thimbay_prawn_fritters_question_audio] <next_ckp/>",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "thimbay_prawn_fritters_question_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/upload/mp3/lesson_generator/b1_f5_d2_present_sentence/thimbay_prawn_fritters_question_audio.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at22.jpg",
+                "media_description": "audio: Voice An Linh: [emphasis] What about Auntie Seven? Which Vietnamese snack does she enjoy the most? image: An older woman sitting in front of a plate of prawn fritters, Sidewalk background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "29adfa0ef562a4df0a8407b600ee7bd79ccdaefb92e72b7290b400b3446d9929",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Trả lời về thím Bảy - She enjoys prawn fritters the most",
+            "past": null,
+            "type": "narrative",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:thimbay_eating_prawn_fritters_audio] <next_ckp/>",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "thimbay_eating_prawn_fritters_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2907TAau16.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at23.jpg",
+                "media_description": "audio: Voice An Linh: [slow, emphasis] She enjoys prawn fritters the most. She always asks for more. image: An older woman eating prawn fritters, Sidewalk background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "1f3784f83a732d754af7b0885f3d1f0a3bd8dfb7045c257c39bfba559a9b5273",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Pika hỏi trẻ về chú Tùng - he",
+            "past": null,
+            "type": "cta_simplify",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:chutung_stall_owner_question_audio] Okay, what about uncle Tung, the snack stand owner? Which Vietnamese snack does he enjoy the most?",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "chutung_stall_owner_question_audio",
+                "type": "for_question",
+                "score": null,
+                "audio_url": null,
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at24.jpg",
+                "media_description": "audio: Voice Ken Bi: [soft, low pitched] Okay, what about uncle Tung, the snack stand owner? Which Vietnamese snack does he enjoy the most? image: A middle-aged man standing behind the snack stall counter, wearing an apron and clean medical gloves, Sidewalk background"
+              },
+              {
+                "id": "nen",
+                "type": "for_response",
+                "score": null,
+                "audio_url": null,
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at26.jpg",
+                "media_description": "audio: none. image: Reaction visual — Case 1 (Trẻ trả lời đúng — He enjoys sesame balls the most): That's right, Sidewalk background"
+              },
+              {
+                "id": "tenten",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at26.jpg",
+                "media_description": "audio: none. image: Reaction visual — Case 2 (Các trường hợp còn lại): He enjoys sesame balls the most, Sidewalk background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "tool": null,
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [],
+                  "turn_guide": "• Case 1 (Trẻ nói đúng hoặc gần đúng 'He enjoys sesame balls the most', có 'enjoys'): [MEDIA:tenten] [That's right. He enjoys sesame balls the most.] <next_ckp/>\n\n• Case 2 (Trẻ nói 'He enjoy' thiếu -s, hoặc chỉ nói 'sesame balls'): <emotion type=\"encouraging\"/> [Khen trẻ nói đúng món] Listen: He enjoy-SSS sesame balls the most! [Nhấn rõ đuôi -s, mời trẻ nói lại cả câu một lần]\n\n• Case 3 (Các trường hợp còn lại): [MEDIA:nen] [He enjoys sesame balls the most. Now you say it!]"
+                },
+                {
+                  "turn": 2,
+                  "cases": [],
+                  "turn_guide": "• Case 1 (Trẻ nói 'He enjoys sesame balls the most' hoặc gần đúng): [MEDIA:tenten] [That's right. He enjoys sesame balls the most.] <next_ckp/>\n\n• Case 2 (Các trường hợp còn lại): [MEDIA:nen] [He enjoys sesame balls the most. Yummy. He recommends it to the students, too.] [Bảo chúng mình sẽ luyện thêm sau] <next_ckp/>"
+                }
+              ],
+              "ref_text": null,
+              "global_guide": ""
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at25.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": "476fabcffde10888c67a317f42f1737d1b3ceea607fb7dd4efc214e651cb83fe",
+            "pronun_score_only": false,
+            "type_cta_simplify": "base",
+            "cache_hash_question": "f9a91368281275dc7bcde84e80582ef2ed258026a723722fc4246b509a9c5b93",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "game": null,
+            "name": "Outro - Ken Bi và An Linh ăn mừng",
+            "past": null,
+            "type": "narrative",
+            "hooks": [],
+            "on_max": "next",
+            "question": "[MEDIA:kenbi_anlinh_celebrate_outro_visual] You did an amazing job today. You learned how to talk about Vietnamese snacks you enjoy the most. Keep practicing and you'll be a superstar. <next_ckp/>",
+            "cambridge": null,
+            "max_turns": null,
+            "placement": null,
+            "media_list": [
+              {
+                "id": "kenbi_anlinh_celebrate_outro_visual",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at27.jpg",
+                "media_description": "audio: none. image: Ken Bi and An Linh sitting on plastic chairs on the sidewalk, both raising their hands clinking sugarcane juice glasses in celebration, a street food cart behind them, Sidewalk background"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "cambridge_game": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": "",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "pronun",
+            "cache_hash_question": "9655246846743c1844158e80b3156d4b8522d58e64a64afd39899463abed882f",
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          }
+        ],
+        "start_message": "",
+        "assessment_mode": null,
+        "enable_subtitle": false,
+        "assessment_level": null,
+        "input_schema_key": null,
+        "learn_v2_keep_model": false,
+        "GRAMMAR_CHECKER_TOOL": "",
+        "SYSTEM_TASK_DESCRIPTION": "You are Pika, a friendly voice teacher for a child.\n\n# ROLE\nThe lesson is a sequence of checkpoints. You receive ONE checkpoint at a time from the developer. Each checkpoint has:\n- Question: what you must ask the child.\n- Response_guide: cases describing how to answer the child.\n\n# FLOW\n1. Start of checkpoint: ask the Question once, including its [MEDIA:...] tokens.\n2. For each child reply:\n   - If the guide says to call a function (e.g. pronun_check(...)), call it exactly as described BEFORE replying.\n   - If the reply fits a case in Response_guide, answer using that case. You may rephrase slightly, but keep the meaning and all media/tags.\n   - Otherwise, kindly repeat or simplify the Question in 1–2 short turns to guide the child back.\n3. End your reply with <next_ckp/> when the Response_guide marks the checkpoint finished, or the child is back on track and agrees to move on. Only at the END of the message.\n\n# FIDELITY (media & tags)\nFor every [MEDIA:...] token, <eng>...</eng>, and <emotion type=\"...\"/> in the guide:\n- Count: output each one exactly as many times as it appears — no more, no fewer.\n- Order: keep the exact sequence given.\n- No invention: never add a token/tag not in the current checkpoint.\n- No omission: never drop one, even if the sentence reads fine without it.\n- No change: never alter an emotion `type` value or invent new keys.\n\n# LANGUAGE\n- Speak in the language set by the system language prompt. Follow it for all your own words.\n- Keep <eng>...</eng> content in English regardless of language setting.\n- [Say in {lang_code}: {text}] → this is an INSTRUCTION to you, not text for the child.\n- Translate {text} into {lang_code} and output ONLY the translation.\n- NEVER output the token \"[Say in ...]\" itself.\n- NEVER output the original {text} if it is not in {lang_code}.\n\nWRONG: \"[Say in EN: Nào cùng nói từ này với tớ nhé]\"\nWRONG: \"Nào cùng nói từ này với tớ nhé\" (kept original Vietnamese)\nRIGHT: \"Now, let's say this word together!\"\n\n# STYLE\n- 1–3 short, simple sentences per turn. Warm, encouraging, clear.\n- Avoid adult, sexual, violent, extremist, unhealthy, or risky content. If the child says something unhealthy, softly advise them.\n\n# EXAMPLES\nExample 1 — basic flow\n  Teacher: [MEDIA:word_image] Can you say the word \"Banana\"?\n  Student: Banana!\n  Teacher: [MEDIA:star_img] Yes, Banana is correct! <next_ckp/>\n\nExample 2 — emotion placement\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"happy\"/>[Say hello to the child],\n        <emotion type=\"excited\"/>[introduce that the child will learn vocab about animals]\n      </question_guide>\n    </checkpoint_1>\n  Teacher: <emotion type=\"happy\"/> Hello! Hi there, friend! <emotion type=\"excited\"/> Today, we are going to learn about animals! So fun!\n\nExample 3 — [Say in {lang_code}:] + exact media count + order\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\n      </question_guide>\n    </checkpoint_1>\nRIGHT OUTPUT:\n  Teacher: <emotion type=\"encouraging\"/> Now, follow me and let's say this word together! [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (output the [Say in...] token literally):\n<emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (kept Vietnamese instead of translating):\n<emotion type=\"encouraging\"/> Nào cùng nói từ này với tớ nhé [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\nWRONG (dropped one token):\n<emotion type=\"encouraging\"/> Now, follow me! [MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\n\nExample 4 — function call required\n  Dev:\n    <checkpoint_1>\n      <question_guide>[MEDIA:question] Can you say the word \"duck\"?</question_guide>\n      <response_guide>\n        Always call pronun_check(ref_text=\"duck\") before replying.\n        - Correct: [MEDIA:diamond_10] <next_ckp/>\n        - Incorrect / no answer / irrelevant: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n      </response_guide>\n    </checkpoint_1>\n  Student: Duck!\n  Teacher (internal): calls pronun_check(ref_text=\"duck\") → correct\n  Teacher: [MEDIA:diamond_10] <next_ckp/>",
+        "SYSTEM_PROMPT_GENERATION": "",
+        "learn_v2_keep_dev_prompt": false,
+        "SYSTEM_EXTRACTION_PROFILE": "",
+        "dynamic_checkpoint_config": null,
+        "PRONUNCIATION_CHECKER_TOOL": "true",
+        "SYSTEM_EXTRACTION_VARIABLES": ""
+      }
+    ],
+    "generation_params": null,
+    "provider_name": "openai",
+    "system_prompt": "You are Pika, a friendly voice teacher for a child.\n\n# ROLE\nThe lesson is a sequence of checkpoints. You receive ONE checkpoint at a time from the developer. Each checkpoint has:\n- Question: what you must ask the child.\n- Response_guide: cases describing how to answer the child.\n\n# FLOW\n1. Start of checkpoint: ask the Question once, including its [MEDIA:...] tokens.\n2. For each child reply:\n   - If the guide says to call a function (e.g. pronun_check(...)), call it exactly as described BEFORE replying.\n   - If the reply fits a case in Response_guide, answer using that case. You may rephrase slightly, but keep the meaning and all media/tags.\n   - Otherwise, kindly repeat or simplify the Question in 1–2 short turns to guide the child back.\n3. End your reply with <next_ckp/> when the Response_guide marks the checkpoint finished, or the child is back on track and agrees to move on. Only at the END of the message.\n\n# FIDELITY (media & tags)\nFor every [MEDIA:...] token, <eng>...</eng>, and <emotion type=\"...\"/> in the guide:\n- Count: output each one exactly as many times as it appears — no more, no fewer.\n- Order: keep the exact sequence given.\n- No invention: never add a token/tag not in the current checkpoint.\n- No omission: never drop one, even if the sentence reads fine without it.\n- No change: never alter an emotion `type` value or invent new keys.\n\n# LANGUAGE\n- Speak in the language set by the system language prompt. Follow it for all your own words.\n- Keep <eng>...</eng> content in English regardless of language setting.\n- [Say in {lang_code}: {text}] → this is an INSTRUCTION to you, not text for the child.\n- Translate {text} into {lang_code} and output ONLY the translation.\n- NEVER output the token \"[Say in ...]\" itself.\n- NEVER output the original {text} if it is not in {lang_code}.\n\nWRONG: \"[Say in EN: Nào cùng nói từ này với tớ nhé]\"\nWRONG: \"Nào cùng nói từ này với tớ nhé\" (kept original Vietnamese)\nRIGHT: \"Now, let's say this word together!\"\n\n# STYLE\n- 1–3 short, simple sentences per turn. Warm, encouraging, clear.\n- Avoid adult, sexual, violent, extremist, unhealthy, or risky content. If the child says something unhealthy, softly advise them.\n\n# EXAMPLES\nExample 1 — basic flow\n  Teacher: [MEDIA:word_image] Can you say the word \"Banana\"?\n  Student: Banana!\n  Teacher: [MEDIA:star_img] Yes, Banana is correct! <next_ckp/>\n\nExample 2 — emotion placement\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"happy\"/>[Say hello to the child],\n        <emotion type=\"excited\"/>[introduce that the child will learn vocab about animals]\n      </question_guide>\n    </checkpoint_1>\n  Teacher: <emotion type=\"happy\"/> Hello! Hi there, friend! <emotion type=\"excited\"/> Today, we are going to learn about animals! So fun!\n\nExample 3 — [Say in {lang_code}:] + exact media count + order\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\n      </question_guide>\n    </checkpoint_1>\nRIGHT OUTPUT:\n  Teacher: <emotion type=\"encouraging\"/> Now, follow me and let's say this word together! [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (output the [Say in...] token literally):\n<emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (kept Vietnamese instead of translating):\n<emotion type=\"encouraging\"/> Nào cùng nói từ này với tớ nhé [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\nWRONG (dropped one token):\n<emotion type=\"encouraging\"/> Now, follow me! [MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\n\nExample 4 — function call required\n  Dev:\n    <checkpoint_1>\n      <question_guide>[MEDIA:question] Can you say the word \"duck\"?</question_guide>\n      <response_guide>\n        Always call pronun_check(ref_text=\"duck\") before replying.\n        - Correct: [MEDIA:diamond_10] <next_ckp/>\n        - Incorrect / no answer / irrelevant: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n      </response_guide>\n    </checkpoint_1>\n  Student: Duck!\n  Teacher (internal): calls pronun_check(ref_text=\"duck\") → correct\n  Teacher: [MEDIA:diamond_10] <next_ckp/>",
+    "format_output": "TEXT",
+    "graph": {
+      "nodes": [
+        {
+          "node_id": "learn_sentence",
+          "prompt": "",
+          "type": "LEARN",
+          "tools": [],
+          "pivots": [],
+          "nexts": [],
+          "checkpoints": [
+            {
+              "name": "An Linh gọi Ken Bi đến quầy ăn vặt",
+              "type": "narrative",
+              "question": "[MEDIA:anlinh_snack_stall_wave_audio] <next_ckp/>",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "anlinh_snack_stall_wave_audio",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at02.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/upload/mp3/lesson_generator/b1_f5_d2_present_sentence/anlinh_snack_stall_wave_audio.mp3",
+                  "media_description": "audio: Voice An Linh: [emphasis] Kenbee, come sit here. I got us some snacks. image: Wide sidewalk in front of a school gate with a snack stall, a few plastic chairs, and a low iron fence along the curb. On the stall counter there are red snack bags, three coconut jelly cups, and many skewered grilled meats. An Linh sits on a plastic chair next to the stall, holding a sausage skewer on a wooden stick, smiling and waving to Ken Bi, Sidewalk background",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": null,
+              "image_listening": "",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "07164ad8d5fe082a96d2c81a50bddfe9bb1fa990fe5a3ca6674f18a431a248b3",
+              "cache_hash_guide": null
+            },
+            {
+              "name": "Ken Bi đến quầy và hỏi An Linh",
+              "type": "narrative",
+              "question": "[MEDIA:kenbi_arrives_stall_audio] <next_ckp/>",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "kenbi_arrives_stall_audio",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at03.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2907TAau11.mp3",
+                  "media_description": "audio: Voice Ken Bi: [soft, low pitched] [soft, low-pitched] Wow, so many snacks. Which Vietnamese snack do you enjoy the most? image: Ken Bi running up to the snack stall, eyes lighting up looking at the snacks displayed on the counter, then turning to An Linh, Sidewalk background",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": null,
+              "image_listening": "",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "bfb1c45c5dd7a5101a55a5abadf94a0595646467bfdb3e3a626a5c17e77385db",
+              "cache_hash_guide": null
+            },
+            {
+              "name": "An Linh suy nghĩ và nói về bánh tôm",
+              "type": "narrative",
+              "question": "[MEDIA:anlinh_thinking_prawn_fritters_audio] <next_ckp/>",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "anlinh_thinking_prawn_fritters_audio",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at04.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/upload/mp3/lesson_generator/b1_f5_d2_present_sentence/anlinh_thinking_prawn_fritters_audio.mp3",
+                  "media_description": "audio: Voice An Linh: [slow, emphasis] I enjoy prawn fritters the most. image: An Linh raising her hand to her chin, smiling and thinking, a thought bubble appearing above her head showing her eating prawn fritters with a woman, the fritters lightly steaming, Sidewalk background",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": null,
+              "image_listening": "",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "a379bca5923dd91cf995b36860391cfe0ebded779e43178282f46a0b17e38db2",
+              "cache_hash_guide": null
+            },
+            {
+              "name": "Hiện câu mẫu - I enjoy prawn fritters the most",
+              "type": "narrative",
+              "question": "[MEDIA:show_form_prawn_fritters_visual] Look, we say it like this. [MEDIA:anlinh_says_prawn_fritters_audio]  <next_ckp/>",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "show_form_prawn_fritters_visual",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at05.jpg",
+                  "audio_url": "",
+                  "media_description": "audio: none. image: A large thought bubble filling the screen showing An Linh holding a plate of prawn fritters, smiling",
+                  "score": null
+                },
+                {
+                  "id": "anlinh_says_prawn_fritters_audio",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at05.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/upload/mp3/lesson_generator/b1_f5_d2_present_sentence/anlinh_says_prawn_fritters_audio.mp3",
+                  "media_description": "audio: Voice An Linh: [slow, emphasis] I enjoy prawn fritters the most. image: A large thought bubble filling the screen showing An Linh holding a plate of prawn fritters, smiling",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": null,
+              "image_listening": "",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "f9df69c46d25e953393035d5a58001885de42f6902abd307f377c346b516acd7",
+              "cache_hash_guide": null
+            },
+            {
+              "name": "Giới thiệu luyện tập cụm cấu trúc",
+              "type": "narrative",
+              "question": "<emotion type=\"excited\"/> Let's practice the phrase, I enjoy the most. <next_ckp/>",
+              "question_guide": null,
+              "media_list": [],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": null,
+              "image_listening": "",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "a931c3b8d5cce9b76eb8882e42aa2f9f183c54aecba77c51a52fe1d48f1b0d71",
+              "cache_hash_guide": null
+            },
+            {
+              "name": "Luyện tập cụm cấu trúc - I enjoy ... the most",
+              "type": "cta_simplify",
+              "question": "[MEDIA:structure_phrase_practice_visual] Listen and say. [MEDIA:anlinh_models_structure_audio] ",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "structure_phrase_practice_visual",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at06.jpg",
+                  "audio_url": "",
+                  "media_description": "audio: none. image: Sidewalk background with large centered text display",
+                  "score": null
+                },
+                {
+                  "id": "anlinh_models_structure_audio",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at06.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2907TAau12.mp3",
+                  "media_description": "audio: Voice An Linh: [slow, emphasis] I enjoy... the most. image: Sidewalk background with large centered text display",
+                  "score": null
+                },
+                {
+                  "id": "nen",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at06.jpg",
+                  "audio_url": null,
+                  "media_description": "audio: none. image: Reaction visual — Now, say that again",
+                  "score": null
+                },
+                {
+                  "id": "audio",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at06.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2907TAau12.mp3",
+                  "media_description": "audio: none. image: Reaction visual — Case 3 (Fallback / Silent / Irrelevant): [Động viên trẻ nói nếu trẻ yên lặng; cổ vũ tinh thần nếu trẻ bảo không biết; ké",
+                  "score": null
+                },
+                {
+                  "id": "tenten",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at06.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+                  "media_description": "audio: none. image: Reaction visual — 85 / Fallback / Silent / Irrelevant): So, we should say, I enjoy the most",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": {
+                "tool": "pronun_check_v2_simplify",
+                "turns": [
+                  {
+                    "turn": 1,
+                    "cases": [
+                      {
+                        "lower_bound": 0.85,
+                        "response_guide": "<emotion type=\"proud\"/> [Khen ngợi tích cực, xác nhận trẻ nói đúng] <next_ckp/>"
+                      },
+                      {
+                        "lower_bound": 0,
+                        "response_guide": "[MEDIA:nen] [Listen again.] [MEDIA:audio] [Now, say that again.]"
+                      }
+                    ],
+                    "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc từ mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này. CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"encouraging\"/> [Động viên trẻ nói nếu trẻ yên lặng; cổ vũ tinh thần nếu trẻ bảo không biết; kéo về bài học nếu trẻ nói linh tinh; các trường hợp còn lại chỉ cần động viên và bảo trẻ nói lại] [MEDIA:audio] [Now, say that again.]"
+                  },
+                  {
+                    "turn": 2,
+                    "cases": [
+                      {
+                        "lower_bound": 0.85,
+                        "response_guide": "<emotion type=\"proud\"/> [Khen ngợi tích cực, xác nhận trẻ nói đúng] <next_ckp/>"
+                      }
+                    ],
+                    "turn_guide": "Điểm phát âm dưới 0.85, hoặc trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan đến từ mẫu (nếu điểm ≥ 0.85 thì KHÔNG chọn nhánh này): [MEDIA:nen] [So, we should say] [MEDIA:audio] [We'll practice more later.] [MEDIA:tenten] <next_ckp/>"
+                  }
+                ],
+                "ref_text": "I enjoy the most",
+                "global_guide": ""
+              },
+              "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at07.jpg",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 3,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "8aafa0cb8a0c1caa003c6108b73acd43c6aacf4b146e2a27c5a0f525dc03960f",
+              "cache_hash_guide": "a2d84ae56553de7ac4c8209b07d12677570d3d57d940ac6d9b53713070ff9a41"
+            },
+            {
+              "name": "Luyện tập câu toàn phần - I enjoy prawn fritters the most",
+              "type": "cta_simplify",
+              "question": "[MEDIA:full_sentence_prawn_fritters_visual] Now, listen and say the whole sentence. [MEDIA:anlinh_models_full_prawn_audio] ",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "full_sentence_prawn_fritters_visual",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at05.jpg",
+                  "audio_url": "",
+                  "media_description": "audio: none. image: An Linh holding a plate of prawn fritters, smiling, Sidewalk background",
+                  "score": null
+                },
+                {
+                  "id": "anlinh_models_full_prawn_audio",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at05.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2907TAau13.mp3",
+                  "media_description": "audio: Voice An Linh: [slow, emphasis] I enjoy prawn fritters the most. image: An Linh holding a plate of prawn fritters, smiling, Sidewalk background",
+                  "score": null
+                },
+                {
+                  "id": "nen",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at05.jpg",
+                  "audio_url": "",
+                  "media_description": "audio: none. image: Reaction visual — Now, say that again, Sidewalk background",
+                  "score": null
+                },
+                {
+                  "id": "audio",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at05.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2907TAau13.mp3",
+                  "media_description": "audio: none. image: Reaction visual — Case 3 (Fallback / Silent / Irrelevant): [Động viên trẻ nói nếu trẻ yên lặng; cổ vũ tinh thần nếu trẻ bảo không biết; ké, Sidewalk background",
+                  "score": null
+                },
+                {
+                  "id": "tenten",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at05.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+                  "media_description": "audio: none. image: Reaction visual — 85 / Fallback / Silent / Irrelevant): So, we should say, I enjoy prawn fritters the most, Sidewalk background",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": {
+                "tool": "pronun_check_v2_simplify",
+                "turns": [
+                  {
+                    "turn": 1,
+                    "cases": [
+                      {
+                        "lower_bound": 0.85,
+                        "response_guide": "<emotion type=\"proud\" /> [Khen ngợi tích cực, xác nhận trẻ nói đúng] <next_ckp/>"
+                      },
+                      {
+                        "lower_bound": 0,
+                        "response_guide": "[MEDIA:nen] [Listen again.] [MEDIA:audio] [Now, say that again.]"
+                      }
+                    ],
+                    "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh intent này. CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu: <emotion type=\"encouraging\"/> [Động viên trẻ nói nếu trẻ yên lặng; cổ vũ tinh thần nếu trẻ bảo không biết; kéo về bài học nếu trẻ nói linh tinh; các trường hợp còn lại chỉ cần động viên và bảo trẻ nói lại] [MEDIA:audio] [Now, say that again.]"
+                  },
+                  {
+                    "turn": 2,
+                    "cases": [
+                      {
+                        "lower_bound": 0.85,
+                        "response_guide": "<emotion type=\"proud\" /> [Khen ngợi tích cực, xác nhận trẻ nói đúng] <next_ckp/>"
+                      }
+                    ],
+                    "turn_guide": "Trẻ có điểm phát âm < 0.85, hoặc trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới từ mẫu. Nếu trẻ đạt điểm phát âm ≥ 0.85 thì KHÔNG chọn nhánh intent này: [MEDIA:nen] [So, we should say] [MEDIA:audio] [We'll practice more later.] [MEDIA:tenten] <next_ckp/>"
+                  }
+                ],
+                "ref_text": "I enjoy prawn fritters the most",
+                "global_guide": ""
+              },
+              "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at08.jpg",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 3,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "a29eddc92f5bbc039f782d8665e19c78f8341ea8510222b00dbca53d7fcfb617",
+              "cache_hash_guide": "ad27971296a6e5770808d9513d2d175ced36dab12aa2e9292788806c830a7595"
+            },
+            {
+              "name": "An Linh hỏi Ken Bi về bánh rán vừng",
+              "type": "narrative",
+              "question": "[MEDIA:anlinh_asks_kenbi_sesame_audio] <next_ckp/>",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "anlinh_asks_kenbi_sesame_audio",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at09.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/upload/mp3/lesson_generator/b1_f5_d2_present_sentence/anlinh_asks_kenbi_sesame_audio.mp3",
+                  "media_description": "audio: Voice An Linh: [soft, low-pitched] What about you, Kenbee? Which Vietnamese snack do you enjoy the most? image: An Linh with eyes lighting up, smiling brightly, looking at Ken Bi, hand on chin, Sidewalk background",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": null,
+              "image_listening": "",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "101f74d8f29359601afa46f57c06d6795afe9ff643c187b8df0014c459f361cf",
+              "cache_hash_guide": null
+            },
+            {
+              "name": "Ken Bi suy nghĩ về bánh rán vừng",
+              "type": "narrative",
+              "question": "[MEDIA:kenbi_thinking_sesame_balls_audio] <next_ckp/>",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "kenbi_thinking_sesame_balls_audio",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at10.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2807TAau01.mp3",
+                  "media_description": "audio: Voice An Linh: [slow, emphasis] I enjoy sesame balls the most. They're so soft inside. image: Ken Bi raising hand to chin thinking, a thought bubble appearing above his head showing round golden-fried sesame balls sprinkled with white sesame seeds on the outside, Sidewalk background",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": null,
+              "image_listening": "",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "e2dc959dbab166c5b9b16e88592211b093a72de34644c3472ad0115f2822fed4",
+              "cache_hash_guide": null
+            },
+            {
+              "name": "Trẻ lắng nghe và lặp lại - sesame balls",
+              "type": "cta_simplify",
+              "question": "[MEDIA:kenbi_sesame_balls_sentence_visual] Now, you listen and repeat. [MEDIA:kenbi_models_sesame_audio] ",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "kenbi_sesame_balls_sentence_visual",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at11.jpg",
+                  "audio_url": "",
+                  "media_description": "audio: none. image: A large thought bubble filling the screen showing Ken Bi holding a sesame ball, mouth wide open ready to eat, Sidewalk background",
+                  "score": null
+                },
+                {
+                  "id": "kenbi_models_sesame_audio",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at11.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2907TAau14.mp3",
+                  "media_description": "audio: Voice Ken Bi: [soft, low pitched] [slow, emphasis] I enjoy sesame balls the most. image: A large thought bubble filling the screen showing Ken Bi holding a sesame ball, mouth wide open ready to eat, Sidewalk background",
+                  "score": null
+                },
+                {
+                  "id": "anlinh_retry_sesame_audio",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at11.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2907TAau14.mp3",
+                  "media_description": "audio: none. image: Reaction visual — 85): [Bảo trẻ cùng nghe lại một lần nữa rồi tiếp tục sang phần khác], Sidewalk background",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": {
+                "tool": "pronun_check_v2_simplify",
+                "turns": [
+                  {
+                    "turn": 1,
+                    "cases": [
+                      {
+                        "lower_bound": 0.85,
+                        "response_guide": "<emotion type=\"proud\" /> [Khen ngợi tích cực, xác nhận trẻ nói đúng] <next_ckp/>"
+                      },
+                      {
+                        "lower_bound": 0,
+                        "response_guide": "<emotion type=\"encouraging\"/> [Bảo trẻ cùng nghe lại một lần nữa rồi tiếp tục sang phần khác] [MEDIA:anlinh_retry_sesame_audio] <next_ckp/>"
+                      }
+                    ],
+                    "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo câu mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này. CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới câu mẫu: <emotion type=\"calm\"/> [Động viên/kéo về bài] [MEDIA:anlinh_retry_sesame_audio] <next_ckp/>"
+                  }
+                ],
+                "ref_text": "I enjoy sesame balls the most",
+                "global_guide": ""
+              },
+              "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at12.jpg",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 3,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "1ca985fef10e700cde9209cf4566c5d51d5e277becc300ccdf233f2af50841bb",
+              "cache_hash_guide": "8b528d115346a24ff76ba08d878f3e0f92de8751405711c0b7b818aedf22d00e"
+            },
+            {
+              "name": "An Linh hào hứng và rủ đến quầy hàng",
+              "type": "narrative",
+              "question": "[MEDIA:anlinh_excited_stall_audio] <next_ckp/>",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "anlinh_excited_stall_audio",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at13.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2807TAau03.mp3",
+                  "media_description": "audio: Voice An Linh: [soft, low-pitched, cheerful] I love sesame balls too. What about getting closer to the snack stall to find some more yummy food? image: An Linh nodding enthusiastically, raising both hands excitedly, Sidewalk background",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": null,
+              "image_listening": "",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "c9bad2180efb14a404e9ca5a05a9f2308393c00ae2c6546ec4c37a93541e7e27",
+              "cache_hash_guide": null
+            },
+            {
+              "name": "An Linh và Ken Bi đứng trước quầy hàng",
+              "type": "narrative",
+              "question": "[MEDIA:anlinh_kenbi_at_stall_audio] <next_ckp/>",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "anlinh_kenbi_at_stall_audio",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at14.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/upload/mp3/lesson_generator/b1_f5_d2_present_sentence/anlinh_kenbi_at_stall_audio.mp3",
+                  "media_description": "audio: Voice An Linh: Wow, so yummy! image: An Linh and Ken Bi standing in front of the snack stall, on the display counter there are various snacks such as fish cakes, sausages, and coconut jelly, Sidewalk background",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": null,
+              "image_listening": "",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "3423b55b11da4d5dd6d0664a5c3809df324a9ea4024b3ed34d80494f0fc6e80f",
+              "cache_hash_guide": null
+            },
+            {
+              "name": "Ken Bi hỏi An Linh về thạch dừa",
+              "type": "narrative",
+              "question": "[MEDIA:kenbi_asks_anlinh_coconut_audio] <next_ckp/>",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "kenbi_asks_anlinh_coconut_audio",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at15.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/upload/mp3/lesson_generator/b1_f5_d2_present_sentence/kenbi_asks_anlinh_coconut_audio.mp3",
+                  "media_description": "audio: Voice Ken Bi: [soft, low pitched] Which Vietnamese snack do you enjoy the most? I'm really excited to know! image: Ken Bi turning to look at An Linh, tilting head curiously, Sidewalk background",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": null,
+              "image_listening": "",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "37599f72a4d021e760c338d4f17ee9a03497980aa9f6b899c38838a9e8f0197a",
+              "cache_hash_guide": null
+            },
+            {
+              "name": "An Linh cầm thạch dừa và nói",
+              "type": "narrative",
+              "question": "[MEDIA:anlinh_holds_coconut_jelly_audio] <next_ckp/>",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "anlinh_holds_coconut_jelly_audio",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at16.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/upload/mp3/lesson_generator/b1_f5_d2_present_sentence/anlinh_holds_coconut_jelly_audio.mp3",
+                  "media_description": "audio: Voice An Linh: [slow, emphasis] I enjoy coconut jelly the most. It's so cool and refreshing. image: An Linh picking up a coconut jelly cup from the stall display counter, holding it out in front, Ken Bi also looking at the coconut jelly cup, Sidewalk background",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": null,
+              "image_listening": "",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "a56c99036f975e04fbfff305d45b4c0b7bf9f95e6a841c2db2b9e681a6f0c75c",
+              "cache_hash_guide": null
+            },
+            {
+              "name": "Trẻ lắng nghe và lặp lại - coconut jelly",
+              "type": "cta_simplify",
+              "question": "[MEDIA:anlinh_coconut_jelly_sentence_visual] Awesome. Now, you say it. Listen and say. [MEDIA:anlinh_models_coconut_audio] ",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "anlinh_coconut_jelly_sentence_visual",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at17.jpg",
+                  "audio_url": "",
+                  "media_description": "audio: none. image: An Linh holding a coconut jelly cup, Sidewalk background",
+                  "score": null
+                },
+                {
+                  "id": "anlinh_models_coconut_audio",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at17.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2907TAau15.mp3",
+                  "media_description": "audio: Voice An Linh: [slow, emphasis] I enjoy coconut jelly the most. image: An Linh holding a coconut jelly cup, Sidewalk background",
+                  "score": null
+                },
+                {
+                  "id": "anlinh_retry_coconut_audio",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at17.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2907TAau15.mp3",
+                  "media_description": "audio: none. image: Reaction visual — 85): [Bảo trẻ cùng nghe lại một lần nữa rồi tiếp tục sang phần khác], Sidewalk background",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": {
+                "tool": "pronun_check_v2_simplify",
+                "turns": [
+                  {
+                    "turn": 1,
+                    "cases": [
+                      {
+                        "lower_bound": 0.85,
+                        "response_guide": "<emotion type=\"proud\" /> [Khen ngợi tích cực, xác nhận trẻ nói đúng] <next_ckp/>"
+                      },
+                      {
+                        "lower_bound": 0,
+                        "response_guide": "<emotion type=\"encouraging\"/> [Bảo trẻ cùng nghe lại một lần nữa rồi tiếp tục sang phần khác] [MEDIA:anlinh_retry_coconut_audio] <next_ckp/>"
+                      }
+                    ],
+                    "turn_guide": "Trẻ CÓ nói tiếng Anh và đang cố đọc theo câu mẫu (kể cả phát âm chưa chuẩn, thiếu hoặc thừa từ) thì KHÔNG chọn nhánh này. CHỈ dùng nhánh này khi trẻ im lặng, nói tiếng Việt, nói \"tớ không biết\", hoặc nói chuyện khác không liên quan tới câu mẫu: <emotion type=\"calm\"/> [Động viên/kéo về bài] [MEDIA:anlinh_retry_coconut_audio] <next_ckp/>"
+                  }
+                ],
+                "ref_text": "I enjoy coconut jelly the most",
+                "global_guide": ""
+              },
+              "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at18.jpg",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 3,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "00000c5d52319a2229171031d72c9b257c39aba0dd10cd4241b974b7c829181d",
+              "cache_hash_guide": "3dbed8273a880aa458808098167b461e00866ad336a9e316f58f2c2b90f4b16d"
+            },
+            {
+              "name": "Pika giới thiệu phần hỏi và đáp",
+              "type": "narrative",
+              "question": "[MEDIA:pika_rises_ask_answer_visual] Now, let's learn how to ask and answer about Vietnamese snacks we enjoy. <next_ckp/>",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "pika_rises_ask_answer_visual",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/616hl01prea1pre20a.mjpeg",
+                  "audio_url": "",
+                  "media_description": "audio: none. image: Pika robot rising up, Sidewalk background",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": null,
+              "image_listening": "",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "4bd394c655bbabf5dbae61218ad81912ee399d8f53936173de03d917b19446ea",
+              "cache_hash_guide": null
+            },
+            {
+              "name": "Ken Bi hỏi An Linh - Which Vietnamese snack",
+              "type": "narrative",
+              "question": "[MEDIA:kenbi_asks_anlinh_dialogue_audio] <next_ckp/>",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "kenbi_asks_anlinh_dialogue_audio",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at19.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2807TAau05.mp3",
+                  "media_description": "audio: Voice Ken Bi: [soft, low pitched] [soft, low-pitched] [slow, emphasis] Which Vietnamese snack do you enjoy the most? image: Ken Bi and An Linh sitting on plastic chairs on a wide sidewalk at a school gate, chatting happily, Ken Bi turning to An Linh, Sidewalk background",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": null,
+              "image_listening": "",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "cde090aa55f71e6af57f40c1955f04ad1bc2aa2310de2b425c859b8916cb7595",
+              "cache_hash_guide": null
+            },
+            {
+              "name": "An Linh trả lời - I enjoy coconut jelly the most",
+              "type": "narrative",
+              "question": "[MEDIA:anlinh_answers_coconut_dialogue_audio] <next_ckp/>",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "anlinh_answers_coconut_dialogue_audio",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at17.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/upload/mp3/lesson_generator/b1_f5_d2_present_sentence/anlinh_answers_coconut_dialogue_audio.mp3",
+                  "media_description": "audio: Voice An Linh: [slow, emphasis] I enjoy coconut jelly the most. image: An Linh smiling, holding a coconut jelly cup, smiling brightly, Sidewalk background",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": null,
+              "image_listening": "",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "921738297de455fd020fe080c7e338c5368c3bfecc615513a0b21cba6747b2c3",
+              "cache_hash_guide": null
+            },
+            {
+              "name": "Pika hỏi trẻ - Which Vietnamese snack do you enjoy the most",
+              "type": "cta_simplify",
+              "question": "[MEDIA:pika_asks_child_snack_visual] Okay, now it's your turn. Which Vietnamese snack do you enjoy the most?",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "pika_asks_child_snack_visual",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at20.jpg",
+                  "audio_url": "",
+                  "media_description": "audio: none. image: Clean screen with two text boxes, question at top and sentence stem at bottom, surrounded by Vietnamese snack icons including prawn fritters, sesame balls, coconut jelly, sweet soup, mixed rice paper, and ice cream cone, Scene background",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": {
+                "tool": null,
+                "turns": [
+                  {
+                    "turn": 1,
+                    "cases": [],
+                    "turn_guide": "• Case 1 (Trẻ nói đủ câu 'I enjoy ... the most' với một món ăn vặt): <emotion type=\"admire\"/> [Khen cụ thể là trẻ nói đủ cả câu, nói Pika thấy đó là lựa chọn tuyệt, không hỏi thêm] <next_ckp/>\n\n• Case 2 (Trẻ chỉ nói tên món, ví dụ 'sesame balls', hoặc thiếu 'the most'): <emotion type=\"encouraging\"/> [Khen trẻ chọn món hay] Let's say the whole sentence: I enjoy <món trẻ chọn> the most! [Mời trẻ nói lại cả câu một lần]\n\n• Case 3 (Im lặng, không biết, nói chuyện khác; nội dung không phù hợp thì lảng đi): <emotion type=\"encouraging\"/> [Nhẹ nhàng] For me, I enjoy coconut jelly the most! What about you? Say: I enjoy ... the most!"
+                  },
+                  {
+                    "turn": 2,
+                    "cases": [],
+                    "turn_guide": "• Case 1 (Trẻ nói đủ câu 'I enjoy ... the most'): <emotion type=\"admire\"/> [Khen cụ thể] <next_ckp/>\n\n• Case 2 (Các trường hợp còn lại): <emotion type=\"encouraging\"/> [Nói mẫu đủ câu với món trẻ chọn, nếu không có thì dùng coconut jelly] I enjoy ... the most! [Bảo chúng mình sẽ luyện thêm sau, không hỏi thêm] <next_ckp/>"
+                  }
+                ],
+                "ref_text": null,
+                "global_guide": ""
+              },
+              "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at21.jpg",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "base",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "f046f7aa9310b6715e10afbe0d70303b23d18a85b840238468182297ef20dbad",
+              "cache_hash_guide": "514468138763ebec51fe4ba27d076270253dc3ab82823ceef4e0914779bfda21"
+            },
+            {
+              "name": "Pika giới thiệu đổi ngôi thứ",
+              "type": "narrative",
+              "question": "<emotion type=\"curious\"/> Now, let's talk about what our friends enjoy. <next_ckp/>",
+              "question_guide": null,
+              "media_list": [],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": null,
+              "image_listening": "",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "ab5514b4bc06360a77d3fa5fa8ff654c73f1394ecbbd6e680b3fb1ef38ce6b0e",
+              "cache_hash_guide": null
+            },
+            {
+              "name": "Hỏi về thím Bảy - she",
+              "type": "narrative",
+              "question": "[MEDIA:thimbay_prawn_fritters_question_audio] <next_ckp/>",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "thimbay_prawn_fritters_question_audio",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at22.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/upload/mp3/lesson_generator/b1_f5_d2_present_sentence/thimbay_prawn_fritters_question_audio.mp3",
+                  "media_description": "audio: Voice An Linh: [emphasis] What about Auntie Seven? Which Vietnamese snack does she enjoy the most? image: An older woman sitting in front of a plate of prawn fritters, Sidewalk background",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": null,
+              "image_listening": "",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "29adfa0ef562a4df0a8407b600ee7bd79ccdaefb92e72b7290b400b3446d9929",
+              "cache_hash_guide": null
+            },
+            {
+              "name": "Trả lời về thím Bảy - She enjoys prawn fritters the most",
+              "type": "narrative",
+              "question": "[MEDIA:thimbay_eating_prawn_fritters_audio] <next_ckp/>",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "thimbay_eating_prawn_fritters_audio",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at23.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/2907TAau16.mp3",
+                  "media_description": "audio: Voice An Linh: [slow, emphasis] She enjoys prawn fritters the most. She always asks for more. image: An older woman eating prawn fritters, Sidewalk background",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": null,
+              "image_listening": "",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "1f3784f83a732d754af7b0885f3d1f0a3bd8dfb7045c257c39bfba559a9b5273",
+              "cache_hash_guide": null
+            },
+            {
+              "name": "Pika hỏi trẻ về chú Tùng - he",
+              "type": "cta_simplify",
+              "question": "[MEDIA:chutung_stall_owner_question_audio] Okay, what about uncle Tung, the snack stand owner? Which Vietnamese snack does he enjoy the most?",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "chutung_stall_owner_question_audio",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at24.jpg",
+                  "audio_url": null,
+                  "media_description": "audio: Voice Ken Bi: [soft, low pitched] Okay, what about uncle Tung, the snack stand owner? Which Vietnamese snack does he enjoy the most? image: A middle-aged man standing behind the snack stall counter, wearing an apron and clean medical gloves, Sidewalk background",
+                  "score": null
+                },
+                {
+                  "id": "nen",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at26.jpg",
+                  "audio_url": null,
+                  "media_description": "audio: none. image: Reaction visual — Case 1 (Trẻ trả lời đúng — He enjoys sesame balls the most): That's right, Sidewalk background",
+                  "score": null
+                },
+                {
+                  "id": "tenten",
+                  "type": "for_response",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at26.jpg",
+                  "audio_url": "https://smedia.stepup.edu.vn/robot/audio/020326HHtentenfunny.mp3",
+                  "media_description": "audio: none. image: Reaction visual — Case 2 (Các trường hợp còn lại): He enjoys sesame balls the most, Sidewalk background",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": {
+                "tool": null,
+                "turns": [
+                  {
+                    "turn": 1,
+                    "cases": [],
+                    "turn_guide": "• Case 1 (Trẻ nói đúng hoặc gần đúng 'He enjoys sesame balls the most', có 'enjoys'): [MEDIA:tenten] [That's right. He enjoys sesame balls the most.] <next_ckp/>\n\n• Case 2 (Trẻ nói 'He enjoy' thiếu -s, hoặc chỉ nói 'sesame balls'): <emotion type=\"encouraging\"/> [Khen trẻ nói đúng món] Listen: He enjoy-SSS sesame balls the most! [Nhấn rõ đuôi -s, mời trẻ nói lại cả câu một lần]\n\n• Case 3 (Các trường hợp còn lại): [MEDIA:nen] [He enjoys sesame balls the most. Now you say it!]"
+                  },
+                  {
+                    "turn": 2,
+                    "cases": [],
+                    "turn_guide": "• Case 1 (Trẻ nói 'He enjoys sesame balls the most' hoặc gần đúng): [MEDIA:tenten] [That's right. He enjoys sesame balls the most.] <next_ckp/>\n\n• Case 2 (Các trường hợp còn lại): [MEDIA:nen] [He enjoys sesame balls the most. Yummy. He recommends it to the students, too.] [Bảo chúng mình sẽ luyện thêm sau] <next_ckp/>"
+                  }
+                ],
+                "ref_text": null,
+                "global_guide": ""
+              },
+              "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at25.jpg",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "base",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "f9a91368281275dc7bcde84e80582ef2ed258026a723722fc4246b509a9c5b93",
+              "cache_hash_guide": "476fabcffde10888c67a317f42f1737d1b3ceea607fb7dd4efc214e651cb83fe"
+            },
+            {
+              "name": "Outro - Ken Bi và An Linh ăn mừng",
+              "type": "narrative",
+              "question": "[MEDIA:kenbi_anlinh_celebrate_outro_visual] You did an amazing job today. You learned how to talk about Vietnamese snacks you enjoy the most. Keep practicing and you'll be a superstar. <next_ckp/>",
+              "question_guide": null,
+              "media_list": [
+                {
+                  "id": "kenbi_anlinh_celebrate_outro_visual",
+                  "type": "for_question",
+                  "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/260726at27.jpg",
+                  "audio_url": "",
+                  "media_description": "audio: none. image: Ken Bi and An Linh sitting on plastic chairs on the sidewalk, both raising their hands clinking sugarcane juice glasses in celebration, a street food cart behind them, Sidewalk background",
+                  "score": null
+                }
+              ],
+              "voice_list": [],
+              "past": null,
+              "question_test": null,
+              "structure_to_remember": null,
+              "how_complete_sentence": null,
+              "game": null,
+              "cambridge": null,
+              "cambridge_game": null,
+              "placement": null,
+              "response_guide": null,
+              "image_listening": "",
+              "max_turns": null,
+              "on_max": "next",
+              "hooks": [],
+              "type_cta_simplify": "pronun",
+              "pronun_version": 2,
+              "pronun_weak_phoneme_threshold": 0.65,
+              "pronun_correct_bot_id": 3027,
+              "pronun_score_only": false,
+              "use_cache_guide": false,
+              "cache_hash_question": "9655246846743c1844158e80b3156d4b8522d58e64a64afd39899463abed882f",
+              "cache_hash_guide": null
+            }
+          ],
+          "input_schema_key": null,
+          "start_message": "",
+          "hooks": [],
+          "max_turns": null,
+          "pre_llm_pipeline": null,
+          "dynamic_checkpoint_builder": null,
+          "dynamic_checkpoint_config": {},
+          "tts_provider_override": null,
+          "learn_v2": true,
+          "learn_v2_keep_dev_prompt": false,
+          "learn_v2_keep_model": false,
+          "enable_subtitle": false,
+          "context": "clear",
+          "context_recent": 4,
+          "context_return": "append_summary",
+          "use_main_system_prompt": false
+        }
+      ],
+      "global_pivots": [],
+      "global_tools": [
+        "pronun_check_v2"
+      ],
+      "global_hooks": [],
+      "system_prompt": "You are Pika, a friendly voice teacher for a child.\n\n# ROLE\nThe lesson is a sequence of checkpoints. You receive ONE checkpoint at a time from the developer. Each checkpoint has:\n- Question: what you must ask the child.\n- Response_guide: cases describing how to answer the child.\n\n# FLOW\n1. Start of checkpoint: ask the Question once, including its [MEDIA:...] tokens.\n2. For each child reply:\n   - If the guide says to call a function (e.g. pronun_check(...)), call it exactly as described BEFORE replying.\n   - If the reply fits a case in Response_guide, answer using that case. You may rephrase slightly, but keep the meaning and all media/tags.\n   - Otherwise, kindly repeat or simplify the Question in 1–2 short turns to guide the child back.\n3. End your reply with <next_ckp/> when the Response_guide marks the checkpoint finished, or the child is back on track and agrees to move on. Only at the END of the message.\n\n# FIDELITY (media & tags)\nFor every [MEDIA:...] token, <eng>...</eng>, and <emotion type=\"...\"/> in the guide:\n- Count: output each one exactly as many times as it appears — no more, no fewer.\n- Order: keep the exact sequence given.\n- No invention: never add a token/tag not in the current checkpoint.\n- No omission: never drop one, even if the sentence reads fine without it.\n- No change: never alter an emotion `type` value or invent new keys.\n\n# LANGUAGE\n- Speak in the language set by the system language prompt. Follow it for all your own words.\n- Keep <eng>...</eng> content in English regardless of language setting.\n- [Say in {lang_code}: {text}] → this is an INSTRUCTION to you, not text for the child.\n- Translate {text} into {lang_code} and output ONLY the translation.\n- NEVER output the token \"[Say in ...]\" itself.\n- NEVER output the original {text} if it is not in {lang_code}.\n\nWRONG: \"[Say in EN: Nào cùng nói từ này với tớ nhé]\"\nWRONG: \"Nào cùng nói từ này với tớ nhé\" (kept original Vietnamese)\nRIGHT: \"Now, let's say this word together!\"\n\n# STYLE\n- 1–3 short, simple sentences per turn. Warm, encouraging, clear.\n- Avoid adult, sexual, violent, extremist, unhealthy, or risky content. If the child says something unhealthy, softly advise them.\n\n# EXAMPLES\nExample 1 — basic flow\n  Teacher: [MEDIA:word_image] Can you say the word \"Banana\"?\n  Student: Banana!\n  Teacher: [MEDIA:star_img] Yes, Banana is correct! <next_ckp/>\n\nExample 2 — emotion placement\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"happy\"/>[Say hello to the child],\n        <emotion type=\"excited\"/>[introduce that the child will learn vocab about animals]\n      </question_guide>\n    </checkpoint_1>\n  Teacher: <emotion type=\"happy\"/> Hello! Hi there, friend! <emotion type=\"excited\"/> Today, we are going to learn about animals! So fun!\n\nExample 3 — [Say in {lang_code}:] + exact media count + order\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\n      </question_guide>\n    </checkpoint_1>\nRIGHT OUTPUT:\n  Teacher: <emotion type=\"encouraging\"/> Now, follow me and let's say this word together! [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (output the [Say in...] token literally):\n<emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (kept Vietnamese instead of translating):\n<emotion type=\"encouraging\"/> Nào cùng nói từ này với tớ nhé [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\nWRONG (dropped one token):\n<emotion type=\"encouraging\"/> Now, follow me! [MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\n\nExample 4 — function call required\n  Dev:\n    <checkpoint_1>\n      <question_guide>[MEDIA:question] Can you say the word \"duck\"?</question_guide>\n      <response_guide>\n        Always call pronun_check(ref_text=\"duck\") before replying.\n        - Correct: [MEDIA:diamond_10] <next_ckp/>\n        - Incorrect / no answer / irrelevant: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n      </response_guide>\n    </checkpoint_1>\n  Student: Duck!\n  Teacher (internal): calls pronun_check(ref_text=\"duck\") → correct\n  Teacher: [MEDIA:diamond_10] <next_ckp/>",
+      "version": "v2",
+      "mem_filter": null,
+      "strict": false,
+      "use_intent": "full"
+    },
+    "created_at": null,
+    "updated_at": null
+  }
+}

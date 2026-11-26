@@ -1,0 +1,2307 @@
+{
+  "name": "A2 - Trải nghiệm 30p - Học câu (chuyển từ workflow 764)",
+  "description": "Bot learn v2 cho buổi trải nghiệm 30 phút A2, nhúng vào graph chính bằng SubGraphNode. Mở bằng câu đố Lý Sơn, rồi chuyển từ workflow 764 (robot lesson 869) #1-#3, #6-#8, #10: lời người nhà An Linh là file thu âm gốc, mỗi nhánh phát đúng file của nhánh đó; bỏ #4-#5 (hỏi thêm 2 người) và #9 (câu trả lời thứ 4).",
+  "task_chain": [
+    {
+      "task": "",
+      "tools": [
+        "pronun_check_v2"
+      ],
+      "language": "",
+      "learn_v2": true,
+      "use_cache": true,
+      "asr_config": "medium",
+      "session_id": "",
+      "sub_agents": [],
+      "checkpoints": [
+        {
+          "name": "Câu nối - Đố đảo Lý Sơn",
+          "past": null,
+          "type": "cta_simplify",
+          "question": "<emotion type=\"excited\"/> Đố cậu nha: hòn đảo nào ở Quảng Ngãi nổi tiếng trồng tỏi? Phú Quốc hay Lý Sơn?",
+          "media_list": null,
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": {
+            "tool": null,
+            "turns": [
+              {
+                "turn": 1,
+                "cases": [],
+                "turn_guide": ""
+              }
+            ],
+            "ref_text": null,
+            "global_guide": "Case 1 — Trẻ nói Lý Sơn: <emotion type=\"excited\"/> [Khen ngắn] Đúng rồi, Lý Sơn! Nhà An Linh sắp ra đảo Lý Sơn ăn Tết đó. Mình đi xem nha! <next_ckp/>\n\nCase 2 — Các trường hợp còn lại (nói Phú Quốc, không biết, im lặng, nói chuyện khác): <emotion type=\"happy\"/> [Không nói trẻ sai] Là đảo Lý Sơn đó! Nhà An Linh sắp ra đảo Lý Sơn ăn Tết. Mình đi xem nha! <next_ckp/>"
+          },
+          "image_listening": null,
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "base",
+          "cache_hash_question": null,
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "#1 - Nhà An Linh đi Lý Sơn ăn Tết",
+          "past": null,
+          "type": "cta_simplify",
+          "question": "[MEDIA:c1q_1] [MEDIA:c1q_2] [MEDIA:c1q_3] [MEDIA:c1q_4] [MEDIA:c1q_5] [MEDIA:c1q_6] Hey! Hey! Hey! Happy Lunar New Year! Today is a special day! [MEDIA:c1q_7] The whole family is going to <vi>Lý Sơn</vi> Island for the holiday. [MEDIA:c1q_8] [MEDIA:c1q_9] [MEDIA:c1q_10] They will go on a garlic-picking tour on <vi>Lý Sơn</vi> Island. [MEDIA:c1q_11] [MEDIA:c1q_12] Let's see what happens. [MEDIA:c1q_13] [MEDIA:c1q_14] [MEDIA:c1q_15] [MEDIA:c1q_16] [MEDIA:c1q_17] [MEDIA:c1q_18] [MEDIA:c1q_19] You've got to ask everyone what they need to prepare before the trip! [MEDIA:c1q_20]",
+          "media_list": [
+            {
+              "id": "c1q_1",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/nhactetso1.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson01.gif",
+              "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+            },
+            {
+              "id": "c1q_2",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/nhactetso2.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson02.gif",
+              "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+            },
+            {
+              "id": "c1q_3",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/nhactetso3.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson03.gif",
+              "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+            },
+            {
+              "id": "c1q_4",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/nhactetso3.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson04.gif",
+              "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+            },
+            {
+              "id": "c1q_5",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/tadaaaaa_6s.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson05.gif",
+              "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+            },
+            {
+              "id": "c1q_6",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson06.jpg",
+              "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+            },
+            {
+              "id": "c1q_7",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson07.gif",
+              "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+            },
+            {
+              "id": "c1q_8",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/songbiennhenhang.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson08.gif",
+              "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+            },
+            {
+              "id": "c1q_9",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/audio0_7s.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson08.gif",
+              "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+            },
+            {
+              "id": "c1q_10",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson09.gif",
+              "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+            },
+            {
+              "id": "c1q_11",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/audio1s.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson11.jpg",
+              "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+            },
+            {
+              "id": "c1q_12",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilysonbonus1.gif",
+              "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+            },
+            {
+              "id": "c1q_13",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio02.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilysonbonus1.gif",
+              "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+            },
+            {
+              "id": "c1q_14",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio03.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson12.gif",
+              "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+            },
+            {
+              "id": "c1q_15",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio02.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson13fix2.jpg",
+              "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+            },
+            {
+              "id": "c1q_16",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio05.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson14.gif",
+              "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+            },
+            {
+              "id": "c1q_17",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio06.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilysonbonus2.gif",
+              "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+            },
+            {
+              "id": "c1q_18",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/thecoach/all_files/ting.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson16.jpg",
+              "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+            },
+            {
+              "id": "c1q_19",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilysonbonus3.gif",
+              "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+            },
+            {
+              "id": "c1q_20",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio08.mp3",
+              "image_url": "",
+              "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+            },
+            {
+              "id": "c1go_1",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson18.gif",
+              "media_description": "An Linh's family greets the child"
+            },
+            {
+              "id": "c1go_2",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio10.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson18.gif",
+              "media_description": "An Linh's family greets the child"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": {
+            "tool": null,
+            "turns": [
+              {
+                "turn": 1,
+                "cases": [],
+                "turn_guide": ""
+              }
+            ],
+            "ref_text": null,
+            "global_guide": "Case 1 — Mọi trường hợp (sẵn sàng, chưa sẵn sàng, im lặng, nói chuyện khác): [MEDIA:c1go_1] Just start the conversation with An Linh's family. They're nice. [MEDIA:c1go_2] <next_ckp/>"
+          },
+          "image_listening": null,
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "base",
+          "cache_hash_question": null,
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "#2 - Bé hỏi bố An Linh",
+          "past": null,
+          "type": "cta_simplify",
+          "question": "[MEDIA:c2q_1]",
+          "media_list": [
+            {
+              "id": "c2q_1",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio11.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson20.jpg",
+              "media_description": "An Linh's dad on the sofa; the child asks him what he needs for the trip"
+            },
+            {
+              "id": "c2ok_1",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio12.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson21.jpg",
+              "media_description": "bố An Linh answers what they need"
+            },
+            {
+              "id": "c2retry_1",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio13.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson20.jpg",
+              "media_description": "invites the child to try asking again"
+            },
+            {
+              "id": "c2model_1",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio14fix.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson21.jpg",
+              "media_description": "models the question, bố An Linh answers"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": {
+            "tool": null,
+            "ref_text": null,
+            "global_guide": "",
+            "turns": [
+              {
+                "turn": 1,
+                "cases": [],
+                "turn_guide": "• Case 1 (Trẻ hỏi được câu 'What do you need to get ready for the trip?' hoặc câu cùng ý ('What do you need?', 'What do you need to prepare?', 'What do you need to get ready?'), kể cả sai ngữ pháp nhỏ): Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c2ok_1] <next_ckp/>\n\n• Case 2 (Các trường hợp còn lại: hỏi sai, không biết, im lặng, nói chuyện khác): Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c2retry_1]"
+              },
+              {
+                "turn": 2,
+                "cases": [],
+                "turn_guide": "• Case 1 (Trẻ hỏi được câu 'What do you need to get ready for the trip?' hoặc câu cùng ý ('What do you need?', 'What do you need to prepare?', 'What do you need to get ready?'), kể cả sai ngữ pháp nhỏ): Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c2ok_1] <next_ckp/>\n\n• Case 2 (Các trường hợp còn lại): Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c2model_1] <next_ckp/>"
+              }
+            ]
+          },
+          "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson20lis.jpg",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "base",
+          "cache_hash_question": null,
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "#3 - Bé hỏi mẹ An Linh",
+          "past": null,
+          "type": "cta_simplify",
+          "question": "[MEDIA:c3q_1]",
+          "media_list": [
+            {
+              "id": "c3q_1",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio15.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson23.jpg",
+              "media_description": "An Linh's mom; the child asks her what she needs for the trip"
+            },
+            {
+              "id": "c3ok_1",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio16.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson24.jpg",
+              "media_description": "mẹ An Linh answers what they need"
+            },
+            {
+              "id": "c3retry_1",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio13.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson23.jpg",
+              "media_description": "invites the child to try asking again"
+            },
+            {
+              "id": "c3model_1",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio18fix.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson24.jpg",
+              "media_description": "models the question, mẹ An Linh answers"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": {
+            "tool": null,
+            "ref_text": null,
+            "global_guide": "",
+            "turns": [
+              {
+                "turn": 1,
+                "cases": [],
+                "turn_guide": "• Case 1 (Trẻ hỏi được câu 'What do you need to get ready for the trip?' hoặc câu cùng ý ('What do you need?', 'What do you need to prepare?', 'What do you need to get ready?'), kể cả sai ngữ pháp nhỏ): Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c3ok_1] <next_ckp/>\n\n• Case 2 (Các trường hợp còn lại: hỏi sai, không biết, im lặng, nói chuyện khác): Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c3retry_1]"
+              },
+              {
+                "turn": 2,
+                "cases": [],
+                "turn_guide": "• Case 1 (Trẻ hỏi được câu 'What do you need to get ready for the trip?' hoặc câu cùng ý ('What do you need?', 'What do you need to prepare?', 'What do you need to get ready?'), kể cả sai ngữ pháp nhỏ): Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c3ok_1] <next_ckp/>\n\n• Case 2 (Các trường hợp còn lại): Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c3model_1] <next_ckp/>"
+              }
+            ]
+          },
+          "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson23lis.jpg",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "base",
+          "cache_hash_question": null,
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "#6 - Bé là An Linh, trả lời câu 1",
+          "past": null,
+          "type": "cta_simplify",
+          "question": "Awesome. Now, let's go New Year shopping for the trip! [MEDIA:c6q_2] [MEDIA:c6q_3] [MEDIA:c6q_4] [MEDIA:c6q_5] [MEDIA:c6q_6] [MEDIA:c6q_7] Now, you are An Linh. Answer the question from her! [MEDIA:c6q_8] [MEDIA:c6q_9] [MEDIA:c6q_10] Now, answer the question from her!",
+          "media_list": [
+            {
+              "id": "c6q_2",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/nhactetso5.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson32.gif",
+              "media_description": "Auntie Bảy's Tết shop; the child is An Linh and answers with 'I need ...'"
+            },
+            {
+              "id": "c6q_3",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/nhactetso6.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson33.gif",
+              "media_description": "Auntie Bảy's Tết shop; the child is An Linh and answers with 'I need ...'"
+            },
+            {
+              "id": "c6q_4",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/nhactetso7.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson34.gif",
+              "media_description": "Auntie Bảy's Tết shop; the child is An Linh and answers with 'I need ...'"
+            },
+            {
+              "id": "c6q_5",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio30.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson35.jpg",
+              "media_description": "Auntie Bảy's Tết shop; the child is An Linh and answers with 'I need ...'"
+            },
+            {
+              "id": "c6q_6",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio31.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson36.gif",
+              "media_description": "Auntie Bảy's Tết shop; the child is An Linh and answers with 'I need ...'"
+            },
+            {
+              "id": "c6q_7",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilysonbonus2.gif",
+              "media_description": "Auntie Bảy's Tết shop; the child is An Linh and answers with 'I need ...'"
+            },
+            {
+              "id": "c6q_8",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio32.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+              "media_description": "Auntie Bảy's Tết shop; the child is An Linh and answers with 'I need ...'"
+            },
+            {
+              "id": "c6q_9",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/181225HHaudio34.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson38.gif",
+              "media_description": "Auntie Bảy's Tết shop; the child is An Linh and answers with 'I need ...'"
+            },
+            {
+              "id": "c6q_10",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson38lisafix1.jpg",
+              "media_description": "Auntie Bảy's Tết shop; the child is An Linh and answers with 'I need ...'"
+            },
+            {
+              "id": "c6ok_1",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio34.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson39.jpg",
+              "media_description": "Auntie Bảy replies"
+            },
+            {
+              "id": "c6other_1",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio39.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+              "media_description": "Auntie Bảy replies"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": {
+            "tool": null,
+            "turns": [
+              {
+                "turn": 1,
+                "cases": [],
+                "turn_guide": ""
+              }
+            ],
+            "ref_text": null,
+            "global_guide": "Case 1 — Trẻ nói một câu có 'I need' kèm một món trong danh sách (suitcase, clothes, shirt, t-shirt, snacks, tent, first-aid kit, board game), ví dụ 'I need a suitcase' hoặc 'I need to pack my suitcase': Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c6ok_1] <next_ckp/>\n\nCase 2 — Các trường hợp còn lại (không có 'I need', không biết, im lặng, nói chuyện khác): Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c6other_1] <next_ckp/>"
+          },
+          "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson38lisa1fix1.jpg",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "base",
+          "cache_hash_question": null,
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "#7 - Bé là An Linh, trả lời câu 2",
+          "past": null,
+          "type": "cta_simplify",
+          "question": "[MEDIA:c7q_1]",
+          "media_list": [
+            {
+              "id": "c7q_1",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio36.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+              "media_description": "Auntie Bảy's Tết shop; the child is An Linh and answers with 'I need ...'"
+            },
+            {
+              "id": "c7ok_1",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio38.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson39.jpg",
+              "media_description": "Auntie Bảy replies"
+            },
+            {
+              "id": "c7other_1",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio39.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+              "media_description": "Auntie Bảy replies"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": {
+            "tool": null,
+            "turns": [
+              {
+                "turn": 1,
+                "cases": [],
+                "turn_guide": ""
+              }
+            ],
+            "ref_text": null,
+            "global_guide": "Case 1 — Trẻ nói một câu có 'I need' kèm một món trong danh sách (suitcase, clothes, shirt, t-shirt, snacks, tent, first-aid kit, board game), ví dụ 'I need a suitcase' hoặc 'I need to pack my suitcase': Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c7ok_1] <next_ckp/>\n\nCase 2 — Các trường hợp còn lại (không có 'I need', không biết, im lặng, nói chuyện khác): Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c7other_1] <next_ckp/>"
+          },
+          "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson38lisa1fix1.jpg",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "base",
+          "cache_hash_question": null,
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "#8 - Bé là An Linh, trả lời câu 3",
+          "past": null,
+          "type": "cta_simplify",
+          "question": "[MEDIA:c8q_1]",
+          "media_list": [
+            {
+              "id": "c8q_1",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio40.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+              "media_description": "Auntie Bảy's Tết shop; the child is An Linh and answers with 'I need ...'"
+            },
+            {
+              "id": "c8ok_1",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio41.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson39.jpg",
+              "media_description": "Auntie Bảy replies"
+            },
+            {
+              "id": "c8other_1",
+              "type": "for_response",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio39.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+              "media_description": "Auntie Bảy replies"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": {
+            "tool": null,
+            "turns": [
+              {
+                "turn": 1,
+                "cases": [],
+                "turn_guide": ""
+              }
+            ],
+            "ref_text": null,
+            "global_guide": "Case 1 — Trẻ nói một câu có 'I need' kèm một món trong danh sách (suitcase, clothes, shirt, t-shirt, snacks, tent, first-aid kit, board game), ví dụ 'I need a suitcase' hoặc 'I need to pack my suitcase': Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c8ok_1] <next_ckp/>\n\nCase 2 — Các trường hợp còn lại (không có 'I need', không biết, im lặng, nói chuyện khác): Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c8other_1] <next_ckp/>"
+          },
+          "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson38lisa1fix1.jpg",
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "base",
+          "cache_hash_question": null,
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        },
+        {
+          "name": "#10 - Cả nhà lên đường ra đảo",
+          "past": null,
+          "type": "narrative",
+          "question": "[MEDIA:c10q_1] [MEDIA:c10q_2] [MEDIA:c10q_3] [MEDIA:c10q_4] [MEDIA:c10q_5] [MEDIA:c10q_6] <next_ckp/>",
+          "media_list": [
+            {
+              "id": "c10q_1",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio47.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson41.jpg",
+              "media_description": "The family sets off to Lý Sơn Island"
+            },
+            {
+              "id": "c10q_2",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio48.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson42.gif",
+              "media_description": "The family sets off to Lý Sơn Island"
+            },
+            {
+              "id": "c10q_3",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio49.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson43.jpg",
+              "media_description": "The family sets off to Lý Sơn Island"
+            },
+            {
+              "id": "c10q_4",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/nhactetoutrotoi.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson44fixx.jpg",
+              "media_description": "The family sets off to Lý Sơn Island"
+            },
+            {
+              "id": "c10q_5",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/nhactetoutrotoi1.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson45fixx.gif",
+              "media_description": "The family sets off to Lý Sơn Island"
+            },
+            {
+              "id": "c10q_6",
+              "type": "for_question",
+              "score": null,
+              "audio_url": "https://smedia.stepup.edu.vn/robot/audio/nhactetoutrotoi2.mp3",
+              "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson47.gif",
+              "media_description": "The family sets off to Lý Sơn Island"
+            }
+          ],
+          "voice_list": [],
+          "question_test": null,
+          "pronun_version": 2,
+          "question_guide": null,
+          "response_guide": null,
+          "image_listening": null,
+          "use_cache_guide": false,
+          "cache_hash_guide": null,
+          "pronun_score_only": false,
+          "type_cta_simplify": "base",
+          "cache_hash_question": null,
+          "how_complete_sentence": null,
+          "pronun_correct_bot_id": 3027,
+          "structure_to_remember": null,
+          "pronun_weak_phoneme_threshold": 0.65
+        }
+      ],
+      "start_message": "",
+      "cache_audio_map": {
+        "012fc018201093e8c5bd503efcaf20b212da60326552b5853f362f484ad3b232:0:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "Pack my suitcase, choose my clothes, and prepare some snacks.",
+          "trace_id": "pika-12-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/012fc018201093e8c5bd503efcaf20b212da60326552b5853f362f484ad3b232:0:s0.1791974078350.wav",
+          "created_at": 1791974078,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 199340,
+          "updated_at": 1791974078
+        },
+        "012fc018201093e8c5bd503efcaf20b212da60326552b5853f362f484ad3b232:0:s1": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " Three important things before a trip.",
+          "trace_id": "pika-12-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/012fc018201093e8c5bd503efcaf20b212da60326552b5853f362f484ad3b232:0:s1.1791974078367.wav",
+          "created_at": 1791974078,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 101164,
+          "updated_at": 1791974078
+        },
+        "012fc018201093e8c5bd503efcaf20b212da60326552b5853f362f484ad3b232:0:s2": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " And you learned all three today, I'm so proud of you.",
+          "trace_id": "pika-12-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/012fc018201093e8c5bd503efcaf20b212da60326552b5853f362f484ad3b232:0:s2.1791974078389.wav",
+          "created_at": 1791974078,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 156844,
+          "updated_at": 1791974078
+        },
+        "014973167a697ad674f4f79501a92701cdc70dd6263a404272b298fdc277dd12:0:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "Now say it with me.",
+          "trace_id": "pika-5-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/014973167a697ad674f4f79501a92701cdc70dd6263a404272b298fdc277dd12:0:s0.1791973846814.wav",
+          "created_at": 1791973847,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 73004,
+          "updated_at": 1791973847
+        },
+        "080ac5e977b5c5f449bbfd3d658e76059e454fb4c109f49cbae0b155841a926a:0:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "Now listen to me!",
+          "trace_id": "pika-2-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/080ac5e977b5c5f449bbfd3d658e76059e454fb4c109f49cbae0b155841a926a:0:s0.1791973756850.wav",
+          "created_at": 1791973757,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 79404,
+          "updated_at": 1791973757
+        },
+        "080ac5e977b5c5f449bbfd3d658e76059e454fb4c109f49cbae0b155841a926a:1:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "And repeat after me.",
+          "trace_id": "pika-2-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/080ac5e977b5c5f449bbfd3d658e76059e454fb4c109f49cbae0b155841a926a:1:s0.1791973758104.wav",
+          "created_at": 1791973758,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 78124,
+          "updated_at": 1791973758
+        },
+        "15f09d3a523a2f15e4eaf0408aec5cdc48b5803693bdf80bbb6272d4f4ddd750:0:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "That was just the beginning.",
+          "trace_id": "pika-13-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/15f09d3a523a2f15e4eaf0408aec5cdc48b5803693bdf80bbb6272d4f4ddd750:0:s0.1791974120983.wav",
+          "created_at": 1791974121,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 103724,
+          "updated_at": 1791974121
+        },
+        "20e09e0a38152a3f6bda1f92e3d245262d483c47ec7c0f6a822be4b1177d1b4c:0:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "Now say it with me.",
+          "trace_id": "pika-9-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/20e09e0a38152a3f6bda1f92e3d245262d483c47ec7c0f6a822be4b1177d1b4c:0:s0.1791973977668.wav",
+          "created_at": 1791973978,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 91564,
+          "updated_at": 1791973978
+        },
+        "489d3a7d9596b1429ad92cf51537835de4023cc372dd738e24bd46f24546f8ab:0:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "Now listen to me!",
+          "trace_id": "pika-6-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/489d3a7d9596b1429ad92cf51537835de4023cc372dd738e24bd46f24546f8ab:0:s0.1791973885688.wav",
+          "created_at": 1791973886,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 89628,
+          "updated_at": 1791973886
+        },
+        "489d3a7d9596b1429ad92cf51537835de4023cc372dd738e24bd46f24546f8ab:1:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "And repeat after me.",
+          "trace_id": "pika-6-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/489d3a7d9596b1429ad92cf51537835de4023cc372dd738e24bd46f24546f8ab:1:s0.1791973886780.wav",
+          "created_at": 1791973887,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 73644,
+          "updated_at": 1791973887
+        },
+        "496477bb6656d901b167326886e75a2ad7bb67c1d9ce937022807b7a9af66cca:0:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "Now listen to me!",
+          "trace_id": "pika-10-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/496477bb6656d901b167326886e75a2ad7bb67c1d9ce937022807b7a9af66cca:0:s0.1791974016978.wav",
+          "created_at": 1791974017,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 87084,
+          "updated_at": 1791974017
+        },
+        "496477bb6656d901b167326886e75a2ad7bb67c1d9ce937022807b7a9af66cca:1:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "And repeat after me.",
+          "trace_id": "pika-10-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/496477bb6656d901b167326886e75a2ad7bb67c1d9ce937022807b7a9af66cca:1:s0.1791974018240.wav",
+          "created_at": 1791974018,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 74822,
+          "updated_at": 1791974018
+        },
+        "71e66bd3ccaa81ce9e131d1419afc096a3fc26eb57ac65434ba92dd63afa16ec:0:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "I pick my favorite treats.",
+          "trace_id": "pika-9-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/71e66bd3ccaa81ce9e131d1419afc096a3fc26eb57ac65434ba92dd63afa16ec:0:s0.1791973976824.wav",
+          "created_at": 1791973977,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 99244,
+          "updated_at": 1791973977
+        },
+        "71e66bd3ccaa81ce9e131d1419afc096a3fc26eb57ac65434ba92dd63afa16ec:0:s1": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " I put them into my backpack.",
+          "trace_id": "pika-9-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/71e66bd3ccaa81ce9e131d1419afc096a3fc26eb57ac65434ba92dd63afa16ec:0:s1.1791973976833.wav",
+          "created_at": 1791973977,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 85532,
+          "updated_at": 1791973977
+        },
+        "71e66bd3ccaa81ce9e131d1419afc096a3fc26eb57ac65434ba92dd63afa16ec:0:s2": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " And now I have yummy snacks for the road.",
+          "trace_id": "pika-9-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/71e66bd3ccaa81ce9e131d1419afc096a3fc26eb57ac65434ba92dd63afa16ec:0:s2.1791973977017.wav",
+          "created_at": 1791973977,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 128028,
+          "updated_at": 1791973977
+        },
+        "71e66bd3ccaa81ce9e131d1419afc096a3fc26eb57ac65434ba92dd63afa16ec:0:s3": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " That is, prepare some snacks.",
+          "trace_id": "pika-9-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/71e66bd3ccaa81ce9e131d1419afc096a3fc26eb57ac65434ba92dd63afa16ec:0:s3.1791973977022.wav",
+          "created_at": 1791973977,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 108828,
+          "updated_at": 1791973977
+        },
+        "747858ff590b33e393e0efb647d94b07bf6058b3d6dd002dcf3c6dd237bdebf7:0:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "Now I'll show you some magic.",
+          "trace_id": "pika-3-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/747858ff590b33e393e0efb647d94b07bf6058b3d6dd002dcf3c6dd237bdebf7:0:s0.1791973784805.wav",
+          "created_at": 1791973785,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 96684,
+          "updated_at": 1791973785
+        },
+        "747858ff590b33e393e0efb647d94b07bf6058b3d6dd002dcf3c6dd237bdebf7:0:s1": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " Say it with me to get ready for the trip.",
+          "trace_id": "pika-3-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/747858ff590b33e393e0efb647d94b07bf6058b3d6dd002dcf3c6dd237bdebf7:0:s1.1791973784946.wav",
+          "created_at": 1791973785,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 110124,
+          "updated_at": 1791973785
+        },
+        "79982ab9fd7f46a73ec7c51866ddeb5c84eb05cd83869edf29dafbb386ee43e2:0:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "I get the things I need for the trip.",
+          "trace_id": "pika-1-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/79982ab9fd7f46a73ec7c51866ddeb5c84eb05cd83869edf29dafbb386ee43e2:0:s0.1791973714171.wav",
+          "created_at": 1791973714,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 108204,
+          "updated_at": 1791973714
+        },
+        "79982ab9fd7f46a73ec7c51866ddeb5c84eb05cd83869edf29dafbb386ee43e2:0:s1": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " I place them one by one into my suitcase.",
+          "trace_id": "pika-1-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/79982ab9fd7f46a73ec7c51866ddeb5c84eb05cd83869edf29dafbb386ee43e2:0:s1.1791973714416.wav",
+          "created_at": 1791973714,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 143132,
+          "updated_at": 1791973714
+        },
+        "79982ab9fd7f46a73ec7c51866ddeb5c84eb05cd83869edf29dafbb386ee43e2:0:s2": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " And soon my suitcase is ready for the trip.",
+          "trace_id": "pika-1-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/79982ab9fd7f46a73ec7c51866ddeb5c84eb05cd83869edf29dafbb386ee43e2:0:s2.1791973714430.wav",
+          "created_at": 1791973714,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 128684,
+          "updated_at": 1791973714
+        },
+        "79982ab9fd7f46a73ec7c51866ddeb5c84eb05cd83869edf29dafbb386ee43e2:0:s3": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " That is, pack my suitcase.",
+          "trace_id": "pika-1-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/79982ab9fd7f46a73ec7c51866ddeb5c84eb05cd83869edf29dafbb386ee43e2:0:s3.1791973714450.wav",
+          "created_at": 1791973714,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 110764,
+          "updated_at": 1791973714
+        },
+        "81374bd4b7c5128e627b5df978c8bec22bb548fa2654ea0e05d105661059546a:0:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "Now I'll show you some magic.",
+          "trace_id": "pika-7-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/81374bd4b7c5128e627b5df978c8bec22bb548fa2654ea0e05d105661059546a:0:s0.1791973912856.wav",
+          "created_at": 1791973913,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 99244,
+          "updated_at": 1791973913
+        },
+        "81374bd4b7c5128e627b5df978c8bec22bb548fa2654ea0e05d105661059546a:0:s1": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " Say it with me to look ready for the trip.",
+          "trace_id": "pika-7-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/81374bd4b7c5128e627b5df978c8bec22bb548fa2654ea0e05d105661059546a:0:s1.1791973913015.wav",
+          "created_at": 1791973913,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 112044,
+          "updated_at": 1791973913
+        },
+        "9bc54e0b3fc278f5d4fa53cd2d06d3e7c50b169a57ffa545bfdfba41912f3369:0:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "I open my closet.",
+          "trace_id": "pika-5-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/9bc54e0b3fc278f5d4fa53cd2d06d3e7c50b169a57ffa545bfdfba41912f3369:0:s0.1791973846038.wav",
+          "created_at": 1791973846,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 95404,
+          "updated_at": 1791973846
+        },
+        "9bc54e0b3fc278f5d4fa53cd2d06d3e7c50b169a57ffa545bfdfba41912f3369:0:s1": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " I pick my favorite shirt to wear.",
+          "trace_id": "pika-5-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/9bc54e0b3fc278f5d4fa53cd2d06d3e7c50b169a57ffa545bfdfba41912f3369:0:s1.1791973846171.wav",
+          "created_at": 1791973846,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 113964,
+          "updated_at": 1791973846
+        },
+        "9bc54e0b3fc278f5d4fa53cd2d06d3e7c50b169a57ffa545bfdfba41912f3369:0:s2": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " Now, I am ready for an adventure.",
+          "trace_id": "pika-5-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/9bc54e0b3fc278f5d4fa53cd2d06d3e7c50b169a57ffa545bfdfba41912f3369:0:s2.1791973846332.wav",
+          "created_at": 1791973846,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 136958,
+          "updated_at": 1791973846
+        },
+        "9bc54e0b3fc278f5d4fa53cd2d06d3e7c50b169a57ffa545bfdfba41912f3369:0:s3": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " That is, choose my clothes.",
+          "trace_id": "pika-5-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/9bc54e0b3fc278f5d4fa53cd2d06d3e7c50b169a57ffa545bfdfba41912f3369:0:s3.1791973846344.wav",
+          "created_at": 1791973846,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 92332,
+          "updated_at": 1791973846
+        },
+        "9df3278636c1da9f7796a2d5ac36255fb2d7a29ced1b40b3979920b1926cd2b4:0:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "Look at me.",
+          "trace_id": "pika-0-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/9df3278636c1da9f7796a2d5ac36255fb2d7a29ced1b40b3979920b1926cd2b4:0:s0.1791973664554.wav",
+          "created_at": 1791973664,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 51884,
+          "updated_at": 1791973664
+        },
+        "9df3278636c1da9f7796a2d5ac36255fb2d7a29ced1b40b3979920b1926cd2b4:0:s1": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " I'm putting my things neatly into my suitcase.",
+          "trace_id": "pika-0-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/9df3278636c1da9f7796a2d5ac36255fb2d7a29ced1b40b3979920b1926cd2b4:0:s1.1791973665237.wav",
+          "created_at": 1791973665,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 132422,
+          "updated_at": 1791973665
+        },
+        "9df3278636c1da9f7796a2d5ac36255fb2d7a29ced1b40b3979920b1926cd2b4:0:s2": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " What am I doing?",
+          "trace_id": "pika-0-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/9df3278636c1da9f7796a2d5ac36255fb2d7a29ced1b40b3979920b1926cd2b4:0:s2.1791973665250.wav",
+          "created_at": 1791973665,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 71724,
+          "updated_at": 1791973665
+        },
+        "9df3278636c1da9f7796a2d5ac36255fb2d7a29ced1b40b3979920b1926cd2b4:0:s3": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " Can you guess?",
+          "trace_id": "pika-0-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/9df3278636c1da9f7796a2d5ac36255fb2d7a29ced1b40b3979920b1926cd2b4:0:s3.1791973665287.wav",
+          "created_at": 1791973665,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 58028,
+          "updated_at": 1791973665
+        },
+        "d088305115c87a07a9441bf87b58bbef24425b57b2b0bed894fc06cdd288a699:0:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "What is the first thing you do before going on a trip?",
+          "trace_id": "pika-12-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/d088305115c87a07a9441bf87b58bbef24425b57b2b0bed894fc06cdd288a699:0:s0.1791974079761.wav",
+          "created_at": 1791974080,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 139564,
+          "updated_at": 1791974080
+        },
+        "d1bbd8df8486b75c745c8d2c9d52291a34ffa535f4c32ad939b2225b0e049f72:0:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "Now say it with me.",
+          "trace_id": "pika-1-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/d1bbd8df8486b75c745c8d2c9d52291a34ffa535f4c32ad939b2225b0e049f72:0:s0.1791973715024.wav",
+          "created_at": 1791973715,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 82604,
+          "updated_at": 1791973715
+        },
+        "d418d0b4908d8bcb8b99b0036acfa169c29e852007442d26f1fa098db65fcb55:0:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "Look at me.",
+          "trace_id": "pika-8-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/d418d0b4908d8bcb8b99b0036acfa169c29e852007442d26f1fa098db65fcb55:0:s0.1791973943643.wav",
+          "created_at": 1791973943,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 49836,
+          "updated_at": 1791973943
+        },
+        "d418d0b4908d8bcb8b99b0036acfa169c29e852007442d26f1fa098db65fcb55:0:s1": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " I'm putting cookies and candy into my backpack.",
+          "trace_id": "pika-8-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/d418d0b4908d8bcb8b99b0036acfa169c29e852007442d26f1fa098db65fcb55:0:s1.1791973944303.wav",
+          "created_at": 1791973944,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 141484,
+          "updated_at": 1791973944
+        },
+        "d418d0b4908d8bcb8b99b0036acfa169c29e852007442d26f1fa098db65fcb55:0:s2": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " What am I doing?",
+          "trace_id": "pika-8-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/d418d0b4908d8bcb8b99b0036acfa169c29e852007442d26f1fa098db65fcb55:0:s2.1791973944316.wav",
+          "created_at": 1791973944,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 65324,
+          "updated_at": 1791973944
+        },
+        "d418d0b4908d8bcb8b99b0036acfa169c29e852007442d26f1fa098db65fcb55:0:s3": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " Can you guess?",
+          "trace_id": "pika-8-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/d418d0b4908d8bcb8b99b0036acfa169c29e852007442d26f1fa098db65fcb55:0:s3.1791973944329.wav",
+          "created_at": 1791973944,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 55324,
+          "updated_at": 1791973944
+        },
+        "d951990a74e1afaa9cf50c990a736fc93e35ac63f84c704f56f4538b1453cbcb:0:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "Now I'll show you some magic.",
+          "trace_id": "pika-11-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/d951990a74e1afaa9cf50c990a736fc93e35ac63f84c704f56f4538b1453cbcb:0:s0.1791974046546.wav",
+          "created_at": 1791974046,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 94124,
+          "updated_at": 1791974046
+        },
+        "d951990a74e1afaa9cf50c990a736fc93e35ac63f84c704f56f4538b1453cbcb:0:s1": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " Say it with me to fill the snack bag.",
+          "trace_id": "pika-11-ROBOT019ecf48-8d29-7cd8-adb7-f036c6c8a1aea8a59996-8b70-47fd-9107-68f5cc51baa8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/d951990a74e1afaa9cf50c990a736fc93e35ac63f84c704f56f4538b1453cbcb:0:s1.1791974046707.wav",
+          "created_at": 1791974047,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 115884,
+          "updated_at": 1791974047
+        },
+        "080ac5e977b5c5f449bbfd3d658e76059e454fb4c109f49cbae0b155841a926a:0|ac=south:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "Now listen to me!",
+          "trace_id": "pika-3-ROBOT01a134bb-f167-7bdf-a8f3-cfbef5798582983b8f57-f304-42d2-90b6-03140a9c2ba8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/080ac5e977b5c5f449bbfd3d658e76059e454fb4c109f49cbae0b155841a926a:0|ac=south:s0.1793249898902.wav",
+          "created_at": 1793249899,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 38652,
+          "updated_at": 1793249899
+        },
+        "080ac5e977b5c5f449bbfd3d658e76059e454fb4c109f49cbae0b155841a926a:1|ac=south:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "And repeat after me.",
+          "trace_id": "pika-3-ROBOT01a134bb-f167-7bdf-a8f3-cfbef5798582983b8f57-f304-42d2-90b6-03140a9c2ba8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/080ac5e977b5c5f449bbfd3d658e76059e454fb4c109f49cbae0b155841a926a:1|ac=south:s0.1793249899761.wav",
+          "created_at": 1793249900,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 69704,
+          "updated_at": 1793249900
+        },
+        "747858ff590b33e393e0efb647d94b07bf6058b3d6dd002dcf3c6dd237bdebf7:0|ac=south:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "Now I'll show you some magic.",
+          "trace_id": "pika-4-ROBOT01a134bb-f167-7bdf-a8f3-cfbef5798582983b8f57-f304-42d2-90b6-03140a9c2ba8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/747858ff590b33e393e0efb647d94b07bf6058b3d6dd002dcf3c6dd237bdebf7:0|ac=south:s0.1793249925407.wav",
+          "created_at": 1793249925,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 86396,
+          "updated_at": 1793249925
+        },
+        "747858ff590b33e393e0efb647d94b07bf6058b3d6dd002dcf3c6dd237bdebf7:0|ac=south:s1": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " Say it with me to get ready for the trip.",
+          "trace_id": "pika-4-ROBOT01a134bb-f167-7bdf-a8f3-cfbef5798582983b8f57-f304-42d2-90b6-03140a9c2ba8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/747858ff590b33e393e0efb647d94b07bf6058b3d6dd002dcf3c6dd237bdebf7:0|ac=south:s1.1793249925452.wav",
+          "created_at": 1793249925,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 102444,
+          "updated_at": 1793249925
+        },
+        "79982ab9fd7f46a73ec7c51866ddeb5c84eb05cd83869edf29dafbb386ee43e2:0|ac=south:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "I get the things I need for the trip.",
+          "trace_id": "pika-1-ROBOT01a134bb-f167-7bdf-a8f3-cfbef5798582983b8f57-f304-42d2-90b6-03140a9c2ba8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/79982ab9fd7f46a73ec7c51866ddeb5c84eb05cd83869edf29dafbb386ee43e2:0|ac=south:s0.1793249834134.wav",
+          "created_at": 1793249834,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 96044,
+          "updated_at": 1793249834
+        },
+        "79982ab9fd7f46a73ec7c51866ddeb5c84eb05cd83869edf29dafbb386ee43e2:0|ac=south:s1": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " I place them one by one into my suitcase.",
+          "trace_id": "pika-1-ROBOT01a134bb-f167-7bdf-a8f3-cfbef5798582983b8f57-f304-42d2-90b6-03140a9c2ba8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/79982ab9fd7f46a73ec7c51866ddeb5c84eb05cd83869edf29dafbb386ee43e2:0|ac=south:s1.1793249834231.wav",
+          "created_at": 1793249834,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 123308,
+          "updated_at": 1793249834
+        },
+        "79982ab9fd7f46a73ec7c51866ddeb5c84eb05cd83869edf29dafbb386ee43e2:0|ac=south:s2": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " And soon my suitcase is ready for the trip.",
+          "trace_id": "pika-1-ROBOT01a134bb-f167-7bdf-a8f3-cfbef5798582983b8f57-f304-42d2-90b6-03140a9c2ba8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/79982ab9fd7f46a73ec7c51866ddeb5c84eb05cd83869edf29dafbb386ee43e2:0|ac=south:s2.1793249834252.wav",
+          "created_at": 1793249834,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 116780,
+          "updated_at": 1793249834
+        },
+        "79982ab9fd7f46a73ec7c51866ddeb5c84eb05cd83869edf29dafbb386ee43e2:0|ac=south:s3": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " That is, pack my suitcase.",
+          "trace_id": "pika-1-ROBOT01a134bb-f167-7bdf-a8f3-cfbef5798582983b8f57-f304-42d2-90b6-03140a9c2ba8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/79982ab9fd7f46a73ec7c51866ddeb5c84eb05cd83869edf29dafbb386ee43e2:0|ac=south:s3.1793249834265.wav",
+          "created_at": 1793249834,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 84732,
+          "updated_at": 1793249834
+        },
+        "9df3278636c1da9f7796a2d5ac36255fb2d7a29ced1b40b3979920b1926cd2b4:0|ac=south:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "Look at me.",
+          "trace_id": "pika-0-ROBOT01a134bb-f167-7bdf-a8f3-cfbef5798582983b8f57-f304-42d2-90b6-03140a9c2ba8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/9df3278636c1da9f7796a2d5ac36255fb2d7a29ced1b40b3979920b1926cd2b4:0|ac=south:s0.1793249792756.wav",
+          "created_at": 1793249793,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 52910,
+          "updated_at": 1793249793
+        },
+        "9df3278636c1da9f7796a2d5ac36255fb2d7a29ced1b40b3979920b1926cd2b4:0|ac=south:s1": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " I'm putting my things neatly into my suitcase.",
+          "trace_id": "pika-0-ROBOT01a134bb-f167-7bdf-a8f3-cfbef5798582983b8f57-f304-42d2-90b6-03140a9c2ba8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/9df3278636c1da9f7796a2d5ac36255fb2d7a29ced1b40b3979920b1926cd2b4:0|ac=south:s1.1793249792922.wav",
+          "created_at": 1793249793,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 124700,
+          "updated_at": 1793249793
+        },
+        "9df3278636c1da9f7796a2d5ac36255fb2d7a29ced1b40b3979920b1926cd2b4:0|ac=south:s2": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " What am I doing?",
+          "trace_id": "pika-0-ROBOT01a134bb-f167-7bdf-a8f3-cfbef5798582983b8f57-f304-42d2-90b6-03140a9c2ba8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/9df3278636c1da9f7796a2d5ac36255fb2d7a29ced1b40b3979920b1926cd2b4:0|ac=south:s2.1793249792953.wav",
+          "created_at": 1793249793,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 67244,
+          "updated_at": 1793249793
+        },
+        "9df3278636c1da9f7796a2d5ac36255fb2d7a29ced1b40b3979920b1926cd2b4:0|ac=south:s3": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": " Can you guess?",
+          "trace_id": "pika-0-ROBOT01a134bb-f167-7bdf-a8f3-cfbef5798582983b8f57-f304-42d2-90b6-03140a9c2ba8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/9df3278636c1da9f7796a2d5ac36255fb2d7a29ced1b40b3979920b1926cd2b4:0|ac=south:s3.1793249792958.wav",
+          "created_at": 1793249793,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 55940,
+          "updated_at": 1793249793
+        },
+        "d1bbd8df8486b75c745c8d2c9d52291a34ffa535f4c32ad939b2225b0e049f72:0|ac=south:s0": {
+          "bot_id": "2584",
+          "source": "runtime",
+          "warmed": false,
+          "winner": "llm_tts",
+          "language": "",
+          "sentence": "Now say it with me.",
+          "trace_id": "pika-1-ROBOT01a134bb-f167-7bdf-a8f3-cfbef5798582983b8f57-f304-42d2-90b6-03140a9c2ba8",
+          "voice_id": "",
+          "audio_url": "https://smedia.stepup.edu.vn/robot/audio/lesson-cache/d1bbd8df8486b75c745c8d2c9d52291a34ffa535f4c32ad939b2225b0e049f72:0|ac=south:s0.1793249834500.wav",
+          "created_at": 1793249834,
+          "is_primary": true,
+          "normalized": false,
+          "size_bytes": 71246,
+          "updated_at": 1793249834
+        }
+      },
+      "input_schema_key": null,
+      "learn_v2_keep_model": false,
+      "GRAMMAR_CHECKER_TOOL": "",
+      "SYSTEM_TASK_DESCRIPTION": "You are Pika, a friendly voice teacher for a child.\n\n# ROLE\nThe lesson is a sequence of checkpoints. You receive ONE checkpoint at a time from the developer. Each checkpoint has:\n- Question: what you must ask the child.\n- Response_guide: cases describing how to answer the child.\n\n# FLOW\n1. Start of checkpoint: ask the Question once, including its [MEDIA:...] tokens.\n2. For each child reply:\n   - If the guide says to call a function (e.g. pronun_check(...)), call it exactly as described BEFORE replying.\n   - If the reply fits a case in Response_guide, answer using that case. You may rephrase slightly, but keep the meaning and all media/tags.\n   - Otherwise, kindly repeat or simplify the Question in 1–2 short turns to guide the child back.\n3. End your reply with <next_ckp/> when the Response_guide marks the checkpoint finished, or the child is back on track and agrees to move on. Only at the END of the message.\n\n# FIDELITY (media & tags)\nFor every [MEDIA:...] token, <eng>...</eng>, and <emotion type=\"...\"/> in the guide:\n- Count: output each one exactly as many times as it appears — no more, no fewer.\n- Order: keep the exact sequence given.\n- No invention: never add a token/tag not in the current checkpoint.\n- No omission: never drop one, even if the sentence reads fine without it.\n- No change: never alter an emotion `type` value or invent new keys.\n\n# LANGUAGE\n- Speak in the language set by the system language prompt. Follow it for all your own words.\n- Keep <eng>...</eng> content in English regardless of language setting.\n- [Say in {lang_code}: {text}] → this is an INSTRUCTION to you, not text for the child.\n- Translate {text} into {lang_code} and output ONLY the translation.\n- NEVER output the token \"[Say in ...]\" itself.\n- NEVER output the original {text} if it is not in {lang_code}.\n\nWRONG: \"[Say in EN: Nào cùng nói từ này với tớ nhé]\"\nWRONG: \"Nào cùng nói từ này với tớ nhé\" (kept original Vietnamese)\nRIGHT: \"Now, let's say this word together!\"\n\n# STYLE\n- 1–3 short, simple sentences per turn. Warm, encouraging, clear.\n- Avoid adult, sexual, violent, extremist, unhealthy, or risky content. If the child says something unhealthy, softly advise them.\n\n# EXAMPLES\nExample 1 — basic flow\n  Teacher: [MEDIA:word_image] Can you say the word \"Banana\"?\n  Student: Banana!\n  Teacher: [MEDIA:star_img] Yes, Banana is correct! <next_ckp/>\n\nExample 2 — emotion placement\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"happy\"/>[Say hello to the child],\n        <emotion type=\"excited\"/>[introduce that the child will learn vocab about animals]\n      </question_guide>\n    </checkpoint_1>\n  Teacher: <emotion type=\"happy\"/> Hello! Hi there, friend! <emotion type=\"excited\"/> Today, we are going to learn about animals! So fun!\n\nExample 3 — [Say in {lang_code}:] + exact media count + order\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\n      </question_guide>\n    </checkpoint_1>\nRIGHT OUTPUT:\n  Teacher: <emotion type=\"encouraging\"/> Now, follow me and let's say this word together! [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (output the [Say in...] token literally):\n<emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (kept Vietnamese instead of translating):\n<emotion type=\"encouraging\"/> Nào cùng nói từ này với tớ nhé [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\nWRONG (dropped one token):\n<emotion type=\"encouraging\"/> Now, follow me! [MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\n\nExample 4 — function call required\n  Dev:\n    <checkpoint_1>\n      <question_guide>[MEDIA:question] Can you say the word \"duck\"?</question_guide>\n      <response_guide>\n        Always call pronun_check(ref_text=\"duck\") before replying.\n        - Correct: [MEDIA:diamond_10] <next_ckp/>\n        - Incorrect / no answer / irrelevant: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n      </response_guide>\n    </checkpoint_1>\n  Student: Duck!\n  Teacher (internal): calls pronun_check(ref_text=\"duck\") → correct\n  Teacher: [MEDIA:diamond_10] <next_ckp/>",
+      "SYSTEM_PROMPT_GENERATION": "",
+      "learn_v2_keep_dev_prompt": false,
+      "SYSTEM_EXTRACTION_PROFILE": "",
+      "dynamic_checkpoint_config": null,
+      "PRONUNCIATION_CHECKER_TOOL": "true",
+      "SYSTEM_EXTRACTION_VARIABLES": ""
+    }
+  ],
+  "generation_params": null,
+  "provider_name": "openai",
+  "system_prompt": "You are Pika, a friendly voice teacher for a child.\n\n# ROLE\nThe lesson is a sequence of checkpoints. You receive ONE checkpoint at a time from the developer. Each checkpoint has:\n- Question: what you must ask the child.\n- Response_guide: cases describing how to answer the child.\n\n# FLOW\n1. Start of checkpoint: ask the Question once, including its [MEDIA:...] tokens.\n2. For each child reply:\n   - If the guide says to call a function (e.g. pronun_check(...)), call it exactly as described BEFORE replying.\n   - If the reply fits a case in Response_guide, answer using that case. You may rephrase slightly, but keep the meaning and all media/tags.\n   - Otherwise, kindly repeat or simplify the Question in 1–2 short turns to guide the child back.\n3. End your reply with <next_ckp/> when the Response_guide marks the checkpoint finished, or the child is back on track and agrees to move on. Only at the END of the message.\n\n# FIDELITY (media & tags)\nFor every [MEDIA:...] token, <eng>...</eng>, and <emotion type=\"...\"/> in the guide:\n- Count: output each one exactly as many times as it appears — no more, no fewer.\n- Order: keep the exact sequence given.\n- No invention: never add a token/tag not in the current checkpoint.\n- No omission: never drop one, even if the sentence reads fine without it.\n- No change: never alter an emotion `type` value or invent new keys.\n\n# LANGUAGE\n- Speak in the language set by the system language prompt. Follow it for all your own words.\n- Keep <eng>...</eng> content in English regardless of language setting.\n- [Say in {lang_code}: {text}] → this is an INSTRUCTION to you, not text for the child.\n- Translate {text} into {lang_code} and output ONLY the translation.\n- NEVER output the token \"[Say in ...]\" itself.\n- NEVER output the original {text} if it is not in {lang_code}.\n\nWRONG: \"[Say in EN: Nào cùng nói từ này với tớ nhé]\"\nWRONG: \"Nào cùng nói từ này với tớ nhé\" (kept original Vietnamese)\nRIGHT: \"Now, let's say this word together!\"\n\n# STYLE\n- 1–3 short, simple sentences per turn. Warm, encouraging, clear.\n- Avoid adult, sexual, violent, extremist, unhealthy, or risky content. If the child says something unhealthy, softly advise them.\n\n# EXAMPLES\nExample 1 — basic flow\n  Teacher: [MEDIA:word_image] Can you say the word \"Banana\"?\n  Student: Banana!\n  Teacher: [MEDIA:star_img] Yes, Banana is correct! <next_ckp/>\n\nExample 2 — emotion placement\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"happy\"/>[Say hello to the child],\n        <emotion type=\"excited\"/>[introduce that the child will learn vocab about animals]\n      </question_guide>\n    </checkpoint_1>\n  Teacher: <emotion type=\"happy\"/> Hello! Hi there, friend! <emotion type=\"excited\"/> Today, we are going to learn about animals! So fun!\n\nExample 3 — [Say in {lang_code}:] + exact media count + order\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\n      </question_guide>\n    </checkpoint_1>\nRIGHT OUTPUT:\n  Teacher: <emotion type=\"encouraging\"/> Now, follow me and let's say this word together! [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (output the [Say in...] token literally):\n<emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (kept Vietnamese instead of translating):\n<emotion type=\"encouraging\"/> Nào cùng nói từ này với tớ nhé [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\nWRONG (dropped one token):\n<emotion type=\"encouraging\"/> Now, follow me! [MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\n\nExample 4 — function call required\n  Dev:\n    <checkpoint_1>\n      <question_guide>[MEDIA:question] Can you say the word \"duck\"?</question_guide>\n      <response_guide>\n        Always call pronun_check(ref_text=\"duck\") before replying.\n        - Correct: [MEDIA:diamond_10] <next_ckp/>\n        - Incorrect / no answer / irrelevant: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n      </response_guide>\n    </checkpoint_1>\n  Student: Duck!\n  Teacher (internal): calls pronun_check(ref_text=\"duck\") → correct\n  Teacher: [MEDIA:diamond_10] <next_ckp/>",
+  "format_output": "TEXT",
+  "graph": {
+    "nodes": [
+      {
+        "node_id": "learn_sentence",
+        "prompt": "",
+        "type": "LEARN",
+        "tools": [],
+        "pivots": [],
+        "nexts": [],
+        "checkpoints": [
+          {
+            "name": "Câu nối - Đố đảo Lý Sơn",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "<emotion type=\"excited\"/> Đố cậu nha: hòn đảo nào ở Quảng Ngãi nổi tiếng trồng tỏi? Phú Quốc hay Lý Sơn?",
+            "media_list": null,
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "tool": null,
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [],
+                  "turn_guide": ""
+                }
+              ],
+              "ref_text": null,
+              "global_guide": "Case 1 — Trẻ nói Lý Sơn: <emotion type=\"excited\"/> [Khen ngắn] Đúng rồi, Lý Sơn! Nhà An Linh sắp ra đảo Lý Sơn ăn Tết đó. Mình đi xem nha! <next_ckp/>\n\nCase 2 — Các trường hợp còn lại (nói Phú Quốc, không biết, im lặng, nói chuyện khác): <emotion type=\"happy\"/> [Không nói trẻ sai] Là đảo Lý Sơn đó! Nhà An Linh sắp ra đảo Lý Sơn ăn Tết. Mình đi xem nha! <next_ckp/>"
+            },
+            "image_listening": null,
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "base",
+            "cache_hash_question": null,
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "#1 - Nhà An Linh đi Lý Sơn ăn Tết",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:c1q_1] [MEDIA:c1q_2] [MEDIA:c1q_3] [MEDIA:c1q_4] [MEDIA:c1q_5] [MEDIA:c1q_6] Hey! Hey! Hey! Happy Lunar New Year! Today is a special day! [MEDIA:c1q_7] The whole family is going to <vi>Lý Sơn</vi> Island for the holiday. [MEDIA:c1q_8] [MEDIA:c1q_9] [MEDIA:c1q_10] They will go on a garlic-picking tour on <vi>Lý Sơn</vi> Island. [MEDIA:c1q_11] [MEDIA:c1q_12] Let's see what happens. [MEDIA:c1q_13] [MEDIA:c1q_14] [MEDIA:c1q_15] [MEDIA:c1q_16] [MEDIA:c1q_17] [MEDIA:c1q_18] [MEDIA:c1q_19] You've got to ask everyone what they need to prepare before the trip! [MEDIA:c1q_20]",
+            "media_list": [
+              {
+                "id": "c1q_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/nhactetso1.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson01.gif",
+                "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+              },
+              {
+                "id": "c1q_2",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/nhactetso2.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson02.gif",
+                "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+              },
+              {
+                "id": "c1q_3",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/nhactetso3.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson03.gif",
+                "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+              },
+              {
+                "id": "c1q_4",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/nhactetso3.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson04.gif",
+                "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+              },
+              {
+                "id": "c1q_5",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/tadaaaaa_6s.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson05.gif",
+                "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+              },
+              {
+                "id": "c1q_6",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson06.jpg",
+                "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+              },
+              {
+                "id": "c1q_7",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson07.gif",
+                "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+              },
+              {
+                "id": "c1q_8",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/songbiennhenhang.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson08.gif",
+                "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+              },
+              {
+                "id": "c1q_9",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/audio0_7s.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson08.gif",
+                "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+              },
+              {
+                "id": "c1q_10",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson09.gif",
+                "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+              },
+              {
+                "id": "c1q_11",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/audio1s.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson11.jpg",
+                "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+              },
+              {
+                "id": "c1q_12",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilysonbonus1.gif",
+                "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+              },
+              {
+                "id": "c1q_13",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio02.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilysonbonus1.gif",
+                "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+              },
+              {
+                "id": "c1q_14",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio03.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson12.gif",
+                "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+              },
+              {
+                "id": "c1q_15",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio02.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson13fix2.jpg",
+                "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+              },
+              {
+                "id": "c1q_16",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio05.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson14.gif",
+                "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+              },
+              {
+                "id": "c1q_17",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio06.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilysonbonus2.gif",
+                "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+              },
+              {
+                "id": "c1q_18",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/thecoach/all_files/ting.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson16.jpg",
+                "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+              },
+              {
+                "id": "c1q_19",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilysonbonus3.gif",
+                "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+              },
+              {
+                "id": "c1q_20",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio08.mp3",
+                "image_url": "",
+                "media_description": "Tết intro: An Linh's family is going to Lý Sơn Island"
+              },
+              {
+                "id": "c1go_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson18.gif",
+                "media_description": "An Linh's family greets the child"
+              },
+              {
+                "id": "c1go_2",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio10.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson18.gif",
+                "media_description": "An Linh's family greets the child"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "tool": null,
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [],
+                  "turn_guide": ""
+                }
+              ],
+              "ref_text": null,
+              "global_guide": "Case 1 — Mọi trường hợp (sẵn sàng, chưa sẵn sàng, im lặng, nói chuyện khác): [MEDIA:c1go_1] Just start the conversation with An Linh's family. They're nice. [MEDIA:c1go_2] <next_ckp/>"
+            },
+            "image_listening": null,
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "base",
+            "cache_hash_question": null,
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "#2 - Bé hỏi bố An Linh",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:c2q_1]",
+            "media_list": [
+              {
+                "id": "c2q_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio11.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson20.jpg",
+                "media_description": "An Linh's dad on the sofa; the child asks him what he needs for the trip"
+              },
+              {
+                "id": "c2ok_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio12.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson21.jpg",
+                "media_description": "bố An Linh answers what they need"
+              },
+              {
+                "id": "c2retry_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio13.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson20.jpg",
+                "media_description": "invites the child to try asking again"
+              },
+              {
+                "id": "c2model_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio14fix.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson21.jpg",
+                "media_description": "models the question, bố An Linh answers"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "tool": null,
+              "ref_text": null,
+              "global_guide": "",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [],
+                  "turn_guide": "• Case 1 (Trẻ hỏi được câu 'What do you need to get ready for the trip?' hoặc câu cùng ý ('What do you need?', 'What do you need to prepare?', 'What do you need to get ready?'), kể cả sai ngữ pháp nhỏ): Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c2ok_1] <next_ckp/>\n\n• Case 2 (Các trường hợp còn lại: hỏi sai, không biết, im lặng, nói chuyện khác): Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c2retry_1]"
+                },
+                {
+                  "turn": 2,
+                  "cases": [],
+                  "turn_guide": "• Case 1 (Trẻ hỏi được câu 'What do you need to get ready for the trip?' hoặc câu cùng ý ('What do you need?', 'What do you need to prepare?', 'What do you need to get ready?'), kể cả sai ngữ pháp nhỏ): Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c2ok_1] <next_ckp/>\n\n• Case 2 (Các trường hợp còn lại): Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c2model_1] <next_ckp/>"
+                }
+              ]
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson20lis.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "base",
+            "cache_hash_question": null,
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "#3 - Bé hỏi mẹ An Linh",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:c3q_1]",
+            "media_list": [
+              {
+                "id": "c3q_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio15.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson23.jpg",
+                "media_description": "An Linh's mom; the child asks her what she needs for the trip"
+              },
+              {
+                "id": "c3ok_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio16.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson24.jpg",
+                "media_description": "mẹ An Linh answers what they need"
+              },
+              {
+                "id": "c3retry_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio13.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson23.jpg",
+                "media_description": "invites the child to try asking again"
+              },
+              {
+                "id": "c3model_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio18fix.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson24.jpg",
+                "media_description": "models the question, mẹ An Linh answers"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "tool": null,
+              "ref_text": null,
+              "global_guide": "",
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [],
+                  "turn_guide": "• Case 1 (Trẻ hỏi được câu 'What do you need to get ready for the trip?' hoặc câu cùng ý ('What do you need?', 'What do you need to prepare?', 'What do you need to get ready?'), kể cả sai ngữ pháp nhỏ): Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c3ok_1] <next_ckp/>\n\n• Case 2 (Các trường hợp còn lại: hỏi sai, không biết, im lặng, nói chuyện khác): Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c3retry_1]"
+                },
+                {
+                  "turn": 2,
+                  "cases": [],
+                  "turn_guide": "• Case 1 (Trẻ hỏi được câu 'What do you need to get ready for the trip?' hoặc câu cùng ý ('What do you need?', 'What do you need to prepare?', 'What do you need to get ready?'), kể cả sai ngữ pháp nhỏ): Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c3ok_1] <next_ckp/>\n\n• Case 2 (Các trường hợp còn lại): Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c3model_1] <next_ckp/>"
+                }
+              ]
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson23lis.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "base",
+            "cache_hash_question": null,
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "#6 - Bé là An Linh, trả lời câu 1",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "Awesome. Now, let's go New Year shopping for the trip! [MEDIA:c6q_2] [MEDIA:c6q_3] [MEDIA:c6q_4] [MEDIA:c6q_5] [MEDIA:c6q_6] [MEDIA:c6q_7] Now, you are An Linh. Answer the question from her! [MEDIA:c6q_8] [MEDIA:c6q_9] [MEDIA:c6q_10] Now, answer the question from her!",
+            "media_list": [
+              {
+                "id": "c6q_2",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/nhactetso5.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson32.gif",
+                "media_description": "Auntie Bảy's Tết shop; the child is An Linh and answers with 'I need ...'"
+              },
+              {
+                "id": "c6q_3",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/nhactetso6.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson33.gif",
+                "media_description": "Auntie Bảy's Tết shop; the child is An Linh and answers with 'I need ...'"
+              },
+              {
+                "id": "c6q_4",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/nhactetso7.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson34.gif",
+                "media_description": "Auntie Bảy's Tết shop; the child is An Linh and answers with 'I need ...'"
+              },
+              {
+                "id": "c6q_5",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio30.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson35.jpg",
+                "media_description": "Auntie Bảy's Tết shop; the child is An Linh and answers with 'I need ...'"
+              },
+              {
+                "id": "c6q_6",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio31.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson36.gif",
+                "media_description": "Auntie Bảy's Tết shop; the child is An Linh and answers with 'I need ...'"
+              },
+              {
+                "id": "c6q_7",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilysonbonus2.gif",
+                "media_description": "Auntie Bảy's Tết shop; the child is An Linh and answers with 'I need ...'"
+              },
+              {
+                "id": "c6q_8",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio32.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+                "media_description": "Auntie Bảy's Tết shop; the child is An Linh and answers with 'I need ...'"
+              },
+              {
+                "id": "c6q_9",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/181225HHaudio34.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson38.gif",
+                "media_description": "Auntie Bảy's Tết shop; the child is An Linh and answers with 'I need ...'"
+              },
+              {
+                "id": "c6q_10",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson38lisafix1.jpg",
+                "media_description": "Auntie Bảy's Tết shop; the child is An Linh and answers with 'I need ...'"
+              },
+              {
+                "id": "c6ok_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio34.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson39.jpg",
+                "media_description": "Auntie Bảy replies"
+              },
+              {
+                "id": "c6other_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio39.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+                "media_description": "Auntie Bảy replies"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "tool": null,
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [],
+                  "turn_guide": ""
+                }
+              ],
+              "ref_text": null,
+              "global_guide": "Case 1 — Trẻ nói một câu có 'I need' kèm một món trong danh sách (suitcase, clothes, shirt, t-shirt, snacks, tent, first-aid kit, board game), ví dụ 'I need a suitcase' hoặc 'I need to pack my suitcase': Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c6ok_1] <next_ckp/>\n\nCase 2 — Các trường hợp còn lại (không có 'I need', không biết, im lặng, nói chuyện khác): Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c6other_1] <next_ckp/>"
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson38lisa1fix1.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "base",
+            "cache_hash_question": null,
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "#7 - Bé là An Linh, trả lời câu 2",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:c7q_1]",
+            "media_list": [
+              {
+                "id": "c7q_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio36.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+                "media_description": "Auntie Bảy's Tết shop; the child is An Linh and answers with 'I need ...'"
+              },
+              {
+                "id": "c7ok_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio38.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson39.jpg",
+                "media_description": "Auntie Bảy replies"
+              },
+              {
+                "id": "c7other_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio39.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+                "media_description": "Auntie Bảy replies"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "tool": null,
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [],
+                  "turn_guide": ""
+                }
+              ],
+              "ref_text": null,
+              "global_guide": "Case 1 — Trẻ nói một câu có 'I need' kèm một món trong danh sách (suitcase, clothes, shirt, t-shirt, snacks, tent, first-aid kit, board game), ví dụ 'I need a suitcase' hoặc 'I need to pack my suitcase': Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c7ok_1] <next_ckp/>\n\nCase 2 — Các trường hợp còn lại (không có 'I need', không biết, im lặng, nói chuyện khác): Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c7other_1] <next_ckp/>"
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson38lisa1fix1.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "base",
+            "cache_hash_question": null,
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "#8 - Bé là An Linh, trả lời câu 3",
+            "past": null,
+            "type": "cta_simplify",
+            "question": "[MEDIA:c8q_1]",
+            "media_list": [
+              {
+                "id": "c8q_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio40.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+                "media_description": "Auntie Bảy's Tết shop; the child is An Linh and answers with 'I need ...'"
+              },
+              {
+                "id": "c8ok_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio41.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson39.jpg",
+                "media_description": "Auntie Bảy replies"
+              },
+              {
+                "id": "c8other_1",
+                "type": "for_response",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio39.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+                "media_description": "Auntie Bảy replies"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": {
+              "tool": null,
+              "turns": [
+                {
+                  "turn": 1,
+                  "cases": [],
+                  "turn_guide": ""
+                }
+              ],
+              "ref_text": null,
+              "global_guide": "Case 1 — Trẻ nói một câu có 'I need' kèm một món trong danh sách (suitcase, clothes, shirt, t-shirt, snacks, tent, first-aid kit, board game), ví dụ 'I need a suitcase' hoặc 'I need to pack my suitcase': Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c8ok_1] <next_ckp/>\n\nCase 2 — Các trường hợp còn lại (không có 'I need', không biết, im lặng, nói chuyện khác): Chỉ phát đoạn thu âm, không nói thêm gì: [MEDIA:c8other_1] <next_ckp/>"
+            },
+            "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson38lisa1fix1.jpg",
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "base",
+            "cache_hash_question": null,
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          },
+          {
+            "name": "#10 - Cả nhà lên đường ra đảo",
+            "past": null,
+            "type": "narrative",
+            "question": "[MEDIA:c10q_1] [MEDIA:c10q_2] [MEDIA:c10q_3] [MEDIA:c10q_4] [MEDIA:c10q_5] [MEDIA:c10q_6] <next_ckp/>",
+            "media_list": [
+              {
+                "id": "c10q_1",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio47.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson41.jpg",
+                "media_description": "The family sets off to Lý Sơn Island"
+              },
+              {
+                "id": "c10q_2",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio48.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson42.gif",
+                "media_description": "The family sets off to Lý Sơn Island"
+              },
+              {
+                "id": "c10q_3",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio49.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson43.jpg",
+                "media_description": "The family sets off to Lý Sơn Island"
+              },
+              {
+                "id": "c10q_4",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/nhactetoutrotoi.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson44fixx.jpg",
+                "media_description": "The family sets off to Lý Sơn Island"
+              },
+              {
+                "id": "c10q_5",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/nhactetoutrotoi1.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson45fixx.gif",
+                "media_description": "The family sets off to Lý Sơn Island"
+              },
+              {
+                "id": "c10q_6",
+                "type": "for_question",
+                "score": null,
+                "audio_url": "https://smedia.stepup.edu.vn/robot/audio/nhactetoutrotoi2.mp3",
+                "image_url": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson47.gif",
+                "media_description": "The family sets off to Lý Sơn Island"
+              }
+            ],
+            "voice_list": [],
+            "question_test": null,
+            "pronun_version": 2,
+            "question_guide": null,
+            "response_guide": null,
+            "image_listening": null,
+            "use_cache_guide": false,
+            "cache_hash_guide": null,
+            "pronun_score_only": false,
+            "type_cta_simplify": "base",
+            "cache_hash_question": null,
+            "how_complete_sentence": null,
+            "pronun_correct_bot_id": 3027,
+            "structure_to_remember": null,
+            "pronun_weak_phoneme_threshold": 0.65
+          }
+        ],
+        "input_schema_key": null,
+        "start_message": "",
+        "hooks": [],
+        "max_turns": null,
+        "pre_llm_pipeline": null,
+        "dynamic_checkpoint_builder": null,
+        "dynamic_checkpoint_config": {},
+        "tts_provider_override": null,
+        "learn_v2": true,
+        "learn_v2_keep_dev_prompt": false,
+        "learn_v2_keep_model": false
+      }
+    ],
+    "global_pivots": [],
+    "global_tools": [
+      "pronun_check_v2"
+    ],
+    "global_hooks": [],
+    "system_prompt": "You are Pika, a friendly voice teacher for a child.\n\n# ROLE\nThe lesson is a sequence of checkpoints. You receive ONE checkpoint at a time from the developer. Each checkpoint has:\n- Question: what you must ask the child.\n- Response_guide: cases describing how to answer the child.\n\n# FLOW\n1. Start of checkpoint: ask the Question once, including its [MEDIA:...] tokens.\n2. For each child reply:\n   - If the guide says to call a function (e.g. pronun_check(...)), call it exactly as described BEFORE replying.\n   - If the reply fits a case in Response_guide, answer using that case. You may rephrase slightly, but keep the meaning and all media/tags.\n   - Otherwise, kindly repeat or simplify the Question in 1–2 short turns to guide the child back.\n3. End your reply with <next_ckp/> when the Response_guide marks the checkpoint finished, or the child is back on track and agrees to move on. Only at the END of the message.\n\n# FIDELITY (media & tags)\nFor every [MEDIA:...] token, <eng>...</eng>, and <emotion type=\"...\"/> in the guide:\n- Count: output each one exactly as many times as it appears — no more, no fewer.\n- Order: keep the exact sequence given.\n- No invention: never add a token/tag not in the current checkpoint.\n- No omission: never drop one, even if the sentence reads fine without it.\n- No change: never alter an emotion `type` value or invent new keys.\n\n# LANGUAGE\n- Speak in the language set by the system language prompt. Follow it for all your own words.\n- Keep <eng>...</eng> content in English regardless of language setting.\n- [Say in {lang_code}: {text}] → this is an INSTRUCTION to you, not text for the child.\n- Translate {text} into {lang_code} and output ONLY the translation.\n- NEVER output the token \"[Say in ...]\" itself.\n- NEVER output the original {text} if it is not in {lang_code}.\n\nWRONG: \"[Say in EN: Nào cùng nói từ này với tớ nhé]\"\nWRONG: \"Nào cùng nói từ này với tớ nhé\" (kept original Vietnamese)\nRIGHT: \"Now, let's say this word together!\"\n\n# STYLE\n- 1–3 short, simple sentences per turn. Warm, encouraging, clear.\n- Avoid adult, sexual, violent, extremist, unhealthy, or risky content. If the child says something unhealthy, softly advise them.\n\n# EXAMPLES\nExample 1 — basic flow\n  Teacher: [MEDIA:word_image] Can you say the word \"Banana\"?\n  Student: Banana!\n  Teacher: [MEDIA:star_img] Yes, Banana is correct! <next_ckp/>\n\nExample 2 — emotion placement\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"happy\"/>[Say hello to the child],\n        <emotion type=\"excited\"/>[introduce that the child will learn vocab about animals]\n      </question_guide>\n    </checkpoint_1>\n  Teacher: <emotion type=\"happy\"/> Hello! Hi there, friend! <emotion type=\"excited\"/> Today, we are going to learn about animals! So fun!\n\nExample 3 — [Say in {lang_code}:] + exact media count + order\n  Dev:\n    <checkpoint_1>\n      <question_guide>\n        <emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\n      </question_guide>\n    </checkpoint_1>\nRIGHT OUTPUT:\n  Teacher: <emotion type=\"encouraging\"/> Now, follow me and let's say this word together! [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (output the [Say in...] token literally):\n<emotion type=\"encouraging\"/> [Say in EN: Nào cùng nói từ này với tớ nhé][MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound]<eng>duck</eng>\nWRONG (kept Vietnamese instead of translating):\n<emotion type=\"encouraging\"/> Nào cùng nói từ này với tớ nhé [MEDIA:duck_sound][MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\nWRONG (dropped one token):\n<emotion type=\"encouraging\"/> Now, follow me! [MEDIA:duck_sound][MEDIA:duck_sound] <eng>duck</eng>\n\nExample 4 — function call required\n  Dev:\n    <checkpoint_1>\n      <question_guide>[MEDIA:question] Can you say the word \"duck\"?</question_guide>\n      <response_guide>\n        Always call pronun_check(ref_text=\"duck\") before replying.\n        - Correct: [MEDIA:diamond_10] <next_ckp/>\n        - Incorrect / no answer / irrelevant: call pivot(event_name=\"CORRECTION\", payload={word=\"duck\", phoneme=<wrong phoneme in CMU format>})\n      </response_guide>\n    </checkpoint_1>\n  Student: Duck!\n  Teacher (internal): calls pronun_check(ref_text=\"duck\") → correct\n  Teacher: [MEDIA:diamond_10] <next_ckp/>",
+    "version": "v2",
+    "strict": false,
+    "use_intent": "full"
+  }
+}

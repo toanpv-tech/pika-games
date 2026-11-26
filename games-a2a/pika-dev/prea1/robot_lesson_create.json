@@ -1,0 +1,26 @@
+{
+  "name": "Pre A1 Trải nghiệm 30p",
+  "description": "",
+  "scenario": [
+    {
+      "robot_type": "Agent",
+      "set_variable": "",
+      "robot_type_id": 3787,
+      "param_extractor": ""
+    }
+  ],
+  "system_prompt": "",
+  "provider_name": "",
+  "generation_params": {},
+  "system_extraction_variables": "",
+  "system_prompt_generation": "",
+  "system_extraction_profile": "",
+  "data_excel": [
+    {
+      "robot_type": "Agent",
+      "set_variable": "",
+      "robot_type_id": 3787,
+      "param_extractor": ""
+    }
+  ]
+}

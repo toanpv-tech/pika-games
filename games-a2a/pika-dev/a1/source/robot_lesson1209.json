@@ -1,0 +1,34 @@
+{
+  "status": 0,
+  "msg": "Success",
+  "result": {
+    "id": 1209,
+    "name": "A1 - F3 - D1 - Present A",
+    "description": "",
+    "scenario": [
+      {
+        "robot_type": "Workflow",
+        "set_variable": "",
+        "robot_type_id": 950,
+        "param_extractor": ""
+      }
+    ],
+    "system_prompt": null,
+    "provider_name": null,
+    "generation_params": null,
+    "create_at": 1773971667967,
+    "update_at": 1773971667967,
+    "system_extraction_variables": null,
+    "system_prompt_generation": null,
+    "system_extraction_profile": null,
+    "data_excel": [
+      {
+        "robot_type": "Workflow",
+        "set_variable": "",
+        "robot_type_id": 950,
+        "param_extractor": ""
+      }
+    ],
+    "is_loading": true
+  }
+}

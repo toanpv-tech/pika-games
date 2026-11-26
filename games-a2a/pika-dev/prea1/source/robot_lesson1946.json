@@ -1,0 +1,34 @@
+{
+  "status": 0,
+  "msg": "Success",
+  "result": {
+    "id": 1946,
+    "name": "Pre A1 - F15 - D2 - Present Sentence",
+    "description": "Pre A1 - F15 - D2 - Present Sentence",
+    "scenario": [
+      {
+        "robot_type": "Agent",
+        "set_variable": "",
+        "robot_type_id": 1737,
+        "param_extractor": ""
+      }
+    ],
+    "system_prompt": null,
+    "provider_name": null,
+    "generation_params": null,
+    "create_at": 1781249087531,
+    "update_at": 1781249088976,
+    "system_extraction_variables": null,
+    "system_prompt_generation": null,
+    "system_extraction_profile": null,
+    "data_excel": [
+      {
+        "robot_type": "Agent",
+        "set_variable": "",
+        "robot_type_id": 1737,
+        "param_extractor": ""
+      }
+    ],
+    "is_loading": true
+  }
+}

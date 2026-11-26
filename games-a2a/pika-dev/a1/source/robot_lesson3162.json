@@ -1,0 +1,34 @@
+{
+  "status": 0,
+  "msg": "Success",
+  "result": {
+    "id": 3162,
+    "name": "A1 F3 D2 Present Sentence new",
+    "description": "",
+    "scenario": [
+      {
+        "robot_type": "Agent",
+        "set_variable": "",
+        "robot_type_id": 2897,
+        "param_extractor": ""
+      }
+    ],
+    "system_prompt": null,
+    "provider_name": null,
+    "generation_params": null,
+    "create_at": 1787797939910,
+    "update_at": 1787797939910,
+    "system_extraction_variables": null,
+    "system_prompt_generation": null,
+    "system_extraction_profile": null,
+    "data_excel": [
+      {
+        "robot_type": "Agent",
+        "set_variable": "",
+        "robot_type_id": 2897,
+        "param_extractor": ""
+      }
+    ],
+    "is_loading": true
+  }
+}

@@ -1,0 +1,3795 @@
+{
+  "_id": "699d231a4f8b621f422c94ba",
+  "name": "F3 - D3 - C.Pract ",
+  "status": "init",
+  "bot_id": 764,
+  "is_lock": false,
+  "parts": [
+    {
+      "_id": "699d231a4f8b621f422c94b9",
+      "type": "academic_round",
+      "content": "",
+      "checkpoints": [
+        {
+          "type": "cta-voice",
+          "name": "",
+          "pattern": "narrative",
+          "content": "",
+          "question": {
+            "content": null,
+            "mood": null,
+            "show_on_screen": {
+              "type": null,
+              "describe": "",
+              "old_describes": []
+            },
+            "sound_effect": null,
+            "action": null,
+            "pika_responses": [
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/nhactetso1.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson01.gif",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/nhactetso2.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson02.gif",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/nhactetso3.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson03.gif",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/nhactetso3.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson04.gif",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/tadaaaaa_6s.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson05.gif",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "Hey! Hey! Hey! Happy Lunar New Year! Today is a special day!",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson06.jpg",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "The whole family is going to <vi>Lý Sơn</vi> Island for the holiday.",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson07.gif",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/songbiennhenhang.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson08.gif",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 1000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/audio0_7s.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson08.gif",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "They will go on a garlic-picking tour on  <vi>Lý Sơn</vi> Island.",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson09.gif",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 1000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/audio1s.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson11.jpg",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "Let's see what happens.",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilysonbonus1.gif",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio02.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilysonbonus1.gif",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio03.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson12.gif",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio02.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson13fix2.jpg",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio05.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson14.gif",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio06.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilysonbonus2.gif",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/thecoach/all_files/ting.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson16.jpg",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "You've got to ask everyone what they need to prepare before the trip!",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilysonbonus3.gif",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "lesson_excited",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio08.mp3",
+                "media": "",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              }
+            ]
+          },
+          "user_true_response": "(Trẻ trả lời gì cũng được)",
+          "true_response": "",
+          "false_response": "",
+          "nav_type": "",
+          "evaluation_type": null,
+          "intents": [
+            {
+              "name": "intent_ready",
+              "type": "",
+              "description": "user confirms that they are ready",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "Just start the conversation with An Linh’s family. They’re nice.",
+                          "mood": "",
+                          "servo": "HAPPY",
+                          "servo_duration": 2000.0,
+                          "sound": "",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson18.gif",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        },
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "HAPPY",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio10.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson18.gif",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "fallback",
+              "type": "else",
+              "description": "User say something not relate to question",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "Just start the conversation with An Linh’s family. They’re nice.",
+                          "mood": "",
+                          "servo": "HAPPY",
+                          "servo_duration": 2000.0,
+                          "sound": "",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson18.gif",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        },
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "HAPPY",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio10.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson18.gif",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "silence",
+              "type": "else",
+              "description": "",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "Just start the conversation with An Linh’s family. They’re nice.",
+                          "mood": "",
+                          "servo": "HAPPY",
+                          "servo_duration": 2000.0,
+                          "sound": "",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson18.gif",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        },
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "HAPPY",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio10.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson18.gif",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            }
+          ],
+          "media_list": [],
+          "image_listening": null,
+          "may_have_loop": false
+        },
+        {
+          "type": "cta-voice",
+          "name": "",
+          "pattern": "",
+          "content": "",
+          "question": {
+            "content": null,
+            "mood": null,
+            "show_on_screen": {
+              "type": null,
+              "describe": "",
+              "old_describes": []
+            },
+            "sound_effect": null,
+            "action": null,
+            "pika_responses": [
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio11.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson20.jpg",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson20lis.jpg",
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              }
+            ]
+          },
+          "user_true_response": "What do you need to get ready for the trip?",
+          "true_response": "",
+          "false_response": "",
+          "nav_type": "",
+          "evaluation_type": null,
+          "intents": [
+            {
+              "name": "intent_true",
+              "type": "true",
+              "description": "user correctly asks 'what do you need to get ready for the trip?\" or a question in the same fashion",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio12.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson21.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": "{\"text_refs\": \"What do you need to get ready for the trip?\", \"threshold\": 0.5, \"robot_type\": \"WORKFLOW\", \"intent_name\": \"normal\", \"robot_type_id\": 32, \"transitional_sentence\": \"Tốt hơn rồi đó\"}",
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "intent_false",
+              "type": "false",
+              "description": "user incorrectly asks 'what do you need to get ready for the trip?\" or a question in the same fashion",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "TALK_RAMDOM_V1",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio13.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson20.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "loop_idx": 2,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "TALK_RAMDOM_V1",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio14fix.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson21.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "idk",
+              "type": "else",
+              "description": "user says they don't know how to ask 'what do you need to get ready for the trip? or what do you need? or what you need to prepare? or what do you need to get ready?' to their dad, filter sound",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "TALK_RAMDOM_V1",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio13.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson20.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "loop_idx": 2,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "TALK_RAMDOM_V1",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio14fix.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson21.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "fallback",
+              "type": "else",
+              "description": "User say something not relate to question",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "TALK_RAMDOM_V1",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio13.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson20.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "loop_idx": 2,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "TALK_RAMDOM_V1",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio14fix.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson21.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "silence",
+              "type": "else",
+              "description": "",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "TALK_RAMDOM_V1",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio13.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson20.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "loop_idx": 2,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "TALK_RAMDOM_V1",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio14fix.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson21.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            }
+          ],
+          "media_list": [],
+          "image_listening": null,
+          "may_have_loop": false
+        },
+        {
+          "type": "cta-voice",
+          "name": "",
+          "pattern": "",
+          "content": "",
+          "question": {
+            "content": null,
+            "mood": null,
+            "show_on_screen": {
+              "type": null,
+              "describe": "",
+              "old_describes": []
+            },
+            "sound_effect": null,
+            "action": null,
+            "pika_responses": [
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio15.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson23.jpg",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson23lis.jpg",
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              }
+            ]
+          },
+          "user_true_response": "What do you need to get ready for the trip?",
+          "true_response": "",
+          "false_response": "",
+          "nav_type": "",
+          "evaluation_type": null,
+          "intents": [
+            {
+              "name": "intent_true",
+              "type": "true",
+              "description": "user correctly asks 'what do you need to get ready for the trip?\" or a question in the same fashion",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio16.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson24.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": "{\"text_refs\": \"What do you need to get ready for the trip?\", \"threshold\": 0.5, \"robot_type\": \"WORKFLOW\", \"intent_name\": \"normal\", \"robot_type_id\": 32, \"transitional_sentence\": \"Tốt hơn rồi đó\"}",
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "intent_false",
+              "type": "false",
+              "description": "user incorrectly asks 'what do you need to get ready for the trip?\" or a question in the same fashion",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "TALK_RAMDOM_V1",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio13.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson23.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "loop_idx": 2,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio18fix.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson24.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "idk",
+              "type": "else",
+              "description": "user says they don't know how to ask their mom the question, filter sound",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "TALK_RAMDOM_V1",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio13.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson23.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "loop_idx": 2,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio18fix.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson24.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "fallback",
+              "type": "else",
+              "description": "User say something not relate to question",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "TALK_RAMDOM_V1",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio13.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson23.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "loop_idx": 2,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio18fix.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson24.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "silence",
+              "type": "else",
+              "description": "",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "TALK_RAMDOM_V1",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio13.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson23.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "loop_idx": 2,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio18fix.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson24.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            }
+          ],
+          "media_list": [],
+          "image_listening": null,
+          "may_have_loop": false
+        },
+        {
+          "type": "cta-voice",
+          "name": "",
+          "pattern": "",
+          "content": "",
+          "question": {
+            "content": null,
+            "mood": null,
+            "show_on_screen": {
+              "type": null,
+              "describe": "",
+              "old_describes": []
+            },
+            "sound_effect": null,
+            "action": null,
+            "pika_responses": [
+              {
+                "text": "",
+                "mood": "",
+                "servo": "RAISE_BOTH_HOLD",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio19.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson26.jpg",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson26lis.jpg",
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              }
+            ]
+          },
+          "user_true_response": "What do you need to get ready for the trip?",
+          "true_response": "",
+          "false_response": "",
+          "nav_type": "",
+          "evaluation_type": null,
+          "intents": [
+            {
+              "name": "intent_true",
+              "type": "true",
+              "description": "user correctly asks 'what do you need to get ready for the trip?' or 'what do you need?' or 'what you need to prepare?' or 'what do you need to get ready?'",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio20fix.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson27.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": "{\"text_refs\": \"What do you need to get ready for the trip?\", \"threshold\": 0.5, \"robot_type\": \"WORKFLOW\", \"intent_name\": \"normal\", \"robot_type_id\": 32, \"transitional_sentence\": \"Tốt hơn rồi đó\"}",
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "intent_false",
+              "type": "false",
+              "description": "user incorrectly asks a different question or makes an error when asking 'what do you need to get ready for the trip?' or 'what do you need?' or 'what you need to prepare?' or 'what do you need to get ready?'",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "TALK_RAMDOM_V1",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio13.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson26.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "loop_idx": 2,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "HAPPY",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio22fix.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson27.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "idk",
+              "type": "else",
+              "description": "user says they don't know, filter sound",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "TALK_RAMDOM_V1",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio13.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson26.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "loop_idx": 2,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "HAPPY",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio22fix.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson27.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "fallback",
+              "type": "else",
+              "description": "User say something not relate to question",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "TALK_RAMDOM_V1",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio13.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson26.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "loop_idx": 2,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "HAPPY",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio22fix.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson27.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "silence",
+              "type": "else",
+              "description": "",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "TALK_RAMDOM_V1",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio13.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson26.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "loop_idx": 2,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "HAPPY",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio22fix.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson27.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            }
+          ],
+          "media_list": [],
+          "image_listening": null,
+          "may_have_loop": false
+        },
+        {
+          "type": "cta-voice",
+          "name": "",
+          "pattern": "",
+          "content": "",
+          "question": {
+            "content": null,
+            "mood": null,
+            "show_on_screen": {
+              "type": null,
+              "describe": "",
+              "old_describes": []
+            },
+            "sound_effect": null,
+            "action": null,
+            "pika_responses": [
+              {
+                "text": "",
+                "mood": "",
+                "servo": "TALK_RAMDOM_V2",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio23.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson29.jpg",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson29lis.jpg",
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              }
+            ]
+          },
+          "user_true_response": "What do you need to get ready for the trip?",
+          "true_response": "",
+          "false_response": "",
+          "nav_type": "",
+          "evaluation_type": null,
+          "intents": [
+            {
+              "name": "intent_true",
+              "type": "true",
+              "description": "user correctly asks 'what do you need to get ready for the trip?\" or a question in the same fashion",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio24.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson30.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": "{\"text_refs\": \"What do you need to get ready for the trip?\", \"threshold\": 0.5, \"robot_type\": \"WORKFLOW\", \"intent_name\": \"normal\", \"robot_type_id\": 32, \"transitional_sentence\": \"Tốt hơn rồi đó\"}",
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "intent_false",
+              "type": "false",
+              "description": "user incorrectly asks 'what do you need to get ready for the trip?\" or a question in the same fashion",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "TALK_RAMDOM_V2",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio13.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson29.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "loop_idx": 2,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio26fix.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson30.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "idk",
+              "type": "else",
+              "description": "user says they don't know, filter sound",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "TALK_RAMDOM_V2",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio13.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson29.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "loop_idx": 2,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio26fix.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson30.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "fallback",
+              "type": "else",
+              "description": "User say something not relate to question",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "TALK_RAMDOM_V2",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio13.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson29.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "loop_idx": 2,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio26fix.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson30.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "silence",
+              "type": "else",
+              "description": "",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "TALK_RAMDOM_V2",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio13.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson29.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "loop_idx": 2,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio26fix.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson30.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            }
+          ],
+          "media_list": [],
+          "image_listening": null,
+          "may_have_loop": false
+        },
+        {
+          "type": "cta-voice",
+          "name": "",
+          "pattern": "narrative",
+          "content": "",
+          "question": {
+            "content": null,
+            "mood": null,
+            "show_on_screen": {
+              "type": null,
+              "describe": "",
+              "old_describes": []
+            },
+            "sound_effect": null,
+            "action": null,
+            "pika_responses": [
+              {
+                "text": "Awesome. Now, let's go New Year shopping for the trip!",
+                "mood": "lesson_excited_talk",
+                "servo": "",
+                "servo_duration": 1000.0,
+                "sound": "",
+                "media": "",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/nhactetso5.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson32.gif",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/nhactetso6.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson33.gif",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/nhactetso7.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson34.gif",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio30.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson35.jpg",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio31.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson36.gif",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "Now, you are An Linh. Answer the question from her!",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 1000.0,
+                "sound": "",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilysonbonus2.gif",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 1000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio32.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "",
+                "servo": "HAPPY",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/181225HHaudio34.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson38.gif",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "Now, answer the question from her!",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 1000.0,
+                "sound": "",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson38lisafix1.jpg",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson38lisa1fix1.jpg",
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              }
+            ]
+          },
+          "user_true_response": "",
+          "true_response": "",
+          "false_response": "",
+          "nav_type": "",
+          "evaluation_type": null,
+          "intents": [
+            {
+              "name": "intent_true",
+              "type": "true",
+              "description": "user says any sentence using the structure 'i need'  with any stuff from the list (e.g, 'tent', 'suitcase', 'first-aid kit', 'board game', 'snack', 'clothes', 't-shirt', 'shirt', 'snack')",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio34.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson39.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "intent_false",
+              "type": "false",
+              "description": "user says any sentence not using the structure 'i need'  with any stuff from the list (e.g, 'tent', 'suitcase', 'first-aid kit', 'board game', 'snack', 'clothes', 't-shirt', 'shirt', 'snack')",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "GREETING",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio39.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "idk",
+              "type": "else",
+              "description": "user says they don't know what they need to get ready for the trip, filter sound.",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "GREETING",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio39.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "fallback",
+              "type": "else",
+              "description": "User say something not relate to question",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "GREETING",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio39.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "silence",
+              "type": "else",
+              "description": "",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "GREETING",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio39.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            }
+          ],
+          "media_list": [],
+          "image_listening": null,
+          "may_have_loop": false
+        },
+        {
+          "type": "cta-voice",
+          "name": "",
+          "pattern": "",
+          "content": "",
+          "question": {
+            "content": null,
+            "mood": null,
+            "show_on_screen": {
+              "type": null,
+              "describe": "",
+              "old_describes": []
+            },
+            "sound_effect": null,
+            "action": null,
+            "pika_responses": [
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio36.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson38lisa1fix1.jpg",
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              }
+            ]
+          },
+          "user_true_response": "",
+          "true_response": "",
+          "false_response": "",
+          "nav_type": "",
+          "evaluation_type": null,
+          "intents": [
+            {
+              "name": "intent_true",
+              "type": "true",
+              "description": "user says any sentence using the structure 'i need'  with any stuff from the list (e.g, 'tent', 'suitcase', 'first-aid kit', 'board game', 'snack', 'clothes', 't-shirt', 'shirt', 'snack')",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio38.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson39.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "intent_false",
+              "type": "false",
+              "description": "user says any sentence not using the structure 'i need'  with any stuff from the list (e.g, 'tent', 'suitcase', 'first-aid kit', 'board game', 'snack', 'clothes', 't-shirt', 'shirt', 'snack')",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "GREETING",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio39.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "idk",
+              "type": "else",
+              "description": "user says they don't know what else to prepare for the trip, filter sound.",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "GREETING",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio39.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "fallback",
+              "type": "else",
+              "description": "User say something not relate to question",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "GREETING",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio39.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "silence",
+              "type": "else",
+              "description": "",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "GREETING",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio39.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            }
+          ],
+          "media_list": [],
+          "image_listening": null,
+          "may_have_loop": false
+        },
+        {
+          "type": "cta-voice",
+          "name": "",
+          "pattern": "",
+          "content": "",
+          "question": {
+            "content": null,
+            "mood": null,
+            "show_on_screen": {
+              "type": null,
+              "describe": "",
+              "old_describes": []
+            },
+            "sound_effect": null,
+            "action": null,
+            "pika_responses": [
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio40.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson38lisa1fix1.jpg",
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              }
+            ]
+          },
+          "user_true_response": "",
+          "true_response": "",
+          "false_response": "",
+          "nav_type": "",
+          "evaluation_type": null,
+          "intents": [
+            {
+              "name": "intent_true",
+              "type": "true",
+              "description": "user says any sentence using the structure 'i need'  with any stuff from the list (e.g, 'tent', 'suitcase', 'first-aid kit', 'board game', 'snack', 'clothes', 't-shirt', 'shirt', 'snack')",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio41.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson39.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "intent_false",
+              "type": "false",
+              "description": "user says any sentence not using the structure 'i need'  with any stuff from the list (e.g, 'tent', 'suitcase', 'first-aid kit', 'board game', 'snack', 'clothes', 't-shirt', 'shirt', 'snack')",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio39.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "idk",
+              "type": "else",
+              "description": "user indicates they don't know what they need to prepare before the trip.",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio39.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "fallback",
+              "type": "else",
+              "description": "User say something not relate to question",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio39.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "silence",
+              "type": "else",
+              "description": "",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio39.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            }
+          ],
+          "media_list": [],
+          "image_listening": null,
+          "may_have_loop": false
+        },
+        {
+          "type": "cta-voice",
+          "name": "",
+          "pattern": "",
+          "content": "",
+          "question": {
+            "content": null,
+            "mood": null,
+            "show_on_screen": {
+              "type": null,
+              "describe": "",
+              "old_describes": []
+            },
+            "sound_effect": null,
+            "action": null,
+            "pika_responses": [
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio43.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson37.jpg",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson38lisa1fix1.jpg",
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              }
+            ]
+          },
+          "user_true_response": "",
+          "true_response": "",
+          "false_response": "",
+          "nav_type": "",
+          "evaluation_type": null,
+          "intents": [
+            {
+              "name": "intent_true",
+              "type": "true",
+              "description": "user says any sentence using the structure 'i need'  with any stuff from the list (e.g, 'tent', 'suitcase', 'first-aid kit', 'board game', 'snack', 'clothes', 't-shirt', 'shirt', 'snack')",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "",
+                          "servo_duration": 2000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio46.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson40.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "en",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "intent_false",
+              "type": "false",
+              "description": "user says any sentence not using the structure 'i need'  with any stuff from the list (e.g, 'tent', 'suitcase', 'first-aid kit', 'board game', 'snack', 'clothes', 't-shirt', 'shirt', 'snack')",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "",
+                          "servo_duration": 1000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio46.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson40.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "vi",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "idk",
+              "type": "else",
+              "description": "user says they don't know what else to prepare, filter sound",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "",
+                          "servo_duration": 1000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio46.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson40.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "vi",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "fallback",
+              "type": "else",
+              "description": "User say something not relate to question",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "",
+                          "servo_duration": 1000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio46.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson40.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "vi",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            },
+            {
+              "name": "silence",
+              "type": "else",
+              "description": "",
+              "max_retries": 2,
+              "buttons": "",
+              "loops": [
+                {
+                  "loop_idx": 1,
+                  "response": [
+                    {
+                      "content": null,
+                      "mood": null,
+                      "show_on_screen": {
+                        "type": null,
+                        "describe": "",
+                        "old_describes": []
+                      },
+                      "sound_effect": null,
+                      "action": null,
+                      "pika_responses": [
+                        {
+                          "text": "",
+                          "mood": "",
+                          "servo": "",
+                          "servo_duration": 1000.0,
+                          "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio46.mp3",
+                          "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson40.jpg",
+                          "voice_speed": 1.0,
+                          "language_response": "vi",
+                          "silence_threshold": null,
+                          "image_listening": null,
+                          "audio_listening": null,
+                          "pronunciation_checker_tool": null,
+                          "grammar_checker_tool": null,
+                          "section": null,
+                          "intent": null,
+                          "loop": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": "",
+              "score": "",
+              "nav_type": ""
+            }
+          ],
+          "media_list": [],
+          "image_listening": null,
+          "may_have_loop": false
+        },
+        {
+          "type": "narrative",
+          "name": "",
+          "pattern": "",
+          "content": "",
+          "question": {
+            "content": null,
+            "mood": null,
+            "show_on_screen": {
+              "type": null,
+              "describe": "",
+              "old_describes": []
+            },
+            "sound_effect": null,
+            "action": null,
+            "pika_responses": [
+              {
+                "text": "",
+                "mood": "",
+                "servo": "HAPPY",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio47.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson41.jpg",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio48.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson42.gif",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "",
+                "servo": "HAPPY",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/251225toiaudio49.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson43.jpg",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/nhactetoutrotoi.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson44fixx.jpg",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/nhactetoutrotoi1.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson45fixx.gif",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              },
+              {
+                "text": "",
+                "mood": "",
+                "servo": "",
+                "servo_duration": 2000.0,
+                "sound": "https://smedia.stepup.edu.vn/robot/audio/nhactetoutrotoi2.mp3",
+                "media": "https://smedia.stepup.edu.vn/robot/emotion/gifs/toilyson47.gif",
+                "voice_speed": 1.0,
+                "language_response": "en",
+                "silence_threshold": null,
+                "image_listening": null,
+                "audio_listening": null,
+                "pronunciation_checker_tool": null,
+                "grammar_checker_tool": null,
+                "section": null,
+                "intent": null,
+                "loop": 0
+              }
+            ]
+          },
+          "user_true_response": "",
+          "true_response": "",
+          "false_response": "",
+          "nav_type": "",
+          "evaluation_type": null,
+          "intents": [],
+          "media_list": [],
+          "image_listening": null,
+          "may_have_loop": false
+        }
+      ],
+      "title": ""
+    }
+  ],
+  "template": {
+    "id": 0,
+    "content": "",
+    "has_demo_instruction": false,
+    "retries_config": {
+      "max_failed_false": 3,
+      "max_failed_fallback": 2,
+      "max_failed_silence": 2,
+      "max_failed_idk": 2
+    },
+    "response_config": {
+      "true_behaviour": "",
+      "false_behaviour": "",
+      "other_behaviour": ""
+    },
+    "rule": ""
+  },
+  "template_link": null,
+  "creative_concept": "",
+  "learning_material": "",
+  "plot": ""
+}

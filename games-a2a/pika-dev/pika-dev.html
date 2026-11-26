@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pika Trải Nghiệm 30 phút</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap">
+<style>
+/* Bản 3: buổi 28–30 phút, trò chuyện 10 phút, học 12 phút. Dựng trên kịch bản thật của các bài; bước 1–2 dùng chung; bước 3–7 tách 3 tab A1, A2, B1. */
+:root{
+  --cyan-50:#edfbfd; --cyan-400:#46c4d7; --cyan-500:#3aabbc; --cyan-600:#2e95a4;
+  --bg:#f8fafc; --card:#ffffff; --sunken:#edf2f7; --line:#e2e8f0;
+  --heading:#0f172a; --text:#1e293b; --muted:#64748b;
+  --brand:var(--cyan-400); --brand-ink:var(--cyan-600); --brand-tint:var(--cyan-50); --brand-shadow:var(--cyan-500);
+  --g1:#5f8f12; --g1-bg:#e8f1e5; --g2:#a87b00; --g2-bg:#fff6e6; --g3:#614fe8; --g3-bg:#e6e6ff; --g4:#c2410c; --g4-bg:#ffedd5;
+  --reward-bg:#fffbea; --ok:#1b8a53; --ok-bg:#edfaf4;
+  --shadow-soft:0 6px 18px rgba(15,23,42,.05);
+  --font:"Nunito", ui-rounded, "Segoe UI", system-ui, sans-serif;
+  --r-md:12px; --r-lg:16px; --r-xl:20px; --r-2xl:24px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f172a; --card:#1e293b; --sunken:#162033; --line:#334155;
+    --heading:#f8fafc; --text:#e2e8f0; --muted:#94a3b8;
+    --brand-ink:#78d2e1; --brand-tint:#14313a;
+    --g1:#a6d65a; --g1-bg:#22301a; --g2:#ffc94d; --g2-bg:#3a2e12; --g3:#a99dff; --g3-bg:#26224a; --g4:#fdba74; --g4-bg:#3b2414;
+    --reward-bg:#3a3110; --ok:#56d796; --ok-bg:#15352a;
+    --shadow-soft:0 6px 18px rgba(0,0,0,.25); color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f172a; --card:#1e293b; --sunken:#162033; --line:#334155;
+  --heading:#f8fafc; --text:#e2e8f0; --muted:#94a3b8;
+  --brand-ink:#78d2e1; --brand-tint:#14313a;
+  --g1:#a6d65a; --g1-bg:#22301a; --g2:#ffc94d; --g2-bg:#3a2e12; --g3:#a99dff; --g3-bg:#26224a; --g4:#fdba74; --g4-bg:#3b2414;
+  --reward-bg:#3a3110; --ok:#56d796; --ok-bg:#15352a;
+  --shadow-soft:0 6px 18px rgba(0,0,0,.25); color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-weight:700;font-size:15px;line-height:22px}
+.wrap{max-width:1080px;margin:0 auto;padding-block:32px 64px;padding-left:max(16px, env(safe-area-inset-left,0px));padding-right:max(16px, env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:24px}
+h1,h2,h3{color:var(--heading);margin:0;text-wrap:balance}
+h1{font-size:32px;line-height:40px;font-weight:900}
+h2{font-size:24px;line-height:32px;font-weight:900}
+h3{font-size:17px;line-height:24px;font-weight:800}
+p{margin:0}
+.muted{color:var(--muted);font-weight:600}
+.overline{font-size:11px;line-height:1;font-weight:800;letter-spacing:.6px;text-transform:uppercase;color:var(--muted)}
+.say{color:var(--brand-ink);font-weight:800}
+.en{font-weight:900;color:var(--heading)}
+header{display:flex;flex-direction:column;gap:12px}
+.pill{display:inline-flex;align-items:center;gap:6px;height:26px;padding:0 10px;border-radius:9999px;font-size:12px;line-height:1;font-weight:800;background:var(--sunken);color:var(--muted);white-space:nowrap}
+.pill.brand{background:var(--brand-tint);color:var(--brand-ink)}
+.lead{font-size:17px;line-height:26px;font-weight:600;max-width:74ch}
+.metarow{display:flex;flex-wrap:wrap;gap:8px}
+.card{background:var(--card);border-radius:var(--r-2xl);box-shadow:var(--shadow-soft);padding:24px;display:flex;flex-direction:column;gap:16px;min-width:0}
+
+.tl{display:flex;height:56px;border-radius:var(--r-lg);overflow:hidden;gap:3px}
+.tl a{display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;font-weight:900;font-size:17px;min-width:0;background:var(--brand);border-bottom:4px solid var(--brand-shadow)}
+.tl a.talk{background:var(--g3);border-bottom-color:#4a3bc4}
+.tl a.learn{background:var(--brand-ink)}
+.tl a.pad{background:var(--sunken);color:var(--muted);border-bottom-color:var(--line)}
+.tl-legend{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px 16px}
+.tl-legend div{display:flex;gap:10px;align-items:baseline;min-width:0}
+.tl-legend b{color:var(--brand-ink);font-weight:900;min-width:18px}
+.tl-legend small{display:block;color:var(--muted);font-weight:600;font-size:13px;font-variant-numeric:tabular-nums}
+.split{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.split div{background:var(--sunken);border-radius:var(--r-lg);padding:12px 14px}
+.split b{display:block;font-size:22px;line-height:28px;font-weight:900;color:var(--heading);font-variant-numeric:tabular-nums}
+
+.levels{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.lv{border-radius:var(--r-xl);padding:16px;display:flex;flex-direction:column;gap:6px;background:var(--sunken);min-width:0}
+.tag{align-self:flex-start;font-size:12px;line-height:1;font-weight:800;padding:6px 10px;border-radius:9999px;white-space:nowrap}
+.t1{background:var(--g1-bg);color:var(--g1)} .t2{background:var(--g2-bg);color:var(--g2)} .t3{background:var(--g3-bg);color:var(--g3)} .t4{background:var(--g4-bg);color:var(--g4)}
+.lv h3{font-size:18px;line-height:25px;font-weight:900}
+
+.rules{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 24px;margin:0;padding:0;list-style:none}
+.rules li{display:flex;gap:10px;align-items:flex-start;font-weight:600}
+.rules li::before{content:"";flex:0 0 8px;height:8px;border-radius:50%;background:var(--brand);margin-top:7px}
+
+.step-head{display:flex;gap:16px;align-items:flex-start}
+.num{flex:0 0 48px;height:48px;border-radius:50%;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:900;border-bottom:4px solid var(--brand-shadow)}
+.num.talk{background:var(--g3);border-bottom-color:#4a3bc4}
+.step-title{display:flex;flex-direction:column;gap:8px;min-width:0;flex:1}
+.step-title .row{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
+.goal{font-weight:600;color:var(--muted)}
+
+.script{display:flex;flex-direction:column;gap:8px}
+.line{display:grid;grid-template-columns:120px minmax(0,1fr);gap:12px;align-items:start;padding:10px 14px;border-radius:var(--r-md);background:var(--sunken)}
+.line .who{font-size:11px;line-height:22px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;color:var(--muted)}
+.line.pika{background:var(--brand-tint)} .line.pika .who{color:var(--brand-ink)}
+.line.note{background:transparent;border:1px dashed var(--line)}
+
+.tbl{overflow-x:auto;border-radius:var(--r-lg);border:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;min-width:720px;font-size:14px;line-height:21px}
+th,td{padding:9px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+tr:last-child td,tr:last-child th{border-bottom:none}
+thead th{font-size:12px;font-weight:900;background:var(--sunken);color:var(--muted);text-transform:uppercase;letter-spacing:.4px}
+tbody th{width:160px;font-size:12px;font-weight:800;color:var(--muted);background:var(--sunken);text-transform:uppercase;letter-spacing:.4px;line-height:18px}
+td{font-weight:600}
+td b{font-weight:900}
+td.src{white-space:nowrap;font-size:12px;font-weight:800;color:var(--muted);width:96px}
+tr.add td{background:var(--reward-bg)}
+tr.add td.src{color:var(--g2)}
+tr.sub th{background:var(--g3-bg);color:var(--g3)}
+.fix{display:block;margin-top:4px;font-size:13px;line-height:19px;color:var(--ok);font-weight:700}
+.fix::before{content:"Sửa lỗi: ";font-weight:900}
+.chunk{display:inline-block;background:var(--brand-tint);color:var(--brand-ink);font-weight:900;padding:2px 8px;border-radius:8px;margin:2px 4px 2px 0}
+.cutlist{font-size:13px;line-height:20px;color:var(--muted);font-weight:600;padding:10px 14px;border:1px dashed var(--line);border-radius:var(--r-md)}
+.cutlist b{color:var(--text)}
+
+.callout{display:flex;gap:12px;padding:12px 16px;border-radius:var(--r-md);background:var(--ok-bg);font-weight:600}
+.callout b{color:var(--ok);font-weight:900;white-space:nowrap}
+.callout.warn{background:var(--reward-bg)} .callout.warn b{color:var(--heading)}
+.legend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:13px;font-weight:700;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:14px;height:14px;border-radius:4px;display:inline-block;border:1px solid var(--line)}
+
+.tabbar{position:sticky;top:0;z-index:5;background:var(--bg);padding-block:8px;display:flex;gap:8px;flex-wrap:wrap}
+.tab{font:inherit;font-weight:900;font-size:15px;border:2px solid var(--line);background:var(--card);color:var(--text);border-radius:9999px;padding:10px 16px;cursor:pointer;min-height:44px}
+.tab[aria-selected="true"]{border-color:var(--brand);background:var(--brand-tint);color:var(--brand-ink)}
+.tab:focus-visible{outline:3px solid var(--brand);outline-offset:2px}
+.panel{display:flex;flex-direction:column;gap:24px}
+.panel[hidden]{display:none}
+.lesson-hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:12px}
+.lesson-hero .lv{gap:8px}
+ol.qs{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px;font-weight:600}
+footer{color:var(--muted);font-weight:600;font-size:13px}
+
+@media (max-width:900px){ .levels{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (max-width:820px){
+  .lesson-hero{grid-template-columns:1fr}
+  .tl-legend{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rules,.split{grid-template-columns:1fr}
+}
+@media (max-width:480px){
+  h1{font-size:24px;line-height:32px}
+  .card{padding:16px}
+  .levels{grid-template-columns:1fr}
+  .line{grid-template-columns:1fr;gap:2px}
+  .num{flex-basis:40px;height:40px;font-size:20px}
+  .tl a{font-size:13px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <span class="pill brand" style="align-self:flex-start">Kịch bản trải nghiệm · bản 4 · 28–30 phút</span>
+  <h1>Pika Trải Nghiệm 30 phút · 4 trình độ</h1>
+  <p class="lead">Buổi kéo dài lên <b>28–30 phút</b>: <b>trò chuyện 10 phút</b>, <b>học 12 phút</b> (học cụm 6 + học câu 6), game 3 phút. Bước học dựng trên <b>kịch bản thật của các bài trong lộ trình</b>, giữ nguyên lời Pika, mỗi trình độ 3 cụm và 3 câu. Sửa lỗi nằm sẵn trong bài, không có bước riêng. Vì có thêm thời gian, các bước gốc đã cắt ở bản 2 (bước nói lại, bước hỏi–đáp từng cụm) được mở lại.</p>
+  <div class="metarow">
+    <span class="pill">Học sinh lớp 1–5</span>
+    <span class="pill">Bản nháp 20/11/2026</span>
+    <span class="pill">Chưa chạy trên robot thật</span>
+  </div>
+</header>
+
+<section class="card" aria-labelledby="tl-h">
+  <h2 id="tl-h">Toàn cảnh 30 phút</h2>
+  <nav class="tl" aria-label="Các bước">
+    <a href="#s1" style="flex:60" title="Chào hỏi">1</a>
+    <a href="#s2" style="flex:60" title="Chọn lớp">2</a>
+    <a href="#chon-bai" class="talk" style="flex:600" title="Trò chuyện">3 · Trò chuyện</a>
+    <a href="#chon-bai" class="learn" style="flex:360" title="Học cụm">4 · Cụm</a>
+    <a href="#chon-bai" class="learn" style="flex:360" title="Học câu">5 · Câu</a>
+    <a href="#chon-bai" style="flex:180" title="Game">6</a>
+    <a href="#chon-bai" style="flex:60" title="Tạm biệt">7</a>
+    <a class="pad" style="flex:120" href="#chon-bai" aria-label="Đệm 2 phút"></a>
+  </nav>
+  <div class="tl-legend">
+    <div><b>1</b><span>Chào hỏi<small>0:00–1:00 · chung</small></span></div>
+    <div><b>2</b><span>Chọn lớp, xếp trình độ<small>1:00–2:00 · chung</small></span></div>
+    <div><b>3</b><span>Trò chuyện 5 phần, nối vào bài<small>2:00–12:00 · 10 phút</small></span></div>
+    <div><b>4</b><span>Học cụm (sửa lỗi lồng trong bài)<small>12:00–18:00 · 6 phút</small></span></div>
+    <div><b>5</b><span>Học câu (sửa lỗi lồng trong bài)<small>18:00–24:00 · 6 phút</small></span></div>
+    <div><b>6</b><span>Game với đúng 3 cụm đã học<small>24:00–27:00 · 3 phút</small></span></div>
+    <div><b>7</b><span>Tạm biệt<small>27:00–28:00 · 1 phút</small></span></div>
+    <div><b style="color:var(--muted)">·</b><span>Đệm<small>28:00–30:00 · 2 phút</small></span></div>
+  </div>
+  <div class="split">
+    <div><span class="overline">Trò chuyện</span><b>10 phút</b><span class="muted">làm quen · bé hỏi Pika · Pika hát/kể chuyện · đố vui · câu nối</span></div>
+    <div><span class="overline">Học</span><b>12 phút</b><span class="muted">học cụm 6 + học câu 6, theo bài gốc</span></div>
+    <div><span class="overline">Chơi và chào</span><b>4 phút</b><span class="muted">game 3 + tạm biệt 1</span></div>
+  </div>
+</section>
+
+<section class="card" aria-labelledby="lv-h">
+  <h2 id="lv-h">Bài gốc dùng cho từng trình độ</h2>
+  <div class="levels">
+    <div class="lv"><span class="tag t1">Pre-A1</span><h3>Món ăn: học tên món → Justin phỏng vấn ở căn tin</h3><p class="muted">Cụm: bài <b>1744</b> (agent 1528). Câu: bài <b>1946</b> (agent 1737).</p><p><span class="chunk">rice</span><span class="chunk">noodles</span><span class="chunk">soup</span></p></div>
+    <div class="lv"><span class="tag t2">A1</span><h3>Thời tiết: KenBi cắm trại → Jenny ở Tây Bắc</h3><p class="muted">Cụm: bài <b>1209</b> (workflow 950). Câu: bài <b>3162</b> (agent 2897).</p><p><span class="chunk">a sunny morning</span><span class="chunk">a cool breeze</span><span class="chunk">a clear sky</span></p></div>
+    <div class="lv"><span class="tag t3">A2</span><h3>Chuẩn bị chuyến đi → đảo Lý Sơn</h3><p class="muted">Cụm: bài <b>2977</b> (agent 2584). Câu: bài <b>869</b> (workflow 764).</p><p><span class="chunk">pack my suitcase</span><span class="chunk">choose my clothes</span><span class="chunk">prepare some snacks</span></p></div>
+    <div class="lv"><span class="tag t4">B1</span><h3>Quà vặt Việt Nam với Kenbee</h3><p class="muted">Cụm: bài <b>2582</b> (agent 2452). Câu: bài <b>2562</b> (agent 2400).</p><p><span class="chunk">prawn fritters</span><span class="chunk">sesame balls</span><span class="chunk">coconut jelly</span></p></div>
+  </div>
+  <div class="legend">
+    <span><i class="sw" style="background:var(--card)"></i>Giữ nguyên bước của bài gốc (ghi số bước / phần gốc)</span>
+    <span><i class="sw" style="background:var(--reward-bg)"></i>Marketing thêm hoặc sửa lời</span>
+    <span><b style="color:var(--ok)">Sửa lỗi:</b> cách bài gốc tự sửa ngay trong bước đó</span>
+  </div>
+</section>
+
+<section class="card" aria-labelledby="r-h">
+  <h2 id="r-h">Luật chung cho cả buổi</h2>
+  <ul class="rules">
+    <li><b>Không có bước sửa phát âm riêng.</b> Sửa lỗi nằm sẵn trong bài gốc: nói mẫu lại, bước nói lại, bước luyện từ khó.</li>
+    <li><b>Bước học giữ nguyên lời gốc</b>, chỉ cắt các bước ngoài 3 cụm, 3 câu. Chỗ đổi lời tô vàng.</li>
+    <li><b>Pika nói song ngữ Việt–Anh ở mọi trình độ.</b> Lời gốc của bài là tiếng Anh; bật chế độ song ngữ của app khi chạy. Lời trò chuyện và câu nối viết sẵn cả hai thứ tiếng.</li>
+    <li><b>Trò chuyện 10 phút là phần Pika tự trả lời bằng AI</b>, theo 5 phần có mục tiêu và thời lượng; mỗi phần có câu chuyển sang phần sau, không để Pika nói lan man.</li>
+    <li><b>Pika nói ngắn, không ngắt lời bé.</b> Phụ huynh từng chê Pika nói nhiều, lan man và ngắt lời.</li>
+    <li><b>Game chỉ dùng đúng 3 cụm đã học ở bước ④.</b></li>
+    <li>Không chữ đỏ, không ✗, không nói "sai rồi". Mỗi lượt nói lại tối đa 2 lần, sau đó Pika nói giúp và đi tiếp.</li>
+    <li>Thưởng kim cương sau mỗi lượt bé nói (đơn vị thưởng chờ product chốt). Hiện chữ cụm đang học trên màn.</li>
+  </ul>
+</section>
+
+<section class="card" id="s1" aria-labelledby="s1-h">
+  <div class="step-head"><div class="num">1</div><div class="step-title">
+    <div class="row"><h2 id="s1-h">Chào hỏi</h2><span class="pill">0:00–1:00 · chung</span></div>
+  </div></div>
+  <div class="script">
+    <div class="line"><span class="who">Bé</span><span>Gọi <b>"Hey Pika!"</b> hoặc <b>"Pika ơi!"</b>.</span></div>
+    <div class="line pika"><span class="who">Pika</span><span>Mở mắt, vẫy tay. <span class="say">"Ơ, có bạn gọi Pika! <span class="en">Hello!</span> Bạn tên là gì nhỉ? <span class="en">What's your name?</span>"</span></span></div>
+    <div class="line pika"><span class="who">Pika</span><span><span class="say">"[Tên] ơi, tên hay quá! [Tên] mấy tuổi rồi? <span class="en">How old are you?</span>"</span> → <span class="say">"[Tuổi] tuổi! Pika mới được 1 tuổi robot thôi đó!"</span></span></div>
+    <div class="line note"><span class="who">Dự phòng</span><span>Gọi 2 lần không đáp: cho bé lại gần (0,5–1 m). Nghe tên không rõ: hỏi lại 1 lần, sau đó gọi bé là "bạn nhỏ".</span></div>
+  </div>
+</section>
+
+<section class="card" id="s2" aria-labelledby="s2-h">
+  <div class="step-head"><div class="num">2</div><div class="step-title">
+    <div class="row"><h2 id="s2-h">Chọn lớp, xếp trình độ</h2><span class="pill">1:00–2:00 · chung</span></div>
+  </div></div>
+  <div class="script">
+    <div class="line pika"><span class="who">Pika · câu 1</span><span><span class="say">"[Tên] học lớp mấy rồi?"</span> Màn hiện: Lớp 1 · 2 · 3 · 4 · 5.</span></div>
+    <div class="line pika"><span class="who">Pika · câu 2</span><span><span class="say">"[Tên] có đi học tiếng Anh ở trung tâm, hay học trường quốc tế không?"</span> Màn hiện: Có · Không.</span></div>
+  </div>
+  <div class="tbl"><table>
+    <thead><tr><th>Trình độ</th><th>Lớp</th><th>Bài</th></tr></thead>
+    <tbody>
+      <tr><td><span class="tag t1">Pre-A1</span></td><td>Lớp 1; lớp 2–3 chỉ học ở trường</td><td>Món ăn: học tên món → Justin phỏng vấn ở căn tin</td></tr>
+      <tr><td><span class="tag t2">A1</span></td><td>Lớp 4–5 chỉ học ở trường; lớp 2–3 có học thêm</td><td>Thời tiết: KenBi cắm trại → Jenny ở Tây Bắc</td></tr>
+      <tr><td><span class="tag t3">A2</span></td><td>Lớp 4–5 có học thêm</td><td>Chuẩn bị chuyến đi → đảo Lý Sơn</td></tr>
+      <tr><td><span class="tag t4">B1</span></td><td>Lớp 4–5 học trường quốc tế (người điều phối chọn)</td><td>Quà vặt Việt Nam với Kenbee</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section class="card" aria-labelledby="talk-h">
+  <h2 id="talk-h">Khung trò chuyện 10 phút (chung cho 4 trình độ)</h2>
+  <p class="muted">Cùng 5 phần cho mọi trình độ; nội dung từng phần đổi theo chủ đề bài, ghi trong từng tab. Mỗi phần hết giờ thì Pika tự dùng câu chuyển sang phần sau.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Phần</th><th>Giờ</th><th>Mục tiêu</th><th>Ai nói nhiều</th></tr></thead>
+    <tbody>
+      <tr><td><b>3a · Làm quen</b></td><td>2:00–5:00 · 3 phút</td><td>Pika hỏi 3 câu về bé, xoay quanh chủ đề bài; mỗi câu bé trả lời, Pika đáp ngắn, chêm một từ tiếng Anh, mời bé nói theo</td><td>bé</td></tr>
+      <tr><td><b>3b · Bé hỏi Pika</b></td><td>5:00–7:00 · 2 phút</td><td>Bé hỏi Pika bất cứ điều gì; bé bí thì Pika gợi 2 câu hỏi</td><td>bé hỏi, Pika đáp ngắn</td></tr>
+      <tr><td><b>3c · Pika hát hoặc kể chuyện</b></td><td>7:00–9:00 · 2 phút</td><td>Bé chọn nghe hát hay nghe chuyện; bài hát hoặc chuyện ngắn đúng chủ đề bài</td><td>Pika</td></tr>
+      <tr><td><b>3d · Đố vui</b></td><td>9:00–11:00 · 2 phút</td><td>3 câu đố cố định đáp án; câu cuối dẫn thẳng vào bài</td><td>bé</td></tr>
+      <tr><td><b>3e · Câu nối vào bài</b></td><td>11:00–12:00 · 1 phút</td><td>Từ câu đố cuối chuyển vào câu mở đầu của bài cụm</td><td>Pika</td></tr>
+    </tbody>
+  </table></div>
+  <div class="callout warn"><b>Cần tech xác nhận</b><span>Pika hát trong lúc trò chuyện đang có trong mã nhưng chưa rõ đã bật cho khách; kể chuyện ngắn bằng AI thì chạy được. Nếu chưa hát được, phần 3c chỉ còn kể chuyện.</span></div>
+</section>
+
+<div class="tabbar" id="chon-bai" role="tablist" aria-label="Chọn trình độ">
+  <button class="tab" role="tab" id="tab-p" aria-controls="panel-p" aria-selected="true">Pre-A1 · Món ăn</button>
+  <button class="tab" role="tab" id="tab-a1" aria-controls="panel-a1" aria-selected="false" tabindex="-1">A1 · Thời tiết</button>
+  <button class="tab" role="tab" id="tab-a2" aria-controls="panel-a2" aria-selected="false" tabindex="-1">A2 · Chuyến đi Lý Sơn</button>
+  <button class="tab" role="tab" id="tab-b1" aria-controls="panel-b1" aria-selected="false" tabindex="-1">B1 · Quà vặt</button>
+</div>
+
+<!-- ================= PRE-A1 ================= -->
+<div class="panel" id="panel-p" role="tabpanel" aria-labelledby="tab-p">
+  <section class="card">
+    <div class="lesson-hero">
+      <div class="lv"><span class="tag t1">Pre-A1 · bài 1744 → bài 1946</span><h3>Học tên món ăn → "Món ngon tớ thích nhất"</h3><p class="muted">Học từ với Pika (bài 1744, ngày 1 chủ đề món ăn, lời gốc đã song ngữ), rồi trả lời phỏng vấn của Justin ở căn tin trường Pet Pet (bài 1946, ngày 2).</p></div>
+      <div class="lv"><span class="overline">3 cụm (④)</span><p><span class="chunk">rice</span><span class="chunk">noodles</span><span class="chunk">soup</span></p><span class="overline">3 câu (⑤)</span><p class="en">I like rice. · I like noodles. · I like soup.</p></div>
+    </div>
+    <div class="callout warn"><b>Vì sao 3 món này</b><span>Bài 1744 dạy rice, noodles, soup, sausage, eggs, <b>fruits</b>; bài 1946 dùng rice, noodles, soup, sausage, eggs, <b>cake</b>. Chọn 3 món có ở cả hai bài và đứng đầu trong cả hai bài, nên cắt bớt dễ nhất.</span></div>
+  </section>
+
+  <section class="card">
+    <div class="step-head"><div class="num talk">3</div><div class="step-title"><div class="row"><h2>Trò chuyện: món bé thích ăn</h2><span class="pill">2:00–12:00 · 10 phút</span></div></div></div>
+    <div class="tbl"><table><tbody>
+      <tr class="sub"><th colspan="2">3a · Làm quen · 3 phút</th></tr>
+      <tr><th>Câu 1</th><td><span class="say">"[Tên] thích ăn món gì nhất? <span class="en">What food do you like?</span>"</span> → Pika đáp, nói tên món bằng tiếng Anh nếu có, mời bé nói theo.</td></tr>
+      <tr><th>Câu 2</th><td><span class="say">"Sáng nay [Tên] ăn gì rồi? Ăn sáng có ngon không?"</span> → Pika đáp theo câu bé kể.</td></tr>
+      <tr><th>Câu 3</th><td><span class="say">"Ở nhà ai nấu ăn ngon nhất? Bà, mẹ hay bố?"</span> → Pika khen: <span class="say">"Oa, chắc ngon lắm! <span class="en">Yummy!</span>"</span></td></tr>
+      <tr class="sub"><th colspan="2">3b · Bé hỏi Pika · 2 phút</th></tr>
+      <tr><th>Mở</th><td><span class="say">"Giờ [Tên] hỏi Pika nhé! Hỏi gì cũng được."</span></td></tr>
+      <tr><th>Bé bí thì gợi</th><td><span class="say">"[Tên] có muốn hỏi Pika có ăn cơm không? Hay hỏi Pika thích món gì nhất?"</span></td></tr>
+      <tr class="sub"><th colspan="2">3c · Pika hát hoặc kể chuyện · 2 phút</th></tr>
+      <tr><th>Cho bé chọn</th><td><span class="say">"[Tên] muốn nghe Pika hát, hay nghe Pika kể chuyện? <span class="en">Song or story?</span>"</span></td></tr>
+      <tr><th>Hát</th><td>Bài thiếu nhi tiếng Anh ngắn về đồ ăn (ví dụ <span class="en">Hot Cross Buns</span>); Pika vỗ tay theo nhịp.</td></tr>
+      <tr><th>Kể chuyện</th><td>Chuyện 1 phút <b>"Bạn mèo kén ăn"</b>: mèo con chê hết món này món kia, đến khi được bát cơm, bát mì và bát canh nóng thì ăn sạch. Chêm <span class="en">rice, noodles, soup</span>.</td></tr>
+      <tr class="sub"><th colspan="2">3d · Đố vui · 2 phút</th></tr>
+      <tr><th>Đố 1</th><td><span class="say">"Món gì sợi dài dài, ăn bằng đũa, có nước nóng?"</span> → <b>mì</b></td></tr>
+      <tr><th>Đố 2</th><td><span class="say">"Món gì nóng hổi, múc bằng thìa, húp một ngụm là ấm bụng?"</span> → <b>canh</b></td></tr>
+      <tr><th>Đố 3</th><td><span class="say">"Hạt trắng trắng, nấu trong nồi, bữa nào cũng ăn?"</span> → <b>cơm</b></td></tr>
+      <tr class="sub"><th colspan="2">3e · Câu nối vào bài · 1 phút</th></tr>
+      <tr class="add"><th>Câu nối</th><td class="say">"Mì, canh, cơm… [Tên] đoán đúng hết luôn! Giờ mình học tên tiếng Anh của các món này nhé. <span class="en">What food do you like? Today, let's learn about food!</span>"<span class="muted"> (câu tiếng Anh là bước #4 của bài 1744)</span></td></tr>
+    </tbody></table></div>
+  </section>
+
+  <section class="card">
+    <div class="step-head"><div class="num">4</div><div class="step-title"><div class="row"><h2>Học cụm: 3 món (bài 1744)</h2><span class="pill">12:00–18:00 · 6 phút</span></div><p class="goal">Mỗi món giữ 2 bước của bài gốc: Pika giới thiệu món bằng tiếng Việt → bé nói theo, máy chấm phát âm (ngưỡng 0,85).</p></div></div>
+    <div class="tbl"><table>
+      <thead><tr><th>Bước gốc</th><th>Pika nói (lời gốc, đã song ngữ)</th><th>Bé</th></tr></thead>
+      <tbody>
+        <tr><td class="src">#5 · giới thiệu</td><td><span class="say">"[Tên] ơi! Cơm trắng dẻo thơm, món ăn quen thuộc trong bữa cơm gia đình mình đó! Trong tiếng Anh, chúng mình gọi đó là…"</span> (âm thanh + hình <b>rice</b>)</td><td>nghe</td></tr>
+        <tr><td class="src">#6 · nói theo</td><td><span class="say">"Cùng nói theo tớ nhé. Say it with me!"</span></td><td><b>rice</b><span class="fix">chưa đạt: "Có gì đó chưa đúng lắm nè! One more time, nghe thật kỹ rồi nói theo tớ nhé" + âm mẫu; bé im hoặc nói tiếng Việt: "Để tớ nói cùng cậu nhé! Let me say…"</span></td></tr>
+        <tr><td class="src">#7 · giới thiệu</td><td><span class="say">"Tiếp nào [Tên] ơi! Sợi mì dài dai, húp xì xụp nghe vui tai, trong tiếng Anh, chúng mình gọi đó là…"</span> (<b>noodles</b>)</td><td>nghe</td></tr>
+        <tr><td class="src">#8 · nói theo</td><td><span class="say">"Cậu nói theo tớ nhé. Say it with me!"</span></td><td><b>noodles</b><span class="fix">như #6</span></td></tr>
+        <tr><td class="src">#9 · giới thiệu</td><td><span class="say">"[Tên] ơi! Canh nóng hổi, húp một ngụm là ấm bụng ngay, trong tiếng Anh, chúng mình gọi đó là…"</span> (<b>soup</b>)</td><td>nghe</td></tr>
+        <tr><td class="src">#10 · nói theo</td><td><span class="say">"Hãy nói theo tớ nhé. Say it with me!"</span></td><td><b>soup</b><span class="fix">như #6</span></td></tr>
+        <tr><td class="src">#17–#18</td><td>Pháo hoa. <span class="say">"[Tên] giỏi quá trời luôn á! Cùng ôn lại nào! Great job! Let's review!"</span></td><td>nghe</td></tr>
+        <tr class="add"><td class="src">#19 (rút)</td><td><span class="say">"rice, noodles, soup."</span> <span class="muted">(bài gốc đọc đủ 6 món; bỏ sausage, eggs, fruits)</span></td><td>nói theo cả 3 món</td></tr>
+      </tbody>
+    </table></div>
+    <p class="cutlist"><b>Cắt khỏi bài gốc:</b> #1–#2 (mở đầu chung), #3 (lời chào "cậu đã quay lại rồi", vì đây là lần đầu bé gặp Pika; bước ③ đã chào), #11–#16 (sausage, eggs, fruits), #20 (sang nhiệm vụ tiếp, thay bằng câu nối sang bước ⑤).</p>
+    <div class="callout"><b>Bài ngắn</b><span>Phần cụm của Pre-A1 chỉ 8 bước nên có thể xong sớm hơn 6 phút. Phần dư dồn vào game hoặc thời gian đệm.</span></div>
+  </section>
+
+  <section class="card">
+    <div class="step-head"><div class="num">5</div><div class="step-title"><div class="row"><h2>Học câu: I like … (bài 1946)</h2><span class="pill">18:00–24:00 · 6 phút</span></div></div></div>
+    <div class="tbl"><table>
+      <thead><tr><th>Bước gốc</th><th>Pika nói / diễn biến (lời gốc)</th><th>Bé</th></tr></thead>
+      <tbody>
+        <tr class="add"><td class="src">câu nối</td><td><span class="say">"[Tên] biết tên 3 món rồi! Giờ mình đi căn tin trường Pet Pet xem các bạn thích món gì nhé. Mở cánh cửa vàng nào! <span class="en">Oh! A yellow door. Let's see what's inside…</span>"</span> <span class="muted">(câu tiếng Anh là bước #5 của bài 1946)</span></td><td>nghe</td></tr>
+        <tr><td class="src">#6–#10</td><td>Căn tin Pet Pet, Justin cầm micro hỏi Alice món yêu thích, Alice trả lời <b>"I like rice"</b>, màn hiện mẫu câu <b>I like rice</b> (âm thanh gốc)</td><td>nghe</td></tr>
+        <tr><td class="src">#11</td><td><span class="say">"Great! In English, we will say… I like. Let's practice together. Listen and say!"</span></td><td>nói <b>I like</b><span class="fix">bé im, nói tiếng Việt hoặc "tớ không biết": "We should say, I like!", động viên</span></td></tr>
+        <tr><td class="src">#12</td><td>Alice ăn cơm (âm thanh gốc)</td><td>nghe</td></tr>
+        <tr><td class="src">#13</td><td><span class="say">"Listen to me one more time! … Now, repeat after me."</span> (tô sáng từng chữ I, like)</td><td>nói lại <b>I like</b><span class="fix">bước bổ trợ của bài gốc</span></td></tr>
+        <tr><td class="src">#15 · câu 1</td><td><span class="say">"Good job! Now let's put it all together. Listen and say the whole sentence."</span></td><td><b>I like rice.</b><span class="fix">nhánh sửa của bài gốc: nói mẫu lại, khen ý</span></td></tr>
+        <tr><td class="src">#16–#17</td><td>Alice ăn cơm; Justin hỏi Jake, Jake trả lời <b>"I like noodles"</b> (âm thanh gốc)</td><td>nghe</td></tr>
+        <tr><td class="src">#18 · câu 2</td><td><span class="say">"In English, we will say… I like noodles. Listen and say it with me!"</span></td><td><b>I like noodles.</b><span class="fix">như trên</span></td></tr>
+        <tr><td class="src">#19</td><td>Jake ăn mì (âm thanh gốc)</td><td>nghe</td></tr>
+        <tr><td class="src">#20 · câu 3</td><td>Bạn Jane hỏi bé về món súp (câu hỏi thu sẵn của bài)</td><td><b>I like soup.</b><span class="fix">bé chỉ nói "soup": khen, Pika nói đủ câu, mời nói lại 1 lần</span></td></tr>
+        <tr><td class="src">#21</td><td>Justin ăn súp (âm thanh gốc)</td><td>nghe</td></tr>
+        <tr class="add"><td class="src">#28 (rút)</td><td><span class="say">"Wow! We learned about food we like today! Rice, noodles, and soup. Amazing work, [Tên]!"</span> <span class="muted">(bài gốc đọc đủ 6 món; bỏ sausage, eggs, cake)</span></td><td>nghe</td></tr>
+      </tbody>
+    </table></div>
+    <p class="cutlist"><b>Cắt khỏi bài gốc:</b> #1–#4 (mở đầu chung, tên lửa, cánh cửa), #14 (Alice ăn cơm lần 2), #22–#27 (sausage, eggs, cake), #29 (tạm biệt, chuyển sang bước ⑦).</p>
+  </section>
+
+  <section class="card">
+    <div class="step-head"><div class="num">6</div><div class="step-title"><div class="row"><h2>Game "Hộp cơm bí mật"</h2><span class="pill">24:00–27:00 · 3 phút</span></div><p class="goal">8 hộp cơm đóng nắp. Bé chọn hộp, nói <span class="en">I like …</span> đúng món bên trong để mở nắp. Chỉ có rice, noodles, soup.</p></div></div>
+    <div class="tbl"><table><tbody>
+      <tr><th>Mở game</th><td class="say">"Justin để quên 8 hộp cơm! [Tên] mở từng hộp nhé! <span class="en">Open the box and say: I like…</span>"</td></tr>
+      <tr><th>8 hộp</th><td><b>Hộp 1–3:</b> cơm, mì, canh, hé rõ. <b>Hộp 4–5:</b> đổi thứ tự. <b>Hộp 6:</b> chỉ thấy một góc. <b>Hộp 7:</b> không hình, chỉ nghe tiếng húp canh. <b>Hộp 8 (vàng):</b> 2 món, bé thử <span class="en">"I like rice and soup!"</span>, nói được một món vẫn mở.</td></tr>
+      <tr><th>Kết</th><td>Justin (thu sẵn): <span class="en">"Thank you! Yummy!"</span> · <span class="say">"Cảm ơn [Tên] nhé!"</span>, mở rương kim cương.</td></tr>
+      <tr><th>Từ khoá máy nghe</th><td>rice, noodles, soup · nút trái/phải chọn hộp, nút giữa mở</td></tr>
+    </tbody></table></div>
+  </section>
+
+  <section class="card">
+    <div class="step-head"><div class="num">7</div><div class="step-title"><div class="row"><h2>Tạm biệt</h2><span class="pill">27:00–28:00 · 1 phút</span></div></div></div>
+    <div class="script">
+      <div class="line pika"><span class="who">Pika</span><span class="say">"[Tên] thích [món bé chọn] đúng không? Nói lại cho Pika nghe nào: <span class="en">I like…</span> Tối nay ăn cơm, [Tên] nói với bố mẹ nhé: <span class="en">I like rice!</span>"</span></div>
+      <div class="line pika"><span class="who">Pika (bài gốc #29)</span><span><span class="say">"<span class="en">You did a great job today!</span> Hôm nay [Tên] giỏi lắm! <span class="en">Bye bye!</span> Hẹn gặp lại [Tên] nhé!"</span> Vẫy hai tay.</span></div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= A1 ================= -->
+<div class="panel" id="panel-a1" role="tabpanel" aria-labelledby="tab-a1" hidden>
+  <section class="card">
+    <div class="lesson-hero">
+      <div class="lv"><span class="tag t2">A1 · bài 1209 → bài 3162</span><h3>KenBi đi cắm trại → Jenny ở Tây Bắc</h3><p class="muted">Học cụm với nhà KenBi đi cắm trại (bài 1209), rồi học câu với Jenny và bạn Thao ở Tây Bắc (bài 3162).</p></div>
+      <div class="lv"><span class="overline">3 cụm (④)</span><p><span class="chunk">a sunny morning</span><span class="chunk">a cool breeze</span><span class="chunk">a clear sky</span></p><span class="overline">3 câu (⑤)</span><p class="en">It's a sunny morning. · It's a cool breeze. · It's a clear sky.</p></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="step-head"><div class="num talk">3</div><div class="step-title"><div class="row"><h2>Trò chuyện: trời và những chuyến đi chơi</h2><span class="pill">2:00–12:00 · 10 phút</span></div></div></div>
+    <div class="tbl"><table><tbody>
+      <tr class="sub"><th colspan="2">3a · Làm quen · 3 phút</th></tr>
+      <tr><th>Câu 1</th><td><span class="say">"[Tên] thích trời nắng hay trời mát? <span class="en">Sunny or cool?</span>"</span> → Pika đáp, nói lại từ bé chọn, mời bé nói theo.</td></tr>
+      <tr><th>Câu 2</th><td><span class="say">"Cuối tuần [Tên] hay đi chơi ở đâu? Công viên, biển hay núi?"</span> → Pika đáp theo chuyện bé kể, chêm từ tiếng Anh (<span class="en">park, beach, mountain</span>).</td></tr>
+      <tr><th>Câu 3</th><td><span class="say">"[Tên] đi cắm trại bao giờ chưa? <span class="en">Have you ever gone camping?</span>"</span> → bé chưa đi thì Pika: <span class="say">"Pika cũng chưa! Lát nữa mình đi cắm trại cùng một bạn nhé!"</span></td></tr>
+      <tr class="sub"><th colspan="2">3b · Bé hỏi Pika · 2 phút</th></tr>
+      <tr><th>Mở</th><td><span class="say">"Giờ đến lượt [Tên] hỏi Pika! Hỏi gì cũng được. <span class="en">Ask me anything!</span>"</span></td></tr>
+      <tr><th>Bé bí thì gợi</th><td><span class="say">"[Tên] có muốn hỏi Pika thích trời mưa hay trời nắng không? Hay hỏi Pika thích đi chơi ở đâu?"</span></td></tr>
+      <tr class="sub"><th colspan="2">3c · Pika hát hoặc kể chuyện · 2 phút</th></tr>
+      <tr><th>Cho bé chọn</th><td><span class="say">"[Tên] muốn nghe Pika hát, hay nghe Pika kể chuyện? <span class="en">Song or story?</span>"</span></td></tr>
+      <tr><th>Hát</th><td>Một bài thiếu nhi tiếng Anh ngắn về thời tiết (ví dụ <span class="en">Rain, Rain, Go Away</span>); Pika nhún nhảy theo nhịp.</td></tr>
+      <tr><th>Kể chuyện</th><td>Chuyện 1 phút <b>"Đám mây nhỏ đi tìm nắng"</b>: đám mây buồn vì trời xám, gió mát thổi mây đi, trời trong xanh, mặt trời ló ra. Chêm <span class="en">sun, wind, sky</span>.</td></tr>
+      <tr class="sub"><th colspan="2">3d · Đố vui · 2 phút</th></tr>
+      <tr><th>Đố 1</th><td><span class="say">"Buổi sáng, cái gì chiếu ánh nắng vàng ấm áp? <span class="en">What is it?</span>"</span> → <b>the sun</b></td></tr>
+      <tr><th>Đố 2</th><td><span class="say">"Cái gì thổi nhè nhẹ, làm lá cây rung rinh và mình thấy mát rượi?"</span> → <b>gió</b> (Pika: <span class="en">"a breeze!"</span>)</td></tr>
+      <tr><th>Đố 3</th><td><span class="say">"Bầu trời không có một gợn mây, xanh trong vắt, nhìn thấy thật xa. Trời như vậy gọi là gì?"</span> → <b>trời trong</b></td></tr>
+      <tr class="sub"><th colspan="2">3e · Câu nối vào bài · 1 phút</th></tr>
+      <tr class="add"><th>Câu nối</th><td class="say">"Nắng, gió mát, trời trong… Hôm nay nhà bạn KenBi đi cắm trại, gặp đủ cả ba luôn! Mình đi cùng KenBi nhé! <span class="en">Hello, hello, hello! Today, KenBi's family is going camping! They're packing everything into the car. Let's watch!</span>"<span class="muted"> (câu tiếng Anh là phần 1 của bài 1209)</span></td></tr>
+    </tbody></table></div>
+  </section>
+
+  <section class="card">
+    <div class="step-head"><div class="num">4</div><div class="step-title"><div class="row"><h2>Học cụm: 3 kiểu trời (bài 1209)</h2><span class="pill">12:00–18:00 · 6 phút</span></div><p class="goal">Mỗi cụm đi 3 nhịp của bài gốc: nhìn và nói → luyện từ khó → hỏi–đáp "What is it like?".</p></div></div>
+    <div class="tbl"><table>
+      <thead><tr><th>Phần gốc</th><th>Pika nói / diễn biến (lời gốc)</th><th>Bé</th></tr></thead>
+      <tbody>
+        <tr><td class="src">P1</td><td>Cảnh nhà KenBi lên xe đi cắm trại (âm thanh / hình gốc)</td><td>nghe</td></tr>
+        <tr><td class="src">P2 · cụm 1</td><td>Cảnh buổi sáng. <span class="say">"Now look, and say."</span></td><td><b>a sunny morning</b><span class="fix">"Not quite right! We should say…" + mẫu thu sẵn</span></td></tr>
+        <tr><td class="src">P3</td><td><span class="say">"Now, look and answer. What is it like?"</span></td><td><b>a sunny morning</b><span class="fix">"Looking at the picture, I say… we can practice it later~"</span></td></tr>
+        <tr><td class="src">P4</td><td>Chuyển cảnh (âm thanh / hình gốc)</td><td>nghe</td></tr>
+        <tr><td class="src">P5 · cụm 2</td><td><span class="say">"Now look, and say."</span></td><td><b>a cool breeze</b><span class="fix">"Hehe, something's not quite right! We should say…"</span></td></tr>
+        <tr><td class="src">P6</td><td><span class="say">"Now listen carefully to this word. Now, louder, say it!"</span></td><td><b>breeze</b><span class="fix">luyện riêng từ khó: "It is… breeze! Remember! That's how we say it!"</span></td></tr>
+        <tr><td class="src">P7</td><td><span class="say">"Now, look and answer. What is it like?"</span></td><td><b>a cool breeze</b><span class="fix">"Looking at the picture, I say… we can practice it later!"</span></td></tr>
+        <tr><td class="src">P8</td><td>Chuyển cảnh (âm thanh / hình gốc)</td><td>nghe</td></tr>
+        <tr><td class="src">P9 · cụm 3</td><td><span class="say">"Now look, and say."</span></td><td><b>a clear sky</b><span class="fix">"Oopsie, that sounded a little different! We should say…"</span></td></tr>
+        <tr><td class="src">P10</td><td><span class="say">"Now listen carefully to this word. Now, louder, say it!"</span></td><td><b>clear</b><span class="fix">"For this, we say it… clear! Remember! That's how we say it!"</span></td></tr>
+        <tr><td class="src">P11</td><td><span class="say">"Now, look and answer. What is the sky like?"</span></td><td><b>a clear sky</b> hoặc <b>the sky is clear</b><span class="fix">như P7</span></td></tr>
+        <tr><td class="src">P12</td><td><span class="say">"Congratulations! Now, let's see what we discovered in this trip! A sunny morning! A cool breeze! A clear sky! And these are the three beautiful things you discovered during the camping adventure!"</span></td><td>nghe</td></tr>
+      </tbody>
+    </table></div>
+    <p class="cutlist"><b>Cắt khỏi bài gốc:</b> phần mở đầu chung trong P1; câu cuối P12 "Let's move to the next mission!" (thay bằng câu nối sang bước ⑤).</p>
+  </section>
+
+  <section class="card">
+    <div class="step-head"><div class="num">5</div><div class="step-title"><div class="row"><h2>Học câu: It's … (bài 3162)</h2><span class="pill">18:00–24:00 · 6 phút</span></div></div></div>
+    <div class="tbl"><table>
+      <thead><tr><th>Bước gốc</th><th>Pika nói / diễn biến (lời gốc)</th><th>Bé</th></tr></thead>
+      <tbody>
+        <tr class="add"><td class="src">câu nối</td><td><span class="say">"KenBi thấy đủ 3 kiểu trời rồi! Bạn Jenny đang du lịch Tây Bắc cũng thấy y như vậy. Mình hỏi Jenny xem trời thế nào nhé! <span class="en">Today, we will learn about the weather in Northwest Vietnam! Ready, ready, are you ready?</span>"</span> <span class="muted">(câu tiếng Anh là bước #4 của bài 3162)</span></td><td>nghe</td></tr>
+        <tr><td class="src">#5–#8</td><td>Jenny khám phá vùng núi, gặp bạn Thao, trời sáng nắng; màn hiện mẫu <b>It's a sunny morning</b> (âm thanh gốc)</td><td>nghe</td></tr>
+        <tr><td class="src">#9–#10</td><td><span class="say">"Let's practice the phrase, It is." … "Listen and say."</span></td><td>nói <b>It's</b><span class="fix">nhánh sửa của bài gốc: nói mẫu lại, khen ý</span></td></tr>
+        <tr><td class="src">#11 · câu 1</td><td><span class="say">"Now, listen and say the whole sentence."</span></td><td><b>It's a sunny morning.</b></td></tr>
+        <tr><td class="src">#12–#14 · câu 2</td><td><span class="say">"Next, let's see what else they see."</span> Jenny cảm nhận gió mát. <span class="say">"Great! Now, you listen and say it with me."</span></td><td><b>It's a cool breeze.</b><span class="fix">như trên</span></td></tr>
+        <tr><td class="src">#15–#17</td><td><span class="say">"Now, let's learn how to ask and answer about the weather!"</span> Jenny hỏi Thao về bầu trời, Thao trả lời <b>"It's a clear sky"</b> (âm thanh gốc)</td><td>nghe</td></tr>
+        <tr><td class="src">#18 · câu 3</td><td><span class="say">"Okay, your turn. What's it like?"</span></td><td><b>It's a clear sky.</b><span class="fix">bé chỉ nói "clear sky": khen, Pika nói đủ câu, mời nói lại 1 lần</span></td></tr>
+        <tr><td class="src">#23</td><td><span class="say">"Wow, what an amazing adventure! You learned so much about the weather in Northwest Vietnam!"</span></td><td>nghe</td></tr>
+      </tbody>
+    </table></div>
+    <p class="cutlist"><b>Cắt khỏi bài gốc:</b> #1–#3 (mở đầu chung), #19–#22 (light rain, beautiful sunset, starry night: ngoài 3 cụm), #24 (tạm biệt, chuyển sang bước ⑦).</p>
+  </section>
+
+  <section class="card">
+    <div class="step-head"><div class="num">6</div><div class="step-title"><div class="row"><h2>Game "Album ảnh cắm trại"</h2><span class="pill">24:00–27:00 · 3 phút</span></div><p class="goal">8 tấm ảnh chuyến đi bị mờ sương. Bé nói đúng kiểu trời để lau sương. Chỉ có 3 cụm đã học.</p></div></div>
+    <div class="tbl"><table><tbody>
+      <tr><th>Mở game</th><td class="say">"Ối, sương phủ mờ album ảnh rồi! [Tên] nói đúng trời trong ảnh để lau sương nhé! <span class="en">What's it like?</span>"</td></tr>
+      <tr><th>8 ảnh</th><td><b>Ảnh 1–3:</b> sáng nắng, gió mát, trời trong. <b>Ảnh 4–5:</b> đổi thứ tự, ảnh mờ hơn. <b>Ảnh 6:</b> mờ đặc, chỉ thấy màu trời. <b>Ảnh 7:</b> không hình, chỉ nghe tiếng gió vi vu. <b>Ảnh 8 (vàng):</b> ảnh ghép, bé nói 2 câu <span class="en">"It's a sunny morning. It's a clear sky!"</span>, nói được một câu vẫn qua.</td></tr>
+      <tr><th>Kết</th><td>Album đầy ảnh, mở rương kim cương. <span class="say">"<span class="en">What a beautiful trip!</span> Chuyến đi đẹp quá!"</span></td></tr>
+      <tr><th>Từ khoá máy nghe</th><td>sunny, morning, cool, breeze, clear, sky</td></tr>
+    </tbody></table></div>
+  </section>
+
+  <section class="card">
+    <div class="step-head"><div class="num">7</div><div class="step-title"><div class="row"><h2>Tạm biệt</h2><span class="pill">27:00–28:00 · 1 phút</span></div></div></div>
+    <div class="script">
+      <div class="line pika"><span class="who">Pika</span><span class="say">"Hôm nay [Tên] đi cắm trại với KenBi và du lịch Tây Bắc với Jenny luôn! Câu Pika thích nhất là '[câu hay nhất]'. Sáng mai [Tên] nhìn ra cửa sổ rồi nói thử nhé: <span class="en">It's a sunny morning!</span>"</span></div>
+      <div class="line pika"><span class="who">Pika (bài gốc #24)</span><span><span class="say">"<span class="en">Great job today! See you next time!</span> Hẹn gặp lại [Tên] nhé!"</span> Vẫy hai tay.</span></div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= A2 ================= -->
+<div class="panel" id="panel-a2" role="tabpanel" aria-labelledby="tab-a2" hidden>
+  <section class="card">
+    <div class="lesson-hero">
+      <div class="lv"><span class="tag t3">A2 · bài 2977 → bài 869</span><h3>Chuẩn bị chuyến đi → đảo Lý Sơn</h3><p class="muted">Học 3 việc chuẩn bị với Pika (bài 2977), rồi đóng vai An Linh trả lời người nhà trước chuyến đi Lý Sơn (bài 869).</p></div>
+      <div class="lv"><span class="overline">3 cụm (④)</span><p><span class="chunk">pack my suitcase</span><span class="chunk">choose my clothes</span><span class="chunk">prepare some snacks</span></p><span class="overline">3 câu (⑤)</span><p class="en">I need to pack my suitcase. · I need to choose my clothes. · I need to prepare some snacks.</p></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="step-head"><div class="num talk">3</div><div class="step-title"><div class="row"><h2>Trò chuyện: những chuyến đi của bé</h2><span class="pill">2:00–12:00 · 10 phút</span></div></div></div>
+    <div class="tbl"><table><tbody>
+      <tr class="sub"><th colspan="2">3a · Làm quen · 3 phút</th></tr>
+      <tr><th>Câu 1</th><td><span class="say">"<span class="en">Have you ever been on a trip with your family?</span> [Tên] đi du lịch cùng gia đình bao giờ chưa? Đi đâu thế?"</span></td></tr>
+      <tr><th>Câu 2</th><td><span class="say">"Đi xa, [Tên] thích đi bằng gì: ô tô, máy bay hay tàu? <span class="en">Car, plane or boat?</span>"</span></td></tr>
+      <tr><th>Câu 3</th><td><span class="say">"Đi chơi, [Tên] hay mang theo đồ chơi gì? <span class="en">What do you bring?</span>"</span> → Pika khen, nói tên đồ bằng tiếng Anh.</td></tr>
+      <tr class="sub"><th colspan="2">3b · Bé hỏi Pika · 2 phút</th></tr>
+      <tr><th>Mở</th><td><span class="say">"Giờ [Tên] hỏi Pika nhé! <span class="en">Ask me anything!</span>"</span></td></tr>
+      <tr><th>Bé bí thì gợi</th><td><span class="say">"[Tên] có muốn hỏi Pika thích đi đâu nhất không? Hay hỏi Pika đi du lịch thì mang gì?"</span></td></tr>
+      <tr class="sub"><th colspan="2">3c · Pika hát hoặc kể chuyện · 2 phút</th></tr>
+      <tr><th>Cho bé chọn</th><td><span class="say">"[Tên] muốn nghe Pika hát, hay nghe Pika kể chuyện? <span class="en">Song or story?</span>"</span></td></tr>
+      <tr><th>Hát</th><td>Bài thiếu nhi tiếng Anh ngắn về đi chơi (ví dụ <span class="en">The Wheels on the Bus</span>); Pika vẫy tay theo nhịp.</td></tr>
+      <tr><th>Kể chuyện</th><td>Chuyện 1 phút <b>"Chiếc va li hay quên"</b>: va li đi du lịch mà quên mang áo, quên mang bánh, cả nhà phải quay về lấy. Chêm <span class="en">suitcase, clothes, snacks</span>.</td></tr>
+      <tr class="sub"><th colspan="2">3d · Đố vui · 2 phút</th></tr>
+      <tr><th>Đố 1</th><td><span class="say">"Xe gì to, chở nhiều người, dừng ở các bến? <span class="en">What is it?</span>"</span> → <b>the bus</b> (xe buýt)</td></tr>
+      <tr><th>Đố 2</th><td><span class="say">"Đi biển, mình đội cái gì để khỏi nắng?"</span> → <b>mũ</b> (Pika: <span class="en">"a hat!"</span>)</td></tr>
+      <tr><th>Đố 3</th><td><span class="say">"Cái gì có bánh xe, kéo đi được, đựng quần áo khi đi xa?"</span> → <b>suitcase</b> (va li)</td></tr>
+      <tr class="sub"><th colspan="2">3e · Câu nối vào bài · 1 phút</th></tr>
+      <tr class="add"><th>Câu nối</th><td class="say">"Đúng rồi, va li! Hôm nay mình học xem mọi người chuẩn bị cho chuyến đi thế nào nhé. <span class="en">Today, we're going to discover how people get ready for a trip!</span> Giờ nhìn Pika nè… <span class="en">Look at me. I'm putting my things neatly into my suitcase. What am I doing? Can you guess?</span>"<span class="muted"> (hai câu tiếng Anh là bước #4 và #5 của bài 2977)</span></td></tr>
+    </tbody></table></div>
+  </section>
+
+  <section class="card">
+    <div class="step-head"><div class="num">4</div><div class="step-title"><div class="row"><h2>Học cụm: 3 việc chuẩn bị (bài 2977)</h2><span class="pill">12:00–18:00 · 6 phút</span></div><p class="goal">Mỗi cụm giữ nguyên khuôn 5 nhịp của bài gốc: đoán → nghe tả → nói theo → nói lại → "phép thuật".</p></div></div>
+    <div class="tbl"><table>
+      <thead><tr><th>Bước gốc</th><th>Pika nói (lời gốc)</th><th>Bé</th></tr></thead>
+      <tbody>
+        <tr><td class="src">#5 · đoán</td><td><span class="say">"Look at me. I'm putting my things neatly into my suitcase. What am I doing? Can you guess?"</span></td><td>đoán (Việt hay Anh đều được)</td></tr>
+        <tr><td class="src">#6 · nghe tả</td><td><span class="say">"I get the things I need for the trip. I place them one by one into my suitcase. And soon my suitcase is ready for the trip. That is, pack my suitcase."</span></td><td>nghe</td></tr>
+        <tr><td class="src">#7 · nói theo</td><td><span class="say">"Now say it with me."</span></td><td><b>pack my suitcase</b></td></tr>
+        <tr><td class="src">#8 · nói lại</td><td><span class="say">"Now listen to me! And repeat after me."</span></td><td><b>pack my suitcase</b><span class="fix">bước sửa của bài gốc: nghe mẫu rõ hơn rồi nói lại</span></td></tr>
+        <tr><td class="src">#9 · phép thuật</td><td><span class="say">"Now I'll show you some magic. Say it with me to get ready for the trip."</span></td><td><b>pack my suitcase</b></td></tr>
+        <tr><td class="src">#10–#14</td><td>Cụm 2, cùng 5 nhịp: <span class="say">"I need to pick out one shirt I like for the beach! [Tên], can you guess what I am doing?"</span> … <span class="say">"I open my closet. I pick my favorite shirt to wear. Now, I am ready for an adventure. That is, choose my clothes."</span> … <span class="say">"Say it with me to look ready for the trip."</span></td><td><b>choose my clothes</b><span class="fix">#13 "Now listen to me! And repeat after me."</span></td></tr>
+        <tr><td class="src">#15–#19</td><td>Cụm 3, cùng 5 nhịp: <span class="say">"Look at me. I'm putting cookies and candy into my backpack. What am I doing?"</span> … <span class="say">"I pick my favorite treats. I put them into my backpack. And now I have yummy snacks for the road. That is, prepare some snacks."</span> … <span class="say">"Say it with me to fill the snack bag."</span></td><td><b>prepare some snacks</b><span class="fix">#18 "Now listen to me! And repeat after me."</span></td></tr>
+        <tr><td class="src">#20</td><td><span class="say">"Pack my suitcase, choose my clothes, and prepare some snacks. Three important things before a trip. And you learned all three today, I'm so proud of you."</span></td><td>nghe</td></tr>
+        <tr><td class="src">#21</td><td><span class="say">"What is the first thing you do before going on a trip?"</span></td><td>bé nói tự do (AI đáp)</td></tr>
+      </tbody>
+    </table></div>
+    <p class="cutlist"><b>Cắt khỏi bài gốc:</b> #1–#3 (mở đầu chung), #22 (hẹn bài sau, thay bằng câu nối sang bước ⑤).</p>
+  </section>
+
+  <section class="card">
+    <div class="step-head"><div class="num">5</div><div class="step-title"><div class="row"><h2>Học câu: I need to … (bài 869)</h2><span class="pill">18:00–24:00 · 6 phút</span></div></div></div>
+    <div class="tbl"><table>
+      <thead><tr><th>Bước gốc</th><th>Pika nói (lời gốc)</th><th>Bé</th></tr></thead>
+      <tbody>
+        <tr class="add"><td class="src">câu nối</td><td><span class="say">"Gia đình bạn An Linh cũng sắp đi xa đó! Đố [Tên]: hòn đảo nào ở Quảng Ngãi nổi tiếng trồng tỏi, Phú Quốc hay Lý Sơn?"</span> → <b>Lý Sơn</b></td><td>trả lời</td></tr>
+        <tr><td class="src">#1</td><td><span class="say">"Hey! Hey! Hey! Happy Lunar New Year! Today is a special day! The whole family is going to Lý Sơn Island for the holiday. They will go on a garlic-picking tour on Lý Sơn Island. Let's see what happens. You've got to ask everyone what they need to prepare before the trip!"</span></td><td>sẵn sàng<span class="fix">bé chưa sẵn sàng: "Just start the conversation with An Linh's family. They're nice."</span></td></tr>
+        <tr><td class="src">#2–#3</td><td>Bé hỏi 2 người nhà An Linh</td><td><b>What do you need to get ready for the trip?</b><span class="fix">nhánh sửa của bài gốc (đúng / sai / không biết / lạc đề / im lặng)</span></td></tr>
+        <tr><td class="src">#6 · câu 1</td><td><span class="say">"Awesome. Now, let's go New Year shopping for the trip! … Now, you are An Linh. Answer the question from her!"</span></td><td><b>I need to pack my suitcase.</b><span class="fix">bài gốc nhận mọi câu "I need …" có đồ vật trong danh sách (suitcase, clothes, snack…)</span></td></tr>
+        <tr><td class="src">#7 · câu 2</td><td>Người nhà hỏi tiếp (âm thanh gốc)</td><td><b>I need to choose my clothes.</b><span class="fix">như trên</span></td></tr>
+        <tr><td class="src">#8 · câu 3</td><td>Người nhà hỏi tiếp (âm thanh gốc)</td><td><b>I need to prepare some snacks.</b><span class="fix">như trên</span></td></tr>
+        <tr><td class="src">#10</td><td>Kết bài, cả nhà lên đường (âm thanh gốc)</td><td>nghe</td></tr>
+      </tbody>
+    </table></div>
+    <p class="cutlist"><b>Cắt khỏi bài gốc:</b> #4–#5 (hỏi thêm 2 người nhà), #9 (câu trả lời thứ 4).</p>
+    <div class="callout warn"><b>Ghép cụm vào câu</b><span>Bài 869 nhận câu "I need + đồ vật". Kịch bản gợi ý bé ghép 3 cụm vừa học thành <span class="en">I need to + cụm</span>; câu này vẫn chứa suitcase / clothes / snacks nên bài gốc chấm đúng. Tech cần thử lại trên robot.</span></div>
+  </section>
+
+  <section class="card">
+    <div class="step-head"><div class="num">6</div><div class="step-title"><div class="row"><h2>Game "Xếp đồ cho An Linh"</h2><span class="pill">24:00–27:00 · 3 phút</span></div><p class="goal">Đồ đạc trôi qua băng chuyền, bé nói đúng việc cần làm để đánh dấu, mỗi lần đúng xe chở cả nhà tiến thêm một đoạn ra bến tàu. Chỉ có 3 cụm đã học.</p></div></div>
+    <div class="tbl"><table><tbody>
+      <tr><th>Mở game</th><td class="say">"Cả nhà sắp xuất phát rồi! [Tên] giúp An Linh chuẩn bị nhé! <span class="en">What do you need to do?</span>"</td></tr>
+      <tr><th>8 lượt</th><td><b>Lượt 1–3:</b> va li mở, tủ quần áo, túi bánh kẹo, hình rõ. <b>Lượt 4–5:</b> đổi thứ tự, đồ trôi nhanh hơn. <b>Lượt 6:</b> bóng đen của đồ vật. <b>Lượt 7:</b> không hình, chỉ nghe tiếng (khoá va li "tách", túi bánh sột soạt). <b>Lượt 8 (vàng):</b> bé nói cả câu <span class="en">"I need to pack my suitcase!"</span>, nói được cụm vẫn qua.</td></tr>
+      <tr><th>Kết</th><td>Cả nhà lên tàu ra đảo Lý Sơn, mở rương kim cương. An Linh (thu sẵn): <span class="en">"Thank you!"</span> · <span class="say">"Cảm ơn [Tên] nhé!"</span></td></tr>
+      <tr><th>Từ khoá máy nghe</th><td>pack, suitcase, choose, clothes, prepare, snacks</td></tr>
+    </tbody></table></div>
+  </section>
+
+  <section class="card">
+    <div class="step-head"><div class="num">7</div><div class="step-title"><div class="row"><h2>Tạm biệt</h2><span class="pill">27:00–28:00 · 1 phút</span></div></div></div>
+    <div class="script">
+      <div class="line pika"><span class="who">Pika</span><span class="say">"Nhờ [Tên] mà nhà An Linh kịp ra đảo Lý Sơn! Câu Pika thích nhất là '[câu hay nhất]'. Lần tới đi chơi, [Tên] nhớ nói nhé: <span class="en">I need to pack my suitcase!</span>"</span></div>
+      <div class="line pika"><span class="who">Pika</span><span><span class="say">"<span class="en">Have a nice trip! Bye bye [Tên]!</span> Hẹn gặp lại [Tên] nhé!"</span> Vẫy hai tay.</span></div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= B1 ================= -->
+<div class="panel" id="panel-b1" role="tabpanel" aria-labelledby="tab-b1" hidden>
+  <section class="card">
+    <div class="lesson-hero">
+      <div class="lv"><span class="tag t4">B1 · bài 2582 → bài 2562</span><h3>Quà vặt Việt Nam với Kenbee</h3><p class="muted">Học 3 món với Kenbee ở quầy quà vặt (bài 2582), rồi nói món mình thích nhất và món người khác thích (bài 2562, có An Linh, thím Bảy, chú Tùng).</p></div>
+      <div class="lv"><span class="overline">3 cụm (④)</span><p><span class="chunk">prawn fritters</span><span class="chunk">sesame balls</span><span class="chunk">coconut jelly</span></p><span class="overline">3 câu (⑤)</span><p class="en">I enjoy prawn fritters the most. · I enjoy … the most. (món bé chọn) · He enjoys … the most.</p></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="step-head"><div class="num talk">3</div><div class="step-title"><div class="row"><h2>Trò chuyện: món ăn vặt bé thích</h2><span class="pill">2:00–12:00 · 10 phút</span></div></div></div>
+    <div class="tbl"><table><tbody>
+      <tr class="sub"><th colspan="2">3a · Làm quen · 3 phút</th></tr>
+      <tr><th>Câu 1</th><td><span class="say">"<span class="en">What do you usually eat after school?</span> Tan học [Tên] hay ăn gì?"</span> → Pika hỏi thêm <span class="say">"<span class="en">Why do you like it?</span> Sao [Tên] thích món đó?"</span></td></tr>
+      <tr><th>Câu 2</th><td><span class="say">"Gần nhà [Tên] có quầy quà vặt không? Ở đó bán món gì?"</span></td></tr>
+      <tr><th>Câu 3</th><td><span class="say">"Ở nhà, bà hay mẹ có làm món gì ngon cho [Tên] không? <span class="en">What is it?</span>"</span> → Pika khen, nói tên món bằng tiếng Anh nếu có.</td></tr>
+      <tr class="sub"><th colspan="2">3b · Bé hỏi Pika · 2 phút</th></tr>
+      <tr><th>Mở</th><td><span class="say">"Giờ [Tên] hỏi Pika nhé! <span class="en">Ask me anything!</span>"</span></td></tr>
+      <tr><th>Bé bí thì gợi</th><td><span class="say">"[Tên] có muốn hỏi Pika có ăn được không? Hay hỏi Pika thích món nào nhất?"</span></td></tr>
+      <tr class="sub"><th colspan="2">3c · Pika hát hoặc kể chuyện · 2 phút</th></tr>
+      <tr><th>Cho bé chọn</th><td><span class="say">"[Tên] muốn nghe Pika hát, hay nghe Pika kể chuyện? <span class="en">Song or story?</span>"</span></td></tr>
+      <tr><th>Hát</th><td>Bài thiếu nhi tiếng Anh ngắn về đồ ăn (ví dụ <span class="en">Pat-a-Cake</span>); Pika vỗ tay theo nhịp.</td></tr>
+      <tr><th>Kể chuyện</th><td>Chuyện 1 phút <b>"Robot lần đầu đi chợ quê"</b>: Pika theo bà đi chợ, thấy bánh rán lăn vừng, nồi chè thơm, cốc thạch mát lạnh, ngửi thôi đã thích. Chêm <span class="en">sweet, crispy, yummy</span>.</td></tr>
+      <tr class="sub"><th colspan="2">3d · Đố vui · 2 phút</th></tr>
+      <tr><th>Đố 1</th><td><span class="say">"Món gì làm từ gạo nếp, gói lá xanh, ăn vào dịp Tết?"</span> → <b>bánh chưng</b> (Pika: <span class="en">"a Vietnamese rice cake!"</span>)</td></tr>
+      <tr><th>Đố 2</th><td><span class="say">"Món gì trắng, mềm, rung rinh, mát lạnh, làm từ dừa? <span class="en">What is it?</span>"</span> → <b>coconut jelly</b> (thạch dừa)</td></tr>
+      <tr><th>Đố 3</th><td><span class="say">"Món gì tròn tròn, vàng ruộm, ngoài giòn trong dẻo, phủ đầy hạt vừng?"</span> → <b>bánh rán vừng</b></td></tr>
+      <tr class="sub"><th colspan="2">3e · Câu nối vào bài · 1 phút</th></tr>
+      <tr class="add"><th>Câu nối</th><td class="say">"Bánh rán, thạch dừa… Bạn Kenbee đang ở quầy quà vặt có đủ các món này luôn. Mình ra xem nhé! <span class="en">Today, we're going to discover Vietnamese snacks. Let's learn three special things we can try.</span> <span class="en">Look at Kenbee. He's looking at a plate of crispy, golden prawn fritters. What snack is this? Can you guess?</span>"<span class="muted"> (câu tiếng Anh là bước #4 và #5 của bài 2582; đổi "shrimp fritters" thành "prawn fritters" cho thống nhất với các bước sau)</span></td></tr>
+    </tbody></table></div>
+  </section>
+
+  <section class="card">
+    <div class="step-head"><div class="num">4</div><div class="step-title"><div class="row"><h2>Học cụm: 3 món (bài 2582)</h2><span class="pill">12:00–18:00 · 6 phút</span></div><p class="goal">Mỗi món giữ nguyên khuôn của bài gốc: đoán → nghe tả + nói theo → nghe lại, nói lại → "phép thuật".</p></div></div>
+    <div class="tbl"><table>
+      <thead><tr><th>Bước gốc</th><th>Pika nói (lời gốc)</th><th>Bé</th></tr></thead>
+      <tbody>
+        <tr><td class="src">#5 · đoán</td><td>(đã hỏi ở câu nối bước ③)</td><td>đoán</td></tr>
+        <tr><td class="src">#6 · nói theo</td><td><span class="say">"Kenbee sits at the snack stall and sees a plate of golden, crispy prawn fritters. Fresh vegetables and a small bowl of dipping sauce are on the side. That is, prawn fritters. Now say it with me."</span></td><td><b>prawn fritters</b></td></tr>
+        <tr><td class="src">#7–#8 · nói lại</td><td><span class="say">"Now listen to me!" … "Now repeat after me."</span></td><td><b>prawn fritters</b><span class="fix">bước sửa của bài gốc</span></td></tr>
+        <tr><td class="src">#9 · phép thuật</td><td><span class="say">"Now I'll show you some magic. Say it with me to crunch into a golden snack."</span></td><td><b>prawn fritters</b></td></tr>
+        <tr><td class="src">#10–#14</td><td>Món 2, cùng khuôn: <span class="say">"Look at Kenbee. He's looking at a plate of round, golden balls covered in sesame seeds. What snack is this? Can you guess?"</span> … <span class="say">"Kenbee sits at the snack stall and sees round, golden balls covered with crunchy sesame seeds. That is, sesame balls. Now say it with me."</span> … <span class="say">"Say it with me to bite into something round and sweet."</span></td><td><b>sesame balls</b><span class="fix">#12–#13 "Now listen to me! … Now repeat after me."</span></td></tr>
+        <tr><td class="src">#15–#19</td><td>Món 3, cùng khuôn: <span class="say">"Look at Kenbee. He's looking at a dessert with soft square pieces of jelly inside. What snack is this?"</span> … <span class="say">"Small pieces of white coconut jelly are inside it. That is, coconut jelly. Now say it with me."</span> … <span class="say">"Say it with me to cool down with a wobbly treat."</span></td><td><b>coconut jelly</b><span class="fix">#17–#18 như trên</span></td></tr>
+        <tr><td class="src">#20</td><td><span class="say">"The three snacks we learn in today's lesson are prawn fritters, sesame balls, and coconut jelly. You learned all three today, and I'm so proud of you! Now you know even more yummy Vietnamese snacks in English!"</span></td><td>nghe</td></tr>
+        <tr><td class="src">#21</td><td><span class="say">"What is your favourite Vietnamese snack?"</span></td><td>bé nói tự do (AI đáp)</td></tr>
+      </tbody>
+    </table></div>
+    <p class="cutlist"><b>Cắt khỏi bài gốc:</b> #1–#3 (mở đầu chung), #22 (hẹn bài sau, thay bằng câu nối sang bước ⑤).</p>
+  </section>
+
+  <section class="card">
+    <div class="step-head"><div class="num">5</div><div class="step-title"><div class="row"><h2>Học câu: I enjoy … the most (bài 2562)</h2><span class="pill">18:00–24:00 · 6 phút</span></div></div></div>
+    <div class="tbl"><table>
+      <thead><tr><th>Bước gốc</th><th>Pika nói / diễn biến (lời gốc)</th><th>Bé</th></tr></thead>
+      <tbody>
+        <tr class="add"><td class="src">câu nối</td><td><span class="say">"Bạn An Linh cũng đang gọi Kenbee ra quầy quà vặt đó! Mình nghe xem hai bạn thích món nào nhất nhé. <span class="en">Let's see!</span>"</span></td><td>nghe</td></tr>
+        <tr><td class="src">#5–#8</td><td>An Linh gọi Ken Bi đến quầy, Ken Bi hỏi, An Linh nói về bánh tôm (âm thanh gốc). <span class="say">"Look, we say it like this."</span> Màn hiện <b>I enjoy prawn fritters the most</b></td><td>nghe</td></tr>
+        <tr><td class="src">#9–#10</td><td><span class="say">"Let's practice the phrase, I enjoy the most." … "Listen and say."</span></td><td>nói <b>I enjoy … the most</b><span class="fix">nhánh sửa của bài gốc: nói mẫu lại, khen ý</span></td></tr>
+        <tr><td class="src">#11 · câu 1</td><td><span class="say">"Now, listen and say the whole sentence."</span></td><td><b>I enjoy prawn fritters the most.</b></td></tr>
+        <tr><td class="src">#12–#19</td><td>Ken Bi và An Linh nói về bánh rán vừng và thạch dừa ở quầy hàng; bé nghe và nhắc lại <span class="say">"Now, you listen and repeat."</span> · <span class="say">"Awesome. Now, you say it. Listen and say."</span></td><td><b>sesame balls</b> · <b>coconut jelly</b> (ôn 2 cụm đã học)</td></tr>
+        <tr><td class="src">#20–#22</td><td><span class="say">"Now, let's learn how to ask and answer about Vietnamese snacks we enjoy."</span> Ken Bi hỏi An Linh, An Linh trả lời <b>"I enjoy coconut jelly the most"</b> (âm thanh gốc)</td><td>nghe</td></tr>
+        <tr><td class="src">#23 · câu 2</td><td><span class="say">"Okay, now it's your turn. Which Vietnamese snack do you enjoy the most?"</span></td><td><b>I enjoy … the most.</b> (một trong 3 món)<span class="fix">bé chỉ nói tên món: khen, Pika nói đủ câu, mời nói lại 1 lần</span></td></tr>
+        <tr><td class="src">#24–#26</td><td><span class="say">"Now, let's talk about what our friends enjoy."</span> Hỏi về thím Bảy, trả lời <b>"She enjoys prawn fritters the most"</b> (âm thanh gốc)</td><td>nghe</td></tr>
+        <tr><td class="src">#27 · câu 3</td><td><span class="say">"Okay, what about uncle Tung, the snack stand owner? Which Vietnamese snack does he enjoy the most?"</span></td><td><b>He enjoys … the most.</b><span class="fix">bé quên "enjoys": Pika nói lại, nhấn đuôi -s, mời nói lại 1 lần</span></td></tr>
+        <tr><td class="src">#28</td><td><span class="say">"You did an amazing job today. You learned how to talk about Vietnamese snacks you enjoy the most. Keep practicing and you'll be a superstar."</span></td><td>nghe</td></tr>
+      </tbody>
+    </table></div>
+    <p class="cutlist"><b>Cắt khỏi bài gốc:</b> #1–#4 (mở đầu chung), #29 (tạm biệt, chuyển sang bước ⑦).</p>
+  </section>
+
+  <section class="card">
+    <div class="step-head"><div class="num">6</div><div class="step-title"><div class="row"><h2>Game "Câu quà chiều"</h2><span class="pill">24:00–27:00 · 3 phút</span></div><p class="goal">Pika thả cần câu xuống "ao quà chiều". Bé nói tên món để kéo cần. Chỉ có 3 món đã học.</p></div></div>
+    <div class="tbl"><table><tbody>
+      <tr><th>Mở game</th><td class="say">"<span class="en">Let's go fishing for snacks!</span> Mình đi câu quà chiều nào! Nói tên món để kéo cần nhé!"</td></tr>
+      <tr><th>8 lượt</th><td><b>Lượt 1–3:</b> 3 món, hình rõ. <b>Lượt 4–5:</b> đổi thứ tự, món trôi nhanh hơn. <b>Lượt 6:</b> chỉ thấy bóng món dưới nước. <b>Lượt 7:</b> Pika tả món, bé đoán. <b>Lượt 8 (vàng):</b> bé nói cả câu <span class="en">"I enjoy … the most!"</span>. Lượt đầu Pika tự câu trượt lên chiếc dép cũ (<span class="say">"Oops! Ối, Pika câu nhầm rồi!"</span>), chỉ một lần, là lỗi của Pika.</td></tr>
+      <tr><th>Kết</th><td>Gánh quà chiều đầy 3 món, Pika ăn thử: <span class="say">"<span class="en">Yummy!</span> Ngon quá!"</span>, mở rương kim cương.</td></tr>
+      <tr><th>Từ khoá máy nghe</th><td>prawn, fritters, sesame, balls, coconut, jelly, enjoy</td></tr>
+    </tbody></table></div>
+  </section>
+
+  <section class="card">
+    <div class="step-head"><div class="num">7</div><div class="step-title"><div class="row"><h2>Tạm biệt</h2><span class="pill">27:00–28:00 · 1 phút</span></div></div></div>
+    <div class="script">
+      <div class="line pika"><span class="who">Pika</span><span class="say">"[Tên] thích [món bé chọn] nhất đúng không? Câu Pika thích nhất là '[câu hay nhất]'. Mai đến lớp, [Tên] hỏi bạn câu này nhé: <span class="en">Which Vietnamese snack do you enjoy the most?</span>"</span></div>
+      <div class="line pika"><span class="who">Pika (bài gốc #29)</span><span><span class="say">"<span class="en">And that's it for today's snack adventure. See you next time, bye bye.</span> Hẹn gặp lại [Tên] nhé!"</span> Vẫy hai tay.</span></div>
+    </div>
+  </section>
+</div>
+
+<section class="card" aria-labelledby="t-h">
+  <h2 id="t-h">Ghi chú cho đội tech</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Mục</th><th>Pre-A1</th><th>A1</th><th>A2</th><th>B1</th></tr></thead>
+    <tbody>
+      <tr><th>Bài cụm (④)</th><td>1744 (agent 1528) #4–#10, #17–#19</td><td>1209 (workflow 950) P1–P12</td><td>2977 (agent 2584) #5–#21</td><td>2582 (agent 2452) #5–#21</td></tr>
+      <tr><th>Bài câu (⑤)</th><td>1946 (agent 1737) #5–#13, #15–#21, #28</td><td>3162 (agent 2897) #5–#18, #23</td><td>869 (workflow 764) #1–#3, #6–#8, #10</td><td>2562 (agent 2400) #5–#28</td></tr>
+      <tr><th>Đổi lời</th><td>1744 #19 và 1946 #28 chỉ đọc 3 món</td><td>bỏ câu cuối P12</td><td>không</td><td>#5 "shrimp" → "prawn"</td></tr>
+      <tr><th>Từ khoá game</th><td>rice, noodles, soup</td><td>sunny, morning, cool, breeze, clear, sky</td><td>pack, suitcase, choose, clothes, prepare, snacks</td><td>prawn, fritters, sesame, balls, coconut, jelly, enjoy</td></tr>
+      <tr><th>Trò chuyện 10 phút</th><td colspan="4">Một bài trò chuyện AI chung, 5 phần có giờ (3a–3e); nội dung câu hỏi, gợi ý, bài hát / chuyện và câu đố đổi theo trình độ như trong từng tab.</td></tr>
+    </tbody>
+  </table></div>
+  <ol class="qs">
+    <li><b>Ghép 3 khối trong một phiên:</b> trò chuyện AI → bài cụm → bài câu. Tech chọn cách nối (graph hoặc chuỗi bước của robot lesson).</li>
+    <li><b>Giữ giờ cho phần trò chuyện:</b> mỗi phần 3a–3e có giới hạn thời gian và câu chuyển; cần cách để Pika tự chuyển phần khi hết giờ.</li>
+    <li><b>Hát trong lúc trò chuyện:</b> xác nhận đã bật cho khách chưa; nếu chưa thì phần 3c chỉ kể chuyện.</li>
+    <li><b>Song ngữ:</b> lời gốc của các bài toàn tiếng Anh; cần bật chế độ song ngữ cho cả buổi.</li>
+    <li><b>Bài 869:</b> thử câu "I need to pack my suitcase" có được chấm đúng không (bài gốc chờ câu "I need + đồ vật").</li>
+  </ol>
+</section>
+
+<footer>Lời trong bước ④ ⑤ chép từ trang soạn bài (bài 1744, 1946, 1209, 3162, 2977, 869, 2582, 2562), đọc ngày 20/11/2026. Kịch bản gốc đầy đủ: 2026-11-20_kich-ban-goc-bai-1744_v1.md, 2026-11-20_kich-ban-goc-4-bai-highlight_v1.md và 2026-11-20_kich-ban-goc-4-bai-1528-1209-2977-2582_v1.md. Màu, chữ theo PK Design System.</footer>
+</div>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('[role="tab"]'));
+  function select(t,focus){
+    tabs.forEach(function(x){
+      var on=x===t;
+      x.setAttribute('aria-selected',on?'true':'false');
+      x.tabIndex=on?0:-1;
+      document.getElementById(x.getAttribute('aria-controls')).hidden=!on;
+    });
+    if(focus)t.focus();
+    try{localStorage.setItem('pika-trai-nghiem-v3-tab',t.id)}catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){select(t)});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(d){e.preventDefault();select(tabs[(i+d+tabs.length)%tabs.length],true)}
+    });
+  });
+  try{var s=localStorage.getItem('pika-trai-nghiem-v3-tab');var el=s&&document.getElementById(s);if(el)select(el)}catch(e){}
+})();
+</script>
+</body>
+</html>

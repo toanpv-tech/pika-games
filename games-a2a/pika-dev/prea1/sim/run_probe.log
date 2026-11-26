@@ -1,0 +1,11 @@
+CHẠY GIẢ LẬP bot 3787 trên https://platform-builder-api.stepup.edu.vn (tốn chi phí LLM)
+  1 persona × 12 turn (tối đa; tổng tối đa 12 turn)
+  - probe-12: profile Vân [VI-EN] maxTurns=12 timeout=900s prompt tuỳ chỉnh | customProfile language_mode=VI-EN,learn_level=Pre-A1,age=7
+  song song tối đa 2; 1 nhóm, trong nhóm chạy tuần tự (0 nhóm có >1 persona; cùng profile chạy tuần tự, thêm --parallel-same-profile để chạy song song)
+[probe-12] bắt đầu (profile 019ecea2-408d-73e3-81cb-78d8a1cac5ec, maxTurns=12) ...
+[probe-12] LỖI: HTTP 504 (POST /simulate/run @ https://platform-builder-api.stepup.edu.vn): lỗi phía server/upstream, thử lại sau. The origin web server did not respond to Cloudflare within the allowed time. This typically means the origin is overloaded or a backend process is taking too long. -> Backend không gọi được dịch vụ giả lập (upstream chưa cấu hình/sai token/không kết nối được). Báo admin, không phải lỗi persona.
+
+=== TÓM TẮT ===
+HOST=https://platform-builder-api.stepup.edu.vn BOT=3787 OUT=sim
+- probe-12: THẤT BẠI — HTTP 504 (POST /simulate/run @ https://platform-builder-api.stepup.edu.vn): lỗi phía server/upstream, thử lại sau. The origin web server did not respond to Cloudflare within the allowed time. This typically means the origin is overloaded or a backend process is taking too long. -> Backend không gọi được dịch vụ giả lập (upstream chưa cấu hình/sai token/không kết nối được). Báo admin, không phải lỗi persona.
+Đọc transcript: <out>/<tên>.md; xem references/reading-results.md để đối chiếu test case.
